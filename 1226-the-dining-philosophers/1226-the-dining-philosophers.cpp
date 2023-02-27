@@ -1,32 +1,33 @@
-class DiningPhilosophers {
+class Solution {
+
 public:
-    DiningPhilosophers()
-     : m_(5) {
 
-    }
+    vector<int> shuffle(vector<int>& nums, int n) {
 
-    void wantsToEat(int philosopher,
-                    function<void()> pickLeftFork,
-                    function<void()> pickRightFork,
-                    function<void()> eat,
-                    function<void()> putLeftFork,
-                    function<void()> putRightFork) {
+        int first = 0, second = n, max = 1001;
 
-        int left = philosopher, right = (philosopher + 4) % 5;
-        int first = left, second = right;
-        if (philosopher % 2) {
-            swap(first, second);
+        for(int i=0;i<2*n;i++)
+
+        {
+
+            if(i%2==0)
+
+            nums[i]=(nums[first++]%max)*max + nums[i];
+
+            else
+
+            nums[i]=(nums[second++]%max)*max + nums[i];
+
         }
 
-        unique_lock<mutex> lock1(m_[first]);
-        unique_lock<mutex> lock2(m_[second]);
-        pickLeftFork();
-        pickRightFork();
-        eat();
-        putLeftFork();
-        putRightFork();
+        for(int i=0;i<2*n;i++)
+
+        nums[i]/=max;
+
+        return nums;
+
     }
 
-private:
-    vector<mutex> m_;
 };
+
+
