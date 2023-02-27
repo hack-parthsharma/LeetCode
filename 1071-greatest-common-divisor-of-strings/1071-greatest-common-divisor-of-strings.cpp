@@ -11,7 +11,6 @@ public:
             return "";
 
         }
-
         // Get the GCD of the two lengths.
 
         int gcdLength = gcd(str1.size(), str2.size());
