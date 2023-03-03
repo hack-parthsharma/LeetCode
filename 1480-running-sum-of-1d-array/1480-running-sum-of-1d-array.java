@@ -5,7 +5,6 @@ class Solution {
         int[] runningSumAr = new int[len];
         
         int sumSoFar = 0;
-        
         for(int i=0; i<len; i++){
             sumSoFar += nums[i];
             
