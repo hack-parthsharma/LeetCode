@@ -24,7 +24,6 @@ public:
 
     }
 
-
     ListNode* mergeKListsHelper(vector<ListNode*>& lists, int start, int end) {
 
         if (start == end) {
