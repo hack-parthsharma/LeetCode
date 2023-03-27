@@ -1,22 +1,25 @@
 class Solution {
-public:
-    //attributes
-    vector<vector<int>> rects_b; //copy of the given 'rects' vector
-    vector<int> points_until; //value of element 'e' = num of points in all rects before 'e', including it
+ public:
+  Solution(vector<vector<int>>& rects) : rects(move(rects)) {
+    for (const vector<int>& r : this->rects)
+      areas.push_back(getArea(r));
+    partial_sum(begin(areas), end(areas), begin(areas));
+  }
 
-    Solution(vector<vector<int>>& rects) {
-        for (auto &e : rects) {
-            int before = (points_until.size() == 0) ? 0 : points_until.back(); //points before 'e'
-            points_until.push_back((e[2] - e[0] + 1) * (e[3] - e[1] + 1) + before);
-            rects_b = rects;
-        }
-    }
+  vector<int> pick() {
+    const int target = rand() % areas.back();
+    const int index =
+        upper_bound(begin(areas), end(areas), target) - begin(areas);
+    const vector<int>& r = rects[index];
+    return {rand() % (r[2] - r[0] + 1) + r[0],
+            rand() % (r[3] - r[1] + 1) + r[1]};
+  }
 
-    vector<int> pick() {
-        int ind = rand() % points_until.back(); //randomly choose one of the points counted
-        int rect = upper_bound(points_until.begin(), points_until.end(), ind) - points_until.begin();
-        ind -= (rect == 0) ? 0 : points_until[rect - 1];
-        int row = rects_b[rect][3] - rects_b[rect][1] + 1;
-        return {ind/row + rects_b[rect][0], ind%row + rects_b[rect][1]};
-    }
+ private:
+  const vector<vector<int>> rects;
+  vector<int> areas;
+
+  int getArea(const vector<int>& r) {
+    return (r[2] - r[0] + 1) * (r[3] - r[1] + 1);
+  }
 };
