@@ -1,22 +1,26 @@
 class Solution {
-public:
-    int countSubstrings(string s) {
-        int len = s.size();
-        if (len<=1) return len;
-        
-        vector< vector<bool> > dp(len, vector<bool>(len, false));
-        
-        int cnt = 0;
-        for( int i=len-1; i>=0; i--) {
-            for (int j=i; j<=len-1; j++) {              
-                if ( i == j  || ( s[i] == s[j] && ( j-i<2 || dp[i+1][j-1]) ) ) {
-                    dp[i][j] = true;
-                    cnt++;
-                }
-            }
-        }
-                                  
-        return cnt;       
-        
+ public:
+  int countSubstrings(string s) {
+    int ans = 0;
+
+    for (int i = 0; i < s.length(); ++i) {
+      ans += extendPalindromes(s, i, i);
+      ans += extendPalindromes(s, i, i + 1);
     }
+
+    return ans;
+  }
+
+ private:
+  int extendPalindromes(const string& s, int l, int r) {
+    int count = 0;
+
+    while (l >= 0 && r < s.length() && s[l] == s[r]) {
+      ++count;
+      --l;
+      ++r;
+    }
+
+    return count;
+  }
 };
