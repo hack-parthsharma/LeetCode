@@ -1,11 +1,15 @@
 class Solution {
-public:
-    int flipLights(int n, int m) {
-        if (m == 0 || n == 0) return 1;
-        if (n == 1) return 2;
-        if (n == 2) return m == 1? 3:4;
-        if (m == 1) return 4;
-        return m==2 ? 7 :8;
-        
-    }
+ public:
+  int flipLights(int n, int m) {
+    n = min(n, 3);
+
+    if (m == 0)
+      return 1;
+    if (m == 1)
+      return vector{2, 3, 4}[n - 1];
+    if (m == 2)
+      return vector{2, 4, 7}[n - 1];
+
+    return pow(2, n);
+  }
 };
