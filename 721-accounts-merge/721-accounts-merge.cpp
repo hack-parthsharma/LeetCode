@@ -1,63 +1,65 @@
+class UnionFind {
+ public:
+  UnionFind(int n) : id(n), sz(n, 1) {
+    iota(begin(id), end(id), 0);
+  }
+
+  void unionBySize(int u, int v) {
+    const int i = find(u);
+    const int j = find(v);
+    if (i == j)
+      return;
+    if (sz[i] < sz[j]) {
+      sz[j] += sz[i];
+      id[i] = j;
+    } else {
+      sz[i] += sz[j];
+      id[j] = i;
+    }
+  }
+
+  int find(int u) {
+    return id[u] == u ? u : id[u] = find(id[u]);
+  }
+
+ private:
+  vector<int> id;
+  vector<int> sz;
+};
+
 class Solution {
-public:
-    // We can orginze all relevant emails to a chain,
-    // then we can use Union Find algorithm
-    // Besides, we also need to map the relationship between name and email.
-    vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
-        unordered_map<string, int> emails_id; //using email ID for union find
-        unordered_map<int, int> emails_chains; // email chains
-        unordered_map<int, string> names; // email id & name
+ public:
+  vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
+    vector<vector<string>> ans;
+    unordered_map<string, int> emailToIndex;        // {email: index}
+    unordered_map<int, set<string>> indexToEmails;  // {index: {emails}}
+    UnionFind uf(accounts.size());
 
-        //initialization & join
-        for(int i = 0 ; i<accounts.size();i++) {
-
-            // using the account index as the emails group ID,
-            // this could simplify the emails chain.
-            emails_chains[i] = i;
-
-            auto& account = accounts[i];
-            auto& name = account[0];
-            for (int j=1; j<account.size(); j++) {
-                auto& email = account[j];
-                if ( emails_id.find(email) == emails_id.end() ) {
-                    emails_id[email] = i;
-                    names[i] = name;
-                }else {
-                    join( emails_chains, i, emails_id[email] );
-                }
-
-            }
+    for (int i = 0; i < accounts.size(); ++i) {
+      const string name = accounts[i][0];
+      for (int j = 1; j < accounts[i].size(); ++j) {
+        const string email = accounts[i][j];
+        const auto it = emailToIndex.find(email);
+        if (it == emailToIndex.end()) {
+          // Only record if it's the first time we see thie email
+          emailToIndex[email] = i;
+        } else {
+          // Otherwise, union i w/ emailToIndex[index]
+          uf.unionBySize(i, it->second);
         }
-
-        //reform the emails
-        unordered_map<int, set<string>> res;
-        for(int i=0; i<accounts.size(); i++) {
-            int idx = find(emails_chains, i);
-            res[idx].insert(accounts[i].begin()+1, accounts[i].end());
-        }
-
-
-        //output the result
-        vector<vector<string>> result;
-        for (auto pair : res) {
-            vector<string> emails( pair.second.begin(), pair.second.end() );
-            emails.insert(emails.begin(), names[pair.first]);
-            result.push_back(emails);
-        }
-        return result;
+      }
     }
 
-    int find(unordered_map<int, int>& emails_chains, int id) {
-        while( id != emails_chains[id] ){
-            id = emails_chains[id];
-        }
-        return id;
+    for (const auto& [email, index] : emailToIndex)
+      indexToEmails[uf.find(index)].insert(email);
+
+    for (const auto& [index, emails] : indexToEmails) {
+      const string name = accounts[index][0];
+      vector<string> row{name};
+      row.insert(end(row), begin(emails), end(emails));
+      ans.push_back(row);
     }
 
-    bool join(unordered_map<int, int>& emails_chains, int id1, int id2) {
-        int e1 = find(emails_chains, id1);
-        int e2 = find(emails_chains, id2);
-        if ( e1 != e2 )  emails_chains[e1] = e2;
-        return e1 == e2;
-    }
+    return ans;
+  }
 };
