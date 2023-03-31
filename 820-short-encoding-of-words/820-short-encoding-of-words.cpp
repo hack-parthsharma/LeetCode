@@ -1,29 +1,37 @@
+struct TrieNode {
+  vector<shared_ptr<TrieNode>> children;
+  int depth = 0;
+  TrieNode() : children(26) {}
+};
+
 class Solution {
-public:
-    static bool comp(string a,string b){
-        return a.size() < b.size();
+ public:
+  int minimumLengthEncoding(vector<string>& words) {
+    int ans = 0;
+    shared_ptr<TrieNode> root = make_shared<TrieNode>();
+    vector<shared_ptr<TrieNode>> heads;
+
+    for (const string& word : unordered_set<string>(begin(words), end(words)))
+      heads.push_back(insert(root, word));
+
+    for (shared_ptr<TrieNode> head : heads)
+      if (all_of(begin(head->children), end(head->children),
+                 [](const auto& child) { return child == nullptr; }))
+        ans += head->depth + 1;
+
+    return ans;
+  }
+
+ private:
+  shared_ptr<TrieNode> insert(shared_ptr<TrieNode> root, const string& word) {
+    shared_ptr<TrieNode> node = root;
+    for (const char c : string(rbegin(word), rend(word))) {
+      const int i = c - 'a';
+      if (node->children[i] == nullptr)
+        node->children[i] = make_shared<TrieNode>();
+      node = node->children[i];
     }
-    int minimumLengthEncoding(vector<string>& words) {
-        sort(words.begin(),words.end(),comp);
-        int ans = 0;
-        int count = 0;
-        unordered_map<string,int> M;
-        for(int i = 0 ; i < words.size() ; i++){
-            string temp = "";
-            for(int k = words[i].size() - 1 ; k >= 0 ; k--){
-                temp = words[i][k] + temp;
-                M[temp]++;
-            }
-        }
-        for(int i = 0 ; i < words.size() ; i++){
-            ans = ans + words[i].size();
-            count++;
-            if(M[words[i]] > 1){
-                ans = ans - words[i].size();
-                count--;
-                M[words[i]]--;
-            }
-        }
-        return ans + count;
-    }
+    node->depth = word.length();
+    return node;
+  }
 };
