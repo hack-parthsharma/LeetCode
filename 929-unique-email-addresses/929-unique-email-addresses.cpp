@@ -1,26 +1,21 @@
 class Solution {
-public:
-    int numUniqueEmails(vector<string>& emails) {
-        unordered_map<string, int> dict;
-        for (auto& email : emails) {
-            string addr;
+ public:
+  int numUniqueEmails(vector<string>& emails) {
+    unordered_set<string> normalized;
 
-            for(int i=0; i<email.size(); i++) {
-                if (email[i] == '.' ) continue;
-
-                if (email[i] == '+') {
-                    while( email[++i] != '@');
-                }
-                if (email[i] =='@') {
-                    addr += email.substr(i);
-                    break;
-                }
-                addr += email[i];
-            }
-
-            dict[addr]++;
-        }
-        return dict.size();
+    for (const string& email : emails) {
+      string local;
+      for (const char c : email) {
+        if (c == '+' || c == '@')
+          break;
+        if (c == '.')
+          continue;
+        local += c;
+      }
+      string atDomain = email.substr(email.find('@'));
+      normalized.insert(local + atDomain);
     }
 
+    return normalized.size();
+  }
 };
