@@ -1,34 +1,16 @@
 class Solution {
-private:
-    int min(int x, int y) {
-        return x < y ? x: y;
-    }
-    int min( int x, int y, int z) {
-        return min(min(x, y),z);
-    }
-public:
-    int minFallingPathSum(vector<vector<int>>& A) {
-        int m = INT_MAX;
-        
-        for (int i=0; i<A.size(); i++) {
-            for (int j=0; j<A[i].size(); j++){
-                //find the minimal item in previous row, and add it into the current item
-                if (i > 0) {
-                    if (j == 0 ){
-                       A[i][j] += min( A[i-1][j], A[i-1][j+1]); 
-                    } else if ( j + 1 == A[i].size()) {
-                       A[i][j] += min( A[i-1][j], A[i-1][j-1]); 
-                    }else {
-                        A[i][j] += min( A[i-1][j], A[i-1][j-1], A[i-1][j+1]);
-                    }
-                }
-                
-                if ( i + 1 == A.size() ) {
-                    m = min(m, A[i][j]);
-                }
-            }
-        }
-        
-        return m;
-    }
+ public:
+  int minFallingPathSum(vector<vector<int>>& A) {
+    const int n = A.size();
+
+    for (int i = 1; i < n; ++i)
+      for (int j = 0; j < n; ++j) {
+        int mini = INT_MAX;
+        for (int k = max(0, j - 1); k < min(n, j + 2); ++k)
+          mini = min(mini, A[i - 1][k]);
+        A[i][j] += mini;
+      }
+
+    return *min_element(begin(A[n - 1]), end(A[n - 1]));
+  }
 };
