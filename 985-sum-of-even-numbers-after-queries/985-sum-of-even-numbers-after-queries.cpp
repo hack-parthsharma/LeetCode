@@ -1,31 +1,23 @@
 class Solution {
-public:
-    vector<int> sumEvenAfterQueries(vector<int>& A, vector<vector<int>>& queries) {
-        int sum = 0;
-        for(int i=0; i<A.size(); i++) {
-            if (A[i] % 2 == 0) sum += A[i];
-        }
-        vector<int> result;
-        for(auto query : queries) {
-            int i = query[1];
-            int x = A[i] + query[0];
-            
-            if (A[i] % 2 == 0 && x %2 == 0) {
-                sum += ( -A[i] + x ); 
-                A[i] = x;
-            } else if (A[i] % 2 != 0 && x %2 == 0) {
-                sum += x;
-                A[i] = x;
-            } else if (A[i] % 2 == 0 && x %2 != 0) {
-                sum -= A[i];
-                A[i] = x;
-            } else if (A[i] % 2 != 0 && x %2 != 0){ 
-                A[i] = x;
-            }
-            result.push_back(sum);
-        }
-        
-        if (result.size()<=0) result.push_back(0);
-        return result;
+ public:
+  vector<int> sumEvenAfterQueries(vector<int>& nums,
+                                  vector<vector<int>>& queries) {
+    vector<int> ans;
+    int sum = accumulate(begin(nums), end(nums), 0, [](int subtotal, int num) {
+      return subtotal + (num % 2 == 0 ? num : 0);
+    });
+
+    for (const vector<int>& query : queries) {
+      const int val = query[0];
+      const int index = query[1];
+      if (nums[index] % 2 == 0)
+        sum -= nums[index];
+      nums[index] += val;
+      if (nums[index] % 2 == 0)
+        sum += nums[index];
+      ans.push_back(sum);
     }
+
+    return ans;
+  }
 };
