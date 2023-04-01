@@ -1,12 +1,12 @@
 class Solution {
-public:
-    int largestPerimeter(vector<int>& A) {
-        if (A.size() < 3) return 0;
-        sort(A.begin(), A.end(), greater<int>());
-        for (auto it = A.begin(); it != A.end() - 2; ++it) {
-            if (*it < *(it + 1) + *(it + 2))
-                return *it + *(it + 1) + *(it + 2);            
-        }
-        return 0;
-    }
+ public:
+  int largestPerimeter(vector<int>& nums) {
+    sort(begin(nums), end(nums));
+
+    for (int i = nums.size() - 1; i > 1; --i)
+      if (nums[i - 2] + nums[i - 1] > nums[i])
+        return nums[i - 2] + nums[i - 1] + nums[i];
+
+    return 0;
+  }
 };
