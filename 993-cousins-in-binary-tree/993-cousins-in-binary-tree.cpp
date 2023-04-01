@@ -1,28 +1,37 @@
 class Solution {
-public:
-    bool isCousins(TreeNode* root, int x, int y) {
-        int dx=0, dy=0;
-        TreeNode *px=root, *py=root;
-        dx = DepthAndParent(root, px, 0, x);
-        dy = DepthAndParent(root, py, 0, y);
-        if (dx && dy){
-            return (dx == dy && px != py);
+ public:
+  bool isCousins(TreeNode* root, int x, int y) {
+    if (root == nullptr)
+      return false;
+
+    queue<TreeNode*> queue{{root}};
+
+    while (!queue.empty()) {
+      bool isFindX = false;
+      bool isFindY = false;
+      for (int i = queue.size(); i > 0; --i) {
+        root = queue.front(), queue.pop();
+        if (root->val == x)
+          isFindX = true;
+        else if (root->val == y)
+          isFindY = true;
+        else if (root->left && root->right) {
+          if (root->left->val == x && root->right->val == y)
+            return false;
+          if (root->left->val == y && root->right->val == x)
+            return false;
         }
-
+        if (root->left)
+          queue.push(root->left);
+        if (root->right)
+          queue.push(root->right);
+      }
+      if (isFindX && isFindY)
+        return true;
+      else if (isFindX || isFindY)
         return false;
-
     }
 
-    int DepthAndParent(TreeNode* root, TreeNode*& parent, int depth, int x) {
-        if (!root) return 0;
-        if ( root->val == x) return depth;
-
-        int d=0;
-        parent = root;
-        if  ( ( d = DepthAndParent(root->left, parent, depth+1, x)) > 0 ) return d;
-
-        parent = root;
-        if ( ( d = DepthAndParent(root->right, parent, depth+1, x)) > 0 ) return d;
-        return 0;
-    }
+    return false;
+  }
 };
