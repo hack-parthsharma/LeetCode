@@ -1,23 +1,19 @@
 class Solution {
-public:
-    int countTriplets(vector<int>& A) {
-        int n = A.size();
+ public:
+  int countTriplets(vector<int>& nums) {
+    constexpr int kMax = 1 << 16;
+    int ans = 0;
+    vector<int> count(kMax);  // {nums[i] & nums[j]: times}
 
-        //using a map to aggregate the duplication
-        unordered_map<int, int> rec;
-        for (int i=0; i<n; i++) {
-            for (int j=0; j<n; j++) {
-                rec[A[i] & A[j]]++;
-            }
-        }
+    for (const int a : nums)
+      for (const int b : nums)
+        ++count[a & b];
 
-        int result = 0;
-        for (auto &r : rec ) {
-            for (int k=0; k<n; k++) {
-                if ((r.first & A[k]) == 0) result+=r.second;
-            }
-        }
-        return result;
-    }
+    for (const int num : nums)
+      for (int i = 0; i < kMax; ++i)
+        if ((num & i) == 0)
+          ans += count[i];
 
+    return ans;
+  }
 };
