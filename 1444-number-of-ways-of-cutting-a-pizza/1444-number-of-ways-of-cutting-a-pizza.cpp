@@ -1,47 +1,34 @@
 class Solution {
- public:
-  int ways(vector<string>& pizza, int k) {
-    const int M = pizza.size();
-    const int N = pizza[0].size();
-    // dp[m][n][k] := # of ways to cut pizza[m:M][n:N] w/ k cuts
-    dp.resize(M, vector<vector<int>>(N, vector<int>(k, -1)));
-    prefix.resize(M + 1, vector<int>(N + 1));
-
-    for (int i = 0; i < M; ++i)
-      for (int j = 0; j < N; ++j)
-        prefix[i + 1][j + 1] = (pizza[i][j] == 'A') + prefix[i][j + 1] +
-                               prefix[i + 1][j] - prefix[i][j];
-
-    return ways(0, 0, k - 1, M, N);
-  }
-
- private:
-  static constexpr int kMod = 1'000'000'007;
-  vector<vector<vector<int>>> dp;
-  vector<vector<int>> prefix;
-
-  // HasApple of pizza[row1..row2)[col1..col2)
-  bool hasApple(int row1, int row2, int col1, int col2) {
-    return (prefix[row2][col2] - prefix[row1][col2] - prefix[row2][col1] +
-            prefix[row1][col1]) > 0;
-  };
-
-  int ways(int m, int n, int k, const int M, const int N) {
-    if (k == 0)
-      return 1;
-    if (dp[m][n][k] >= 0)
-      return dp[m][n][k];
-
-    dp[m][n][k] = 0;
-
-    for (int i = m + 1; i < M; ++i)  // Cut horizontally
-      if (hasApple(m, i, n, N) && hasApple(i, M, n, N))
-        dp[m][n][k] = (dp[m][n][k] + ways(i, n, k - 1, M, N)) % kMod;
-
-    for (int j = n + 1; j < N; ++j)  // Cut vertically
-      if (hasApple(m, M, n, j) && hasApple(m, M, j, N))
-        dp[m][n][k] = (dp[m][n][k] + ways(m, j, k - 1, M, N)) % kMod;
-
-    return dp[m][n][k];
-  }
+    void add(long &a, long &b) { a = (a + b) % ((int) 1e9+7); }
+public:
+    int ways(vector<string>& A, int K) {
+        int M = A.size(), N = A[0].size();
+        vector<vector<int>> cnt(M + 1, vector<int>(N + 1));
+        for (int i = M - 1; i >= 0; --i) {
+            int s = 0;
+            for (int j = N - 1; j >= 0; --j) {
+                s += A[i][j] == 'A';
+                cnt[i][j] = cnt[i + 1][j] + s;
+            }
+        }
+        vector<vector<vector<long>>> dp(M + 1, vector<vector<long>>(N + 1, vector<long>(K + 1)));
+        for (int i = M - 1; i >= 0; --i) {
+            for (int j = N - 1; j >= 0; --j) {
+                dp[i][j][1] = cnt[i][j] > 0;
+                for (int k = 2; k <= K; ++k) {
+                    for (int t = i + 1; t < M; ++t) {
+                        if (cnt[i][j] == cnt[t][j]) continue;
+                        if (cnt[t][j] == 0) break;
+                        add(dp[i][j][k], dp[t][j][k - 1]);
+                    }
+                    for (int t = j + 1; t < N; ++t) {
+                        if (cnt[i][j] == cnt[i][t]) continue;
+                        if (cnt[i][t] == 0) break;
+                        add(dp[i][j][k], dp[i][t][k - 1]);
+                    }
+                }
+            }
+        }
+        return dp[0][0][K];
+    }
 };
