@@ -1,14 +1,15 @@
 class Solution {
-public:
-    long zeroFilledSubarray(vector<int>& nums) {
-        long cnt = 0, zeroSubarraysEndingAtCurrentIndex = 0;
-        for (int n : nums) {
-            if (n == 0) {
-                cnt += ++zeroSubarraysEndingAtCurrentIndex;
-            } else {
-                zeroSubarraysEndingAtCurrentIndex = 0;
-            }
-        }
-        return cnt;
-    }
+ public:
+  long long zeroFilledSubarray(vector<int>& nums) {
+    long long ans = 0;
+    int indexBeforeZero = -1;
+
+    for (int i = 0; i < nums.size(); ++i)
+      if (nums[i])
+        indexBeforeZero = i;
+      else
+        ans += i - indexBeforeZero;
+
+    return ans;
+  }
 };
