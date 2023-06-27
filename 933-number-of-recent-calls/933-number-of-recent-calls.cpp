@@ -22,10 +22,3 @@ private:
         return x > req[low] ? low+1 : low ;
     }
 };
-
-/**
- * Your R
-ecentCounter object will be instantiated and called as such:
- * RecentCounter* obj = new RecentCounter();
- * int param_1 = obj->ping(t);
- */
