@@ -9,6 +9,7 @@ class Solution {
       if (!set2.count(num))
         ans[0].push_back(num);
 
+      
     for (const int num : set2)
       if (!set1.count(num))
         ans[1].push_back(num);
