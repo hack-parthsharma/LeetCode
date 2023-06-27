@@ -17,9 +17,11 @@ class Solution {
         ans += s[i++];
       }
 
+      
     return ans;
   }
 
+    
  private:
   int i = 0;
 };
