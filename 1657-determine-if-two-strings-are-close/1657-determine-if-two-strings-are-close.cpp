@@ -9,7 +9,7 @@ class Solution {
     string s1;           // Unique chars in word1
     string s2;           // Unique chars in word2
     vector<int> freqs1;  // Freqs of unique chars in word1
-    vector<int> freqs2;  // Freqs of unique chars in word2
+    vector<int> freqs2;  
 
     for (const char c : word1)
       ++count1[c];
@@ -33,6 +33,7 @@ class Solution {
     if (s1 != s2)
       return false;
 
+      
     sort(begin(freqs1), end(freqs1));
     sort(begin(freqs2), end(freqs2));
     return freqs1 == freqs2;
