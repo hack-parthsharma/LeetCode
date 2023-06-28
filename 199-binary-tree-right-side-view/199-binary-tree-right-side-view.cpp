@@ -3,10 +3,8 @@ class Solution {
   vector<int> rightSideView(TreeNode* root) {
     if (root == nullptr)
       return {};
-
     vector<int> ans;
     queue<TreeNode*> q{{root}};
-
     while (!q.empty()) {
       const int size = q.size();
       for (int i = 0; i < size; ++i) {
@@ -20,7 +18,6 @@ class Solution {
           q.push(node->right);
       }
     }
-
     return ans;
   }
 };
