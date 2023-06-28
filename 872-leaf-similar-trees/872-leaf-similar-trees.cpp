@@ -7,7 +7,6 @@ class Solution {
     dfs(root2, leaves2);
     return leaves1 == leaves2;
   }
-
   void dfs(TreeNode* root, vector<int>& leaves) {
     if (root == nullptr)
       return;
@@ -15,7 +14,6 @@ class Solution {
       leaves.push_back(root->val);
       return;
     }
-
     dfs(root->left, leaves);
     dfs(root->right, leaves);
   }
