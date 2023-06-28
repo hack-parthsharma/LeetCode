@@ -20,7 +20,6 @@ class Solution {
     }
     return root;
   }
-
  private:
   TreeNode* getMin(TreeNode* node) {
     while (node->left)
