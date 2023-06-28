@@ -6,6 +6,7 @@ class Solution {
     ListNode* odd = &oddHead;
     ListNode* even = &evenHead;
 
+      
     for (int isOdd = 0; head; head = head->next)
       if (isOdd ^= 1) {
         odd->next = head;
@@ -15,6 +16,7 @@ class Solution {
         even = even->next;
       }
 
+      
     odd->next = evenHead.next;
     even->next = nullptr;
     return oddHead.next;
