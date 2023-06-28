@@ -3,13 +3,11 @@ struct T {
   int rightMax;
   int subtreeMax;
 };
-
 class Solution {
  public:
   int longestZigZag(TreeNode* root) {
     return dfs(root).subtreeMax;
   }
-
  private:
   T dfs(TreeNode* root) {
     if (root == nullptr)
