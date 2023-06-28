@@ -21,7 +21,6 @@ class Solution {
         ans = level;
       }
     }
-
     return ans;
   }
 };
