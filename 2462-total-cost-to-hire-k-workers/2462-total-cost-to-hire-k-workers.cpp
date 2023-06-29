@@ -23,6 +23,7 @@ class Solution {
         ans += minHeapR.top(), minHeapR.pop();
     }
 
+      
     return ans;
   }
 };
