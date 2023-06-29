@@ -20,6 +20,7 @@ class UnionFind {
     --count;
   }
 
+    
   int getCount() const {
     return count;
   }
