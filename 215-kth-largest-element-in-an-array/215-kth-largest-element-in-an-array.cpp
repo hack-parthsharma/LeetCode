@@ -9,6 +9,7 @@ class Solution {
         minHeap.pop();
     }
 
+      
     return minHeap.top();
   }
 };
