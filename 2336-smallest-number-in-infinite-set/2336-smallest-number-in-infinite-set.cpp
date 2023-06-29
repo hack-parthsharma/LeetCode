@@ -13,6 +13,7 @@ public:
         return i;
     }
 
+    
     void addBack(int num) {
         black.erase(num);
     }
