@@ -4,14 +4,11 @@ class Solution {
                               long long success) {
     vector<int> ans;
     sort(begin(potions), end(potions));
-
     for (const int spell : spells)
       ans.push_back(potions.size() -
                     firstIndexSuccess(spell, potions, success));
-
     return ans;
   }
-
  private:
   // First index i s.t. spell * potions[i] >= success
   int firstIndexSuccess(int spell, const vector<int>& potions,
