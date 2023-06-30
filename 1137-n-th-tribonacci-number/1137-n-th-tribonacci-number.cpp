@@ -10,6 +10,7 @@ public:
             b = c;
             c = next;
         }
+        
         return c;
     }
 };
