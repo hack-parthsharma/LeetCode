@@ -5,8 +5,6 @@ class Solution {
       return 0;
     if (nums.size() == 1)
       return nums[0];
-
-    // dp[i] := max money of robbing nums[0..i]
     vector<int> dp(nums.size());
     dp[0] = nums[0];
     dp[1] = max(nums[0], nums[1]);
