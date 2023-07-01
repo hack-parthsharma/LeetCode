@@ -3,18 +3,14 @@ struct TrieNode {
   const string* word = nullptr;
   TrieNode() : children(26) {}
 };
-
 class Solution {
  public:
   vector<vector<string>> suggestedProducts(vector<string>& products,
                                            string searchWord) {
     vector<vector<string>> ans;
-
     for (const string& product : products)
       insert(product);
-
     shared_ptr<TrieNode> node = root;
-
     for (const char c : searchWord) {
       if (node == nullptr || node->children[c - 'a'] == nullptr) {
         node = nullptr;
