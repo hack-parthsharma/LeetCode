@@ -8,7 +8,6 @@ public:
         memset(children, 0, sizeof(children)); // Initialize all children to null
     }
 };
-
 class Trie {
 private:
     TrieNode* root;
