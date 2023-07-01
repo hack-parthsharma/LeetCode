@@ -3,7 +3,6 @@ class Solution {
   vector<int> dailyTemperatures(vector<int>& temperatures) {
     vector<int> ans(temperatures.size());
     stack<int> stack;  // Decreasing stack
-
     for (int i = 0; i < temperatures.size(); ++i) {
       while (!stack.empty() && temperatures[stack.top()] < temperatures[i]) {
         const int index = stack.top();
@@ -12,7 +11,6 @@ class Solution {
       }
       stack.push(i);
     }
-
     return ans;
   }
 };
