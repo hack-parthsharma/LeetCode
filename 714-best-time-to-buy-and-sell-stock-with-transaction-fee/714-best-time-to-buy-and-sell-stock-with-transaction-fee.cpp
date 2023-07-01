@@ -6,17 +6,13 @@ private:
     int max(int x, int y, int z) {
         return max(x, max(y,z));
     }
-
 public:
-
     int maxProfit(vector<int>& prices, int fee) {
         return maxProfit_dp03(prices, fee); // 100ms
         return maxProfit_dp02(prices, fee); // 100ms
         return maxProfit_dp01(prices, fee); // 2700ms
     }
 
-    // find the [buy-low, sell-high] prices pairs,
-    // and remove the unnecessary prices.
     void genPricesPairs(vector<int> &prices, vector< pair<int, int> > &prices_pairs, int fee){
 
         int low = -1;
