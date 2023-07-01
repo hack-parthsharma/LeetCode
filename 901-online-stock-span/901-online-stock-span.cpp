@@ -7,7 +7,6 @@ class StockSpanner {
     stack.emplace(price, span);
     return span;
   }
-
  private:
   stack<pair<int, int>> stack;  // (price, span)
 };
