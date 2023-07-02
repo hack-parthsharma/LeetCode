@@ -11,10 +11,8 @@ class Solution {
         return;
       }
 
-      // Skip requests[i]
       dfs(i + 1, processedReqs);
 
-      // Process requests[i]
       --degree[requests[i][0]];
       ++degree[requests[i][1]];
       dfs(i + 1, processedReqs + 1);
