@@ -1,4 +1,3 @@
-# Write your MySQL query statement below
 SELECT TMP.MACHINE_ID as machine_id, ROUND(SUM(TMP.TIME_DIFF)/COUNT(TMP.TIME_DIFF),3) AS processing_time FROM
 (
     SELECT A.MACHINE_ID,
