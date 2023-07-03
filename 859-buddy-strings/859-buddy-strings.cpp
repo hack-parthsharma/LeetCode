@@ -17,7 +17,6 @@ public:
                 
             }
         }
-        //if A == B and there has repeated chars , then return true
         if (diffCnt==0 && bRepeat) return true;
         
         return (A[idx[0]] == B[idx[1]] && A[idx[1]] == B[idx[0]]);
