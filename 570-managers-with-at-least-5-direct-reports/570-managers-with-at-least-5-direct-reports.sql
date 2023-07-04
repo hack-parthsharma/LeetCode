@@ -1,4 +1,5 @@
 SELECT Name
+
 FROM Employee AS a JOIN
     (SELECT ManagerId
     FROM Employee
