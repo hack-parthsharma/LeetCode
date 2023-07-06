@@ -1,4 +1,3 @@
-# Write your MySQL query statement below
 WITH first_year_sales AS (
     SELECT 
         s.product_id,
