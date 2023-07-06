@@ -1,4 +1,3 @@
-# Write your MySQL query statement below
 SELECT
     user_id,
     count(1) AS followers_count
