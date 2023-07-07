@@ -1,4 +1,3 @@
-# Write your MySQL query statement below
 select e1.reports_to as employee_id,
        e2.name,
        count(e1.reports_to) as reports_count,
