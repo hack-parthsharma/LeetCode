@@ -1,4 +1,3 @@
-# Write your MySQL query statement below
 select
     employee_id
 from Employees
