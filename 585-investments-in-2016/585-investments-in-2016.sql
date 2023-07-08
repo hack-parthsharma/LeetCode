@@ -1,7 +1,9 @@
 SELECT
     ROUND(SUM(insurance.TIV_2016),2) AS TIV_2016
+
 FROM
     insurance
+
 WHERE
     insurance.TIV_2015 IN
     (
