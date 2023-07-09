@@ -1,4 +1,5 @@
 select  prod.product_name, prod.unit
+
 from
     (select p.product_name, 
         sum(o.unit) as unit
@@ -8,4 +9,5 @@ from
         datediff(order_date, '2020=02-01') >= 0 and
         datediff('2020-03-01', order_date) > 0 
     group by p.product_id) prod
+
 where prod.unit >= 100
