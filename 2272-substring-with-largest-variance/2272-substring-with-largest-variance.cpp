@@ -12,8 +12,6 @@ class Solution {
   }
 
  private:
-  // A := the char w/ higher freq
-  // B := the char w/ lower freq
   int kadane(const string& s, char a, char b) {
     int ans = 0;
     int countA = 0;
@@ -28,13 +26,10 @@ class Solution {
       else
         ++countB;
       if (countB > 0) {
-        // An interval should contain at least one b
         ans = max(ans, countA - countB);
       } else if (countB == 0 && canExtendPrevB) {
-        // Edge case: consider previous b
         ans = max(ans, countA - 1);
       }
-      // Reset if # of b > # of a
       if (countB > countA) {
         countA = 0;
         countB = 0;
