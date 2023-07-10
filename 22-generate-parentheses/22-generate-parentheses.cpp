@@ -11,7 +11,6 @@ class Solution {
       ans.push_back(path);
       return;
     }
-
     if (l > 0) {
       path.push_back('(');
       dfs(l - 1, r, move(path), ans);
