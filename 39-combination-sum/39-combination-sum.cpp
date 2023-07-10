@@ -6,7 +6,6 @@ class Solution {
     dfs(candidates, 0, target, {}, ans);
     return ans;
   }
-
  private:
   void dfs(const vector<int>& A, int s, int target, vector<int>&& path,
            vector<vector<int>>& ans) {
