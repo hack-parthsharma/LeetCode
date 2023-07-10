@@ -15,7 +15,6 @@ class Solution {
       ans.push_back(path);
       return;
     }
-
     for (int i = s; i < A.size(); ++i) {
       path.push_back(A[i]);
       dfs(A, i, target - A[i], move(path), ans);
