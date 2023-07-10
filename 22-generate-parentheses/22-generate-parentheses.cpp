@@ -5,7 +5,6 @@ class Solution {
     dfs(n, n, "", ans);
     return ans;
   }
-
  private:
   void dfs(int l, int r, string&& path, vector<string>& ans) {
     if (l == 0 && r == 0) {
