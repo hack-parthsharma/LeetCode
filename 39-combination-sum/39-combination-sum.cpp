@@ -6,6 +6,7 @@ class Solution {
     dfs(candidates, 0, target, {}, ans);
     return ans;
   }
+    
  private:
   void dfs(const vector<int>& A, int s, int target, vector<int>&& path,
            vector<vector<int>>& ans) {
@@ -15,6 +16,7 @@ class Solution {
       ans.push_back(path);
       return;
     }
+      
     for (int i = s; i < A.size(); ++i) {
       path.push_back(A[i]);
       dfs(A, i, target - A[i], move(path), ans);
