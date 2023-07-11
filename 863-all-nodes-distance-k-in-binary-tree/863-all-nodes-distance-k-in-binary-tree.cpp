@@ -25,7 +25,6 @@ class Solution {
     if (const auto it = nodeToDist.find(root->right); it != cend(nodeToDist))
       nodeToDist[root] = it->second + 1;
   }
-
   void dfs(TreeNode* root, int k, int dist,
            unordered_map<TreeNode*, int>& nodeToDist, vector<int>& ans) {
     if (root == nullptr)
@@ -34,7 +33,6 @@ class Solution {
       dist = it->second;
     if (dist == k)
       ans.push_back(root->val);
-
     dfs(root->left, k, dist + 1, nodeToDist, ans);
     dfs(root->right, k, dist + 1, nodeToDist, ans);
   }
