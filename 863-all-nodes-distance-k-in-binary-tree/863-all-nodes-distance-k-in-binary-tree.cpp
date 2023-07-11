@@ -2,7 +2,7 @@ class Solution {
  public:
   vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
     vector<int> ans;
-    unordered_map<TreeNode*, int> nodeToDist;  // {node: distance to target}
+    unordered_map<TreeNode*, int> nodeToDist;  
 
     getDists(root, target, nodeToDist);
     dfs(root, k, 0, nodeToDist, ans);
