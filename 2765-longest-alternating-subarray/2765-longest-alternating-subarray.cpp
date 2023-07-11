@@ -8,7 +8,6 @@ class Solution {
       const int targetDiff = dp % 2 == 0 ? -1 : 1;
       if (nums[i] - nums[i - 1] == targetDiff)
         ++dp;
-      // Reset the alternating subarray to nums[i - 1..i].
       else if (nums[i] - nums[i - 1] == 1)
         dp = 2;
       // Reset the alternating subarray to nums[i].
