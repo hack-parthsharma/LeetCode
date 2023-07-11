@@ -14,7 +14,6 @@ class Solution {
         dp = 1;
       ans = max(ans, dp);
     }
-
     return ans == 1 ? -1 : ans;
   }
 };
