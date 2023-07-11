@@ -7,7 +7,6 @@ class Solution {
     dfs(root, k, 0, nodeToDist, ans);
     return ans;
   }
-
  private:
   void getDists(TreeNode* root, TreeNode* target,
                 unordered_map<TreeNode*, int>& nodeToDist) {
