@@ -10,7 +10,6 @@ class Solution {
         ++dp;
       else if (nums[i] - nums[i - 1] == 1)
         dp = 2;
-      // Reset the alternating subarray to nums[i].
       else
         dp = 1;
       ans = max(ans, dp);
