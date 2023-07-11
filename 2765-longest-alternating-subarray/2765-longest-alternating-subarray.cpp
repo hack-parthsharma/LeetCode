@@ -6,7 +6,6 @@ class Solution {
 
     for (int i = 1; i < nums.size(); ++i) {
       const int targetDiff = dp % 2 == 0 ? -1 : 1;
-      // Append nums[i] to current alternating subarray.
       if (nums[i] - nums[i - 1] == targetDiff)
         ++dp;
       // Reset the alternating subarray to nums[i - 1..i].
