@@ -18,13 +18,11 @@ class Solution {
     }
     getDists(root->left, target, nodeToDist);
     if (const auto it = nodeToDist.find(root->left); it != cend(nodeToDist)) {
-      // The target is in the left subtree
       nodeToDist[root] = it->second + 1;
       return;
     }
     getDists(root->right, target, nodeToDist);
     if (const auto it = nodeToDist.find(root->right); it != cend(nodeToDist))
-      // The target is in the right subtree
       nodeToDist[root] = it->second + 1;
   }
 
