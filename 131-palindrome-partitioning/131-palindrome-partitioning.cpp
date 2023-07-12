@@ -5,7 +5,6 @@ class Solution {
     dfs(s, 0, {}, ans);
     return ans;
   }
-
  private:
   void dfs(const string& s, int start, vector<string>&& path,
            vector<vector<string>>& ans) {
