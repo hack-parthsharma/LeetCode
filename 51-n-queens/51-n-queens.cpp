@@ -6,7 +6,6 @@ class Solution {
         vector<string>(n, string(n, '.')), ans);
     return ans;
   }
-
  private:
   void dfs(int n, int i, vector<bool>&& cols, vector<bool>&& diag1,
            vector<bool>&& diag2, vector<string>&& board,
