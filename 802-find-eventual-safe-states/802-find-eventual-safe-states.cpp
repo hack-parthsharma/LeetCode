@@ -9,7 +9,6 @@ class Solution {
     for (int i = 0; i < graph.size(); ++i)
       if (!hasCycle(graph, i, state))
         ans.push_back(i);
-
     return ans;
   }
  private:
