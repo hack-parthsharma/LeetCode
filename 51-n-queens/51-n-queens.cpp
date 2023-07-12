@@ -15,7 +15,6 @@ class Solution {
       ans.push_back(board);
       return;
     }
-
     for (int j = 0; j < n; ++j) {
       if (cols[j] || diag1[i + j] || diag2[j - i + n - 1])
         continue;
