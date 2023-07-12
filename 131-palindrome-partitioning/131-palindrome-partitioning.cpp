@@ -13,7 +13,6 @@ class Solution {
       ans.push_back(path);
       return;
     }
-
     for (int i = start; i < s.length(); ++i)
       if (isPalindrome(s, start, i)) {
         path.push_back(s.substr(start, i - start + 1));
