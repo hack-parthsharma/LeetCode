@@ -21,7 +21,6 @@ class Solution {
         path.pop_back();
       }
   }
-
   bool isPalindrome(const string& s, int l, int r) {
     while (l < r)
       if (s[l++] != s[r--])
