@@ -5,7 +5,6 @@ class Solution {
   vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
     vector<int> ans;
     vector<State> state(graph.size());
-
     for (int i = 0; i < graph.size(); ++i)
       if (!hasCycle(graph, i, state))
         ans.push_back(i);
