@@ -2,7 +2,6 @@ class Solution {
  public:
   vector<vector<int>> permute(vector<int>& nums) {
     vector<vector<int>> ans;
-
     dfs(nums, vector<bool>(nums.size()), {}, ans);
     return ans;
   }
