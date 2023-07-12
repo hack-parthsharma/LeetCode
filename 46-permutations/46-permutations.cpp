@@ -14,7 +14,6 @@ class Solution {
       ans.push_back(path);
       return;
     }
-
     for (int i = 0; i < nums.size(); ++i) {
       if (used[i])
         continue;
