@@ -6,7 +6,6 @@ class Solution {
     dfs(nums, vector<bool>(nums.size()), {}, ans);
     return ans;
   }
-
  private:
   void dfs(const vector<int>& nums, vector<bool>&& used, vector<int>&& path,
            vector<vector<int>>& ans) {
