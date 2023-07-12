@@ -1,5 +1,4 @@
 enum class State { kInit, kVisiting, kVisited };
-
 class Solution {
  public:
   vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
