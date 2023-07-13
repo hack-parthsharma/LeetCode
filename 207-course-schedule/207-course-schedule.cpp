@@ -12,7 +12,6 @@ class Solution {
     for (int i = 0; i < numCourses; ++i)
       if (hasCycle(graph, i, state))
         return false;
-
     return true;
   }
  private:
