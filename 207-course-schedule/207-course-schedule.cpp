@@ -15,7 +15,6 @@ class Solution {
 
     return true;
   }
-
  private:
   bool hasCycle(const vector<vector<int>>& graph, int u, vector<State>& state) {
     if (state[u] == State::kVisiting)
