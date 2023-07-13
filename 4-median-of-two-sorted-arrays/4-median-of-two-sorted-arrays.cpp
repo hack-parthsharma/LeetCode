@@ -5,7 +5,6 @@ class Solution {
     const int n2 = nums2.size();
     if (n1 > n2)
       return findMedianSortedArrays(nums2, nums1);
-
     int l = 0;
     int r = n1;
     while (l <= r) {
