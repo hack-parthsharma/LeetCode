@@ -5,6 +5,7 @@ class Solution {
     if (l == nums.size() || nums[l] != target)
       return {-1, -1};
     const int r = upper_bound(begin(nums), end(nums), target) - begin(nums) - 1;
-    return {l, r};
+   
+      return {l, r};
   }
 };
