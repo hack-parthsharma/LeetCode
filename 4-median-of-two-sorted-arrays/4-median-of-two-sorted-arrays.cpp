@@ -25,7 +25,6 @@ class Solution {
       else
         l = partition1 + 1;
     }
-
     throw;
   }
 };
