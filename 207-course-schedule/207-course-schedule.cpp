@@ -28,7 +28,6 @@ class Solution {
       if (hasCycle(graph, v, state))
         return true;
     state[u] = State::kVisited;
-
     return false;
   }
 };
