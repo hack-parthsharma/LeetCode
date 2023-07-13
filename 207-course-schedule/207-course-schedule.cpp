@@ -1,5 +1,4 @@
 enum class State { kInit, kVisiting, kVisited };
-
 class Solution {
  public:
   bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
