@@ -3,7 +3,6 @@ class Solution {
   int longestSubsequence(vector<int>& arr, int difference) {
     int ans = 0;
     unordered_map<int, int> lengthAt;
-
     for (const int a : arr) {
       if (const auto it = lengthAt.find(a - difference); it != cend(lengthAt))
         lengthAt[a] = it->second + 1;
