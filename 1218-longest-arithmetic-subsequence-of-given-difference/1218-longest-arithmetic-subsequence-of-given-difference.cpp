@@ -11,7 +11,6 @@ class Solution {
         lengthAt[a] = 1;
       ans = max(ans, lengthAt[a]);
     }
-
     return ans;
   }
 };
