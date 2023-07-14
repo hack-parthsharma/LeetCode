@@ -8,7 +8,6 @@ class Solution {
     const int n = matrix[0].size();
     int l = 0;
     int r = m * n;
-
     while (l < r) {
       const int mid = (l + r) / 2;
       const int i = mid / n;
