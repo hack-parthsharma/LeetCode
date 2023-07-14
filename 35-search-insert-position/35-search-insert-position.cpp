@@ -3,7 +3,6 @@ class Solution {
   int searchInsert(vector<int>& nums, int target) {
     int l = 0;
     int r = nums.size();
-
     while (l < r) {
       const int m = (l + r) / 2;
       if (nums[m] == target)
