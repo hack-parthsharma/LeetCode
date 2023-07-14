@@ -20,7 +20,6 @@ class Solution {
       else
         r = mid;
     }
-
     return false;
   }
 };
