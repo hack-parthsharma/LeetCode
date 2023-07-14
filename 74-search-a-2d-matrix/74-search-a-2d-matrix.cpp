@@ -3,7 +3,6 @@ class Solution {
   bool searchMatrix(vector<vector<int>>& matrix, int target) {
     if (matrix.empty())
       return false;
-
     const int m = matrix.size();
     const int n = matrix[0].size();
     int l = 0;
