@@ -27,7 +27,6 @@ class Solution {
       head = node;
       carry /= 10;
     }
-
     return head;
   }
 };
