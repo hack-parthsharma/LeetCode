@@ -13,7 +13,6 @@ class Solution {
       stack2.push(l2);
       l2 = l2->next;
     }
-
     ListNode* head = nullptr;
     int carry = 0;
     while (carry || !stack1.empty() || !stack2.empty()) {
