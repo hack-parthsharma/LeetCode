@@ -8,7 +8,6 @@ class Solution {
       stack1.push(l1);
       l1 = l1->next;
     }
-
     while (l2) {
       stack2.push(l2);
       l2 = l2->next;
