@@ -16,7 +16,6 @@ class Solution {
 
     ListNode* head = nullptr;
     int carry = 0;
-
     while (carry || !stack1.empty() || !stack2.empty()) {
       if (!stack1.empty())
         carry += stack1.top()->val, stack1.pop();
