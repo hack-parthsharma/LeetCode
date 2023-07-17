@@ -3,7 +3,6 @@ class Solution {
   ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     stack<ListNode*> stack1;
     stack<ListNode*> stack2;
-
     while (l1) {
       stack1.push(l1);
       l1 = l1->next;
