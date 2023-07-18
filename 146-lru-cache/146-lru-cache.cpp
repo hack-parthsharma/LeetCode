@@ -11,7 +11,6 @@ class LRUCache {
   LRUCache(int capacity) : capacity(capacity) {
     join(head, tail);
   }
-
   int get(int key) {
     const auto it = keyToNode.find(key);
     if (it == cend(keyToNode))
