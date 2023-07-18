@@ -13,7 +13,6 @@ class Solution {
       ans.push_back(root->val);
       root = root->right;
     }
-
     return ans;
   }
 };
