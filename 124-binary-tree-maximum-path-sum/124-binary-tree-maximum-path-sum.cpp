@@ -5,7 +5,6 @@ class Solution {
     maxPathSumDownFrom(root, ans);
     return ans;
   }
-
  private:
   int maxPathSumDownFrom(TreeNode* root, int& ans) {
     if (root == nullptr)
