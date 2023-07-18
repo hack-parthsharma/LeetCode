@@ -5,7 +5,6 @@ struct Node {
   shared_ptr<Node> next;
   Node(int key, int value) : key(key), value(value) {}
 };
-
 class LRUCache {
  public:
   LRUCache(int capacity) : capacity(capacity) {
