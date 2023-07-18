@@ -22,7 +22,6 @@ class LRUCache {
     moveToHead(node);
     return node->value;
   }
-
   void put(int key, int value) {
     if (const auto it = keyToNode.find(key); it != cend(keyToNode)) {
       shared_ptr<Node> node = it->second;
