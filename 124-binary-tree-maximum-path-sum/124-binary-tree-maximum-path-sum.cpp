@@ -7,7 +7,6 @@ class Solution {
   }
 
  private:
-  // root->val + 0/1 of its subtrees
   int maxPathSumDownFrom(TreeNode* root, int& ans) {
     if (root == nullptr)
       return 0;
