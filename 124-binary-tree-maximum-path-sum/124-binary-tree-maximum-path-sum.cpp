@@ -10,7 +10,6 @@ class Solution {
   int maxPathSumDownFrom(TreeNode* root, int& ans) {
     if (root == nullptr)
       return 0;
-
     const int l = max(0, maxPathSumDownFrom(root->left, ans));
     const int r = max(0, maxPathSumDownFrom(root->right, ans));
     ans = max(ans, root->val + l + r);
