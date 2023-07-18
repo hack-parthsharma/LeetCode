@@ -3,7 +3,6 @@ class Solution {
   vector<int> inorderTraversal(TreeNode* root) {
     vector<int> ans;
     stack<TreeNode*> stack;
-
     while (root || !stack.empty()) {
       while (root) {
         stack.push(root);
