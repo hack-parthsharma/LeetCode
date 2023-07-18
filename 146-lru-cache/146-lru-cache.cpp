@@ -14,7 +14,6 @@ class LRUCache {
     const auto it = keyToNode.find(key);
     if (it == cend(keyToNode))
       return -1;
-
     shared_ptr<Node> node = it->second;
     remove(node);
     moveToHead(node);
