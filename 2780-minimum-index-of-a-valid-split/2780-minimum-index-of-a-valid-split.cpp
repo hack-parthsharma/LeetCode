@@ -4,7 +4,6 @@ class Solution {
     const int n = nums.size();
     unordered_map<int, int> count1;
     unordered_map<int, int> count2;
-
     for (const int num : nums)
       ++count2[num];
     for (int i = 0; i < n; ++i) {
