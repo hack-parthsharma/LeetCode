@@ -12,7 +12,6 @@ class Solution {
         currentEnd = intervals[i][1];
       else
         ++ans;
-
     return ans;
   }
 };
