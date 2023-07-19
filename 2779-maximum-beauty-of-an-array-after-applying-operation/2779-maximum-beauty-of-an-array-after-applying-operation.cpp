@@ -10,7 +10,6 @@ class Solution {
         ++l;
       ans = max(ans, r - l + 1);
     }
-
     return ans;
   }
 };
