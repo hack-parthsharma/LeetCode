@@ -7,7 +7,6 @@ class Solution {
 
     for (const int num : nums)
       ++count2[num];
-
     for (int i = 0; i < n; ++i) {
       const int freq1 = ++count1[nums[i]];
       const int freq2 = --count2[nums[i]];
