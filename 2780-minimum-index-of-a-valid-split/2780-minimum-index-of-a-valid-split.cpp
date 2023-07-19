@@ -14,7 +14,6 @@ class Solution {
       if (freq1 * 2 > i + 1 && freq2 * 2 > n - i - 1)
         return i;
     }
-
     return -1;
   }
 };
