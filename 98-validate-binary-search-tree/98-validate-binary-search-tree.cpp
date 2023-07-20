@@ -3,7 +3,6 @@ class Solution {
   bool isValidBST(TreeNode* root) {
     return isValidBST(root, nullptr, nullptr);
   }
-
  private:
   bool isValidBST(TreeNode* root, TreeNode* minNode, TreeNode* maxNode) {
     if (root == nullptr)
