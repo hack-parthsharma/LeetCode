@@ -16,8 +16,7 @@ class Solution {
           stack.pop_back();  
         else                 
           ;                  
-      }
-      
+      }    
     return stack;
   }
 };
