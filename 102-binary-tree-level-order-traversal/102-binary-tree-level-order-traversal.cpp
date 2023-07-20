@@ -20,7 +20,6 @@ class Solution {
       }
       ans.push_back(currLevel);
     }
-
     return ans;
   }
 };
