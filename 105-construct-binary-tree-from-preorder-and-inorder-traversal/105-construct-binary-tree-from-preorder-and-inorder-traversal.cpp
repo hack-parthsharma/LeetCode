@@ -9,7 +9,6 @@ class Solution {
     return build(preorder, 0, preorder.size() - 1, inorder, 0,
                  inorder.size() - 1, inToIndex);
   }
-
  private:
   TreeNode* build(const vector<int>& preorder, int preStart, int preEnd,
                   const vector<int>& inorder, int inStart, int inEnd,
