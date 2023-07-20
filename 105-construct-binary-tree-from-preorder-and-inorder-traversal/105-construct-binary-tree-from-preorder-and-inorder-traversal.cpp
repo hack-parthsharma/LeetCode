@@ -16,7 +16,6 @@ class Solution {
                   const unordered_map<int, int>& inToIndex) {
     if (preStart > preEnd)
       return nullptr;
-
     const int rootVal = preorder[preStart];
     const int rootInIndex = inToIndex.at(rootVal);
     const int leftSize = rootInIndex - inStart;
