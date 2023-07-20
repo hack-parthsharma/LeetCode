@@ -6,7 +6,6 @@ class Solution {
 
     vector<vector<int>> ans;
     queue<TreeNode*> q{{root}};
-
     while (!q.empty()) {
       vector<int> currLevel;
       for (int sz = q.size(); sz > 0; --sz) {
