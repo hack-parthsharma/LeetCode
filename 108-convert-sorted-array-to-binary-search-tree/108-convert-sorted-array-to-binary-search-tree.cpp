@@ -3,7 +3,6 @@ class Solution {
   TreeNode* sortedArrayToBST(vector<int>& nums) {
     return build(nums, 0, nums.size() - 1);
   }
-
  private:
   TreeNode* build(const vector<int>& nums, int l, int r) {
     if (l > r)
