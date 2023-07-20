@@ -7,7 +7,6 @@ class Solution {
       if (a > 0) {
         stack.push_back(a);
       } else {  // A < 0
-        // Destroy previous positive one(s)
         while (!stack.empty() && stack.back() > 0 && stack.back() < -a)
           stack.pop_back();
         if (stack.empty() || stack.back() < 0)
