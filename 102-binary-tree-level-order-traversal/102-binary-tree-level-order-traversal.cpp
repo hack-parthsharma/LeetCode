@@ -3,7 +3,6 @@ class Solution {
   vector<vector<int>> levelOrder(TreeNode* root) {
     if (root == nullptr)
       return {};
-
     vector<vector<int>> ans;
     queue<TreeNode*> q{{root}};
     while (!q.empty()) {
