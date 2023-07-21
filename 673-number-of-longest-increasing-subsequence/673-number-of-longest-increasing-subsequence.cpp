@@ -16,7 +16,6 @@ class Solution {
           } else if (length[i] == length[j] + 1) {
             count[i] += count[j];
           }
-
     for (int i = 0; i < n; ++i)
       if (length[i] > maxLength) {
         maxLength = length[i];
