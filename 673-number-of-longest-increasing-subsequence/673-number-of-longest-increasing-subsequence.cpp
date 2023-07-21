@@ -23,7 +23,6 @@ class Solution {
       } else if (length[i] == maxLength) {
         ans += count[i];
       }
-
     return ans;
   }
 };
