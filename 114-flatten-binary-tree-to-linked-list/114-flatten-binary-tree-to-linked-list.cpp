@@ -13,7 +13,6 @@ class Solution {
     root->left = nullptr;
     root->right = left;
 
-    // Connect the original right subtree
     TreeNode* rightmost = root;
     while (rightmost->right)
       rightmost = rightmost->right;
