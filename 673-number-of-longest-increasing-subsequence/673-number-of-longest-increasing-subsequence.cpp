@@ -18,7 +18,6 @@ class Solution {
             count[i] += count[j];
           }
 
-    // Get # of LIS
     for (int i = 0; i < n; ++i)
       if (length[i] > maxLength) {
         maxLength = length[i];
