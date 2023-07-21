@@ -7,7 +7,7 @@ class Solution {
       return root->val;
     if (leftCount >= k)
       return kthSmallest(root->left, k);
-    return kthSmallest(root->right, k - 1 - leftCount);  // LeftCount < k
+    return kthSmallest(root->right, k - 1 - leftCount);  
   }
 
  private:
