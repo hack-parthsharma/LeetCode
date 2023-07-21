@@ -14,7 +14,6 @@ class Solution {
     root->right = left;
 
     // Connect the original right subtree
-    // To the end of new right subtree
     TreeNode* rightmost = root;
     while (rightmost->right)
       rightmost = rightmost->right;
