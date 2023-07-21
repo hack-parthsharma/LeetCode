@@ -5,7 +5,6 @@ class Solution {
     maxDepth(root, ans);
     return ans;
   }
-
  private:
   int maxDepth(TreeNode* root, int& ans) {
     if (root == nullptr)
