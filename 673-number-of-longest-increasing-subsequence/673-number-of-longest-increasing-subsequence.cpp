@@ -4,7 +4,7 @@ class Solution {
     const int n = nums.size();
     int ans = 0;
     int maxLength = 0;
-    vector<int> length(n, 1);  // length[i] := LIS's length ending w/ nums[i]
+    vector<int> length(n, 1);  
     vector<int> count(n, 1);   
 
     for (int i = 0; i < n; ++i)
