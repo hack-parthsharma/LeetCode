@@ -7,8 +7,8 @@ class Solution {
     flatten(root->left);
     flatten(root->right);
 
-    TreeNode* const left = root->left;    // Flattened left
-    TreeNode* const right = root->right;  // Flattened right
+    TreeNode* const left = root->left;    
+    TreeNode* const right = root->right;  
 
     root->left = nullptr;
     root->right = left;
