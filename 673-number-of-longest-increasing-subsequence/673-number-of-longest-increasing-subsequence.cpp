@@ -5,7 +5,7 @@ class Solution {
     int ans = 0;
     int maxLength = 0;
     vector<int> length(n, 1);  // length[i] := LIS's length ending w/ nums[i]
-    vector<int> count(n, 1);   // count[i] := # of the LIS ending w/ nums[i]
+    vector<int> count(n, 1);   
 
     for (int i = 0; i < n; ++i)
       for (int j = 0; j < i; ++j)
