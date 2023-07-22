@@ -5,7 +5,6 @@ class Solution {
     const vector<pair<int, int>> dirs{{-2, 1}, {-1, 2}, {1, 2},   {2, 1},
                                       {2, -1}, {1, -2}, {-1, -2}, {-2, -1}};
 
-    // dp[i][j] := probability to stand on (i, j)
     vector<vector<double>> dp(n, vector<double>(n));
     dp[r][c] = 1.0;
 
