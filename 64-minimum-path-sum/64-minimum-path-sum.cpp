@@ -12,7 +12,6 @@ class Solution {
           grid[i][0] += grid[i - 1][0];
         else if (j > 0)
           grid[0][j] += grid[0][j - 1];
-
     return grid[m - 1][n - 1];
   }
 };
