@@ -23,7 +23,6 @@ class Solution {
           }
       dp = move(newDp);
     }
-
     return accumulate(begin(dp), end(dp), 0.0,
                       [](double s, const vector<double>& row) {
       return s + accumulate(begin(row), end(row), 0.0);
