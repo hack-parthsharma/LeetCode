@@ -2,7 +2,6 @@ class Solution {
  public:
   int longestValidParentheses(string s) {
     const string s2 = ")" + s;
-    // dp[i] := Length of longest valid parentheses substring of s2[1..i]
     vector<int> dp(s2.length());
 
     for (int i = 1; i < s2.length(); ++i)
