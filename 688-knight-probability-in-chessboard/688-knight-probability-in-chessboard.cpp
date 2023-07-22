@@ -7,7 +7,6 @@ class Solution {
 
     vector<vector<double>> dp(n, vector<double>(n));
     dp[r][c] = 1.0;
-
     for (int k = 0; k < K; ++k) {
       vector<vector<double>> newDp(n, vector<double>(n));
       for (int i = 0; i < n; ++i)
