@@ -9,7 +9,6 @@ class Solution {
       return it->second;
 
     vector<TreeNode*> ans;
-
     for (int leftCount = 0; leftCount < n; ++leftCount) {
       const int rightCount = n - 1 - leftCount;
       for (TreeNode* left : allPossibleFBT(leftCount))
