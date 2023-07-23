@@ -4,7 +4,6 @@ class Solution {
     constexpr int kMax = 200;
     const int n = nums.size() - 1;
     vector<int> count(kMax + 1);
-
     for (const int num : nums)
       ++count[num];
     return all_of(count.begin() + 1, count.begin() + n,
