@@ -7,7 +7,6 @@ class Solution {
 
     for (const int num : nums)
       ++count[num];
-
     return all_of(count.begin() + 1, count.begin() + n,
                   [](int c) { return c == 1; }) &&
            count[n] == 2;
