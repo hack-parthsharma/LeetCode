@@ -19,7 +19,6 @@ class Solution {
           ans.back()->right = right;
         }
     }
-
     return memo[n] = ans;
   }
  private:
