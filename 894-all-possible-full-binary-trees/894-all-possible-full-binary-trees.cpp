@@ -22,7 +22,6 @@ class Solution {
 
     return memo[n] = ans;
   }
-
  private:
   unordered_map<int, vector<TreeNode*>> memo;
 };
