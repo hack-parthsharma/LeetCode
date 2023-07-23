@@ -3,7 +3,6 @@ class Solution {
   bool wordBreak(string s, vector<string>& wordDict) {
     return wordBreak(s, {begin(wordDict), end(wordDict)}, {});
   }
-
  private:
   bool wordBreak(const string& s, const unordered_set<string>&& wordSet,
                  unordered_map<string, bool>&& memo) {
