@@ -11,7 +11,6 @@ class Solution {
       return true;
     if (const auto it = memo.find(s); it != cend(memo))
       return it->second;
-
     for (int i = 1; i < s.length(); ++i) {
       const string& prefix = s.substr(0, i);
       const string& suffix = s.substr(i);
