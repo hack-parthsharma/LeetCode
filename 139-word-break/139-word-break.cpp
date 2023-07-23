@@ -18,7 +18,6 @@ class Solution {
       if (wordSet.count(prefix) && wordBreak(suffix, move(wordSet), move(memo)))
         return memo[s] = true;
     }
-
     return memo[s] = false;
   }
 };
