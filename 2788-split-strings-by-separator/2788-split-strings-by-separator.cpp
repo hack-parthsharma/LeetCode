@@ -8,7 +8,6 @@ class Solution {
         if (!word.empty())
           ans.push_back(word);
     }
-
     return ans;
   }
 };
