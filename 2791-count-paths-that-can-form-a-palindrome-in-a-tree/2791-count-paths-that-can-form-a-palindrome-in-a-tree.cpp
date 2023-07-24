@@ -16,8 +16,6 @@ class Solution {
   }
 
  private:
-  // mask := 26 bits that represent the parity of each character in the alphabet
-  // on the path from node 0 to u
   long long dfs(const vector<vector<int>>& tree, int u, int mask,
                 const string& s, unordered_map<int, int>&& maskToCount) {
     long long res = 0;
