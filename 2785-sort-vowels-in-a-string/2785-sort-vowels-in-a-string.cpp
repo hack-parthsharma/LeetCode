@@ -13,10 +13,8 @@ class Solution {
     int i = 0; 
     for (const char c : s)
       ans += isVowel(c) ? vowels[i++] : c;
-
     return ans;
   }
-
  private:
   bool isVowel(char c) {
     static constexpr string_view kVowels = "aeiouAEIOU";
