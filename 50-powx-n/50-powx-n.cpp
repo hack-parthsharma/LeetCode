@@ -9,4 +9,5 @@ class Solution {
       return x * myPow(x, n - 1);
     return myPow(x * x, n / 2);
   }
+
 };
