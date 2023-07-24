@@ -2,9 +2,8 @@ class Solution {
  public:
   int numberOfWays(int n, int x) {
     constexpr int kMod = 1'000'000'007;
-    // dp[i] := # of ways to express i
     vector<int> dp(n + 1);
-    int ax;  // a^x
+    int ax; 
 
     dp[0] = 1;
 
