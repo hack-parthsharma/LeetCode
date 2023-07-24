@@ -23,12 +23,10 @@ class Solution {
     long long res = 0;
     if (u > 0) {
       mask ^= 1 << (s[u] - 'a');
-      // Consider any u-v path with 1 bit set.
       for (int i = 0; i < 26; ++i)
         if (const auto it = maskToCount.find(mask ^ (1 << i));
             it != maskToCount.cend())
           res += it->second;
-      // Consider u-v path with 0 bit set.
       res += maskToCount[mask ^ 0]++;
     }
     for (const int v : tree[u])
