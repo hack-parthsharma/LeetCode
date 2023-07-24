@@ -1,12 +1,6 @@
 class Solution {
  public:
   long long countPalindromePaths(vector<int>& parent, string s) {
-    // Valid (u, v) has at most 1 letter with odd frequency on its path. The
-    // frequency of a letter on the u-v path is equal to the sum of its
-    // frequencies on the root-u and root-v paths minus twice its frequency on
-    // the root-LCA(u, v) path. Considering only the parity (even/odd), the part
-    // involving root-LCA(u, v) can be ignored, making it possible to calculate
-    // both parts easily using a simple DFS.
     vector<vector<int>> tree(parent.size());
 
     for (int i = 1; i < parent.size(); ++i)
