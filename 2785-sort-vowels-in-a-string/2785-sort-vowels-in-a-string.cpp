@@ -10,7 +10,7 @@ class Solution {
 
     sort(vowels.begin(), vowels.end());
 
-    int i = 0;  // vowels' index
+    int i = 0; 
     for (const char c : s)
       ans += isVowel(c) ? vowels[i++] : c;
 
