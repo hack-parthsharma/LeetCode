@@ -7,8 +7,8 @@ class Solution {
 
     for (int i = 1; i < nums.size(); ++i) {
       const int num = nums[i];
-      const int prevMin = dpMin;  // dpMin[i - 1]
-      const int prevMax = dpMax;  // dpMax[i - 1]
+      const int prevMin = dpMin;  
+      const int prevMax = dpMax;  
       if (num < 0) {
         dpMin = min(prevMax * num, num);
         dpMax = max(prevMin * num, num);
