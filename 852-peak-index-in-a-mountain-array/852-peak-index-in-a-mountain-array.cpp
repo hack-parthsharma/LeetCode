@@ -2,7 +2,6 @@ class Solution {
 public:
     int peakIndexInMountainArray(vector<int>& A) {
         
-        // Put two dummy items at head and tail to avoid Out-of-Bound Error.
         #define INT_MAX 2147483647
         #define INT_MIN (-INT_MAX - 1)
         A.insert ( A.begin() , INT_MIN );
