@@ -2,8 +2,8 @@ class Solution {
  public:
   int maxProduct(vector<int>& nums) {
     int ans = nums[0];
-    int dpMin = nums[0];  // Min so far
-    int dpMax = nums[0];  // Max so far
+    int dpMin = nums[0];  
+    int dpMax = nums[0];  
 
     for (int i = 1; i < nums.size(); ++i) {
       const int num = nums[i];
