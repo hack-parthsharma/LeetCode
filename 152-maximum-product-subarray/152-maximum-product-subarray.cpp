@@ -4,7 +4,6 @@ class Solution {
     int ans = nums[0];
     int dpMin = nums[0];  
     int dpMax = nums[0];  
-
     for (int i = 1; i < nums.size(); ++i) {
       const int num = nums[i];
       const int prevMin = dpMin;  
@@ -18,7 +17,6 @@ class Solution {
       }
       ans = max(ans, dpMax);
     }
-
     return ans;
   }
 };
