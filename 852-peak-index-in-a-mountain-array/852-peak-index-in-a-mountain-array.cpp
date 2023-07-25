@@ -7,7 +7,6 @@ public:
         A.insert ( A.begin() , INT_MIN );
         A.push_back(INT_MIN);
         
-        //binary search
         int len = A.size();
         int left = 1, right = len - 2;
         while(left <= right) {
