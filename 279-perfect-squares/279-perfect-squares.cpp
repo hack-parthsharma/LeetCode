@@ -1,7 +1,7 @@
 class Solution {
  public:
   int numSquares(int n) {
-    vector<int> dp(n + 1, n);  // 1^2 x n
+    vector<int> dp(n + 1, n);  
 
     dp[0] = 0;  // No way
     dp[1] = 1;  // 1^2
