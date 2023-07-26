@@ -10,7 +10,6 @@ class Solution {
   bool knapsack(const vector<int>& nums, int subsetSum) {
     vector<bool> dp(subsetSum + 1);
     dp[0] = true;
-
     for (const int num : nums)
       for (int i = subsetSum; i >= num; --i)
         dp[i] = dp[i] || dp[i - num];
