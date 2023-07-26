@@ -6,7 +6,6 @@ class Solution {
       return false;
     return knapsack(nums, sum / 2);
   }
-
  private:
   bool knapsack(const vector<int>& nums, int subsetSum) {
     vector<bool> dp(subsetSum + 1);
