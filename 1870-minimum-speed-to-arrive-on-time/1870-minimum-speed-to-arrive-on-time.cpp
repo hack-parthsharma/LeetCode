@@ -13,7 +13,6 @@ public:
     int minSpeedOnTime(vector<int>& dist, double hour) {
         int n = dist.size();
         if (hour <= n-1) return -1;
-        
         int low = 1, high = 1e7;
         while (low < high) {
             int mid = low + (high - low) / 2;
