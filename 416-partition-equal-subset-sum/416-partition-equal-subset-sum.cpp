@@ -9,7 +9,6 @@ class Solution {
 
  private:
   bool knapsack(const vector<int>& nums, int subsetSum) {
-    // dp[i] := true if i can be formed by nums so far
     vector<bool> dp(subsetSum + 1);
     dp[0] = true;
 
