@@ -9,7 +9,6 @@ public:
         t += (double)dist[n-1]/speed;
         return t <= hour;
     }
-    
     int minSpeedOnTime(vector<int>& dist, double hour) {
         int n = dist.size();
         if (hour <= n-1) return -1;
