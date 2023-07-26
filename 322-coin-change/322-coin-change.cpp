@@ -6,7 +6,6 @@ class Solution {
     for (const int coin : coins)
       for (int i = coin; i <= amount; ++i)
         dp[i] = min(dp[i], dp[i - coin] + 1);
-
     return dp[amount] == amount + 1 ? -1 : dp[amount];
   }
 };
