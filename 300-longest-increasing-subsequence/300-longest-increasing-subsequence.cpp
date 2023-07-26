@@ -4,7 +4,6 @@ class Solution {
     if (nums.empty())
       return 0;
 
-    // dp[i] := Length of LIS ending at nums[i]
     vector<int> dp(nums.size(), 1);
 
     for (int i = 1; i < nums.size(); ++i)
