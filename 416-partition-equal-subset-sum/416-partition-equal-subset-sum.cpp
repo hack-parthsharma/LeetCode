@@ -13,7 +13,6 @@ class Solution {
     for (const int num : nums)
       for (int i = subsetSum; i >= num; --i)
         dp[i] = dp[i] || dp[i - num];
-
     return dp[subsetSum];
   }
 };
