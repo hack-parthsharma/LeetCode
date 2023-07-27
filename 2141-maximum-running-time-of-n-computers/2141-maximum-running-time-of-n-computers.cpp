@@ -10,7 +10,6 @@ class Solution {
       sum -= batteries.back(), batteries.pop_back();
       --n;
     }
-
     return sum / n;
   }
 };
