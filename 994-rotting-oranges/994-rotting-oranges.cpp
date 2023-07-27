@@ -16,9 +16,7 @@ class Solution {
       }
       return false;
     };
-
     int ans = 0;
-
     while (true) {
       vector<vector<int>> nextGrid(m, vector<int>(n));
       for (int i = 0; i < m; ++i)
