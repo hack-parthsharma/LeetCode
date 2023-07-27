@@ -37,7 +37,6 @@ class Solution {
       grid = nextGrid;
       ++ans;
     }
-
     return any_of(
                begin(grid), end(grid),
                [&](vector<int>& row) {
