@@ -8,7 +8,7 @@ class Solution {
 
     auto bfs = [&](int r, int c) {
       queue<pair<int, int>> q{{{r, c}}};
-      grid[r][c] = '2';  // Mark '2' as visited
+      grid[r][c] = '2';  
       while (!q.empty()) {
         const auto [i, j] = q.front();
         q.pop();
