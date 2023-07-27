@@ -5,8 +5,7 @@ class Solution {
 
     sort(begin(batteries), end(batteries));
 
-    // Max battery is greater than the average, so it can last forever
-    // Reduce the problem from size n to size n - 1
+
     while (batteries.back() > sum / n) {
       sum -= batteries.back(), batteries.pop_back();
       --n;
