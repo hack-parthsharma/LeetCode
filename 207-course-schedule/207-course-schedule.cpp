@@ -17,7 +17,6 @@ class Solution {
       return true;
     if (state[u] == State::kVisited)
       return false;
-
     state[u] = State::kVisiting;
     for (const int v : graph[u])
       if (hasCycle(graph, v, state))
