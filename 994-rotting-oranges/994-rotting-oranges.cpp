@@ -30,8 +30,8 @@ class Solution {
               nextGrid[i][j] = 2;
             else
               nextGrid[i][j] = 1;
-          } else if (grid[i][j] == 2) {  // Rotten
-            nextGrid[i][j] = 2;          // Keep rotten
+          } else if (grid[i][j] == 2) {  
+            nextGrid[i][j] = 2;          
           }
       if (nextGrid == grid)
         break;
