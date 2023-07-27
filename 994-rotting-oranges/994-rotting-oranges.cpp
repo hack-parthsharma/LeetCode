@@ -4,7 +4,6 @@ class Solution {
     const int m = grid.size();
     const int n = grid[0].size();
     const vector<int> dirs{0, 1, 0, -1, 0};
-
     auto isNeighborRotten = [&](int i, int j, const vector<vector<int>>& grid) {
       for (int k = 0; k < 4; ++k) {
         const int r = i + dirs[k];
