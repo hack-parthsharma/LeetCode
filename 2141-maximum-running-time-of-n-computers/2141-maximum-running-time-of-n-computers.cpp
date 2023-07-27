@@ -12,8 +12,6 @@ class Solution {
       --n;
     }
 
-    // If the max battery <= average running time,
-    // It won't be waste, and so do smaller batteries
     return sum / n;
   }
 };
