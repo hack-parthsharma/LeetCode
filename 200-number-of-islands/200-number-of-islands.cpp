@@ -31,7 +31,6 @@ class Solution {
           bfs(i, j);
           ++ans;
         }
-
     return ans;
   }
 };
