@@ -5,7 +5,6 @@ class Solution {
     const int n = grid[0].size();
     const vector<int> dirs{0, 1, 0, -1, 0};
     int ans = 0;
-
     auto bfs = [&](int r, int c) {
       queue<pair<int, int>> q{{{r, c}}};
       grid[r][c] = '2';  
