@@ -4,7 +4,6 @@ class Solution {
     int ans = 0;
     int prefix = 0;
     unordered_map<int, int> count{{0, 1}};  
-
     for (const int num : nums) {
       prefix += num;
       const int target = prefix - k;
