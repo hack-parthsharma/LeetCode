@@ -13,7 +13,7 @@ class Solution {
         break;
       }
       if (i == end) {    
-        ++ans;           // Increment the level
+        ++ans;           
         end = farthest;  // Make the queue size for the next level
       }
     }
