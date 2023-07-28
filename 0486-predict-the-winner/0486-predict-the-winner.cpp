@@ -7,7 +7,7 @@ class Solution {
     for (int d = 1; d < n; ++d)
       for (int j = n - 1; j - d >= 0; --j) {
         const int i = j - d;
-        dp[j] = max(nums[i] - dp[j],       // Pick left num
+        dp[j] = max(nums[i] - dp[j],       
                     nums[j] - dp[j - 1]);  
       }
 
