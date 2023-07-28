@@ -3,7 +3,6 @@ class Solution {
   vector<int> partitionLabels(string s) {
     vector<int> ans;
     vector<int> rightmost(128);
-
     for (int i = 0; i < s.length(); ++i)
       rightmost[s[i]] = i;
     int l = 0;  
