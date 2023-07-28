@@ -12,7 +12,6 @@ class Solution {
         ans += it->second;
       ++count[prefix];
     }
-
     return ans;
   }
 };
