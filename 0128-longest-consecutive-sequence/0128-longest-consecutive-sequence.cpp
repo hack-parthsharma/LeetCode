@@ -5,7 +5,6 @@ class Solution {
     unordered_set<int> seen{begin(nums), end(nums)};
 
     for (int num : nums) {
-      
       if (seen.count(num - 1))
         continue;
       int length = 1;
