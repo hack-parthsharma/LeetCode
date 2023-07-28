@@ -9,7 +9,6 @@ class Solution {
 
     int l = 0;  
     int r = 0;  
-
     for (int i = 0; i < s.length(); ++i) {
       r = max(r, rightmost[s[i]]);
       if (r == i) {
