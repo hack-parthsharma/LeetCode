@@ -6,7 +6,6 @@ class Solution {
 
     for (int i = 0; i < s.length(); ++i)
       rightmost[s[i]] = i;
-
     int l = 0;  
     int r = 0;  
     for (int i = 0; i < s.length(); ++i) {
