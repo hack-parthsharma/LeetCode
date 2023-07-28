@@ -8,7 +8,7 @@ class Solution {
       for (int j = n - 1; j - d >= 0; --j) {
         const int i = j - d;
         dp[j] = max(nums[i] - dp[j],       // Pick left num
-                    nums[j] - dp[j - 1]);  // Pick right num
+                    nums[j] - dp[j - 1]);  
       }
 
     return dp[n - 1] >= 0;
