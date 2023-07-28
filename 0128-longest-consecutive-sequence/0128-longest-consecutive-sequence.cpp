@@ -13,7 +13,6 @@ class Solution {
         ++length;
       ans = max(ans, length);
     }
-
     return ans;
   }
 };
