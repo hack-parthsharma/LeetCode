@@ -14,7 +14,7 @@ class Solution {
       }
       if (i == end) {    
         ++ans;           
-        end = farthest;  // Make the queue size for the next level
+        end = farthest;  
       }
     }
 
