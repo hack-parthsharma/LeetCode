@@ -17,7 +17,6 @@ class Solution {
         l = i + 1;
       }
     }
-
     return ans;
   }
 };
