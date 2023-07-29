@@ -3,7 +3,6 @@ class Solution {
   double soupServings(int n) {
     return n >= 4800 ? 1.0 : dfs((n + 24) / 25, (n + 24) / 25);
   }
-
  private:
   vector<vector<double>> memo =
       vector<vector<double>>(4800 / 25, vector<double>(4800 / 25));
