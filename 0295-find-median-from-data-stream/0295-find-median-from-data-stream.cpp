@@ -6,7 +6,6 @@ class MedianFinder {
     else
       minHeap.push(num);
 
-    // Balance two heaps s.t.
     if (maxHeap.size() < minHeap.size())
       maxHeap.push(minHeap.top()), minHeap.pop();
     else if (maxHeap.size() - minHeap.size() > 1)
