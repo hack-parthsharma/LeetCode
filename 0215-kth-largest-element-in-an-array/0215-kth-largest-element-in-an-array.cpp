@@ -8,7 +8,6 @@ class Solution {
       if (minHeap.size() > k)
         minHeap.pop();
     }
- 
     return minHeap.top();
   }
 };
