@@ -3,7 +3,6 @@ struct T {
   int freq;
   T(int num, int freq) : num(num), freq(freq) {}
 };
-
 class Solution {
  public:
   vector<int> topKFrequent(vector<int>& nums, int k) {
