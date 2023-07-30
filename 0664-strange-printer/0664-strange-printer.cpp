@@ -8,13 +8,11 @@ class Solution {
 
  private:
   vector<vector<int>> dp;
-
   int strangePrinter(const string& s, int i, int j) {
     if (i > j)
       return 0;
     if (dp[i][j] > 0)
       return dp[i][j];
-
     dp[i][j] = strangePrinter(s, i + 1, j) + 1;
     for (int k = i + 1; k <= j; ++k)
       if (s[k] == s[i])
