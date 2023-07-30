@@ -15,7 +15,6 @@ class Solution {
     if (dp[i][j] > 0)
       return dp[i][j];
 
-    // Print s[i]
     dp[i][j] = strangePrinter(s, i + 1, j) + 1;
 
     for (int k = i + 1; k <= j; ++k)
