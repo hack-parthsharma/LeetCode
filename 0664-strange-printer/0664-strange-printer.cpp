@@ -16,7 +16,6 @@ class Solution {
       return dp[i][j];
 
     dp[i][j] = strangePrinter(s, i + 1, j) + 1;
-
     for (int k = i + 1; k <= j; ++k)
       if (s[k] == s[i])
         dp[i][j] = min(dp[i][j], strangePrinter(s, i, k - 1) +
