@@ -21,7 +21,6 @@ class Solution {
       if (s[k] == s[i])
         dp[i][j] = min(dp[i][j], strangePrinter(s, i, k - 1) +
                                      strangePrinter(s, k + 1, j));
-
     return dp[i][j];
   }
 };
