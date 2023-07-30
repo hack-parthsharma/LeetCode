@@ -5,7 +5,6 @@ class Solution {
     dp.resize(n, vector<int>(n));
     return strangePrinter(s, 0, n - 1);
   }
-
  private:
   vector<vector<int>> dp;
   int strangePrinter(const string& s, int i, int j) {
