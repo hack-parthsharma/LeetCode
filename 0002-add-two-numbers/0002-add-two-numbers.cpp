@@ -4,7 +4,6 @@ class Solution {
     ListNode dummy(0);
     ListNode* curr = &dummy;
     int carry = 0;
-
     while (l1 || l2 || carry) {
       if (l1 != nullptr) {
         carry += l1->val;
