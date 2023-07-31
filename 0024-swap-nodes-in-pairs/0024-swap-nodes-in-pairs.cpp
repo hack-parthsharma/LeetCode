@@ -5,7 +5,6 @@ class Solution {
     ListNode dummy(0, head);
     ListNode* prev = &dummy;
     ListNode* curr = head;
-
     for (int i = 0; i < length / 2; ++i) {
       ListNode* next = curr->next;
       curr->next = next->next;
@@ -14,7 +13,6 @@ class Solution {
       prev = curr;
       curr = curr->next;
     }
-
     return dummy.next;
   }
  private:
