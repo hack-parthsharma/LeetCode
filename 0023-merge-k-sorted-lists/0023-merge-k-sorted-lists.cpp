@@ -10,7 +10,6 @@ class Solution {
     for (ListNode* list : lists)
       if (list != nullptr)
         minHeap.push(list);
-
     while (!minHeap.empty()) {
       ListNode* minNode = minHeap.top();
       minHeap.pop();
