@@ -6,7 +6,6 @@ class Solution {
     auto compare = [](ListNode* a, ListNode* b) { return a->val > b->val; };
     priority_queue<ListNode*, vector<ListNode*>, decltype(compare)> minHeap(
         compare);
-
     for (ListNode* list : lists)
       if (list != nullptr)
         minHeap.push(list);
