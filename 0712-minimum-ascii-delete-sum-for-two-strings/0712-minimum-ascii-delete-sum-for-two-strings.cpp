@@ -4,7 +4,6 @@ public:
         // Dynamic Programm - simlar with : Edit Distance
         vector < vector <int> > dp ( s1.size()+1, vector<int>( s2.size()+1, 0) );
 
-        // s1 is row, s2 is column
         for (int i=1; i<=s2.size(); i++) dp[0][i] = dp[0][i-1] + s2[i-1];
         for (int i=1; i<=s1.size(); i++) dp[i][0] = dp[i-1][0] + s1[i-1];
         for (int i=1; i<=s1.size(); i++){
