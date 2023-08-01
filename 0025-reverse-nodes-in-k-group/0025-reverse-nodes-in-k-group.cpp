@@ -18,7 +18,6 @@ class Solution {
   }
 
  private:
-  // Reverses [head, tail)
   ListNode* reverse(ListNode* head, ListNode* tail) {
     ListNode* prev = nullptr;
     ListNode* curr = head;
