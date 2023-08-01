@@ -5,7 +5,6 @@ class Solution {
       return nullptr;
     if (const auto it = map.find(head); it != cend(map))
       return it->second;
-
     Node* newNode = new Node(head->val);
     map[head] = newNode;
     newNode->next = copyRandomList(head->next);
