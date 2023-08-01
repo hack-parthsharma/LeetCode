@@ -16,7 +16,6 @@ class Solution {
     head->next = reverseKGroup(tail, k);
     return newHead;
   }
-
  private:
   ListNode* reverse(ListNode* head, ListNode* tail) {
     ListNode* prev = nullptr;
