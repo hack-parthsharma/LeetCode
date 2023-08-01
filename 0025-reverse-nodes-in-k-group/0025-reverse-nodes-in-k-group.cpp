@@ -22,7 +22,6 @@ class Solution {
   ListNode* reverse(ListNode* head, ListNode* tail) {
     ListNode* prev = nullptr;
     ListNode* curr = head;
-
     while (curr != tail) {
       ListNode* next = curr->next;
       curr->next = prev;
