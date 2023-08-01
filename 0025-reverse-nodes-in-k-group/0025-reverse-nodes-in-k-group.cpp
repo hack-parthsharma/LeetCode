@@ -5,7 +5,6 @@ class Solution {
       return nullptr;
 
     ListNode* tail = head;
-
     for (int i = 0; i < k; ++i) {
       if (tail == nullptr)  
         return head;
