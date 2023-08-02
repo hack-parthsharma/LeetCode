@@ -23,8 +23,6 @@ class Solution {
     }
     return a + b;
   }
-
-  // Returns the lexicographically smallest string.
   string getMin(const vector<string>& words) {
     string res = words[0];
     for (int i = 1; i < words.size(); ++i)
