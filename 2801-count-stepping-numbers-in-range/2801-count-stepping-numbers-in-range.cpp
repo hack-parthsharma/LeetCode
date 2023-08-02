@@ -32,7 +32,6 @@ class Solution {
       const bool nextIsTight1 = isTight1 && (d == minDigit);
       const bool nextIsTight2 = isTight2 && (d == maxDigit);
       if (isLeadingZero)
-        // Can place any digit in [minDigit, maxDigit].
         res += count(low, high, i + 1, d, isLeadingZero && d == 0, nextIsTight1,
                      nextIsTight2);
       else if (abs(d - prevDigit) == 1)
