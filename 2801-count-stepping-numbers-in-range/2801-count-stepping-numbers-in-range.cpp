@@ -3,9 +3,6 @@ class Solution {
   int countSteppingNumbers(string low, string high) {
     const string lowWithLeadingZeros =
         string(high.length() - low.length(), '0') + low;
-    // dp[i][j][k1][k2] := # of valid integers with size i and the previous
-    // digit j. The variable k1 and k2 indicate whether there are tight
-    // constraints (0/1) for low and high, respectively.
     dp.resize(high.length(),
               vector<vector<vector<int>>>(
                   11, vector<vector<int>>(2, vector<int>(2, -1))));
