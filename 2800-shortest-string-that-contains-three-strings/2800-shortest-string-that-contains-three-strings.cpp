@@ -31,8 +31,6 @@ class Solution {
       res = getMin(res, words[i]);
     return res;
   }
-
-  // Returns the lexicographically smaller string.
   string getMin(const string& a, const string& b) {
     return (a.length() < b.length() || (a.length() == b.length() && a < b)) ? a
                                                                             : b;
