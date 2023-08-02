@@ -11,7 +11,6 @@ class Solution {
   }
 
  private:
-  // Merges a and b.
   string merge(const string& a, const string& b) {
     if (b.find(a) != string::npos)  // a is a substring of b.
       return b;
