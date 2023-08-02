@@ -15,7 +15,6 @@ class Solution {
       while (distinct == totalDistinct)
         if (--count[nums[l++]] == 0)
           --distinct;
-      // Assume nums[r] = num,
       // nums[0..r], nums[1..r], ..., nums[l - 1..r] have k different values
       ans += l;
     }
