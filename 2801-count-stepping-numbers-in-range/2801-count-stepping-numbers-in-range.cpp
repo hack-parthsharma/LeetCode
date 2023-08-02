@@ -36,7 +36,6 @@ class Solution {
         res += count(low, high, i + 1, d, isLeadingZero && d == 0, nextIsTight1,
                      nextIsTight2);
       else if (abs(d - prevDigit) == 1)
-        // Can only place prevDigit - 1 or prevDigit + 1.
         res += count(low, high, i + 1, d, false, nextIsTight1, nextIsTight2);
       res %= kMod;
     }
