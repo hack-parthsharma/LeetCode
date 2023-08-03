@@ -40,7 +40,6 @@ class Solution {
   pair<ListNode*, ListNode*> merge(ListNode* l1, ListNode* l2) {
     ListNode dummy(0);
     ListNode* tail = &dummy;
-
     while (l1 && l2) {
       if (l1->val > l2->val)
         swap(l1, l2);
