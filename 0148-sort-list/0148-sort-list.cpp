@@ -19,7 +19,6 @@ class Solution {
 
     return dummy.next;
   }
-
  private:
   int getLength(ListNode* head) {
     int length = 0;
