@@ -36,7 +36,6 @@ class Solution {
       head->next = nullptr;
     return rest;
   }
-
   pair<ListNode*, ListNode*> merge(ListNode* l1, ListNode* l2) {
     ListNode dummy(0);
     ListNode* tail = &dummy;
