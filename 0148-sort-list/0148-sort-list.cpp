@@ -3,7 +3,6 @@ class Solution {
   ListNode* sortList(ListNode* head) {
     const int length = getLength(head);
     ListNode dummy(0, head);
-
     for (int k = 1; k < length; k *= 2) {
       ListNode* curr = dummy.next;
       ListNode* tail = &dummy;
