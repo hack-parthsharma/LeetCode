@@ -37,7 +37,6 @@ class LRUCache {
     moveToHead(make_shared<Node>(key, value));
     keyToNode[key] = head->next;
   }
-
  private:
   const int capacity;
   unordered_map<int, shared_ptr<Node>> keyToNode;
