@@ -27,7 +27,6 @@ class LRUCache {
       moveToHead(node);
       return;
     }
-
     if (keyToNode.size() == capacity) {
       shared_ptr<Node> lastNode = tail->prev;
       keyToNode.erase(lastNode->key);
