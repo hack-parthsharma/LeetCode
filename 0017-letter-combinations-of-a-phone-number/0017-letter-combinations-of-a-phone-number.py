@@ -6,7 +6,6 @@ class Solution:
     digitToLetters = ['', '', 'abc', 'def', 'ghi',
                       'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
     ans = []
-
     def dfs(i: int, path: List[chr]) -> None:
       if i == len(digits):
         ans.append(''.join(path))
