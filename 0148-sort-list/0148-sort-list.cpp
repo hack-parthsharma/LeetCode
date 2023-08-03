@@ -27,7 +27,6 @@ class Solution {
       ++length;
     return length;
   }
-
   ListNode* split(ListNode* head, int k) {
     while (--k && head)
       head = head->next;
