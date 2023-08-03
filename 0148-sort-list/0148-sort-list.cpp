@@ -16,7 +16,6 @@ class Solution {
         tail = mergedTail;
       }
     }
-
     return dummy.next;
   }
  private:
