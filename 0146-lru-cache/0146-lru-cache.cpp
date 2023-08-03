@@ -48,7 +48,6 @@ class LRUCache {
     node1->next = node2;
     node2->prev = node1;
   }
-
   void moveToHead(shared_ptr<Node> node) {
     join(node, head->next);
     join(head, node);
