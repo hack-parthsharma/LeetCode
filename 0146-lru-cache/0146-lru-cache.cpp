@@ -33,7 +33,6 @@ class LRUCache {
       keyToNode.erase(lastNode->key);
       remove(lastNode);
     }
-
     moveToHead(make_shared<Node>(key, value));
     keyToNode[key] = head->next;
   }
