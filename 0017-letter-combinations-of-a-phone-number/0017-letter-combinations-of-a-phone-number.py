@@ -10,7 +10,6 @@ class Solution:
       if i == len(digits):
         ans.append(''.join(path))
         return
-
       for letter in digitToLetters[ord(digits[i]) - ord('0')]:
         path.append(letter)
         dfs(i + 1, path)
