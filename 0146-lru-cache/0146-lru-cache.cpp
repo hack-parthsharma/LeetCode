@@ -43,7 +43,6 @@ class LRUCache {
   unordered_map<int, shared_ptr<Node>> keyToNode;
   shared_ptr<Node> head = make_shared<Node>(-1, -1);
   shared_ptr<Node> tail = make_shared<Node>(-1, -1);
-
   void join(shared_ptr<Node> node1, shared_ptr<Node> node2) {
     node1->next = node2;
     node2->prev = node1;
