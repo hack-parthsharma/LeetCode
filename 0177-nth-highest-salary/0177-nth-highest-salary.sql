@@ -4,7 +4,8 @@ begin
       
       select distinct salary as 'getNthHighestSalary(2)'
        from  (
-          select salary,
+          
+           select salary,
                 dense_rank() over(order by salary desc) as rnk
           from employee
       )  sal_rnk
