@@ -1,6 +1,5 @@
 SELECT
-    name, population, area
-    
+    name, population, area 
 FROM
     world 
 WHERE
