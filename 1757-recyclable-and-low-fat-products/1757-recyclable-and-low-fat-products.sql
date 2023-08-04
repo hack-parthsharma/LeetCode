@@ -1,6 +1,5 @@
 SELECT
     product_id
-
 FROM
     Products
 WHERE
