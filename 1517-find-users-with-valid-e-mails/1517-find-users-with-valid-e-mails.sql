@@ -2,7 +2,6 @@ select
 user_id,
 name,
 mail
-
 from Users
 
 where 
