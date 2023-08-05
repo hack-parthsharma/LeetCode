@@ -1,5 +1,6 @@
 select t.student_id, t.student_name, t.subject_name, 
     if(e.attended_exams is null, 0, e.attended_exams) as attended_exams
+
 from
     (select *
     from Students
