@@ -4,4 +4,5 @@ select score,
      where ss.score > s.score) `rank`
 
 from scores s
+
 order by score desc
