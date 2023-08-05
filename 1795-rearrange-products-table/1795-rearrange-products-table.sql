@@ -1,6 +1,7 @@
 SELECT product_id,
     'store1' AS store,
     store1 AS price
+
 FROM products
 WHERE store1 IS NOT NULL
 UNION
