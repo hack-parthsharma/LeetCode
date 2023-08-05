@@ -5,7 +5,7 @@ SELECT
 
 FROM
     Employee
-JOIN -- default is inner join
+JOIN 
     Department
 ON Employee.DepartmentId = Department.Id
 
