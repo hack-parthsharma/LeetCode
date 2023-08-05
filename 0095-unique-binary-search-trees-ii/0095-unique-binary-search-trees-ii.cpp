@@ -10,7 +10,6 @@ class Solution {
   vector<TreeNode*> generateTrees(int min, int max) {
     if (min > max)
       return {nullptr};
-
     vector<TreeNode*> ans;
     for (int i = min; i <= max; ++i)
       for (TreeNode* left : generateTrees(min, i - 1))
