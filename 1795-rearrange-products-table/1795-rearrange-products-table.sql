@@ -23,4 +23,5 @@ SELECT product_id,
     store3 AS price
 
 FROM products
+
 WHERE store3 IS NOT NULL;
