@@ -8,6 +8,7 @@ FROM
 
 JOIN 
     Department
+
 ON Employee.DepartmentId = Department.Id
 
 WHERE
