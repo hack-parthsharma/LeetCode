@@ -5,7 +5,6 @@ class Solution {
       return {};
     return generateTrees(1, n);
   }
-
  private:
   vector<TreeNode*> generateTrees(int min, int max) {
     if (min > max)
