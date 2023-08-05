@@ -1,5 +1,6 @@
 SELECT 
     s.name
+
 FROM
     salesperson s
 
