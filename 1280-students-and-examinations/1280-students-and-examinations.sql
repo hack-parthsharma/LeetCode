@@ -4,6 +4,7 @@ from
     (select *
     from Students
     cross join Subjects) t
+
 left join 
     (select *, count(*) as attended_exams
     from Examinations
