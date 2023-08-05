@@ -5,6 +5,7 @@ SELECT product_id,
 FROM products
 
 WHERE store1 IS NOT NULL
+
 UNION
 SELECT product_id,
     'store2' AS store,
