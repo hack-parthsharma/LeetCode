@@ -12,7 +12,6 @@ class Solution {
       return {nullptr};
 
     vector<TreeNode*> ans;
-
     for (int i = min; i <= max; ++i)
       for (TreeNode* left : generateTrees(min, i - 1))
         for (TreeNode* right : generateTrees(i + 1, max)) {
