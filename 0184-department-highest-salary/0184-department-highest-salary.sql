@@ -10,7 +10,7 @@ JOIN -- default is inner join
 ON Employee.DepartmentId = Department.Id
 
 WHERE
-    (Employee.DepartmentId , Employee.Salary) IN -- so that if tie, both will appear in result
+    (Employee.DepartmentId , Employee.Salary) IN 
     (
         SELECT
             DepartmentId, MAX(Salary)
