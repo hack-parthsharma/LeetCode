@@ -8,6 +8,7 @@ FROM
 JOIN -- default is inner join
     Department
 ON Employee.DepartmentId = Department.Id
+
 WHERE
     (Employee.DepartmentId , Employee.Salary) IN -- so that if tie, both will appear in result
     (
