@@ -1,4 +1,3 @@
-# Write your MySQL query statement below
 # select actor_id, director_id
 # from (
 #   select actor_id, director_id, count(*) as cnt
