@@ -3,6 +3,7 @@ SELECT product_id,
     store1 AS price
 
 FROM products
+
 WHERE store1 IS NOT NULL
 UNION
 SELECT product_id,
