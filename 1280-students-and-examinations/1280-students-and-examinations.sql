@@ -9,4 +9,5 @@ left join
     from Examinations
     group by student_id, subject_name) e
 on t.student_id = e.student_id and t.subject_name = e.subject_name
+
 order by student_id, subject_name
