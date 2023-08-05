@@ -17,6 +17,7 @@ FROM products
 WHERE store2 IS NOT NULL
 
 UNION
+
 SELECT product_id,
     'store3' AS store,
     store3 AS price
