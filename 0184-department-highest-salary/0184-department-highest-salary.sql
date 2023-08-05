@@ -5,6 +5,7 @@ SELECT
 
 FROM
     Employee
+
 JOIN 
     Department
 ON Employee.DepartmentId = Department.Id
