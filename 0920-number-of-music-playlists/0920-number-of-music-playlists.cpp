@@ -8,7 +8,7 @@ class Solution {
 
     for (int i = 1; i <= goal; ++i)
       for (int j = 1; j <= n; ++j) {
-        dp[i][j] += dp[i - 1][j - 1] * (n - (j - 1));  // Last song is new
+        dp[i][j] += dp[i - 1][j - 1] * (n - (j - 1));  
         dp[i][j] += dp[i - 1][j] * max(0, j - k);      
         dp[i][j] %= kMod;
       }
