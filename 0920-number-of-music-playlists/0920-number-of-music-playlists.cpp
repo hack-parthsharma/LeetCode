@@ -2,7 +2,6 @@ class Solution {
  public:
   int numMusicPlaylists(int n, int goal, int k) {
     constexpr int kMod = 1'000'000'007;
-    // dp[i][j] := # of playlists with i songs and j different songs
     vector<vector<long>> dp(goal + 1, vector<long>(n + 1));
     dp[0][0] = 1;
 
