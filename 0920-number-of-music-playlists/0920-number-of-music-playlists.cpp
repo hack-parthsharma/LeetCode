@@ -11,7 +11,6 @@ class Solution {
         dp[i][j] += dp[i - 1][j] * max(0, j - k);      
         dp[i][j] %= kMod;
       }
-
     return dp[goal][n];
   }
 };
