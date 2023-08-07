@@ -17,7 +17,6 @@ class Solution {
       const auto [num2, num1] = sortedNums[i - 1];
       for (int j = 1; j <= i; ++j)
         dp[i][j] = max(
-            // max reduced value if we do j ops on the first i - 1 nums
             dp[i - 1][j],
             // max reduced value if we do j - 1 ops on the first i - 1 nums +
             // making i-th num of nums1 to 0 at j-th operation
