@@ -18,7 +18,6 @@ class Solution {
       for (int j = 1; j <= i; ++j)
         dp[i][j] = max(
             dp[i - 1][j],
-            // making i-th num of nums1 to 0 at j-th operation
             dp[i - 1][j - 1] + num2 * j + num1);
     }
 
