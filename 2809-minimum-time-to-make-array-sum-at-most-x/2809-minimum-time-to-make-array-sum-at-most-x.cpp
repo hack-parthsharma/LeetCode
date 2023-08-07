@@ -4,7 +4,6 @@ class Solution {
     const int n = nums1.size();
     const int sum1 = accumulate(nums1.begin(), nums1.end(), 0);
     const int sum2 = accumulate(nums2.begin(), nums2.end(), 0);
-    // dp[j] := max reduced value if we do j ops on the nums so far
     vector<vector<int>> dp(n + 1, vector<int>(n + 1));
     vector<pair<int, int>> sortedNums;
 
