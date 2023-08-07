@@ -19,7 +19,6 @@ class Solution {
   }
 
  private:
-  // Returns the number of seconds require to make nums[i..j] the same.
   int getSeconds(int i, int j) {
     return (i - j) / 2;
   }
