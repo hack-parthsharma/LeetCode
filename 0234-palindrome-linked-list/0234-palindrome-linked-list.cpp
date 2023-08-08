@@ -22,7 +22,6 @@ class Solution {
 
     return true;
   }
-
  private:
   ListNode* reverseList(ListNode* head) {
     ListNode* prev = nullptr;
