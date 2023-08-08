@@ -7,7 +7,6 @@ class Solution {
       a = a ? a->next : headB;
       b = b ? b->next : headA;
     }
-
     return a;
   }
 };
