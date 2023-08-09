@@ -3,7 +3,6 @@ class Solution {
   vector<int> spiralOrder(vector<vector<int>>& matrix) {
     if (matrix.empty())
       return {};
-
     const int m = matrix.size();
     const int n = matrix[0].size();
     vector<int> ans;
