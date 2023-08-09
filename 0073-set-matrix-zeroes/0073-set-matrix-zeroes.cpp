@@ -26,7 +26,6 @@ class Solution {
           matrix[0][j] = 0;
         }
 
-    // Fill 0s for the matrix except the 1st row/col
     for (int i = 1; i < m; ++i)
       for (int j = 1; j < n; ++j)
         if (matrix[i][0] == 0 || matrix[0][j] == 0)
