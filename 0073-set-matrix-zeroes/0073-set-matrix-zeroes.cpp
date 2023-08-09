@@ -32,7 +32,6 @@ class Solution {
         if (matrix[i][0] == 0 || matrix[0][j] == 0)
           matrix[i][j] = 0;
 
-    // Fill 0s for the 1st row if needed
     if (shouldFillFirstRow)
       for (int j = 0; j < n; ++j)
         matrix[0][j] = 0;
