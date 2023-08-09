@@ -4,7 +4,6 @@ class Solution {
     sort(begin(nums), end(nums));
     int l = 0;
     int r = nums.back() - nums.front();
-
     while (l < r) {
       const int m = (l + r) / 2;
       if (numPairs(nums, m) >= p)
