@@ -13,7 +13,6 @@ class Solution {
     }
     return l;
   }
-
  private:
   int numPairs(const vector<int>& nums, int maxDiff) {
     int pairs = 0;
