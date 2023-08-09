@@ -19,7 +19,6 @@ class Solution {
 
  private:
   // Returns the # of pairs that can be obtained if the difference between each
-  // pair <= `maxDiff`.
   int numPairs(const vector<int>& nums, int maxDiff) {
     int pairs = 0;
     for (int i = 1; i < nums.size(); ++i)
