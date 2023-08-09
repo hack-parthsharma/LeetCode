@@ -2,7 +2,6 @@ class Solution {
  public:
   int minimizeMax(vector<int>& nums, int p) {
     sort(begin(nums), end(nums));
-
     int l = 0;
     int r = nums.back() - nums.front();
 
