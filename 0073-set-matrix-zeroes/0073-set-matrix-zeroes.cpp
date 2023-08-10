@@ -5,7 +5,6 @@ class Solution {
     const int n = matrix[0].size();
     bool shouldFillFirstRow = false;
     bool shouldFillFirstCol = false;
-
     for (int j = 0; j < n; ++j)
       if (matrix[0][j] == 0) {
         shouldFillFirstRow = true;
