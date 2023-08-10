@@ -11,7 +11,7 @@ class Solution {
       if (nums[l] == nums[m] && nums[m] == nums[r]) {
         ++l;
         --r;
-      } else if (nums[l] <= nums[m]) {  // nums[l..m] are sorted
+      } else if (nums[l] <= nums[m]) {  
         if (nums[l] <= target && target < nums[m])
           r = m - 1;
         else
