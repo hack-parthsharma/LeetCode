@@ -21,7 +21,6 @@ class Solution {
         ans.push_back(matrix[i][c1]);
       ++r1, ++c1, --r2, --c2;
     }
-    
-      return ans;
+    return ans;
   }
 };
