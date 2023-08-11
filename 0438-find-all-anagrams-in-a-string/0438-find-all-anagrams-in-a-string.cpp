@@ -16,7 +16,6 @@ class Solution {
           ++required;
       }
     }
-
     return ans;
   }
 };
