@@ -6,7 +6,6 @@ class Solution {
     int required = p.length();
     for (const char c : p)
       ++count[c];
-
     for (int l = 0, r = 0; r < s.length(); ++r) {
       if (--count[s[r]] >= 0)
         --required;
