@@ -20,7 +20,6 @@ class Solution {
           ++required;
       }
     }
-
     return bestLeft == -1 ? "" : s.substr(bestLeft, minLength);
   }
 };
