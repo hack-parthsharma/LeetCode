@@ -7,7 +7,6 @@ class Solution {
     int minLength = s.length() + 1;
     for (const char c : t)
       ++count[c];
-
     for (int l = 0, r = 0; r < s.length(); ++r) {
       if (--count[s[r]] >= 0)
         --required;
