@@ -10,7 +10,6 @@ class MinStack {
   void pop() {
     stack.pop();
   }
-
   int top() {
     return stack.top().first;
   }
