@@ -2,7 +2,6 @@ class Solution {
  public:
   string decodeString(string s) {
     string ans;
-
     while (i < s.length() && s[i] != ']')
       if (isdigit(s[i])) {
         int k = 0;
