@@ -15,9 +15,7 @@ class Solution {
           ans += decodedString;
       } else {
         ans += s[i++];
-      }
-
-      
+      }  
     return ans;
   } 
  private:
