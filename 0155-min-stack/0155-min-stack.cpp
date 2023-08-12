@@ -14,7 +14,6 @@ class MinStack {
   int top() {
     return stack.top().first;
   }
-
   int getMin() {
     return stack.top().second;
   }
