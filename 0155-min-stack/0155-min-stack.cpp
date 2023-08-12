@@ -18,7 +18,6 @@ class MinStack {
   int getMin() {
     return stack.top().second;
   }
-
  private:
   stack<pair<int, int>> stack;  
 };
