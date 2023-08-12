@@ -6,7 +6,6 @@ class MinStack {
     else
       stack.emplace(x, min(x, stack.top().second));
   }
-
   void pop() {
     stack.pop();
   }
