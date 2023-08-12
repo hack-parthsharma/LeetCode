@@ -10,7 +10,7 @@ class Solution {
           k = k * 10 + (s[i++] - '0');
         ++i;  // '['
         const string& decodedString = decodeString(s);
-        ++i;  // ']'
+        ++i;  
         while (k-- > 0)
           ans += decodedString;
       } else {
