@@ -2,7 +2,6 @@ class Solution {
  public:
   bool isValid(string s) {
     stack<char> stack;
-
     for (const char c : s)
       if (c == '(')
         stack.push(')');
