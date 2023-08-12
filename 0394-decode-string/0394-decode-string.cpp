@@ -8,7 +8,7 @@ class Solution {
         int k = 0;
         while (i < s.length() && isdigit(s[i]))
           k = k * 10 + (s[i++] - '0');
-        ++i;  // '['
+        ++i; 
         const string& decodedString = decodeString(s);
         ++i;  
         while (k-- > 0)
