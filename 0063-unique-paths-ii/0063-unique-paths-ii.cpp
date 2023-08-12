@@ -3,7 +3,6 @@ class Solution {
   int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
     const int m = obstacleGrid.size();
     const int n = obstacleGrid[0].size();
-    // dp[i][j] := unique paths from (0, 0) to (i - 1, j - 1)
     vector<vector<long>> dp(m + 1, vector<long>(n + 1, 0));
     dp[0][1] = 1;  
 
