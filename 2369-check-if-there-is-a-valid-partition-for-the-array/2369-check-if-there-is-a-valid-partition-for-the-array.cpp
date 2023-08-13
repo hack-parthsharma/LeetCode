@@ -11,7 +11,6 @@ class Solution {
                ((nums[i - 3] == nums[i - 2] && nums[i - 2] == nums[i - 1]) ||
                 (nums[i - 3] + 1 == nums[i - 2] &&
                  nums[i - 2] + 1 == nums[i - 1])));
-
     return dp[n];
   }
 };
