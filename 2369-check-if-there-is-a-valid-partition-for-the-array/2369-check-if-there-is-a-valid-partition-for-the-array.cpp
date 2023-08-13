@@ -2,7 +2,6 @@ class Solution {
  public:
   bool validPartition(vector<int>& nums) {
     const int n = nums.size();
-    // dp[i] := true if there's a valid partition for first i elements
     vector<bool> dp(n + 1);
     dp[0] = true;
     dp[2] = nums[0] == nums[1];
