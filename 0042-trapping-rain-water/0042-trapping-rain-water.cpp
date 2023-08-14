@@ -13,7 +13,6 @@ class Solution {
 
     for (int i = 0; i < n; ++i)
       ans += min(l[i], r[i]) - height[i];
-
     return ans;
   }
 };
