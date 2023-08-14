@@ -4,7 +4,7 @@ class Solution {
     const int n = height.size();
     int ans = 0;
     vector<int> l(n);  
-    vector<int> r(n);  // r[i] := max(height[i..n))
+    vector<int> r(n);  
 
     for (int i = 0; i < n; ++i)
       l[i] = i == 0 ? height[i] : max(height[i], l[i - 1]);
