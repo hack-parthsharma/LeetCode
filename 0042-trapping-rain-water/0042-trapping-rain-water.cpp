@@ -7,7 +7,6 @@ class Solution {
     vector<int> r(n);  
     for (int i = 0; i < n; ++i)
       l[i] = i == 0 ? height[i] : max(height[i], l[i - 1]);
-
     for (int i = n - 1; i >= 0; --i)
       r[i] = i == n - 1 ? height[i] : max(height[i], r[i + 1]);
 
