@@ -3,7 +3,6 @@ class Solution:
     if len(nums) < 3:
       return []
     ans = []
-
     nums.sort()
 
     for i in range(len(nums) - 2):
