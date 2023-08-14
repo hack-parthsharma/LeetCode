@@ -3,7 +3,6 @@ class Solution:
     ans = 0
     l = 0
     r = len(height) - 1
-
     while l < r:
       minHeight = min(height[l], height[r])
       ans = max(ans, minHeight * (r - l))
