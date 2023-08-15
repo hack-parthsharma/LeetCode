@@ -9,7 +9,6 @@ class Solution {
       if (nums[i] < nums[i + 1])
         break;
 
-    // From back to front, find the first num > nums[i], swap it with nums[i]
     if (i >= 0)
       for (int j = n - 1; j > i; --j)
         if (nums[j] > nums[i]) {
