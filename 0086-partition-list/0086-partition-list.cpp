@@ -14,7 +14,6 @@ class Solution {
         after->next = head;
         after = head;
       }
-
     after->next = nullptr;
     before->next = afterHead.next;
     return beforeHead.next;
