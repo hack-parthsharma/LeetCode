@@ -13,7 +13,6 @@ class Solution {
           swap(nums[i], nums[j]);
           break;
         }
-
     reverse(nums, i + 1, n - 1);
   }
  private:
