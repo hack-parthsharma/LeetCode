@@ -5,7 +5,6 @@ class Solution {
     ListNode afterHead(0);
     ListNode* before = &beforeHead;
     ListNode* after = &afterHead;
-
     for (; head; head = head->next)
       if (head->val < x) {
         before->next = head;
