@@ -3,7 +3,6 @@ class Solution {
   void nextPermutation(vector<int>& nums) {
     const int n = nums.size();
 
-    // From back to front, find the first num < nums[i + 1]
     int i;
     for (i = n - 2; i >= 0; --i)
       if (nums[i] < nums[i + 1])
