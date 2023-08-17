@@ -11,7 +11,6 @@ class Solution {
           q.emplace(i, j);
         else
           mat[i][j] = INT_MAX;
-
     while (!q.empty()) {
       const auto [i, j] = q.front();
       q.pop();
