@@ -26,7 +26,6 @@ class Solution {
         mat[x][y] = mat[i][j] + 1;
       }
     }
-
     return mat;
   }
 };
