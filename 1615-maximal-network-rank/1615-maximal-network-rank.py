@@ -9,7 +9,6 @@ class Solution:
                 if i == b:
                     indegrees[i].append(f'{i}-{a}')
                     indegrees[i].append(f'{a}-{i}')
-
         max_net = 0
         for i in range(n):
             for j in range(n):
