@@ -4,8 +4,7 @@ class Solution {
     int i = 0;
     for (const int num : nums)
       if (num != val)
-        nums[i++] = num;
-
+        nums[i++] = num;           
     return i;
   }
 };
