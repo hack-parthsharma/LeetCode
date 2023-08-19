@@ -20,7 +20,6 @@ class UnionFind {
   int find(int u) {
     return id[u] == u ? u : id[u] = find(id[u]);
   }
-
  private:
   vector<int> id;
   vector<int> rank;
@@ -33,7 +32,6 @@ class Solution {
     vector<int> criticalEdges;
     vector<int> pseudoCriticalEdges;
 
-    // Record the index information, so edges[i] := (u, v, weight, index).
     for (int i = 0; i < edges.size(); ++i)
       edges[i].push_back(i);
 
