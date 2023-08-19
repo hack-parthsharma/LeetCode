@@ -24,7 +24,6 @@ class UnionFind {
   vector<int> id;
   vector<int> rank;
 };
-
 class Solution {
  public:
   vector<vector<int>> findCriticalAndPseudoCriticalEdges(
