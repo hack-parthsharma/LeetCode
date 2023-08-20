@@ -41,7 +41,7 @@ class Solution {
     if (u < n)
       ans.push_back(u);
 
-    inDegree[u] = -1;  // Mark as visited
+    inDegree[u] = -1;  
 
     for (const int v : graph[u])
       if (--inDegree[v] == 0)
