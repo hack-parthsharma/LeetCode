@@ -5,7 +5,6 @@ class Solution {
     vector<vector<int>> graph(n + m);
     vector<int> inDegree(n + m);
 
-    // Build graph by remapping k-th group to k + n imaginary node
     for (int i = 0; i < group.size(); ++i) {
       if (group[i] == -1)
         continue;
@@ -30,7 +29,7 @@ class Solution {
     vector<int> ans;
 
     for (int i = 0; i < n + m; ++i)
-      if (inDegree[i] == 0)  // inDegree[i] == -1 means visited
+      if (inDegree[i] == 0)  
         dfs(graph, i, inDegree, n, ans);
 
     return ans.size() == n ? ans : vector<int>();
