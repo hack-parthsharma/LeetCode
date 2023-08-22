@@ -3,7 +3,6 @@ class Solution {
   int majorityElement(vector<int>& nums) {
     int ans;
     int count = 0;
-
     for (const int num : nums) {
       if (count == 0)
         ans = num;
