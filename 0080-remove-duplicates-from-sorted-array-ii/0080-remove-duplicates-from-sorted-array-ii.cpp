@@ -5,7 +5,6 @@ class Solution {
     for (const int num : nums)
       if (i < 2 || num > nums[i - 2])
         nums[i++] = num;
-
     return i;
   }
 };
