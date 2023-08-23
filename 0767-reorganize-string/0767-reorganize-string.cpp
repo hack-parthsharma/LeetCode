@@ -6,7 +6,6 @@ class Solution {
 
     for (const char c : s)
       maxFreq = max(maxFreq, ++count[c]);
-
     if (maxFreq > (s.length() + 1) / 2)
       return "";
     string ans;
