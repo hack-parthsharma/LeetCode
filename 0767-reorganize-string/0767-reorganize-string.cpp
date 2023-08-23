@@ -3,7 +3,6 @@ class Solution {
   string reorganizeString(string s) {
     unordered_map<char, int> count;
     int maxFreq = 0;
-
     for (const char c : s)
       maxFreq = max(maxFreq, ++count[c]);
     if (maxFreq > (s.length() + 1) / 2)
