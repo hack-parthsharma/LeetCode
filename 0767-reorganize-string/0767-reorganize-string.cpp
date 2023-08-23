@@ -19,7 +19,6 @@ class Solution {
       maxHeap.emplace(freq, c);
 
     while (!maxHeap.empty()) {
-      // Get the most freq letter
       const auto [freq, c] = maxHeap.top();
       maxHeap.pop();
       ans += c;
