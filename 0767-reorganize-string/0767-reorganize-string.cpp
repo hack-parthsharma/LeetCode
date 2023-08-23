@@ -11,7 +11,7 @@ class Solution {
       return "";
 
     string ans;
-    priority_queue<pair<int, char>> maxHeap;  // (freq, c)
+    priority_queue<pair<int, char>> maxHeap;  
     int prevFreq = 0;
     char prevChar = '@';
 
