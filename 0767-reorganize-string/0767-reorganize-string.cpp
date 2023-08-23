@@ -9,12 +9,10 @@ class Solution {
 
     if (maxFreq > (s.length() + 1) / 2)
       return "";
-
     string ans;
     priority_queue<pair<int, char>> maxHeap;  
     int prevFreq = 0;
     char prevChar = '@';
-
     for (const auto& [c, freq] : count)
       maxHeap.emplace(freq, c);
     while (!maxHeap.empty()) {
