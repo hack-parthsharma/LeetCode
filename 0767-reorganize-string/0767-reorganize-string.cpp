@@ -23,7 +23,6 @@ class Solution {
       const auto [freq, c] = maxHeap.top();
       maxHeap.pop();
       ans += c;
-      // Any two adjacent characters are not the same
       if (prevFreq > 0)
         maxHeap.emplace(prevFreq, prevChar);
       prevFreq = freq - 1;
