@@ -28,7 +28,6 @@ class Solution {
       prevFreq = freq - 1;
       prevChar = c;
     }
-
     return ans;
   }
 };
