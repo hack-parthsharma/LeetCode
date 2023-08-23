@@ -17,7 +17,6 @@ class Solution {
 
     for (const auto& [c, freq] : count)
       maxHeap.emplace(freq, c);
-
     while (!maxHeap.empty()) {
       const auto [freq, c] = maxHeap.top();
       maxHeap.pop();
