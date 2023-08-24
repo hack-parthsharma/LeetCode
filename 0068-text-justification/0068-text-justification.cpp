@@ -12,7 +12,6 @@ class Solution {
       if (rowLetters + row.size() + word.length() > maxWidth) {
         const int spaces = maxWidth - rowLetters;
         if (row.size() == 1) {
-          // Pad all spaces after row[0]
           for (int i = 0; i < spaces; ++i)
             row[0] += " ";
         } else {
