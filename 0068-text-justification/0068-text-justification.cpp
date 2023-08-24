@@ -29,7 +29,6 @@ class Solution {
 
     return ans;
   }
-
  private:
   string join(const vector<string>& words, const string& s) {
     string joined;
