@@ -40,7 +40,6 @@ class Solution {
     }
     return joined;
   }
-
   string ljust(string s, int width) {
     for (int i = 0; i < s.length() - width; ++i)
       s += " ";
