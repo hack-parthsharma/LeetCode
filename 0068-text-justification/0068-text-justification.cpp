@@ -6,7 +6,6 @@ class Solution {
     size_t rowLetters = 0;
 
     for (const string& word : words) {
-      // If we put the word in this row, it'll exceed the maxWidth,
       if (rowLetters + row.size() + word.length() > maxWidth) {
         const int spaces = maxWidth - rowLetters;
         if (row.size() == 1) {
