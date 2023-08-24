@@ -4,7 +4,6 @@ class Solution {
     vector<string> ans;
     vector<string> row;
     size_t rowLetters = 0;
-
     for (const string& word : words) {
       if (rowLetters + row.size() + word.length() > maxWidth) {
         const int spaces = maxWidth - rowLetters;
