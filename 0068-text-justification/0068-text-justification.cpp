@@ -8,7 +8,6 @@ class Solution {
     for (const string& word : words) {
       // If we put the word in this row, it'll exceed the maxWidth,
       // So we cannot put the word to this row and have to pad spaces to
-      // Each word in this row
       if (rowLetters + row.size() + word.length() > maxWidth) {
         const int spaces = maxWidth - rowLetters;
         if (row.size() == 1) {
