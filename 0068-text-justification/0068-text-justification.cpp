@@ -22,7 +22,6 @@ class Solution {
       rowLetters += word.length();
     }
     ans.push_back(ljust(join(row, " "), maxWidth));
-
     return ans;
   }
  private:
