@@ -16,7 +16,6 @@ class Solution {
           for (int i = 0; i < spaces; ++i)
             row[0] += " ";
         } else {
-          // Evenly pad spaces to each word (expect the last one) in this row
           for (int i = 0; i < spaces; ++i)
             row[i % (row.size() - 1)] += " ";
         }
