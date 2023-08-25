@@ -5,7 +5,6 @@ class Solution {
     const int n = s2.length();
     if (m + n != s3.length())
       return false;
-
     vector<vector<bool>> dp(m + 1, vector<bool>(n + 1));
     dp[0][0] = true;
 
