@@ -27,6 +27,6 @@ class RandomizedSet {
   }
 
  private:
-  unordered_map<int, int> valToIndex;  // {val: index in vals}
+  unordered_map<int, int> valToIndex;  
   vector<int> vals;
 };
