@@ -8,7 +8,6 @@ class Solution {
     for (const int citation : citations)
       ++count[min(citation, n)];
 
-    // To find the largeset h-index, loop from back to front
     for (int i = n; i >= 0; --i) {
       accumulate += count[i];
       if (accumulate >= i)
