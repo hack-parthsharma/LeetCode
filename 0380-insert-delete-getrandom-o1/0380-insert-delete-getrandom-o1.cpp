@@ -21,7 +21,6 @@ class RandomizedSet {
     return true;
   }
 
-  /** Get a random element from the set. */
   int getRandom() {
     const int index = rand() % vals.size();
     return vals[index];
