@@ -10,7 +10,6 @@ class Solution {
         ++ans;
         prevEnd = pair[1];
       }
-
     return ans;
   }
 };
