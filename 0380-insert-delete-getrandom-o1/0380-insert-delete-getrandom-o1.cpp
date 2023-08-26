@@ -14,7 +14,6 @@ class RandomizedSet {
       return false;
 
     const int index = valToIndex[val];
-    // Following two lines order are important when vals.size() == 1
     valToIndex[vals.back()] = index;
     valToIndex.erase(val);
     vals[index] = vals.back();
