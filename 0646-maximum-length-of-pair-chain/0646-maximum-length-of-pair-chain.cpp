@@ -5,7 +5,6 @@ class Solution {
     int prevEnd = INT_MIN;
     sort(begin(pairs), end(pairs),
          [](const auto& a, const auto& b) { return a[1] < b[1]; });
-
     for (const vector<int>& pair : pairs)
       if (pair[0] > prevEnd) {
         ++ans;
