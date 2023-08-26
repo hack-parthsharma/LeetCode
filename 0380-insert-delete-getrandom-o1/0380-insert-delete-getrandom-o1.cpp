@@ -9,8 +9,6 @@ class RandomizedSet {
     return true;
   }
 
-  /** Removes a value from the set. Returns true if the set contained the
-   * specified element. */
   bool remove(int val) {
     if (!valToIndex.count(val))
       return false;
