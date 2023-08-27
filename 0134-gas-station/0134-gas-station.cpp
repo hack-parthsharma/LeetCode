@@ -13,7 +13,7 @@ class Solution {
       sum += gas[i] - cost[i];
       if (sum < 0) {
         sum = 0;
-        ans = i + 1;  // Start from next index
+        ans = i + 1;  
       }
     }
 
