@@ -3,7 +3,7 @@ class Solution {
   vector<int> productExceptSelf(vector<int>& nums) {
     const int n = nums.size();
     vector<int> ans(n);        
-    vector<int> prefix(n, 1);  // Prefix product
+    vector<int> prefix(n, 1);  
     vector<int> suffix(n, 1);  // Suffix product
 
     for (int i = 1; i < n; ++i)
