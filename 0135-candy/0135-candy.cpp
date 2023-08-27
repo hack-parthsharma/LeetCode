@@ -5,7 +5,6 @@ class Solution {
     int ans = 0;
     vector<int> l(n, 1);
     vector<int> r(n, 1);
-
     for (int i = 1; i < n; ++i)
       if (ratings[i] > ratings[i - 1])
         l[i] = l[i - 1] + 1;
