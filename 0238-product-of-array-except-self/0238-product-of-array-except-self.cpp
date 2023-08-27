@@ -11,7 +11,6 @@ class Solution {
       suffix[i] = suffix[i + 1] * nums[i + 1];
     for (int i = 0; i < n; ++i)
       ans[i] = prefix[i] * suffix[i];
-
     return ans;
   }
 };
