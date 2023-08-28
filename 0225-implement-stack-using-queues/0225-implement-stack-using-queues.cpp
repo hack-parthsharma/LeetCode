@@ -16,7 +16,6 @@ class MyStack {
   int top() {
     return q.front();
   }
-
   bool empty() {
     return q.empty();
   }
