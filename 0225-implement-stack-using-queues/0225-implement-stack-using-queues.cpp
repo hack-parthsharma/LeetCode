@@ -12,7 +12,6 @@ class MyStack {
     q.pop();
     return val;
   }
-
   int top() {
     return q.front();
   }
