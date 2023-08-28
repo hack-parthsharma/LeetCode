@@ -20,7 +20,6 @@ class MyStack {
   bool empty() {
     return q.empty();
   }
-
  private:
   queue<int> q;
 };
