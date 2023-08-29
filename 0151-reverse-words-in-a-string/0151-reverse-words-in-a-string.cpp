@@ -35,7 +35,6 @@ class Solution {
       if (j < n)  // Keep only one space
         s[i++] = ' ';
     }
-
     return s.substr(0, i);
   }
 };
