@@ -5,7 +5,6 @@ class Solution {
     vector<vector<char>> rows(numRows);
     int k = 0;
     int direction = (numRows == 1) - 1;
-
     for (const char c : s) {
       rows[k].push_back(c);
       if (k == 0 || k == numRows - 1)
@@ -15,7 +14,6 @@ class Solution {
     for (const vector<char>& row : rows)
       for (const char c : row)
         ans += c;
-
     return ans;
   }
 };
