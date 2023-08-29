@@ -2,7 +2,7 @@ class Solution {
  public:
   string reverseWords(string s) {
     reverse(begin(s), end(s));          
-    reverseWords(s, s.length());        // Reverse each word
+    reverseWords(s, s.length());        
     return cleanSpaces(s, s.length());  // Clean up spaces
   }
 
