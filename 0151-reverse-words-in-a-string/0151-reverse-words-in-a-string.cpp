@@ -21,7 +21,6 @@ class Solution {
   string cleanSpaces(string& s, int n) {
     int i = 0;
     int j = 0;
-
     while (j < n) {
       while (j < n && s[j] == ' ')  // Skip spaces
         ++j;
