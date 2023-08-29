@@ -5,7 +5,6 @@ class Solution {
     reverseWords(s, s.length());        
     return cleanSpaces(s, s.length());  
   }
-
  private:
   void reverseWords(string& s, int n) {
     int i = 0;
