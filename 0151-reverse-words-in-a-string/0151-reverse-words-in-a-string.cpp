@@ -3,7 +3,7 @@ class Solution {
   string reverseWords(string s) {
     reverse(begin(s), end(s));          
     reverseWords(s, s.length());        
-    return cleanSpaces(s, s.length());  // Clean up spaces
+    return cleanSpaces(s, s.length());  
   }
 
  private:
