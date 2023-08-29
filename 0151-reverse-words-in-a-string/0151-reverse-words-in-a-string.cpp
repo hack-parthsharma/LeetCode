@@ -28,7 +28,7 @@ class Solution {
         s[i++] = s[j++];
       while (j < n && s[j] == ' ')  // Skip spaces
         ++j;
-      if (j < n)  // Keep only one space
+      if (j < n)  
         s[i++] = ' ';
     }
     return s.substr(0, i);
