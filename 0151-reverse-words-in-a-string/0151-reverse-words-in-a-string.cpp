@@ -12,7 +12,7 @@ class Solution {
     int j = 0;
 
     while (i < n) {
-      while (i < j || i < n && s[i] == ' ')  // Skip spaces
+      while (i < j || i < n && s[i] == ' ')  
         ++i;
       while (j < i || j < n && s[j] != ' ')  // Skip non spaces
         ++j;
