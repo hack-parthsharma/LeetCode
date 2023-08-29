@@ -19,8 +19,6 @@ class Solution {
       reverse(begin(s) + i, begin(s) + j);  // Reverse the word
     }
   }
-
-  // Trim leading, trailing, and middle spaces
   string cleanSpaces(string& s, int n) {
     int i = 0;
     int j = 0;
