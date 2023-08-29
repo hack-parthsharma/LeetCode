@@ -1,7 +1,6 @@
 class Solution {
  public:
   int bestClosingTime(string customers) {
-    // Instead of computing the minimum penalty, we can compute the max profit.
     int ans = 0;
     int profit = 0;
     int maxProfit = 0;
