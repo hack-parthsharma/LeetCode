@@ -7,7 +7,6 @@ class Solution {
     const int lastIndex = i;
     while (i >= 0 && s[i] != ' ')
       --i;
-
     return lastIndex - i;
   }
 };
