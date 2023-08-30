@@ -8,7 +8,6 @@ class Solution {
       ans += ops;
       max = nums[i] / (ops + 1);
     }
-
     return ans;
   }
 };
