@@ -7,7 +7,6 @@ class Solution {
       int r = min(n, i + ranges[i]);
       nums[l] = max(nums[l], r - l);
     }
-
     int ans = 0;
     int end = 0;
     int farthest = 0;
