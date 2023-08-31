@@ -20,7 +20,6 @@ public:
 
         }
        else
-
            k=k+1;
 
            continue;
