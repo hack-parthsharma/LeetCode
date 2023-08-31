@@ -9,7 +9,6 @@ public:
         auto itr=find(haystack.begin()+k,haystack.end(),needle[0]);
 
         int n=itr-haystack.begin();
-
         string str=haystack.substr(n,niddilesize);
         if(str==needle){
            ans=n; 
