@@ -23,7 +23,6 @@ public:
            k=k+1;
            continue;
          }
-
         if(ans==-1)
 
             return -1;
