@@ -24,7 +24,6 @@ public:
             break;
 
         }
-
        else
 
            k=k+1;
