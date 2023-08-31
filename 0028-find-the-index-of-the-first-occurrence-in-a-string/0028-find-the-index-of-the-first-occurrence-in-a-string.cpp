@@ -11,7 +11,6 @@ public:
         int n=itr-haystack.begin();
 
         string str=haystack.substr(n,niddilesize);
-
         if(str==needle){
            ans=n; 
             break;
