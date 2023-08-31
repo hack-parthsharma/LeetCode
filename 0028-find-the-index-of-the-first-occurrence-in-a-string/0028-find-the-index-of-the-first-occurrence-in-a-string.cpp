@@ -22,7 +22,6 @@ public:
        else
            k=k+1;
            continue;
-
          }
 
         if(ans==-1)
