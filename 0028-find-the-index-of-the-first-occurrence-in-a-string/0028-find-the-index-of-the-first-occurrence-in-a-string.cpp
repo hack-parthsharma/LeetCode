@@ -15,7 +15,6 @@ public:
         if(str==needle){
 
            ans=n; 
-
             break;
         }
        else
