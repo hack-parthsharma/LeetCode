@@ -17,7 +17,6 @@ public:
            ans=n; 
 
             break;
-
         }
        else
            k=k+1;
