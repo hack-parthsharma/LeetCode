@@ -2,9 +2,7 @@ class Solution {
 public:
     int strStr(string haystack, string needle) {
         int ans=-1;
-
         int niddilesize=needle.size();
-
         int k=0;     
 
         while(k<haystack.size()){
