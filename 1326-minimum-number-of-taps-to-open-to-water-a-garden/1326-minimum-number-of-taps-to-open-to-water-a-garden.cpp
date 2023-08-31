@@ -17,7 +17,6 @@ class Solution {
         end = farthest;
       }
     }
-
     return end == n ? ans : -1;
   }
 };
