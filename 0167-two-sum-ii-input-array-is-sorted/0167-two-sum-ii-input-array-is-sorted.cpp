@@ -8,7 +8,6 @@ class Solution {
         ++l;
       else
         --r;
-
     return {l + 1, r + 1};
   }
 };
