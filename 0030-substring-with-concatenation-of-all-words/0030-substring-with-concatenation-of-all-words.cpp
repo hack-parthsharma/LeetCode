@@ -7,7 +7,6 @@ class Solution {
     const int n = words[0].length();
     vector<int> ans;
     unordered_map<string, int> count;
-
     for (const string& word : words)
       ++count[word];
 
