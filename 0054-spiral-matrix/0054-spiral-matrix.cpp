@@ -11,7 +11,8 @@ class Solution {
     int c1 = 0;
     int r2 = m - 1;
     int c2 = n - 1;
-    while (ans.size() < m * n) {
+    
+        while (ans.size() < m * n) {
       for (int j = c1; j <= c2 && ans.size() < m * n; ++j)
         ans.push_back(matrix[r1][j]);
       for (int i = r1 + 1; i <= r2 - 1 && ans.size() < m * n; ++i)
