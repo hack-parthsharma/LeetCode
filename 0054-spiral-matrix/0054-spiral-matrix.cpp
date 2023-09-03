@@ -19,7 +19,8 @@ class Solution {
         ans.push_back(matrix[i][c2]);
       for (int j = c2; j >= c1 && ans.size() < m * n; --j)
         ans.push_back(matrix[r2][j]);
-      for (int i = r2 - 1; i >= r1 + 1 && ans.size() < m * n; --i)
+     
+    for (int i = r2 - 1; i >= r1 + 1 && ans.size() < m * n; --i)
         ans.push_back(matrix[i][c1]);
       ++r1, ++c1, --r2, --c2;
     }
