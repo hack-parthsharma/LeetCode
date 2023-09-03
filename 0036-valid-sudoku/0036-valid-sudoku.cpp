@@ -13,7 +13,6 @@ class Solution {
                  .second)
           return false;
       }
-
     return true;
   }
 };
