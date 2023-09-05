@@ -28,7 +28,6 @@ class Solution {
       for (int j = 1; j < n; ++j)
         if (matrix[i][0] == 0 || matrix[0][j] == 0)
           matrix[i][j] = 0;
-
     if (shouldFillFirstRow)
       for (int j = 0; j < n; ++j)
         matrix[0][j] = 0;
