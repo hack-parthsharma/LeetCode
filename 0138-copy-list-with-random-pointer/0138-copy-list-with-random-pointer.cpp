@@ -6,7 +6,8 @@ Node* copyRandomList(Node* head) {
       return nullptr;
     if (const auto it = map.find(head); it != cend(map))
       return it->second;
-    Node* newNode = new Node(head->val);
+   
+Node* newNode = new Node(head->val);
     map[head] = newNode;
     newNode->next = copyRandomList(head->next);
     newNode->random = copyRandomList(head->random);
