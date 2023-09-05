@@ -11,7 +11,7 @@ Node* newNode = new Node(head->val);
     map[head] = newNode;
     
 newNode->next = copyRandomList(head->next);
-    newNode->random = copyRandomList(head->random);
+newNode->random = copyRandomList(head->random);
     return newNode;
   }
  
