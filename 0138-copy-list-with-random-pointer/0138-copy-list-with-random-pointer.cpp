@@ -11,6 +11,7 @@ class Solution {
     newNode->random = copyRandomList(head->random);
     return newNode;
   }
- private:
+ 
+private:
   unordered_map<Node*, Node*> map;
 };
