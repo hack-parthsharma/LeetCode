@@ -2,7 +2,8 @@ class Solution {
  public:
  
 Node* copyRandomList(Node* head) {
-    if (head == nullptr)
+    
+if (head == nullptr)
       return nullptr;
 if (const auto it = map.find(head); it != cend(map))
       return it->second;
