@@ -4,7 +4,7 @@ class Solution {
 Node* copyRandomList(Node* head) {
     if (head == nullptr)
       return nullptr;
-    if (const auto it = map.find(head); it != cend(map))
+if (const auto it = map.find(head); it != cend(map))
       return it->second;
    
 Node* newNode = new Node(head->val);
