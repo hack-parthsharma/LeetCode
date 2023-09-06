@@ -18,7 +18,6 @@ class Solution {
     }
     return ans;
   }
-
  private:
   int getLength(ListNode* root) {
     int length = 0;
