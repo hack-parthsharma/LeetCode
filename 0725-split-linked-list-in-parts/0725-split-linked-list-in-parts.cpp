@@ -16,7 +16,6 @@ class Solution {
       if (prev != nullptr)
         prev->next = nullptr;
     }
-
     return ans;
   }
 
