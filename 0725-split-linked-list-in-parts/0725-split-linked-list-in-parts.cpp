@@ -7,7 +7,6 @@ class Solution {
     int remainder = length % k;
     ListNode* prev = nullptr;
     ListNode* head = root;
-
     for (int i = 0; i < k; ++i, --remainder) {
       ans[i] = head;
       for (int j = 0; j < subLength + (remainder > 0); ++j) {
