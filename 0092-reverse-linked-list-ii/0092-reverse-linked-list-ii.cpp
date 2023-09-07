@@ -4,7 +4,6 @@ class Solution {
     if (left == 1)
       return reverseN(head, right);
     head->next = reverseBetween(head->next, left - 1, right - 1);
-
     return head;
   }
 
