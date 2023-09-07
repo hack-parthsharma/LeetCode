@@ -14,7 +14,6 @@ class Solution {
     ListNode* headNext = head->next;
     head->next = headNext->next;
     headNext->next = head;
-
     return newHead;
   }
 };
