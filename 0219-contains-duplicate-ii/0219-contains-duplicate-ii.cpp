@@ -8,7 +8,6 @@ class Solution {
       if (i >= k)
         seen.erase(nums[i - k]);
     }
-
     return false;
   }
 };
