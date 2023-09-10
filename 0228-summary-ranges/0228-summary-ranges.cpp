@@ -12,7 +12,6 @@ class Solution {
       else
         ans.push_back(to_string(begin) + "->" + to_string(end));
     }
-
     return ans;
   }
 };
