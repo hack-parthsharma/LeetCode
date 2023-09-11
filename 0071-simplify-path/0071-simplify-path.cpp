@@ -16,7 +16,6 @@ class Solution {
     }
     for (const string& s : stack)
       ans += "/" + s;
-
     return ans.empty() ? "/" : ans;
   }
 };
