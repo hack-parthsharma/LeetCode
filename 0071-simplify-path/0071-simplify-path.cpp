@@ -14,7 +14,6 @@ class Solution {
         stack.push_back(dir);
       }
     }
-
     for (const string& s : stack)
       ans += "/" + s;
 
