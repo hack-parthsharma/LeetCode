@@ -5,7 +5,6 @@ class Solution {
     unordered_map<int, vector<int>> groupSizeToIndices;
     for (int i = 0; i < groupSizes.size(); ++i)
       groupSizeToIndices[groupSizes[i]].push_back(i);
-
     for (const auto& [groupSize, indices] : groupSizeToIndices) {
       vector<int> groupIndices;
       for (const int index : indices) {
