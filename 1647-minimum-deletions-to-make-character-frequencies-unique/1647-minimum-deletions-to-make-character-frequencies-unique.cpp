@@ -11,7 +11,6 @@ class Solution {
         --freq;  // Delete ('a' + i).
         ++ans;
       }
-
     return ans;
   }
 };
