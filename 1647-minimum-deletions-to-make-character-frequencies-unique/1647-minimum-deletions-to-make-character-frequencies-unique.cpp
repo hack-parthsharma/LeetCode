@@ -8,7 +8,7 @@ class Solution {
       ++count[c - 'a'];
     for (int freq : count)
       while (freq > 0 && !usedFreq.insert(freq).second) {
-        --freq;  // Delete ('a' + i).
+        --freq;  
         ++ans;
       }
     return ans;
