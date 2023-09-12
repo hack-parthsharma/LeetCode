@@ -6,7 +6,6 @@ class Solution {
     unordered_set<int> usedFreq;
     for (const char c : s)
       ++count[c - 'a'];
-
     for (int freq : count)
       while (freq > 0 && !usedFreq.insert(freq).second) {
         --freq;  // Delete ('a' + i).
