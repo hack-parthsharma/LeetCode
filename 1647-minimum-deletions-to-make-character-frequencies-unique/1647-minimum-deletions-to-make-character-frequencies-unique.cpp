@@ -4,7 +4,6 @@ class Solution {
     int ans = 0;
     vector<int> count(26);
     unordered_set<int> usedFreq;
-
     for (const char c : s)
       ++count[c - 'a'];
 
