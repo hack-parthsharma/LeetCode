@@ -2,6 +2,7 @@ class Solution {
  public:
   
     int candy(vector<int>& ratings) {
+    
     const int n = ratings.size();
     int ans = 0;
     vector<int> l(n, 1);
