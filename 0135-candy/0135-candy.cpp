@@ -16,6 +16,7 @@ class Solution {
     
      for (int i = 0; i < n; ++i)
       ans += max(l[i], r[i]);
-    return ans;
+    
+     return ans;
   }
 };
