@@ -4,6 +4,7 @@ class Solution {
     int candy(vector<int>& ratings) {
     
     const int n = ratings.size();
+    
     int ans = 0;
     vector<int> l(n, 1);
     vector<int> r(n, 1);
