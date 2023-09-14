@@ -5,7 +5,6 @@ class Solution {
     unordered_map<string, multiset<string>> graph;
     for (const vector<string>& ticket : tickets)
       graph[ticket[0]].insert(ticket[1]);
-
     dfs(graph, "JFK", ans);
     reverse(begin(ans), end(ans));
     return ans;
