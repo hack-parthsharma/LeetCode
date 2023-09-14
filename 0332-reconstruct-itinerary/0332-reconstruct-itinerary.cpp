@@ -1,6 +1,7 @@
 class Solution {
  public:
-  vector<string> findItinerary(vector<vector<string>>& tickets) {
+  
+vector<string> findItinerary(vector<vector<string>>& tickets) {
     vector<string> ans;
     unordered_map<string, multiset<string>> graph;
     for (const vector<string>& ticket : tickets)
