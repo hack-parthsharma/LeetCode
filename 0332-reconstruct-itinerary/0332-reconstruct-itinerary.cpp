@@ -12,7 +12,8 @@ vector<string> findItinerary(vector<vector<string>>& tickets) {
   }
 
 private:
-  void dfs(unordered_map<string, multiset<string>>& graph, const string& u,
+  
+void dfs(unordered_map<string, multiset<string>>& graph, const string& u,
            vector<string>& ans) {
     while (graph.count(u) && !graph[u].empty()) {
       const string v = *begin(graph[u]);
