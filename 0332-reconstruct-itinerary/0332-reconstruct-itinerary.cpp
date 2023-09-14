@@ -9,7 +9,8 @@ class Solution {
     reverse(begin(ans), end(ans));
     return ans;
   }
- private:
+
+private:
   void dfs(unordered_map<string, multiset<string>>& graph, const string& u,
            vector<string>& ans) {
     while (graph.count(u) && !graph[u].empty()) {
