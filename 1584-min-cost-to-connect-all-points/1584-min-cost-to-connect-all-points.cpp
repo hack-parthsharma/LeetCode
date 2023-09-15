@@ -35,6 +35,7 @@ public:
         }
         make_heap(begin(E), end(E), greater<array<int, 3>>());
         UnionFind uf(N);
+        
         while (uf.getSize() > 1) {
             pop_heap(begin(E), end(E), greater<array<int, 3>>());
             auto [w, u, v] = E.back();
