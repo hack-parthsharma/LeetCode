@@ -24,6 +24,7 @@ public:
     
     int getSize() { return size; }
 };
+
 class Solution {
 public:
     int minCostConnectPoints(vector<vector<int>>& A) {
