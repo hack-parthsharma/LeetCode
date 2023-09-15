@@ -1,6 +1,7 @@
 class UnionFind {
     vector<int> id;
     int size;
+
 public:
     UnionFind(int N) : id(N), size(N) {
         iota(begin(id), end(id), 0);
