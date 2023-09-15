@@ -6,6 +6,7 @@ public:
     UnionFind(int N) : id(N), size(N) {
         iota(begin(id), end(id), 0);
     }
+    
     int find(int a) {
         return id[a] == a ? a : (id[a] = find(id[a]));
     }
