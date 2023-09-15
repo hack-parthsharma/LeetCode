@@ -33,6 +33,7 @@ public:
         for (int i = 0; i < N; ++i) {
             for (int j = i + 1; j < N; ++j) E.push_back({ abs(A[i][0] - A[j][0]) + abs(A[i][1] - A[j][1]), i, j });
         }
+        
         make_heap(begin(E), end(E), greater<array<int, 3>>());
         UnionFind uf(N);
         
