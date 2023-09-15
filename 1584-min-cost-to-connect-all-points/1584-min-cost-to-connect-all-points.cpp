@@ -10,6 +10,7 @@ public:
     int find(int a) {
         return id[a] == a ? a : (id[a] = find(id[a]));
     }
+    
     void connect(int a, int b) {
         int p = find(a), q = find(b);
         if (p == q) return;
