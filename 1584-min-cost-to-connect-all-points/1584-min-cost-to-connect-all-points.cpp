@@ -21,6 +21,7 @@ public:
     bool connected(int a, int b) {
         return find(a) == find(b);
     }
+    
     int getSize() { return size; }
 };
 class Solution {
