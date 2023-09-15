@@ -17,6 +17,7 @@ public:
         id[p] = q;
         --size;
     }
+    
     bool connected(int a, int b) {
         return find(a) == find(b);
     }
