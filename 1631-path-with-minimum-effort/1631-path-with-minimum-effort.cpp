@@ -16,7 +16,6 @@ class Solution {
     vector<vector<bool>> seen(m, vector<bool>(n));
     minHeap.emplace(0, 0, 0);
     diff[0][0] = 0;
-
     while (!minHeap.empty()) {
       const auto [i, j, d] = minHeap.top();
       minHeap.pop();
