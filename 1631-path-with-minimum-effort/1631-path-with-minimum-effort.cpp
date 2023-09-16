@@ -4,7 +4,6 @@ struct T {
   int d;
   T(int i, int j, int d) : i(i), j(j), d(d) {}
 };
-
 class Solution {
  public:
   int minimumEffortPath(vector<vector<int>>& heights) {
