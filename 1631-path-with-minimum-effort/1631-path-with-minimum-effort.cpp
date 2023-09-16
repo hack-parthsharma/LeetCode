@@ -14,7 +14,6 @@ class Solution {
     priority_queue<T, vector<T>, decltype(compare)> minHeap(compare);
     vector<vector<int>> diff(m, vector<int>(n, INT_MAX));
     vector<vector<bool>> seen(m, vector<bool>(n));
-
     minHeap.emplace(0, 0, 0);
     diff[0][0] = 0;
 
