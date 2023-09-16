@@ -12,7 +12,6 @@ class Solution {
     const vector<int> dirs{0, 1, 0, -1, 0};
     auto compare = [](const T& a, const T& b) { return a.d > b.d; };
     priority_queue<T, vector<T>, decltype(compare)> minHeap(compare);
-    // diff[i][j] := max absolute difference to reach (i, j).
     vector<vector<int>> diff(m, vector<int>(n, INT_MAX));
     vector<vector<bool>> seen(m, vector<bool>(n));
 
