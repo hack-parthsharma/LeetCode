@@ -8,7 +8,6 @@ class Solution {
     vector<vector<bool>> seen(n, vector<bool>(1 << n));
     for (int i = 0; i < n; ++i)
       q.emplace(i, 1 << i);
-
     while (!q.empty()) {
       for (int sz = q.size(); sz > 0; --sz) {
         const auto [u, state] = q.front();
