@@ -6,7 +6,6 @@ class Solution {
     int ans = 0;
     queue<pair<int, int>> q;  
     vector<vector<bool>> seen(n, vector<bool>(1 << n));
-
     for (int i = 0; i < n; ++i)
       q.emplace(i, 1 << i);
 
