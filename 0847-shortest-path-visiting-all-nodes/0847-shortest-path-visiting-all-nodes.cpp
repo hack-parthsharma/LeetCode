@@ -4,7 +4,7 @@ class Solution {
     const int n = graph.size();
     const int goal = (1 << n) - 1;
     int ans = 0;
-    queue<pair<int, int>> q;  // (u, state)
+    queue<pair<int, int>> q;  
     vector<vector<bool>> seen(n, vector<bool>(1 << n));
 
     for (int i = 0; i < n; ++i)
