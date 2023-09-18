@@ -8,10 +8,8 @@ class Solution {
     sort(begin(rowSum), end(rowSum), [](const auto& a, const auto& b) {
       return a[0] == b[0] ? a[1] < b[1] : a[0] < b[0];
     });
-
     for (int i = 0; i < k; ++i)
       ans.push_back(rowSum[i][1]);
-
     return ans;
   }
 };
