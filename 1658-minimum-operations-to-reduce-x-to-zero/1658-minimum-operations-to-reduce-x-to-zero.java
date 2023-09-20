@@ -5,7 +5,6 @@
             for (int num : nums) {
                 target += num;
             }
-            // corner case
             if (target == 0) {
                 return len;
             }
