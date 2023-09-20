@@ -8,7 +8,6 @@
             if (target == 0) {
                 return len;
             }
-            // normal case
             int res = Integer.MIN_VALUE;
             int sum = 0;
             HashMap<Integer, Integer> map = new HashMap<>(); // sum value 0-i => index i
