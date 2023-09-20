@@ -6,6 +6,7 @@
             for (int num : nums) {
                 target += num;
             }
+            
             if (target == 0) {
                 return len;
             }
