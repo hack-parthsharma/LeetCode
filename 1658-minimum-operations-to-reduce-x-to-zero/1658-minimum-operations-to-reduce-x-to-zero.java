@@ -2,6 +2,7 @@
         public int minOperations(int[] nums, int x) {
             int target = -x;
             int len = nums.length;
+            
             for (int num : nums) {
                 target += num;
             }
