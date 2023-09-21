@@ -18,7 +18,8 @@ class Solution {
         return (n1 + n2) % 2 == 0
                    ? (max(maxLeft1, maxLeft2) + min(minRight1, minRight2)) * 0.5
                    : max(maxLeft1, maxLeft2);
-      else if (maxLeft1 > minRight2)
+      
+    else if (maxLeft1 > minRight2)
         r = partition1 - 1;
      
     else
