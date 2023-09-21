@@ -14,7 +14,8 @@ class Solution {
       const int maxLeft2 = partition2 == 0 ? INT_MIN : nums2[partition2 - 1];
       const int minRight1 = partition1 == n1 ? INT_MAX : nums1[partition1];
       const int minRight2 = partition2 == n2 ? INT_MAX : nums2[partition2];
-      if (maxLeft1 <= minRight2 && maxLeft2 <= minRight1)
+      
+    if (maxLeft1 <= minRight2 && maxLeft2 <= minRight1)
         return (n1 + n2) % 2 == 0
                    ? (max(maxLeft1, maxLeft2) + min(minRight1, minRight2)) * 0.5
                    : max(maxLeft1, maxLeft2);
