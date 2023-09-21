@@ -20,7 +20,8 @@ class Solution {
                    : max(maxLeft1, maxLeft2);
       else if (maxLeft1 > minRight2)
         r = partition1 - 1;
-      else
+     
+    else
         l = partition1 + 1;
     }
     
