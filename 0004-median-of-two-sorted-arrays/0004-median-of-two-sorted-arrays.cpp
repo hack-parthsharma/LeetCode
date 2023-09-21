@@ -7,6 +7,7 @@ class Solution {
       return findMedianSortedArrays(nums2, nums1);
     int l = 0;
     int r = n1;
+    
     while (l <= r) {
       const int partition1 = (l + r) / 2;
       const int partition2 = (n1 + n2 + 1) / 2 - partition1;
