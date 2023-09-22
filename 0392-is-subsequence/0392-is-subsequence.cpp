@@ -12,6 +12,7 @@ for (const char c : t)
       
     if (s[i] == c && ++i == s.length())
         return true;
-    return false;
+    
+return false;
   }
 };
