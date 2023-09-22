@@ -9,7 +9,8 @@ if (s.empty())
 int i = 0;
     
 for (const char c : t)
-      if (s[i] == c && ++i == s.length())
+      
+    if (s[i] == c && ++i == s.length())
         return true;
     return false;
   }
