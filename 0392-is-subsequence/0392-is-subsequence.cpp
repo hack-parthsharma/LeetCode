@@ -1,6 +1,7 @@
 class Solution {
  public:
-  bool isSubsequence(string s, string t) {
+  
+bool isSubsequence(string s, string t) {
     if (s.empty())
       return true;
     int i = 0;
