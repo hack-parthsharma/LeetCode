@@ -2,7 +2,8 @@ class Solution {
  public:
   
 bool isSubsequence(string s, string t) {
-    if (s.empty())
+    
+if (s.empty())
       return true;
     int i = 0;
     for (const char c : t)
