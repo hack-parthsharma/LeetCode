@@ -13,7 +13,6 @@ class Solution {
     reverse(begin(ans), end(ans));
     return ans;
   }
-
  private:
   bool hasCycle(const vector<vector<int>>& graph, int u, vector<State>& state,
                 vector<int>& ans) {
