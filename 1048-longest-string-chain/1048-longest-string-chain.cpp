@@ -13,7 +13,6 @@ class Solution {
     if (const auto it = dp.find(s); it != cend(dp))
       return it->second;
     int ans = 1;
-
     for (int i = 0; i < s.length(); ++i) {
       const string pred = s.substr(0, i) + s.substr(i + 1);
       if (wordsSet.count(pred))
