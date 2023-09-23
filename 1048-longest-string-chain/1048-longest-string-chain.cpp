@@ -7,7 +7,6 @@ class Solution {
       ans = max(ans, longestStrChain(word, wordsSet));
     return ans;
   }
-
  private:
   // dp[s] := longest string chain where s is the last word
   unordered_map<string, int> dp;
