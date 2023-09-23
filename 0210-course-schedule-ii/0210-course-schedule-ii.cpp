@@ -5,7 +5,6 @@ class Solution {
     vector<int> ans;
     vector<vector<int>> graph(numCourses);
     vector<State> state(numCourses);
-
     for (const auto& p : prerequisites)
       graph[p[1]].push_back(p[0]);
 
