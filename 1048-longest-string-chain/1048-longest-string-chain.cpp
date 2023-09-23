@@ -9,7 +9,6 @@ class Solution {
   }
  private:
   unordered_map<string, int> dp;
-
   int longestStrChain(const string& s, const unordered_set<string>& wordsSet) {
     if (const auto it = dp.find(s); it != cend(dp))
       return it->second;
