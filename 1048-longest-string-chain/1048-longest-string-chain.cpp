@@ -18,7 +18,6 @@ class Solution {
       if (wordsSet.count(pred))
         ans = max(ans, longestStrChain(pred, wordsSet) + 1);
     }
-
     return dp[s] = ans;
   }
 };
