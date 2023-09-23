@@ -8,7 +8,6 @@ class Solution {
     return ans;
   }
  private:
-  // dp[s] := longest string chain where s is the last word
   unordered_map<string, int> dp;
 
   int longestStrChain(const string& s, const unordered_set<string>& wordsSet) {
