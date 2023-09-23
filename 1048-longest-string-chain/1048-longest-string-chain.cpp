@@ -3,7 +3,6 @@ class Solution {
   int longestStrChain(vector<string>& words) {
     const unordered_set<string> wordsSet{begin(words), end(words)};
     int ans = 0;
-
     for (const string& word : words)
       ans = max(ans, longestStrChain(word, wordsSet));
 
