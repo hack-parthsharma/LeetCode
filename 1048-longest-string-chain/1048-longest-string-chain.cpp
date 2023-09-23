@@ -12,7 +12,6 @@ class Solution {
   int longestStrChain(const string& s, const unordered_set<string>& wordsSet) {
     if (const auto it = dp.find(s); it != cend(dp))
       return it->second;
-
     int ans = 1;
 
     for (int i = 0; i < s.length(); ++i) {
