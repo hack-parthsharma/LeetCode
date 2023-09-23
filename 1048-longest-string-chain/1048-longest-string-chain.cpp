@@ -5,7 +5,6 @@ class Solution {
     int ans = 0;
     for (const string& word : words)
       ans = max(ans, longestStrChain(word, wordsSet));
-
     return ans;
   }
 
