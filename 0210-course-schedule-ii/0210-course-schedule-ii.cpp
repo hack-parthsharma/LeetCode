@@ -7,7 +7,6 @@ class Solution {
     vector<State> state(numCourses);
     for (const auto& p : prerequisites)
       graph[p[1]].push_back(p[0]);
-
     for (int i = 0; i < numCourses; ++i)
       if (hasCycle(graph, i, state, ans))
         return {};
