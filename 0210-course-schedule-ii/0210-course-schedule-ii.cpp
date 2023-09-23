@@ -10,7 +10,6 @@ class Solution {
     for (int i = 0; i < numCourses; ++i)
       if (hasCycle(graph, i, state, ans))
         return {};
-
     reverse(begin(ans), end(ans));
     return ans;
   }
