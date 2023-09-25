@@ -6,7 +6,6 @@ class Solution {
       ans ^= c;
     for (const char c : t)
       ans ^= c;
-
     return ans;
   }
 };
