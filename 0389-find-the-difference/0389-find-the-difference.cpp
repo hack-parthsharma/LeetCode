@@ -4,7 +4,6 @@ class Solution {
     char ans = 0;
     for (const char c : s)
       ans ^= c;
-
     for (const char c : t)
       ans ^= c;
 
