@@ -17,7 +17,6 @@ class Solution {
       used[c] = true;
       ans.push_back(c);
     }
-
     return ans;
   }
 };
