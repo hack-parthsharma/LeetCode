@@ -6,7 +6,6 @@ class Solution {
     vector<bool> used(128);
     for (const char c : s)
       ++count[c];
-
     for (const char c : s) {
       --count[c];
       if (used[c])
