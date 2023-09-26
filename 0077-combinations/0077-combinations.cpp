@@ -12,6 +12,7 @@ class Solution {
       ans.push_back(path);
       return;
     }
+     
     for (int i = s; i <= n; ++i) {
       path.push_back(i);
       dfs(n, k, i + 1, move(path), ans);
