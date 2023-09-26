@@ -5,6 +5,7 @@ class Solution {
     dfs(n, k, 1, {}, ans);
     return ans;
   }
+
  private:
   void dfs(int n, int k, int s, vector<int>&& path, vector<vector<int>>& ans) {
     if (path.size() == k) {
