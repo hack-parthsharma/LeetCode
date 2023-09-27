@@ -2,7 +2,6 @@ class Solution {
  public:
   string decodeAtIndex(string s, int k) {
     long size = 0;  
-
     for (const char c : s)
       if (isdigit(c))
         size *= c - '0';
