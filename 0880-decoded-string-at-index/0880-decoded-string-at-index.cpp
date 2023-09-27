@@ -16,7 +16,6 @@ class Solution {
       else
         --size;
     }
-
     throw;
   }
 };
