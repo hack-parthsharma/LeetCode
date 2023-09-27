@@ -7,7 +7,6 @@ class Solution {
         size *= c - '0';
       else
         ++size;
-
     for (int i = s.length() - 1; i >= 0; --i) {
       k %= size;
       if (k == 0 && isalpha(s[i]))
