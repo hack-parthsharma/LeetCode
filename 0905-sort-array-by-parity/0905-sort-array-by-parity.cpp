@@ -11,7 +11,6 @@ class Solution {
       if (nums[r] % 2 == 1)
         --r;
     }
-
     return nums;
   }
 };
