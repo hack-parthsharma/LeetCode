@@ -1,5 +1,6 @@
 class Solution {
- public:
+
+public:
   
  bool isMonotonic(vector<int>& nums) {
  bool increasing = true;
