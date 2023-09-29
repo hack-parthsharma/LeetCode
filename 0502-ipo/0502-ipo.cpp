@@ -14,7 +14,6 @@ class Solution {
 
     for (int i = 0; i < Capital.size(); ++i)
       minHeap.emplace(Profits[i], Capital[i]);
-
     while (k--) {
       while (!minHeap.empty() && minHeap.top().cap <= W)
         maxHeap.push(minHeap.top()), minHeap.pop();
