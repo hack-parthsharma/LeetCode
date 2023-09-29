@@ -9,6 +9,7 @@ for (int i = 1; i < nums.size(); ++i) {
       
     increasing &= nums[i] >= nums[i - 1];
     decreasing &= nums[i] <= nums[i - 1];
+
 }
 
 return increasing || decreasing;
