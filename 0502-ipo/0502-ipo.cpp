@@ -22,7 +22,6 @@ class Solution {
         break;
       W += maxHeap.top().pro, maxHeap.pop();
     }
-
     return W;
   }
 };
