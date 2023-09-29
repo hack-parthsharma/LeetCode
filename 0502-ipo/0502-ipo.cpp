@@ -11,7 +11,6 @@ class Solution {
     auto compareP = [](const T& a, const T& b) { return a.pro < b.pro; };
     priority_queue<T, vector<T>, decltype(compareC)> minHeap(compareC);
     priority_queue<T, vector<T>, decltype(compareP)> maxHeap(compareP);
-
     for (int i = 0; i < Capital.size(); ++i)
       minHeap.emplace(Profits[i], Capital[i]);
     while (k--) {
