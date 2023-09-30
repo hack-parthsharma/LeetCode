@@ -5,7 +5,6 @@ class Solution {
     int ak = INT_MIN;  
 
     for (int i = nums.size() - 1; i >= 0; --i) {
-      // Ai < ak, we're done because ai must also smaller than aj
       if (nums[i] < ak)
         return true;
       while (!stack.empty() && stack.top() < nums[i])
