@@ -39,7 +39,6 @@ class Solution {
 
     return {countZeroPrimePath, countOnePrimePath};
   }
-
   vector<bool> sieveEratosthenes(int n) {
     vector<bool> isPrime(n, true);
     isPrime[0] = false;
