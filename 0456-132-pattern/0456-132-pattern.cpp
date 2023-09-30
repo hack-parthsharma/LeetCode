@@ -9,7 +9,7 @@ class Solution {
         return true;
       while (!stack.empty() && stack.top() < nums[i])
         ak = stack.top(), stack.pop();
-      stack.push(nums[i]);  // nums[i] is a candidate of aj
+      stack.push(nums[i]); 
     }
 
     return false;
