@@ -11,7 +11,6 @@ class Solution {
         ak = stack.top(), stack.pop();
       stack.push(nums[i]); 
     }
-
     return false;
   }
 };
