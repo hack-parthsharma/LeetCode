@@ -4,6 +4,7 @@ class Solution {
     
     int i = 0;
     int j = 0;
+    
     while (i < s.length()) {
       while (i < j || i < s.length() && s[i] == ' ')
         ++i;
