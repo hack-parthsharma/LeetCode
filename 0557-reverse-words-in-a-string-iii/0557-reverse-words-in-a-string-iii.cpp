@@ -1,5 +1,6 @@
 class Solution {
  public:
+  
   string reverseWords(string s) {
     
     int i = 0;
