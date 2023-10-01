@@ -10,7 +10,6 @@ class Solution {
         ++j;
       reverse(begin(s) + i, begin(s) + j);
     }
-
     return s;
   }
 };
