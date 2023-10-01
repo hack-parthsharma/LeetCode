@@ -4,6 +4,7 @@ class Solution {
   string reverseWords(string s) {
     
     int i = 0;
+    
     int j = 0;
     
     while (i < s.length()) {
