@@ -9,7 +9,8 @@ class Solution {
       
     while (i < j || i < s.length() && s[i] == ' ')
         ++i;
-      while (j < i || j < s.length() && s[j] != ' ')
+      
+    while (j < i || j < s.length() && s[j] != ' ')
         ++j;
       reverse(begin(s) + i, begin(s) + j);
     }
