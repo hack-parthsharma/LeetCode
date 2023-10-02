@@ -9,7 +9,6 @@ class Solution {
           ++countAAA;
         else
           ++countBBB;
-
     return countAAA > countBBB;
   }
 };
