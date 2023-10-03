@@ -5,7 +5,6 @@ class Solution {
     vector<int> count(101);
     for (const int num : nums)
       ans += count[num]++;
-
     return ans;
   }
 };
