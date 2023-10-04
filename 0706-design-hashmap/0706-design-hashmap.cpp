@@ -1,8 +1,6 @@
 class MyHashMap {
  public:
   MyHashMap() : lists(kSize) {}
-
-  /** value will always be non-negative. */
   void put(int key, int value) {
     auto& pairs = lists[key % kSize];
     for (auto& [k, v] : pairs)
