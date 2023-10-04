@@ -10,7 +10,6 @@ class MyHashMap {
       }
     pairs.emplace_back(key, value);
   }
-
   int get(int key) {
     const list<pair<int, int>>& pairs = lists[key % kSize];
     for (const auto& [k, v] : pairs)
