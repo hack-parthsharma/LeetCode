@@ -11,8 +11,6 @@ class MyHashMap {
     pairs.emplace_back(key, value);
   }
 
-  /** Returns the value to which the specified key is mapped, or -1 if this map
-   * contains no mapping for the key */
   int get(int key) {
     const list<pair<int, int>>& pairs = lists[key % kSize];
     for (const auto& [k, v] : pairs)
