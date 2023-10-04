@@ -19,8 +19,6 @@ class MyHashMap {
     return -1;
   }
 
-  /** Removes the mapping of the specified value key if this map contains a
-   * mapping for the key */
   void remove(int key) {
     auto& pairs = lists[key % kSize];
     for (auto it = begin(pairs); it != end(pairs); ++it)
