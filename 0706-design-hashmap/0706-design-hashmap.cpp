@@ -18,7 +18,6 @@ class MyHashMap {
         return v;
     return -1;
   }
-
   void remove(int key) {
     auto& pairs = lists[key % kSize];
     for (auto it = begin(pairs); it != end(pairs); ++it)
