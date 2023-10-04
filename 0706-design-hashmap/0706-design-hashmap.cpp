@@ -27,7 +27,6 @@ class MyHashMap {
         return;
       }
   }
-
  private:
   static constexpr int kSize = 10000;
   vector<list<pair<int, int>>> lists;  
