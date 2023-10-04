@@ -30,5 +30,5 @@ class MyHashMap {
 
  private:
   static constexpr int kSize = 10000;
-  vector<list<pair<int, int>>> lists;  // Each slot store (key, value) list
+  vector<list<pair<int, int>>> lists;  
 };
