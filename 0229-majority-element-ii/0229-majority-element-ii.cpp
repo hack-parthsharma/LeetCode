@@ -4,7 +4,7 @@ class Solution {
     vector<int> ans;
     int candidate1 = 0;
     int candidate2 = 1;   
-    int countSoFar1 = 0;  // # of candidate1 so far
+    int countSoFar1 = 0;  
     int countSoFar2 = 0;  // # of candidate2 so far
 
     for (const int num : nums)
