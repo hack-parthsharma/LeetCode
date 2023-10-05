@@ -22,10 +22,8 @@ class Solution {
         --countSoFar1;
         --countSoFar2;
       }
-
     const int count1 = count(begin(nums), end(nums), candidate1);
     const int count2 = count(begin(nums), end(nums), candidate2);
-
     if (count1 > nums.size() / 3)
       ans.push_back(candidate1);
     if (count2 > nums.size() / 3)
