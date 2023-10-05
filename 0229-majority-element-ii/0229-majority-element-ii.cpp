@@ -18,7 +18,7 @@ class Solution {
       } else if (countSoFar2 == 0) {  
         candidate2 = num;
         ++countSoFar2;
-      } else {  // Meet a new number, so pair out previous counts
+      } else {  
         --countSoFar1;
         --countSoFar2;
       }
