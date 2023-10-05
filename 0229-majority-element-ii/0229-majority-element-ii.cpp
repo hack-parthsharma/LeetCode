@@ -12,7 +12,7 @@ class Solution {
         ++countSoFar1;
       } else if (num == candidate2) {
         ++countSoFar2;
-      } else if (countSoFar1 == 0) {  // Assign new candidate
+      } else if (countSoFar1 == 0) {  
         candidate1 = num;
         ++countSoFar1;
       } else if (countSoFar2 == 0) {  // Assign new candidate
