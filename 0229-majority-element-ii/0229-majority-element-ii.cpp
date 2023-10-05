@@ -15,7 +15,7 @@ class Solution {
       } else if (countSoFar1 == 0) {  
         candidate1 = num;
         ++countSoFar1;
-      } else if (countSoFar2 == 0) {  // Assign new candidate
+      } else if (countSoFar2 == 0) {  
         candidate2 = num;
         ++countSoFar2;
       } else {  // Meet a new number, so pair out previous counts
