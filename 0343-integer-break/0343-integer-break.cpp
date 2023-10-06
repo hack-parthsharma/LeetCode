@@ -1,7 +1,6 @@
 class Solution {
  public:
   int integerBreak(int n) {
-    // (and 1 is wasteful).
     // Also, 3 * 3 is better than 2 * 2 * 2, so we never use 2 more than twice.
     if (n == 2)  // 1 * 1
       return 1;
