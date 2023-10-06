@@ -1,7 +1,7 @@
 class Solution {
  public:
   int integerBreak(int n) {
-    if (n == 2)  // 1 * 1
+    if (n == 2)  
       return 1;
     if (n == 3)  // 1 * 2
       return 2;
@@ -13,7 +13,6 @@ class Solution {
       ans *= 3;
     }
     ans *= n;
-
     return ans;
   }
 };
