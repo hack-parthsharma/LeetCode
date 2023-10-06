@@ -7,7 +7,6 @@ class Solution {
       return 2;
 
     int ans = 1;
-
     while (n > 4) {
       n -= 3;
       ans *= 3;
