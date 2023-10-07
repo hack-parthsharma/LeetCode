@@ -12,7 +12,6 @@ class Solution {
       for (int j = 1; j <= m; ++j)               // For each max value
         for (int cost = 1; cost <= k; ++cost) {  // For each cost
           dp[i][j][cost] = static_cast<long>(j) * dp[i - 1][j][cost] % kMod;
-          //    make j the new max and cost 1
           for (int prevMax = 1; prevMax < j; ++prevMax) {
             dp[i][j][cost] += dp[i - 1][prevMax][cost - 1];
             dp[i][j][cost] %= kMod;
