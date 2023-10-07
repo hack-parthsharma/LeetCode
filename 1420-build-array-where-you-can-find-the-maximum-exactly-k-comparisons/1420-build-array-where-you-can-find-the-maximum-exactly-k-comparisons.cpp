@@ -17,7 +17,6 @@ class Solution {
             dp[i][j][cost] %= kMod;
           }
         }
-
     int ans = 0;
     for (int j = 1; j <= m; ++j) {
       ans += dp[n][j][k];
