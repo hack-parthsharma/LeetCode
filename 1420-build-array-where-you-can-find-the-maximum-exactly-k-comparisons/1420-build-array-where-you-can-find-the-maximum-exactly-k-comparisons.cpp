@@ -2,7 +2,6 @@ class Solution {
  public:
   int numOfArrays(int n, int m, int k) {
     constexpr int kMod = 1'000'000'007;
-    // Max used num and k is the search_cost
     vector<vector<vector<int>>> dp(
         n + 1, vector<vector<int>>(m + 1, vector<int>(k + 1)));
 
