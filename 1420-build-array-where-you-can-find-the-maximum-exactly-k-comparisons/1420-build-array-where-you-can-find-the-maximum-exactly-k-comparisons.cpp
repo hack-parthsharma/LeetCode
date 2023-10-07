@@ -11,7 +11,6 @@ class Solution {
     for (int i = 2; i <= n; ++i)                 // For each length
       for (int j = 1; j <= m; ++j)               // For each max value
         for (int cost = 1; cost <= k; ++cost) {  // For each cost
-          // 1. appending any of [1, j] in i-th position
           //    doesn't change the max and cost
           dp[i][j][cost] = static_cast<long>(j) * dp[i - 1][j][cost] % kMod;
           // 2. appending j in i-th position
