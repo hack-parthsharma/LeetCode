@@ -10,7 +10,7 @@ public:
             }
         }
         long long ans = 0;
-        const int mod = 1e9 + 7;
+    const int mod = 1e9 + 7;
         while (k--) {
             int x = 0;
             for (int i = 0; i < 31; ++i) {
