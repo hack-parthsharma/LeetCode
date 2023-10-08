@@ -21,6 +21,6 @@ public:
             }
             ans = (ans + 1LL * x * x) % mod;
         }
-        return ans;
+return ans;
     }
 };
