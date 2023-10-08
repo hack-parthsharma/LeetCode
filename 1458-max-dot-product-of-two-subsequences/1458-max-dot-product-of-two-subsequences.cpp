@@ -9,7 +9,6 @@ class Solution {
       for (int j = 0; j < n; ++j)
         dp[i + 1][j + 1] = max({dp[i][j + 1], dp[i + 1][j],
                                 max(0, dp[i][j]) + nums1[i] * nums2[j]});
-
     return dp[m][n];
   }
 };
