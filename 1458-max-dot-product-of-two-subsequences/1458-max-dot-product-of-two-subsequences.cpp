@@ -3,7 +3,6 @@ class Solution {
   int maxDotProduct(vector<int>& nums1, vector<int>& nums2) {
     const int m = nums1.size();
     const int n = nums2.size();
-    // dp[i][j] := max dot product of two subseqs nums[0..i) and nums2[0..j)
     vector<vector<int>> dp(m + 1, vector<int>(n + 1, INT_MIN));
 
     for (int i = 0; i < m; ++i)
