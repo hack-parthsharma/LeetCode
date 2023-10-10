@@ -11,7 +11,7 @@ for (int i = 0; i < nums.size(); ++i) {
       const int index = firstGreater(nums, end);
       const int uniqueLength = index - i;
       ans = min(ans, n - uniqueLength);
-    }
+}
 
     return ans;
   }
