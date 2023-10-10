@@ -3,7 +3,6 @@ class Solution {
   int minOperations(vector<int>& nums) {
     const int n = nums.size();
     int ans = n;
-
     sort(begin(nums), end(nums));
     nums.erase(unique(begin(nums), end(nums)), end(nums));
 
