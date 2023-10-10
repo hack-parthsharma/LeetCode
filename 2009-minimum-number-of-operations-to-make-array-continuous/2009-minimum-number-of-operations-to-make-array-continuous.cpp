@@ -1,6 +1,6 @@
 class Solution {
  public:
-  int minOperations(vector<int>& nums) {
+int minOperations(vector<int>& nums) {
     const int n = nums.size();
     int ans = n;
     sort(begin(nums), end(nums));
