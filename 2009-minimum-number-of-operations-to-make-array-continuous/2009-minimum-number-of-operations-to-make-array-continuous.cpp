@@ -15,7 +15,7 @@ for (int i = 0; i < nums.size(); ++i) {
 return ans;
   }
 
- private:
+private:
   int firstGreater(const vector<int>& nums, int target) {
     return upper_bound(begin(nums), end(nums), target) - begin(nums);
   }
