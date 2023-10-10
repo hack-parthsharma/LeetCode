@@ -5,7 +5,7 @@ class Solution {
     int ans = n;
     sort(begin(nums), end(nums));
     nums.erase(unique(begin(nums), end(nums)), end(nums));
-    for (int i = 0; i < nums.size(); ++i) {
+for (int i = 0; i < nums.size(); ++i) {
       const int start = nums[i];
       const int end = start + n - 1;
       const int index = firstGreater(nums, end);
