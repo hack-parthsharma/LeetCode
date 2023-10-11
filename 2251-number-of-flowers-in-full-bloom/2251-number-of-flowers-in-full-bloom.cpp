@@ -4,7 +4,7 @@ vector<int> fullBloomFlowers(vector<vector<int>>& flowers,
                                vector<int>& persons) {
 vector<int> ans;
 vector<int> starts;
-    vector<int> ends;
+vector<int> ends;
     for (const vector<int>& f : flowers) {
       starts.push_back(f[0]);
       ends.push_back(f[1]);
