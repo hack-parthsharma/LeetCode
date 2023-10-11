@@ -10,7 +10,7 @@ for (const vector<int>& f : flowers) {
 }
     sort(begin(starts), end(starts));
     sort(begin(ends), end(ends));
-    for (const int p : persons) {
+for (const int p : persons) {
       const int started =
           upper_bound(begin(starts), end(starts), p) - begin(starts);
       const int ended = lower_bound(begin(ends), end(ends), p) - begin(ends);
