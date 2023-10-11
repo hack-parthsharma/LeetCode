@@ -11,7 +11,6 @@ class Solution {
     }
     sort(begin(starts), end(starts));
     sort(begin(ends), end(ends));
-
     for (const int p : persons) {
       const int started =
           upper_bound(begin(starts), end(starts), p) - begin(starts);
