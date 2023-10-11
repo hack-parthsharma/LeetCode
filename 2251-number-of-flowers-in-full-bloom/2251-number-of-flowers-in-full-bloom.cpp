@@ -8,7 +8,7 @@ vector<int> ends;
 for (const vector<int>& f : flowers) {
       starts.push_back(f[0]);
       ends.push_back(f[1]);
-    }
+}
     sort(begin(starts), end(starts));
     sort(begin(ends), end(ends));
     for (const int p : persons) {
