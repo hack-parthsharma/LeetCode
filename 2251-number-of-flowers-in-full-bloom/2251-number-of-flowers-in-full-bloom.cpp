@@ -3,7 +3,7 @@ class Solution {
 vector<int> fullBloomFlowers(vector<vector<int>>& flowers,
                                vector<int>& persons) {
 vector<int> ans;
-    vector<int> starts;
+vector<int> starts;
     vector<int> ends;
     for (const vector<int>& f : flowers) {
       starts.push_back(f[0]);
