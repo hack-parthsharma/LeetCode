@@ -17,7 +17,6 @@ class Solution {
       const int ended = lower_bound(begin(ends), end(ends), p) - begin(ends);
       ans.push_back(started - ended);
     }
-
     return ans;
   }
 };
