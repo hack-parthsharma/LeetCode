@@ -12,7 +12,7 @@ class Solution {
       return rightIndex;
     return -1;
   }
- private:
+private:
   int peakIndexInMountainArray(MountainArray& A, int l, int r) {
     while (l < r) {
       const int m = (l + r) / 2;
