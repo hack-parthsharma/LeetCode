@@ -26,7 +26,7 @@ if (A.get(m) < A.get(m + 1))
 int searchLeft(MountainArray& A, int target, int l, int r) {
     while (l < r) {
       const int m = (l + r) / 2;
-      if (A.get(m) < target)
+if (A.get(m) < target)
         l = m + 1;
       else
         r = m;
