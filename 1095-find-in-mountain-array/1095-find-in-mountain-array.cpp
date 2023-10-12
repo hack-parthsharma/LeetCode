@@ -7,7 +7,6 @@ class Solution {
     const int leftIndex = searchLeft(mountainArr, target, 0, peakIndex);
     if (mountainArr.get(leftIndex) == target)
       return leftIndex;
-
     const int rightIndex =
         searchRight(mountainArr, target, peakIndex + 1, n - 1);
     if (mountainArr.get(rightIndex) == target)
