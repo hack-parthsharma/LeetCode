@@ -1,4 +1,3 @@
-
 class Solution {
  public:
   int findInMountainArray(int target, MountainArray& mountainArr) {
@@ -18,7 +17,6 @@ class Solution {
   }
 
  private:
-  // 852. Peak Index in a Mountain Array
   int peakIndexInMountainArray(MountainArray& A, int l, int r) {
     while (l < r) {
       const int m = (l + r) / 2;
