@@ -33,7 +33,7 @@ class Solution {
     }
     return l;
   }
-  int searchRight(MountainArray& A, int target, int l, int r) {
+int searchRight(MountainArray& A, int target, int l, int r) {
     while (l < r) {
       const int m = (l + r) / 2;
       if (A.get(m) > target)
