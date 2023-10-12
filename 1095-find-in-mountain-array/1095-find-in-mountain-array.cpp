@@ -15,7 +15,6 @@ class Solution {
 
     return -1;
   }
-
  private:
   int peakIndexInMountainArray(MountainArray& A, int l, int r) {
     while (l < r) {
