@@ -4,7 +4,7 @@ public:
     const int n = mountainArr.length();
     const int peakIndex = peakIndexInMountainArray(mountainArr, 0, n - 1);
     const int leftIndex = searchLeft(mountainArr, target, 0, peakIndex);
-    if (mountainArr.get(leftIndex) == target)
+if (mountainArr.get(leftIndex) == target)
       return leftIndex;
     const int rightIndex =
         searchRight(mountainArr, target, peakIndex + 1, n - 1);
