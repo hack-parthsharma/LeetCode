@@ -1,6 +1,6 @@
 class Solution {
 public:
- int findInMountainArray(int target, MountainArray& mountainArr) {
+int findInMountainArray(int target, MountainArray& mountainArr) {
     const int n = mountainArr.length();
     const int peakIndex = peakIndexInMountainArray(mountainArr, 0, n - 1);
     const int leftIndex = searchLeft(mountainArr, target, 0, peakIndex);
