@@ -12,7 +12,6 @@ class Solution {
         searchRight(mountainArr, target, peakIndex + 1, n - 1);
     if (mountainArr.get(rightIndex) == target)
       return rightIndex;
-
     return -1;
   }
  private:
