@@ -8,7 +8,7 @@ public:
       return leftIndex;
     const int rightIndex =
         searchRight(mountainArr, target, peakIndex + 1, n - 1);
-    if (mountainArr.get(rightIndex) == target)
+if (mountainArr.get(rightIndex) == target)
       return rightIndex;
     return -1;
   }
