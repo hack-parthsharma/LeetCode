@@ -16,7 +16,7 @@ private:
   int peakIndexInMountainArray(MountainArray& A, int l, int r) {
     while (l < r) {
       const int m = (l + r) / 2;
-      if (A.get(m) < A.get(m + 1))
+if (A.get(m) < A.get(m + 1))
         l = m + 1;
       else
         r = m;
