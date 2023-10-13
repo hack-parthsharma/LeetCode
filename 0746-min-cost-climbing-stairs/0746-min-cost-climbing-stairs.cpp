@@ -1,5 +1,6 @@
 class Solution {
- public:
+ 
+public:
   
 int minCostClimbingStairs(vector<int>& cost) {
     
