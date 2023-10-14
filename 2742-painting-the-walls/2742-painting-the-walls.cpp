@@ -1,7 +1,7 @@
 class Solution {
 public:
 int paintWalls(vector<int>& cost, vector<int>& time) {
-        int n = cost.size();
+int n = cost.size();
         int f[n][n << 1 | 1];
         memset(f, -1, sizeof(f));
         function<int(int, int)> dfs = [&](int i, int j) -> int {
