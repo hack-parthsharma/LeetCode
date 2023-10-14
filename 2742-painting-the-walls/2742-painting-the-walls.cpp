@@ -11,7 +11,7 @@ if (n - i <= j - n) {
 }
 
 if (i >= n) {
-                return 1 << 30;
+    return 1 << 30;
 }
 if (f[i][j] == -1) {
                 f[i][j] = min(dfs(i + 1, j + time[i]) + cost[i], dfs(i + 1, j - 1));
