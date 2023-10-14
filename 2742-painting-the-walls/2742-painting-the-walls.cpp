@@ -15,7 +15,7 @@ if (i >= n) {
 }
 
 if (f[i][j] == -1) {
-                f[i][j] = min(dfs(i + 1, j + time[i]) + cost[i], dfs(i + 1, j - 1));
+    f[i][j] = min(dfs(i + 1, j + time[i]) + cost[i], dfs(i + 1, j - 1));
 }
             return f[i][j];
         };
