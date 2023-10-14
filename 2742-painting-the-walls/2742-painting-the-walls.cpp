@@ -8,7 +8,7 @@ function<int(int, int)> dfs = [&](int i, int j) -> int {
 
 if (n - i <= j - n) {
                 return 0;
-            }
+}
             if (i >= n) {
                 return 1 << 30;
             }
