@@ -5,7 +5,7 @@ public:
         int f[n][n << 1 | 1];
         memset(f, -1, sizeof(f));
         function<int(int, int)> dfs = [&](int i, int j) -> int {
-            if (n - i <= j - n) {
+if (n - i <= j - n) {
                 return 0;
             }
             if (i >= n) {
