@@ -12,7 +12,7 @@ while (steps--) {
         newDp[i] = dp[i];
   if (i - 1 >= 0)
           newDp[i] += dp[i - 1];
-        if (i + 1 < n)
+    if (i + 1 < n)
           newDp[i] += dp[i + 1];
         newDp[i] %= kMod;
       }
