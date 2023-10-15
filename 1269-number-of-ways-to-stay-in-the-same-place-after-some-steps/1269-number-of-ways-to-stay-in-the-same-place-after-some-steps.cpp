@@ -8,9 +8,9 @@ int numWays(int steps, int arrLen) {
 
 while (steps--) {
       vector<long> newDp(n);
-  for (int i = 0; i < n; ++i) {
+ for (int i = 0; i < n; ++i) {
         newDp[i] = dp[i];
-        if (i - 1 >= 0)
+    if (i - 1 >= 0)
           newDp[i] += dp[i - 1];
         if (i + 1 < n)
           newDp[i] += dp[i + 1];
