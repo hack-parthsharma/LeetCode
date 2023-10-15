@@ -6,7 +6,7 @@ int numWays(int steps, int arrLen) {
     vector<long> dp(n);
     dp[0] = 1;
 
-    while (steps--) {
+while (steps--) {
       vector<long> newDp(n);
       for (int i = 0; i < n; ++i) {
         newDp[i] = dp[i];
