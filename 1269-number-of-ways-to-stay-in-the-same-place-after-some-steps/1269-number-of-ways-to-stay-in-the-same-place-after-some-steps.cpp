@@ -17,8 +17,8 @@ while (steps--) {
         newDp[i] %= kMod;
       }
       dp = move(newDp);
-    }
+}
 
-    return dp[0];
+return dp[0];
   }
 };
