@@ -1,5 +1,6 @@
 class Solution {
 public:
+
 int numWays(int steps, int arrLen) {
     constexpr int kMod = 1'000'000'007;
     const int n = min(arrLen, steps / 2 + 1);
