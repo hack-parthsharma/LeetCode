@@ -15,7 +15,7 @@ while (steps--) {
     if (i + 1 < n)
           newDp[i] += dp[i + 1];
         newDp[i] %= kMod;
-      }
+  }
       dp = move(newDp);
 }
 
