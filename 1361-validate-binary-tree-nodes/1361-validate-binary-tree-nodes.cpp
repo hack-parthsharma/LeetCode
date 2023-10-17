@@ -19,7 +19,7 @@ for (int i = 0; i < n; ++i)
         else
           return false;  
 
-    if (root == -1)
+if (root == -1)
       return false;
 
     return countNodes(root, leftChild, rightChild) == n;
