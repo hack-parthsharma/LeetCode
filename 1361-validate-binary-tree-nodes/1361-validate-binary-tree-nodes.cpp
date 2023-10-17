@@ -1,7 +1,7 @@
 class Solution {
  public:
 bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {
-    vector<int> inDegree(n);
+vector<int> inDegree(n);
     int root = -1;
 
     for (const int child : leftChild)
