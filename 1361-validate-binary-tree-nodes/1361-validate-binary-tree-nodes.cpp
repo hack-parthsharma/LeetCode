@@ -20,7 +20,6 @@ class Solution {
         else
           return false;  
 
-    // didn't find the root
     if (root == -1)
       return false;
 
