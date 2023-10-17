@@ -13,7 +13,6 @@ class Solution {
       if (child != -1 && ++inDegree[child] == 2)
         return false;
 
-    // Find the root (node with inDegree == 0)
     for (int i = 0; i < n; ++i)
       if (inDegree[i] == 0)
         if (root == -1)
