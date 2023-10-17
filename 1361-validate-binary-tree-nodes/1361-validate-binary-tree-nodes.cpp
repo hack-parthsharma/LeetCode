@@ -30,7 +30,7 @@ private:
                  const vector<int>& rightChild) {
     if (root == -1)
       return 0;
-    return 1 +  //
+    return 1 +  
            countNodes(leftChild[root], leftChild, rightChild) +
            countNodes(rightChild[root], leftChild, rightChild);
   }
