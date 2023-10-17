@@ -25,7 +25,7 @@ if (root == -1)
     return countNodes(root, leftChild, rightChild) == n;
   }
 
- private:
+private:
   int countNodes(int root, const vector<int>& leftChild,
                  const vector<int>& rightChild) {
     if (root == -1)
