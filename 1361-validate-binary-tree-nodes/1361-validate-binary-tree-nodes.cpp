@@ -8,7 +8,7 @@ for (const int child : leftChild)
       if (child != -1 && ++inDegree[child] == 2)
         return false;
 
-    for (const int child : rightChild)
+for (const int child : rightChild)
       if (child != -1 && ++inDegree[child] == 2)
         return false;
 
