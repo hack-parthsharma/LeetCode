@@ -5,7 +5,6 @@ class Solution {
     vector<int> inDegree(n);
     int root = -1;
 
-    // If inDegree of any node > 1, return false
     for (const int child : leftChild)
       if (child != -1 && ++inDegree[child] == 2)
         return false;
