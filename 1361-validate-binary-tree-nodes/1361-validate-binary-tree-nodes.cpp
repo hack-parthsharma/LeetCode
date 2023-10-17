@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
 bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {
 vector<int> inDegree(n);
 int root = -1;
