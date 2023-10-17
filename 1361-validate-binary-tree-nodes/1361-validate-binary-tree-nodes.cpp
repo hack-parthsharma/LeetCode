@@ -23,7 +23,7 @@ if (root == -1)
       return false;
 
     return countNodes(root, leftChild, rightChild) == n;
-  }
+}
 
 private:
   int countNodes(int root, const vector<int>& leftChild,
