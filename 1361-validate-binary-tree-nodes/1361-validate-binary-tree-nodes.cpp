@@ -33,5 +33,5 @@ private:
     return 1 +  
            countNodes(leftChild[root], leftChild, rightChild) +
            countNodes(rightChild[root], leftChild, rightChild);
-  }
+}
 };
