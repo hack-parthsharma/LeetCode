@@ -18,7 +18,7 @@ class Solution {
         if (root == -1)
           root = i;
         else
-          return false;  // Multiple roots
+          return false;  
 
     // didn't find the root
     if (root == -1)
