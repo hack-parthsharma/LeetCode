@@ -13,7 +13,7 @@ for (const int child : rightChild)
         return false;
 
 for (int i = 0; i < n; ++i)
-      if (inDegree[i] == 0)
+    if (inDegree[i] == 0)
         if (root == -1)
           root = i;
         else
