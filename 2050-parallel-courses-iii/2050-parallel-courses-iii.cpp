@@ -22,7 +22,8 @@ while (!q.empty()) {
       q.pop();
 for (const int v : graph[u]) {
         dist[v] = max(dist[v], dist[u] + time[v]);
-        if (--inDegree[v] == 0)
+        
+if (--inDegree[v] == 0)
           q.push(v);
       }
     }
