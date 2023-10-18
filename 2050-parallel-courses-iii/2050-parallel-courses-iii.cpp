@@ -20,7 +20,7 @@ for (int i = 0; i < n; ++i)
 while (!q.empty()) {
       const int u = q.front();
       q.pop();
-      for (const int v : graph[u]) {
+for (const int v : graph[u]) {
         dist[v] = max(dist[v], dist[u] + time[v]);
         if (--inDegree[v] == 0)
           q.push(v);
