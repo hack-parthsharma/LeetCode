@@ -13,7 +13,6 @@ for (const vector<int>& r : relations) {
       ++inDegree[v];
 }
 
-    // Topology
     for (int i = 0; i < n; ++i)
       if (inDegree[i] == 0)
         q.push(i);
