@@ -26,7 +26,7 @@ for (const int v : graph[u]) {
 if (--inDegree[v] == 0)
           q.push(v);
       }
-    }
+}
 
 return *max_element(begin(dist), end(dist));
   }
