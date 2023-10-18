@@ -17,7 +17,7 @@ for (int i = 0; i < n; ++i)
       if (inDegree[i] == 0)
         q.push(i);
 
-    while (!q.empty()) {
+while (!q.empty()) {
       const int u = q.front();
       q.pop();
       for (const int v : graph[u]) {
