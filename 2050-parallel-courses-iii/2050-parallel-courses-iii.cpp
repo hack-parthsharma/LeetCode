@@ -27,6 +27,6 @@ while (!q.empty()) {
       }
     }
 
-    return *max_element(begin(dist), end(dist));
+return *max_element(begin(dist), end(dist));
   }
 };
