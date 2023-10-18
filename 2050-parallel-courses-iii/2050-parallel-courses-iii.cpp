@@ -5,7 +5,6 @@ class Solution {
     vector<int> inDegree(n);
     queue<int> q;
     vector<int> dist(time);
-
     for (const vector<int>& r : relations) {
       const int u = r[0] - 1;
       const int v = r[1] - 1;
