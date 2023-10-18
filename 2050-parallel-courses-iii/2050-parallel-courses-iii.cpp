@@ -11,7 +11,7 @@ for (const vector<int>& r : relations) {
       const int v = r[1] - 1;
       graph[u].push_back(v);
       ++inDegree[v];
-    }
+}
 
     // Topology
     for (int i = 0; i < n; ++i)
