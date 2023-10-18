@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minimumTime(int n, vector<vector<int>>& relations, vector<int>& time) {
     vector<vector<int>> graph(n);
     vector<int> inDegree(n);
