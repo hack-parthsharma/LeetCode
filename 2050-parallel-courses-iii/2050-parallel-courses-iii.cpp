@@ -13,7 +13,7 @@ for (const vector<int>& r : relations) {
       ++inDegree[v];
 }
 
-    for (int i = 0; i < n; ++i)
+for (int i = 0; i < n; ++i)
       if (inDegree[i] == 0)
         q.push(i);
 
