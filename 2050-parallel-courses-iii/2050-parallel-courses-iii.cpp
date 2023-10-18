@@ -6,7 +6,6 @@ class Solution {
     queue<int> q;
     vector<int> dist(time);
 
-    // Build graph
     for (const vector<int>& r : relations) {
       const int u = r[0] - 1;
       const int v = r[1] - 1;
