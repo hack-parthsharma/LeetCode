@@ -12,5 +12,5 @@ class Solution {
       else if (!stack.empty())
         stack.pop_back();
     return stack;
-  }
+}
 };
