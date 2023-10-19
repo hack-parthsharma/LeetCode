@@ -11,6 +11,6 @@ private:
         stack.push_back(c);
       else if (!stack.empty())
         stack.pop_back();
-    return stack;
+return stack;
 }
 };
