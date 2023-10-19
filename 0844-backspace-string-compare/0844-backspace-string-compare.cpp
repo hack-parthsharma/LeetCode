@@ -2,7 +2,7 @@ class Solution {
  public:
   bool backspaceCompare(string s, string t) {
     return backspace(s) == backspace(t);
-  }
+}
 private:
   string backspace(const string& s) {
     string stack;
