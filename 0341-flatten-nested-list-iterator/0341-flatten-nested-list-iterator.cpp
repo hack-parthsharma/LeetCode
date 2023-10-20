@@ -18,7 +18,6 @@ class NestedIterator {
   }
  private:
   stack<NestedInteger> stack;
-  // AddInteger([6]) -> stack = [6]
   void addInteger(const vector<NestedInteger>& nestedList) {
     for (int i = nestedList.size() - 1; i >= 0; --i)
       stack.push(nestedList[i]);
