@@ -8,7 +8,6 @@ class NestedIterator {
     stack.pop();
     return num;
   }
-
   bool hasNext() {
     while (!stack.empty() && !stack.top().isInteger()) {
       vector<NestedInteger> nestedList = stack.top().getList();
