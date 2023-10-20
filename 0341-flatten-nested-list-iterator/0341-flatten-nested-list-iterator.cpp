@@ -18,7 +18,6 @@ class NestedIterator {
   }
  private:
   stack<NestedInteger> stack;
-
   // AddInteger([1, [4, [6]]]) -> stack = [[4, [6]], 1]
   // AddInteger([4, [6]]) -> stack = [[6], 4]
   // AddInteger([6]) -> stack = [6]
