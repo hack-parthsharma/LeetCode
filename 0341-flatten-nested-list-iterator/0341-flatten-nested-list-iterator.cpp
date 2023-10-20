@@ -16,7 +16,6 @@ class NestedIterator {
     }
     return !stack.empty();
   }
-
  private:
   stack<NestedInteger> stack;
 
