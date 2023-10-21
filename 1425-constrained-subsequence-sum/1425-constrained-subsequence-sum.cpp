@@ -1,7 +1,6 @@
 class Solution {
  public:
   int constrainedSubsetSum(vector<int>& nums, int k) {
-    // dp[i] := max sum of non-empty subsequence in nums[0..i]
     vector<int> dp(nums.size());
     // Q stores dp[i - k], dp[i - k + 1], ..., dp[i - 1] whose values are > 0 in
     // Decreasing order
