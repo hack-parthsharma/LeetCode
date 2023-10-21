@@ -4,7 +4,7 @@ class Solution {
     vector<int> dp(nums.size());
     deque<int> q;
 for (int i = 0; i < nums.size(); ++i) {
-      if (q.empty())
+    if (q.empty())
         dp[i] = nums[i];
       else
         dp[i] = max(q.front(), 0) + nums[i];
