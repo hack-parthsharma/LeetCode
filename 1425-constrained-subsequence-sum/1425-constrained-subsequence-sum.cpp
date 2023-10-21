@@ -15,6 +15,6 @@ for (int i = 0; i < nums.size(); ++i) {
         q.pop_front();
 }
 
-    return *max_element(begin(dp), end(dp));
+return *max_element(begin(dp), end(dp));
   }
 };
