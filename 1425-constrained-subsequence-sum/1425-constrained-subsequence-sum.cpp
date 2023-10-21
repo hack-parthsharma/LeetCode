@@ -2,7 +2,6 @@ class Solution {
  public:
   int constrainedSubsetSum(vector<int>& nums, int k) {
     vector<int> dp(nums.size());
-    // Q stores dp[i - k], dp[i - k + 1], ..., dp[i - 1] whose values are > 0 in
     // Decreasing order
     deque<int> q;
 
