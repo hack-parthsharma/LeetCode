@@ -11,7 +11,7 @@ for (int i = 0; i < nums.size(); ++i) {
     while (!q.empty() && q.back() < dp[i])
         q.pop_back();
       q.push_back(dp[i]);
-      if (i >= k && dp[i - k] == q.front())
+    if (i >= k && dp[i - k] == q.front())
         q.pop_front();
 }
 
