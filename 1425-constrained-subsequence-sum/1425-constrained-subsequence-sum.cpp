@@ -13,7 +13,7 @@ for (int i = 0; i < nums.size(); ++i) {
       q.push_back(dp[i]);
       if (i >= k && dp[i - k] == q.front())
         q.pop_front();
-    }
+}
 
     return *max_element(begin(dp), end(dp));
   }
