@@ -6,7 +6,7 @@ class Solution {
 for (int i = 0; i < nums.size(); ++i) {
     if (q.empty())
         dp[i] = nums[i];
-      else
+    else
         dp[i] = max(q.front(), 0) + nums[i];
       while (!q.empty() && q.back() < dp[i])
         q.pop_back();
