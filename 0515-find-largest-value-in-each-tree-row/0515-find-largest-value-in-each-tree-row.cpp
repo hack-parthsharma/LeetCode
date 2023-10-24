@@ -14,7 +14,7 @@ private:
       ans.push_back(root->val);
     else
       ans[depth] = max(ans[depth], root->val);
-    dfs(root->left, depth + 1, ans);
+dfs(root->left, depth + 1, ans);
     dfs(root->right, depth + 1, ans);
   }
 };
