@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> largestValues(TreeNode* root) {
     vector<int> ans;
     dfs(root, 0, ans);
