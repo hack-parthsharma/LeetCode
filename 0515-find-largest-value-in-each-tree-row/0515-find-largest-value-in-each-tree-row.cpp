@@ -4,7 +4,7 @@ public:
     vector<int> ans;
     dfs(root, 0, ans);
     return ans;
-  }
+}
  private:
   void dfs(TreeNode* root, int depth, vector<int>& ans) {
     if (root == nullptr)
