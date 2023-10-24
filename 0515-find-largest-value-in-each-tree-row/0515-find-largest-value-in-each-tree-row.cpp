@@ -7,7 +7,7 @@ public:
 }
 
 private:
-  void dfs(TreeNode* root, int depth, vector<int>& ans) {
+void dfs(TreeNode* root, int depth, vector<int>& ans) {
     if (root == nullptr)
       return;
     if (depth + 1 > ans.size())
