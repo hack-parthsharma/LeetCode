@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int kthGrammar(int n, int k) {
     if (n == 1)
       return 0;
