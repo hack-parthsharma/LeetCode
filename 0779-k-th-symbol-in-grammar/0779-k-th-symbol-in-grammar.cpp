@@ -5,6 +5,6 @@ class Solution {
       return 0;
     if (k & 1)
       return kthGrammar(n - 1, (k + 1) / 2) != 0;  
-      return kthGrammar(n - 1, k / 2) == 0;          // Right node
-  }
+      return kthGrammar(n - 1, k / 2) == 0;         
+}
 };
