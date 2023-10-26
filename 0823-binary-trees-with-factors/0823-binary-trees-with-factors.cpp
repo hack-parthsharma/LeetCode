@@ -13,14 +13,13 @@ class Solution {
 
     for (int i = 0; i < n; ++i)  
       for (int j = 0; j < i; ++j)
-        if (arr[i] % arr[j] == 0) {  // arr[j] is left subtree
+        if (arr[i] % arr[j] == 0) { 
           const int right = arr[i] / arr[j];
           if (const auto it = numToIndex.find(right); it != cend(numToIndex)) {
             dp[i] += dp[j] * dp[it->second];
             dp[i] %= kMod;
           }
         }
-
     return accumulate(begin(dp), end(dp), 0L) % kMod;
   }
 };
