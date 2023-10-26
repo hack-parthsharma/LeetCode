@@ -11,7 +11,7 @@ class Solution {
     for (int i = 0; i < n; ++i)
       numToIndex[arr[i]] = i;
 
-    for (int i = 0; i < n; ++i)  // arr[i] is root
+    for (int i = 0; i < n; ++i)  
       for (int j = 0; j < i; ++j)
         if (arr[i] % arr[j] == 0) {  // arr[j] is left subtree
           const int right = arr[i] / arr[j];
