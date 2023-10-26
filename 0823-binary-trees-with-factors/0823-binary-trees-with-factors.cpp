@@ -7,7 +7,6 @@ class Solution {
     unordered_map<int, int> numToIndex;
 
     sort(begin(arr), end(arr));
-
     for (int i = 0; i < n; ++i)
       numToIndex[arr[i]] = i;
     for (int i = 0; i < n; ++i)  
