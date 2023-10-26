@@ -5,7 +5,6 @@ class Solution {
     const int n = arr.size();
     vector<long> dp(n, 1);
     unordered_map<int, int> numToIndex;
-
     sort(begin(arr), end(arr));
     for (int i = 0; i < n; ++i)
       numToIndex[arr[i]] = i;
