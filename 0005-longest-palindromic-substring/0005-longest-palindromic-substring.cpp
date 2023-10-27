@@ -15,7 +15,7 @@ pair<int, int> indices{0, 0};
         if (r2 - l2 > indices.second - indices.first)
           indices = {l2, r2};
       }
-    }
+}
 
     return s.substr(indices.first, indices.second - indices.first + 1);
 }
