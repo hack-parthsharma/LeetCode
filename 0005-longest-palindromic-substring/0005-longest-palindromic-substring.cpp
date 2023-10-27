@@ -14,10 +14,10 @@ pair<int, int> indices{0, 0};
         const auto [l2, r2] = extend(s, i, i + 1);
         if (r2 - l2 > indices.second - indices.first)
           indices = {l2, r2};
-      }
+    }
 }
 
-    return s.substr(indices.first, indices.second - indices.first + 1);
+return s.substr(indices.first, indices.second - indices.first + 1);
 }
 
  private:
