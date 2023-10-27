@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string longestPalindrome(string s) {
     if (s.empty())
       return "";
