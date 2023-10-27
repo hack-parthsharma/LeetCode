@@ -4,7 +4,7 @@ public:
     if (s.empty())
       return "";
 
-    pair<int, int> indices{0, 0};
+pair<int, int> indices{0, 0};
 
     for (int i = 0; i < s.length(); ++i) {
       const auto [l1, r1] = extend(s, i, i);
