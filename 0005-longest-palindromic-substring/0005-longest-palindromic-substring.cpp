@@ -18,7 +18,7 @@ public:
     }
 
     return s.substr(indices.first, indices.second - indices.first + 1);
-  }
+}
 
  private:
  pair<int, int> extend(const string& s, int i, int j) {
