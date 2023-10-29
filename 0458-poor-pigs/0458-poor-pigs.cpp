@@ -5,5 +5,5 @@ int times = minutesToTest / minutesToDie;
 int result = 0;
 while (pow(times + 1, result) < buckets) ++result;    
 return result;
-  }
+}
 };
