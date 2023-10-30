@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> sortByBits(vector<int>& arr) {
     sort(begin(arr), end(arr), [](const int a, int b) {
       const int x = bitset<32>(a).count();
