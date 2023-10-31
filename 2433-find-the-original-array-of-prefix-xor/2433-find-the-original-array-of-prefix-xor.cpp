@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
 vector<int> findArray(vector<int>& pref) {
 vector<int> ans(pref.size());
 ans[0] = pref[0];
