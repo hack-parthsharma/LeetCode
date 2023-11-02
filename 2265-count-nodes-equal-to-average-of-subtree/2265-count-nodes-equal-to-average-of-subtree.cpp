@@ -7,7 +7,7 @@ public:
 }
     
 private:
-  pair<int, int> dfs(TreeNode* root, int& ans) {
+pair<int, int> dfs(TreeNode* root, int& ans) {
     if (root == nullptr)
       return {0, 0};
     const auto [leftSum, leftCount] = dfs(root->left, ans);
