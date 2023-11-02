@@ -3,7 +3,7 @@ public:
 int averageOfSubtree(TreeNode* root) {
 int ans = 0;
 dfs(root, ans);
-    return ans;
+return ans;
 }
     
 private:
