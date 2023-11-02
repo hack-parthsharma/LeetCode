@@ -6,7 +6,7 @@ class Solution {
     return ans;
 }
     
- private:
+private:
   pair<int, int> dfs(TreeNode* root, int& ans) {
     if (root == nullptr)
       return {0, 0};
