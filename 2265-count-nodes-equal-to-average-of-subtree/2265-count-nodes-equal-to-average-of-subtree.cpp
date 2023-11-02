@@ -5,7 +5,6 @@ class Solution {
     dfs(root, ans);
     return ans;
   }
-
  private:
   pair<int, int> dfs(TreeNode* root, int& ans) {
     if (root == nullptr)
