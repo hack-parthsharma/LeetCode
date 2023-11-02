@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int averageOfSubtree(TreeNode* root) {
     int ans = 0;
     dfs(root, ans);
