@@ -16,5 +16,5 @@ class Solution {
     if (sum / count == root->val)
       ++ans;
 return {sum, count};
-  }
+}
 };
