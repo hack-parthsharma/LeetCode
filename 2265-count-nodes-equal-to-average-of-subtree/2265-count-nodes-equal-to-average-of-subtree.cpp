@@ -1,8 +1,8 @@
 class Solution {
 public:
 int averageOfSubtree(TreeNode* root) {
-    int ans = 0;
-    dfs(root, ans);
+int ans = 0;
+dfs(root, ans);
     return ans;
 }
     
