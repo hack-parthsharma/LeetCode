@@ -15,6 +15,6 @@ class Solution {
     const int count = 1 + leftCount + rightCount;
     if (sum / count == root->val)
       ++ans;
-    return {sum, count};
+return {sum, count};
   }
 };
