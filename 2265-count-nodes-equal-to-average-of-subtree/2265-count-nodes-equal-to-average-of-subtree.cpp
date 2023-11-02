@@ -14,7 +14,7 @@ const auto [leftSum, leftCount] = dfs(root->left, ans);
 const auto [rightSum, rightCount] = dfs(root->right, ans);
 const int sum = root->val + leftSum + rightSum;
 const int count = 1 + leftCount + rightCount;
-    if (sum / count == root->val)
+if (sum / count == root->val)
       ++ans;
 
 return {sum, count};
