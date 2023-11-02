@@ -4,7 +4,7 @@ class Solution {
     int ans = 0;
     dfs(root, ans);
     return ans;
-  }
+}
     
  private:
   pair<int, int> dfs(TreeNode* root, int& ans) {
