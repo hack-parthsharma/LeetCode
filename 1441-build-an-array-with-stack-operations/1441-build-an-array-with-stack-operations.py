@@ -2,7 +2,7 @@ class Solution:
   def buildArray(self, target: List[int], n: int) -> List[str]:
     ans = []
     i = 0  
-    num = 1  # Curr num
+    num = 1  
 
     while i < len(target):
       t = target[i]
