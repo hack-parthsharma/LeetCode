@@ -12,5 +12,4 @@ class Solution:
         ans.append("Push")
         ans.append("Pop")
       num += 1
-
     return ans
