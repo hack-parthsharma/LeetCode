@@ -3,7 +3,6 @@ class Solution:
     ans = []
     i = 0  
     num = 1  
-
     while i < len(target):
       t = target[i]
       if t == num:
