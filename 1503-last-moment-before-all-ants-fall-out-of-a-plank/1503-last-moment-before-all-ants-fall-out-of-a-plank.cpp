@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int getLastMoment(int n, vector<int>& left, vector<int>& right) {
     const int maxLeft = left.empty() ? 0 : *max_element(begin(left), end(left));
     const int minRight =
