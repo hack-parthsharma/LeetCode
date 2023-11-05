@@ -10,7 +10,6 @@ class Solution {
       } else {
         ++wins;
       }
-
     return ans;
   }
 };
