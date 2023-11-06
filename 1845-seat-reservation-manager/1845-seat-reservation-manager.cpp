@@ -6,7 +6,7 @@ public:
         for(int i=1; i<=n; i++) {
             idle.insert(i);
         }
-    }
+}
 int reserve() {
         auto it = idle.begin();
         auto seat = *it;
