@@ -1,6 +1,6 @@
 class SeatManager {
 private:
-    set<int> idle;
+set<int> idle;
 public:
     SeatManager(int n) {
         for(int i=1; i<=n; i++) {
