@@ -5,7 +5,7 @@ public:
     SeatManager(int n) {
     for(int i=1; i<=n; i++) {
             idle.insert(i);
-        }
+    }
 }
 
 int reserve() {
