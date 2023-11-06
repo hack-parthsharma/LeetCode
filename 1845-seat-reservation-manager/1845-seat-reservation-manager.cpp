@@ -3,7 +3,7 @@ private:
 set<int> idle;
 public:
     SeatManager(int n) {
-        for(int i=1; i<=n; i++) {
+    for(int i=1; i<=n; i++) {
             idle.insert(i);
         }
 }
