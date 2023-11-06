@@ -14,7 +14,7 @@ int reserve() {
         return seat;
 }
     
-    void unreserve(int seatNumber) {
+void unreserve(int seatNumber) {
         idle.insert(seatNumber);
     }
 };
