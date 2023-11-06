@@ -12,7 +12,7 @@ int reserve() {
         auto seat = *it;
         idle.erase(it);
         return seat;
-    }
+}
     
     void unreserve(int seatNumber) {
         idle.insert(seatNumber);
