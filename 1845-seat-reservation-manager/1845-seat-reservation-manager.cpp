@@ -7,7 +7,7 @@ public:
             idle.insert(i);
         }
     }
-    int reserve() {
+int reserve() {
         auto it = idle.begin();
         auto seat = *it;
         idle.erase(it);
