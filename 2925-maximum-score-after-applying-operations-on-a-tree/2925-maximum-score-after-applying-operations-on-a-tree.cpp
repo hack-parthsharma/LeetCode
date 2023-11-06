@@ -16,7 +16,6 @@ class Solution {
   }
 
  private:
-  // Returns the minimum of sum to be reduced.
   long long dfs(const vector<vector<int>>& tree, int u, int prev,
                 const vector<int>& values) {
     if (u > 0 && tree[u].size() == 1)
