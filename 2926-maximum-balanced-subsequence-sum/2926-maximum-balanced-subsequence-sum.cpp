@@ -3,7 +3,6 @@ class FenwickTree {
  public:
   FenwickTree(int n) : vals(n + 1) {}
 
-  // Updates the max sum of subseq ending at (i - 1) with `val`.
   void update(int i, T val) {
     while (i < vals.size()) {
       vals[i] = max(vals[i], val);
