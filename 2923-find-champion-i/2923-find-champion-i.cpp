@@ -5,7 +5,6 @@ class Solution {
     int ans = -1;
     int count = 0;
     vector<int> inDegrees(n);
-
     for (int i = 0; i < n; ++i)
       for (int j = 0; j < n; ++j) {
         if (i == j)
