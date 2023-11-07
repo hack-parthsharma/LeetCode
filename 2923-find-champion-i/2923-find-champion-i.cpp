@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int findChampion(vector<vector<int>>& grid) {
     const int n = grid.size();
     int ans = -1;
