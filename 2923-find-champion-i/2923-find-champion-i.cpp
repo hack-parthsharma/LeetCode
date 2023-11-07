@@ -13,7 +13,7 @@ for (int i = 0; i < n; ++i)
         grid[i][j] == 1 ? ++inDegrees[j] : ++inDegrees[i];
 }
 
-    for (int i = 0; i < n; ++i)
+for (int i = 0; i < n; ++i)
       if (inDegrees[i] == 0) {
         ++count;
         ans = i;
