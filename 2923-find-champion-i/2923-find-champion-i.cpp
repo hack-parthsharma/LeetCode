@@ -20,5 +20,5 @@ for (int i = 0; i < n; ++i)
 }
 
 return count > 1 ? -1 : ans;
-  }
+}
 };
