@@ -17,7 +17,7 @@ for (int i = 0; i < n; ++i)
       if (inDegrees[i] == 0) {
         ++count;
         ans = i;
-      }
+}
 
     return count > 1 ? -1 : ans;
   }
