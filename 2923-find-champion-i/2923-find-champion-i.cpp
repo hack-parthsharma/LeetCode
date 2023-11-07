@@ -19,6 +19,6 @@ for (int i = 0; i < n; ++i)
         ans = i;
 }
 
-    return count > 1 ? -1 : ans;
+return count > 1 ? -1 : ans;
   }
 };
