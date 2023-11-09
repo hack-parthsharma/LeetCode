@@ -6,7 +6,6 @@ int countHomogenous(string s) {
         long long len = 0;
         for(int i = 0; i < s.size() ; i++) {
             if (current != s[i] ){
-                //sum from 1 to len
                 result += len * (len+1)/2;
                 current = s[i];
                 len = 1;
