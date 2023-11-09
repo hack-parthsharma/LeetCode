@@ -7,8 +7,8 @@ long long len = 0;
     for(int i = 0; i < s.size() ; i++) {
         if (current != s[i] ){
             result += len * (len+1)/2;
-                current = s[i];
-                len = 1;
+            current = s[i];
+            len = 1;
     }else{
             len++;
     }
