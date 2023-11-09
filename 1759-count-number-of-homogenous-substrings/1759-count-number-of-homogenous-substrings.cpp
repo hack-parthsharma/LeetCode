@@ -14,7 +14,7 @@ int countHomogenous(string s) {
                 len++;
             }
         }
-        result += len * (len+1)/2;
+result += len * (len+1)/2;
         return result % 1000000007;
     }
 };
