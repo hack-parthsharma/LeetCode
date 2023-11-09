@@ -11,7 +11,7 @@ long long len = 0;
                 len = 1;
     }else{
                 len++;
-            }
+    }
 }
 result += len * (len+1)/2;
 return result % 1000000007;
