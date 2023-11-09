@@ -14,7 +14,6 @@ public:
                 len++;
             }
         }
-        //the rest string
         result += len * (len+1)/2;
         return result % 1000000007;
     }
