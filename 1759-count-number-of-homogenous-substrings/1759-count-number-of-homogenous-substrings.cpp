@@ -10,7 +10,7 @@ long long len = 0;
                 current = s[i];
                 len = 1;
     }else{
-                len++;
+            len++;
     }
 }
 result += len * (len+1)/2;
