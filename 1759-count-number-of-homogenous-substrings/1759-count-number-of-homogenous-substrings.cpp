@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int countHomogenous(string s) {
+int countHomogenous(string s) {
         long long result = 0;
         char current = '\0';
         long long len = 0;
