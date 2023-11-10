@@ -7,7 +7,6 @@ public:
             dict[pair[0]].push_back(pair[1]);
             dict[pair[1]].push_back(pair[0]);
         }
-        
         int end[2]; int i=0;
         for (auto& [key, pair] : dict) {
             if(pair.size()==1) end[i++] = key;
