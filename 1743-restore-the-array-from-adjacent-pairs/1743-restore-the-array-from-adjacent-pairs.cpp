@@ -1,7 +1,6 @@
 class Solution {
 public:
     vector<int> restoreArray(vector<vector<int>>& adjacentPairs) {
-        // only two numbers have one neighbour
         // start from one of them to travel all number.
         
         unordered_map<int, vector<int>> dict;
