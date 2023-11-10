@@ -13,7 +13,6 @@ public:
             if(pair.size()==1) end[i++] = key;
             if (i>1) break;
         }
-        //cout << "start=" << end[0] <<", end=" << end[1] << endl;
         vector<int> result(1, end[0]);
         int start = end[0];
         int prev = -1;
