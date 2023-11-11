@@ -28,7 +28,6 @@ class Graph {
           minHeap.emplace(dist[v], v);
         }
     }
-
     return -1;
   }
 
