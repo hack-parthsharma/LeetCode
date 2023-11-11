@@ -5,7 +5,6 @@ class Graph {
     for (const vector<int>& edge : edges)
       addEdge(edge);
   }
-
   void addEdge(vector<int> edge) {
     const int u = edge[0];
     const int v = edge[1];
