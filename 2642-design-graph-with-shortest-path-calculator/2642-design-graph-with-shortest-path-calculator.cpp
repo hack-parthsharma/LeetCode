@@ -17,7 +17,6 @@ class Graph {
     priority_queue<P, vector<P>, greater<>> minHeap;
     dist[node1] = 0;
     minHeap.emplace(dist[node1], node1);
-
     while (!minHeap.empty()) {
       const auto [d, u] = minHeap.top();
       minHeap.pop();
