@@ -11,7 +11,6 @@ class Graph {
     const int w = edge[2];
     graph[u].emplace_back(v, w);
   }
-
   int shortestPath(int node1, int node2) {
     vector<int> dist(graph.size(), INT_MAX);
     using P = pair<int, int>;  // (d, u)
