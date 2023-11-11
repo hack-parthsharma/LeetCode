@@ -15,7 +15,6 @@ class Graph {
     vector<int> dist(graph.size(), INT_MAX);
     using P = pair<int, int>;  // (d, u)
     priority_queue<P, vector<P>, greater<>> minHeap;
-
     dist[node1] = 0;
     minHeap.emplace(dist[node1], node1);
 
