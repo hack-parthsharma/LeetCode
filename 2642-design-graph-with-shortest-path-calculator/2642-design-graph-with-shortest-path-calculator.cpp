@@ -30,7 +30,6 @@ class Graph {
     }
     return -1;
   }
-
  private:
   vector<vector<pair<int, int>>> graph;
 };
