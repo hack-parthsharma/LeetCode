@@ -3,7 +3,7 @@ public:
   string sortVowels(string s) {
     string ans;
     vector<char> vowels;
-    for (const char c : s)
+for (const char c : s)
       if (isVowel(c))
         vowels.push_back(c);
     sort(vowels.begin(), vowels.end());
