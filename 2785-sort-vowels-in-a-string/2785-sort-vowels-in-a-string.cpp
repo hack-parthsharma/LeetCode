@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string sortVowels(string s) {
     string ans;
     vector<char> vowels;
