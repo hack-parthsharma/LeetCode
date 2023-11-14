@@ -10,7 +10,8 @@ for (int i = 0; i < s.length(); ++i) {
       first[index] = min(first[index], i);
       last[index] = i;
 }
-    for (int i = 0; i < 26; ++i)
+    
+for (int i = 0; i < 26; ++i)
       if (first[i] < last[i])
         ans += unordered_set<int>(begin(s) + first[i] + 1, begin(s) + last[i])
                    .size();
