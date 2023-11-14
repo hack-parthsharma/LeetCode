@@ -4,7 +4,6 @@ class Solution {
     int ans = 0;
     vector<int> first(26, s.length());
     vector<int> last(26);
-
     for (int i = 0; i < s.length(); ++i) {
       const int index = s[i] - 'a';
       first[index] = min(first[index], i);
