@@ -9,8 +9,9 @@ int m = arr[0] = 1;
                 continue;
         }
         arr[i+1] = arr[i] + 1;
-            m = arr[i+1];
-        }
+        m = arr[i+1];
+        
+    }
         return m;
     }
 };
