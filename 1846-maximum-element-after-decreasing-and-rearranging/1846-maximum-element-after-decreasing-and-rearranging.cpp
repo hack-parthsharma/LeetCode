@@ -12,6 +12,7 @@ int m = arr[0] = 1;
         m = arr[i+1];
         
     }
-        return m;
+        
+return m;
     }
 };
