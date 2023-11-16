@@ -3,7 +3,7 @@ public:
 string findDifferentBinaryString(vector<string>& nums) {
 
 const int bitSize = nums[0].length();
-    const int maxNum = 1 << bitSize;
+const int maxNum = 1 << bitSize;
     unordered_set<int> numsSet;
 
 for (const string& num : nums)
