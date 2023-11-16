@@ -1,7 +1,8 @@
 class Solution {
 public:
 string findDifferentBinaryString(vector<string>& nums) {
-    const int bitSize = nums[0].length();
+
+const int bitSize = nums[0].length();
     const int maxNum = 1 << bitSize;
     unordered_set<int> numsSet;
 
