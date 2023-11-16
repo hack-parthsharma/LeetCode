@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string findDifferentBinaryString(vector<string>& nums) {
     const int bitSize = nums[0].length();
     const int maxNum = 1 << bitSize;
