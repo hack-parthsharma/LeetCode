@@ -7,6 +7,7 @@ public:
 
 for (const string& num : nums)
       numsSet.insert(stoi(num, nullptr, 2));
+
 for (int num = 0; num < maxNum; ++num)
 
 if (!numsSet.count(num))
