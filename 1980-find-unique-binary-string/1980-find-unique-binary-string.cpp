@@ -4,7 +4,6 @@ class Solution {
     const int bitSize = nums[0].length();
     const int maxNum = 1 << bitSize;
     unordered_set<int> numsSet;
-
     for (const string& num : nums)
       numsSet.insert(stoi(num, nullptr, 2));
 
