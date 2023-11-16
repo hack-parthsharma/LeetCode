@@ -11,5 +11,5 @@ for (int num = 0; num < maxNum; ++num)
 if (!numsSet.count(num))
         return std::bitset<16>(num).to_string().substr(16 - bitSize);
 throw;
-  }
+}
 };
