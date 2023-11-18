@@ -9,7 +9,6 @@ public:
             long delta = nums[i] - nums[i-1];
             k -= delta * (i - start);;
             if (k < 0 )  {
-                // remove the first one
                 k += (nums[i] - nums[start]) ;
                 start++;
             }
