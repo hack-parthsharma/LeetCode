@@ -5,7 +5,7 @@ public:
         int m = 1;
         int start = 0;
         int i = 1;
-        for(; i<nums.size(); i++){
+    for(; i<nums.size(); i++){
             long delta = nums[i] - nums[i-1];
             k -= delta * (i - start);;
             if (k < 0 )  {
