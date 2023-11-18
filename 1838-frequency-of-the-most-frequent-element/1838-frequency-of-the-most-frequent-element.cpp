@@ -8,7 +8,7 @@ public:
     for(; i<nums.size(); i++){
             long delta = nums[i] - nums[i-1];
             k -= delta * (i - start);;
-            if (k < 0 )  {
+        if (k < 0 )  {
                 k += (nums[i] - nums[start]) ;
                 start++;
             }
