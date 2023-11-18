@@ -12,8 +12,7 @@ public:
                 k += (nums[i] - nums[start]) ;
                 start++;
         }
-            m = max(m, i - start +1);
-            
+            m = max(m, i - start +1);  
         }
         return m;
 }
