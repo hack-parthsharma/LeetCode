@@ -8,6 +8,6 @@ for (int i = 1; i < nums.length; ++i) {
             }
             ans += cnt;
     }
-        return ans;
+return ans;
     }
 }
