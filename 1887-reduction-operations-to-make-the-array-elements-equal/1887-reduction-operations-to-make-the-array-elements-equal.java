@@ -7,7 +7,7 @@ for (int i = 1; i < nums.length; ++i) {
                 ++cnt;
             }
             ans += cnt;
-        }
+    }
         return ans;
     }
 }
