@@ -20,5 +20,5 @@ for (int i = 0; i < garbage.size(); ++i) {
       characterCount += std::count(begin(s), end(s), c);
     }
 return characterCount + (lastIndex <= 0 ? 0 : prefix[lastIndex - 1]);
-  }
+}
 };
