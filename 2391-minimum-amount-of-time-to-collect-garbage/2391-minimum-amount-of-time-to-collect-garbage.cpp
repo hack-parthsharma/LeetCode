@@ -18,6 +18,6 @@ for (int i = 0; i < garbage.size(); ++i) {
         lastIndex = i;
       characterCount += std::count(begin(s), end(s), c);
     }
-    return characterCount + (lastIndex <= 0 ? 0 : prefix[lastIndex - 1]);
+return characterCount + (lastIndex <= 0 ? 0 : prefix[lastIndex - 1]);
   }
 };
