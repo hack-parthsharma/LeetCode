@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int garbageCollection(vector<string>& garbage, vector<int>& travel) {
     vector<int> prefix(travel.size());
     partial_sum(begin(travel), end(travel), begin(prefix));
@@ -7,7 +7,7 @@ class Solution {
     const int timeP = getTime(garbage, prefix, 'P');
     const int timeG = getTime(garbage, prefix, 'G');
     return timeM + timeP + timeG;
-  }
+}
 
 private:
   int getTime(const vector<string>& garbage, const vector<int>& prefix, char c) {
