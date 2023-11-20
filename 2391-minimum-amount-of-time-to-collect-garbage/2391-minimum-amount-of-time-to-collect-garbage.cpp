@@ -12,7 +12,7 @@ class Solution {
   int getTime(const vector<string>& garbage, const vector<int>& prefix, char c) {
     int characterCount = 0;
     int lastIndex = -1;
-    for (int i = 0; i < garbage.size(); ++i) {
+for (int i = 0; i < garbage.size(); ++i) {
       const string& s = garbage[i];
       if (any_of(begin(s), end(s), [c](const char g) { return g == c; }))
         lastIndex = i;
