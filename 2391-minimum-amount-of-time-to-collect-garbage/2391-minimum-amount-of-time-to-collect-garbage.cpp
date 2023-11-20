@@ -8,10 +8,8 @@ class Solution {
     const int timeG = getTime(garbage, prefix, 'G');
     return timeM + timeP + timeG;
   }
-
  private:
-  int getTime(const vector<string>& garbage, const vector<int>& prefix,
-              char c) {
+  int getTime(const vector<string>& garbage, const vector<int>& prefix, char c) {
     int characterCount = 0;
     int lastIndex = -1;
     for (int i = 0; i < garbage.size(); ++i) {
