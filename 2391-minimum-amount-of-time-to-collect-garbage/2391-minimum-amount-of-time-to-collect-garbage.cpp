@@ -14,7 +14,7 @@ class Solution {
     int lastIndex = -1;
 for (int i = 0; i < garbage.size(); ++i) {
       const string& s = garbage[i];
-      if (any_of(begin(s), end(s), [c](const char g) { return g == c; }))
+    if (any_of(begin(s), end(s), [c](const char g) { return g == c; }))
         lastIndex = i;
       characterCount += std::count(begin(s), end(s), c);
     }
