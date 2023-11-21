@@ -28,7 +28,6 @@ public:
     }
     
     int countNicePairs02(vector<int>& nums) {
-        //   then:  a - a' == b - b'
         int result = 0;
         unordered_map<int, int> stat;
         for(auto& n : nums) {
