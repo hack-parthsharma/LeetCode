@@ -14,7 +14,6 @@ public:
         return countNicePairs01(nums);
     }
     int countNicePairs01(vector<int>& nums) {
-        // suppose n' = rev(n) 
         // define:  a + b' == b + a'
         //   then:  a - a' == b - b'
         
