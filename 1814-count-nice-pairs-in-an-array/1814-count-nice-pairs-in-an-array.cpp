@@ -20,7 +20,6 @@ public:
             
         }
         
-        // then there are  n*(n-1)/2 unique pairs.
         int result = 0;
         for(auto& [n, cnt] : stat) {
             result  =  (result + cnt * (cnt -1l) / 2)  % 1000000007;
