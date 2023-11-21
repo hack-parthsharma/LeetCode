@@ -20,7 +20,6 @@ public:
             
         }
         
-        //if there are n elements  has same value, 
         // then there are  n*(n-1)/2 unique pairs.
         int result = 0;
         for(auto& [n, cnt] : stat) {
