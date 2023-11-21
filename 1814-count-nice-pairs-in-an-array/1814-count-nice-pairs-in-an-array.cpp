@@ -8,7 +8,6 @@ private:
         }
         return x;
     }
-
 public:
     int countNicePairs(vector<int>& nums) {
         return countNicePairs02(nums);
