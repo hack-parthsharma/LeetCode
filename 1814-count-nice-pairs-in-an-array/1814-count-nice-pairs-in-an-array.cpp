@@ -35,8 +35,6 @@ public:
             stat[delta]++;
             result = (result + (stat[delta] - 1l)) % 1000000007 ;
         }
-        
-  
 return result ;
     }
 };
