@@ -7,7 +7,6 @@ class Solution {
 
     unordered_map<int, vector<int>> graph; 
     unordered_set<int> usedBuses;
-
     for (int i = 0; i < routes.size(); ++i)
       for (const int route : routes[i])
         graph[route].push_back(i);
