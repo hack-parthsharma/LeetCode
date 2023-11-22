@@ -10,7 +10,6 @@ class Solution {
     for (int i = 0; i < routes.size(); ++i)
       for (const int route : routes[i])
         graph[route].push_back(i);
-
     int ans = 0;
     queue<int> q{{source}};
 
