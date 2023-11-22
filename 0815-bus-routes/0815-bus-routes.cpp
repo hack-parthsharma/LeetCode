@@ -12,7 +12,6 @@ class Solution {
         graph[route].push_back(i);
     int ans = 0;
     queue<int> q{{source}};
-
     while (!q.empty()) {
       ++ans;
       for (int sz = q.size(); sz > 0; --sz) {
