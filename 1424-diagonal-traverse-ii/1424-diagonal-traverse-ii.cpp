@@ -11,7 +11,6 @@ class Solution {
         keyToNums[key].push_back(nums[i][j]);
         maxKey = max(maxKey, key);
       }
-
     for (int i = 0; i <= maxKey; ++i)
       for (auto it = rbegin(keyToNums[i]); it != rend(keyToNums[i]); ++it)
         ans.push_back(*it);
