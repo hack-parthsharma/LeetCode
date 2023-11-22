@@ -4,7 +4,6 @@ class Solution {
     vector<int> ans;
     unordered_map<int, vector<int>> keyToNums;  // Key = row + col
     int maxKey = 0;
-
     for (int i = 0; i < nums.size(); ++i)
       for (int j = 0; j < nums[i].size(); ++j) {
         const int key = i + j;
