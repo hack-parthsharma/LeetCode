@@ -4,7 +4,6 @@ class Solution:
         for i in range(len(l)):
             answer.append(self.checkCurrentSubarray(nums[l[i]:r[i]+1]))
         return answer
-    
     def checkCurrentSubarray(self, sequence):
         sequence.sort()
         difference = sequence[1] - sequence[0]
