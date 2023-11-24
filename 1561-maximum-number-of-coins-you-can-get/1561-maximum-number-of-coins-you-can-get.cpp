@@ -9,6 +9,7 @@ while (i < j) {
             --j;
             ans += A[j--];
 }
-        return ans;
+
+return ans;
     }
 };
