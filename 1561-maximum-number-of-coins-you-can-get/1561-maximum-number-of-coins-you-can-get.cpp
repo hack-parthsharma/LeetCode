@@ -11,5 +11,5 @@ while (i < j) {
 }
 
 return ans;
-    }
+}
 };
