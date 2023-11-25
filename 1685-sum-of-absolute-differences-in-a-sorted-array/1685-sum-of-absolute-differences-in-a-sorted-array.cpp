@@ -8,7 +8,7 @@ public:
             int v = nums[i] * i - t + s - t - nums[i] * (n - i);
             ans[i] = v;
             t += nums[i];
-        }
+    }
         return ans;
     }
 };
