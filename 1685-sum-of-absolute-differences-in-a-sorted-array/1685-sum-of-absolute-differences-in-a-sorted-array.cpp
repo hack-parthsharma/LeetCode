@@ -10,5 +10,5 @@ public:
             t += nums[i];
     }
         return ans;
-    }
+}
 };
