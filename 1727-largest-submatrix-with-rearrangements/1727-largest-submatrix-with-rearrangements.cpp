@@ -9,7 +9,7 @@ public:
             for(int c = 0; c < cols; c++) {
                 if (matrix[r][c] == 1) height[c]++;
                 else height[c] = 0;
-            }
+        }
             vector<int> h = height;
             sort(h.begin(), h.end());
             for(int i = 0; i < cols; i++) {
