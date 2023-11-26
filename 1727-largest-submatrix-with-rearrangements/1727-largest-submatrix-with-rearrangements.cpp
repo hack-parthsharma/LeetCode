@@ -14,7 +14,7 @@ public:
             sort(h.begin(), h.end());
             for(int i = 0; i < cols; i++) {
                 result = max(result, h[i] * ( cols - i)); 
-            }
+    }
         }
         return result;
     }
