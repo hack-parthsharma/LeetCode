@@ -4,7 +4,6 @@ public:
         int rows = matrix.size();
         int cols = matrix[0].size();
         vector<int> height (cols, 0);
-        
         int result = 0;
         for(int r = 0; r < rows; r++) {
             for(int c = 0; c < cols; c++) {
