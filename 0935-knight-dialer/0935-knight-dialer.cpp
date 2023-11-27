@@ -26,7 +26,6 @@ class Solution {
         }
       dp = move(newDp);
     }
-
     int ans = 0;
     for (const vector<int>& row : dp)
       for (const int a : row)
