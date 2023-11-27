@@ -35,7 +35,6 @@ class Solution {
 
     return ans;
   }
-
  private:
   bool isNotNumericCell(int i, int j) {
     return i == 3 && (j == 0 || j == 2);
