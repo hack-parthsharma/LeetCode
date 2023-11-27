@@ -28,7 +28,6 @@ class Solution {
     }
 
     int ans = 0;
-
     for (const vector<int>& row : dp)
       for (const int a : row)
         ans = (ans + a) % kMod;
