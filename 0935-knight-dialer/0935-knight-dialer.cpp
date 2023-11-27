@@ -7,7 +7,6 @@ class Solution {
 
     vector<vector<int>> dp(4, vector<int>(3, 1));
     dp[3][0] = dp[3][2] = 0;
-
     for (int k = 0; k < n - 1; ++k) {
       vector<vector<int>> newDp(4, vector<int>(3));
       for (int i = 0; i < 4; ++i)
