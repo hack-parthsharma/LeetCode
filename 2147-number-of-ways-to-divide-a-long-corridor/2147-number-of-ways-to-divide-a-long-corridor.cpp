@@ -5,7 +5,6 @@ class Solution {
     long ans = 1;
     int prevSeat = -1;
     int numSeats = 0;
-
     for (int i = 0; i < corridor.length(); ++i) {
       if (corridor[i] == 'S') {
         if (++numSeats > 2 && numSeats & 1)
