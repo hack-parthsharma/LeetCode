@@ -13,6 +13,7 @@ for (int i = 0; i < corridor.length(); ++i) {
         prevSeat = i;
       }
     }
+
 return numSeats > 1 && numSeats % 2 == 0 ? ans : 0;
 }
 };
