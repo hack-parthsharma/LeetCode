@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numberOfWays(string corridor) {
   constexpr int kMod = 1'000'000'007;
     long ans = 1;
