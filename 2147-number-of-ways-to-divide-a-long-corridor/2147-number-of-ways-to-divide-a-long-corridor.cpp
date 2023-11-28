@@ -13,5 +13,5 @@ public:
       }
     }
 return numSeats > 1 && numSeats % 2 == 0 ? ans : 0;
-  }
+}
 };
