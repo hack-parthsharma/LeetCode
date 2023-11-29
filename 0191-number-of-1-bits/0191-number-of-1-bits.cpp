@@ -6,5 +6,5 @@ class Solution {
       if ((n >> i) & 1)
         ++ans;
     return ans;
-  }
+}
 };
