@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int hammingWeight(uint32_t n) {
     int ans = 0;
 
