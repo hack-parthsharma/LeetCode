@@ -2,6 +2,7 @@ class Solution {
 inline unsigned lowbit(unsigned x) { return x & -x; }
 
 public:
+
 int minimumOneBitOperations(int n) {
         
 if (n <= 1) return n;
