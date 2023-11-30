@@ -1,4 +1,5 @@
 class Solution {
+
 inline unsigned lowbit(unsigned x) { return x & -x; }
 
 public:
