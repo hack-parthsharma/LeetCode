@@ -19,4 +19,5 @@ unsigned second = (first >> 1) & n, rest = minimumOneBitOperations(n & ~first & 
 return second ? first + rest : (first << 1) - 1 - rest;
 
 }
+
 };
