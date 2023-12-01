@@ -8,7 +8,8 @@ public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
             w1+=word1[i];
         }
         String ans1=w1;
-        for(int i=0; i<word2.length; i++)
+        
+    for(int i=0; i<word2.length; i++)
         {
             w2+=word2[i];
         }
