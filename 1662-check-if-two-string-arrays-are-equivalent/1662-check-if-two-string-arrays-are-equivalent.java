@@ -10,6 +10,7 @@ String w2="";
         {
             w1+=word1[i];
         }
+
 String ans1=w1;
         
     for(int i=0; i<word2.length; i++)
