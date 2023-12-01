@@ -17,6 +17,7 @@ String ans1=w1;
         {
             w2+=word2[i];
         }
+
 String ans2=w2;
         
     if(w1.equals(w2))
