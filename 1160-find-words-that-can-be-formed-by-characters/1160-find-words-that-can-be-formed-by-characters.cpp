@@ -5,7 +5,6 @@ class Solution {
     vector<int> count(26);
     for (const char c : chars)
       ++count[c - 'a'];
-
     for (const string& word : words) {
       vector<int> tempCount(count);
       for (const char c : word)
