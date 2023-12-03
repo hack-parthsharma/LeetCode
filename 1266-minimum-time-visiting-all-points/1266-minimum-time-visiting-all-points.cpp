@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minTimeToVisitAllPoints(vector<vector<int>>& points) {
     int ans = 0;
     for (int i = 1; i < points.size(); ++i)
