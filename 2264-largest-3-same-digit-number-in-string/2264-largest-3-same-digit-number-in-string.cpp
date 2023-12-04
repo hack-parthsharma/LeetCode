@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string largestGoodInteger(string num) {
     string ans;
 for (int i = 2; i < num.length(); ++i)
