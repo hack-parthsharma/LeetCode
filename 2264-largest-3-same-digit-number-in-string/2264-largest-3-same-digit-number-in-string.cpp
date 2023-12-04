@@ -7,5 +7,5 @@ class Solution {
         ans = max(ans, num.substr(i - 2, 3));
 
     return ans;
-  }
+}
 };
