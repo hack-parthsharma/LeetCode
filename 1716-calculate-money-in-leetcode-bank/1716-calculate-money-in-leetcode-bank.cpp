@@ -18,7 +18,6 @@ public:
         int money = weeks*m + 7 * (weeks-1) * weeks / 2;
         
         // for the rest days
-        // every day needs to add  previous `weeks * 1`, it is  days* weeks
         money += (days*weeks + days*(days+1)/2);
         
         return money;
