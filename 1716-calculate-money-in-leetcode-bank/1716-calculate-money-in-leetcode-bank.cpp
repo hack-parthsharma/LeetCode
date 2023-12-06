@@ -19,7 +19,6 @@ public:
         
         // for the rest days
         // every day needs to add  previous `weeks * 1`, it is  days* weeks
-        // then add from 1 to days
         money += (days*weeks + days*(days+1)/2);
         
         return money;
