@@ -5,7 +5,6 @@ public:
         int days = n % 7;
         
         int m = 1 + 2 + 3 + 4 + 5 + 6 + 7;
-        //     weekn = (n-1)*7 + m
         // So, 
         //     week1 + week2 + week3 + ....+ weekn 
         //   = n*m + 7*(0+1+2+..n-1)
