@@ -5,7 +5,6 @@ public:
         int days = n % 7;
         
         int m = 1 + 2 + 3 + 4 + 5 + 6 + 7;
-        // we know
         //     week1 = 0*7 + m
         //     week2 = 1*7 + m 
         //     week3 = 2*7 + m 
