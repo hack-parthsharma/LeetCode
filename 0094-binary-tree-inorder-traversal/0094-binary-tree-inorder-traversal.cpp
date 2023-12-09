@@ -4,7 +4,7 @@ public:
     vector<int> ans;
     stack<TreeNode*> stack;
 while (root || !stack.empty()) {
-      while (root) {
+     while (root) {
         stack.push(root);
         root = root->left;
       }
