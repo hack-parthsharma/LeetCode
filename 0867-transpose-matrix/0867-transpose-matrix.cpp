@@ -5,7 +5,6 @@ class Solution {
     for (int i = 0; i < A.size(); ++i)
       for (int j = 0; j < A[0].size(); ++j)
         ans[j][i] = A[i][j];
-
     return ans;
   }
 };
