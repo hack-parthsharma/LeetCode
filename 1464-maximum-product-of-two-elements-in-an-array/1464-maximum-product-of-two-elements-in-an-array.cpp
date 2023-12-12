@@ -14,5 +14,5 @@ for (int i=2; i< nums.size(); i++) {
             }
         }
 return (max1-1)*(max2-1);
-    }
+}
 };
