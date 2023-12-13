@@ -12,6 +12,6 @@ int M = A.size(), N = A[0].size(), ans = 0;
                 ans += col == 1;
             }
         }
-        return ans;
+return ans;
     }
 };
