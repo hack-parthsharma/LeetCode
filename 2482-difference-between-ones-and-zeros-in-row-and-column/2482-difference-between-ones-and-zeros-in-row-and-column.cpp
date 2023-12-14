@@ -18,7 +18,6 @@ class Solution {
       for (int j = 0; j < n; ++j)
         ans[i][j] =
             onesRow[i] + onesCol[j] - (n - onesRow[i]) - (m - onesCol[j]);
-
     return ans;
   }
 };
