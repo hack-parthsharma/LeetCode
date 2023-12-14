@@ -14,7 +14,6 @@ class Solution {
         ones += grid[i][j];
       onesCol.push_back(ones);
     }
-
     for (int i = 0; i < m; ++i)
       for (int j = 0; j < n; ++j)
         ans[i][j] =
