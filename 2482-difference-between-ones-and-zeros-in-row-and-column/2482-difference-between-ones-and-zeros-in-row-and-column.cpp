@@ -8,7 +8,6 @@ class Solution {
     vector<int> onesCol;
     for (const vector<int>& row : grid)
       onesRow.push_back(count(begin(row), end(row), 1));
-
     for (int j = 0; j < n; ++j) {
       int ones = 0;
       for (int i = 0; i < m; ++i)
