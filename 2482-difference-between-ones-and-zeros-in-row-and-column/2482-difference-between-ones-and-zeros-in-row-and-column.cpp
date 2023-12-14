@@ -19,5 +19,5 @@ public:
         ans[i][j] =
             onesRow[i] + onesCol[j] - (n - onesRow[i]) - (m - onesCol[j]);
 return ans;
-  }
+}
 };
