@@ -6,7 +6,6 @@ class Solution {
     vector<vector<int>> ans(m, vector<int>(n));
     vector<int> onesRow;
     vector<int> onesCol;
-
     for (const vector<int>& row : grid)
       onesRow.push_back(count(begin(row), end(row), 1));
 
