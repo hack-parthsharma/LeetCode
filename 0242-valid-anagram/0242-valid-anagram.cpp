@@ -10,6 +10,6 @@ for (const char c : s)
 for (const char c : t)
       if (--count[c] < 0)
         return false;
-    return true;
+return true;
 }
 };
