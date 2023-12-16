@@ -1,7 +1,8 @@
 class Solution {
 public:
   bool isAnagram(string s, string t) {
-    if (s.length() != t.length())
+    
+if (s.length() != t.length())
       return false;
     vector<int> count(128);
     for (const char c : s)
