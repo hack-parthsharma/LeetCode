@@ -7,7 +7,7 @@ if (s.length() != t.length())
     vector<int> count(128);
 for (const char c : s)
       ++count[c];
-    for (const char c : t)
+for (const char c : t)
       if (--count[c] < 0)
         return false;
     return true;
