@@ -11,5 +11,5 @@ for (const char c : t)
       if (--count[c] < 0)
         return false;
     return true;
-  }
+}
 };
