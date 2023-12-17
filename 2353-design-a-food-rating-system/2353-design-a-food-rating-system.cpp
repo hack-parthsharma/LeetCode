@@ -8,7 +8,6 @@ class FoodRatings {
       foodToRating[foods[i]] = ratings[i];
     }
   }
-
   void changeRating(string food, int newRating) {
     const string cuisine = foodToCuisine[food];
     const int oldRating = foodToRating[food];
