@@ -18,7 +18,7 @@ void changeRating(string food, int newRating) {
     foodToRating[food] = newRating;
 }
 
-  string highestRated(string cuisine) {
+string highestRated(string cuisine) {
     return begin(cuisineToRatingAndFoods[cuisine])->second;
 }
 
