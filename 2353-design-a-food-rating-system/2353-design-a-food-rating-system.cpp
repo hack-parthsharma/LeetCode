@@ -7,7 +7,7 @@ for (int i = 0; i < foods.size(); ++i) {
       foodToCuisine[foods[i]] = cuisines[i];
       foodToRating[foods[i]] = ratings[i];
     }
-  }
+}
     
   void changeRating(string food, int newRating) {
     const string cuisine = foodToCuisine[food];
