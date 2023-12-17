@@ -1,5 +1,5 @@
 class FoodRatings {
- public:
+public:
   FoodRatings(vector<string>& foods, vector<string>& cuisines,
               vector<int>& ratings) {
     for (int i = 0; i < foods.size(); ++i) {
