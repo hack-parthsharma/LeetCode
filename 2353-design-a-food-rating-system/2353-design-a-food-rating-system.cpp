@@ -16,7 +16,7 @@ for (int i = 0; i < foods.size(); ++i) {
     ratingAndFoods.erase({-oldRating, food});
     ratingAndFoods.insert({-newRating, food});
     foodToRating[food] = newRating;
-  }
+}
 
   string highestRated(string cuisine) {
     return begin(cuisineToRatingAndFoods[cuisine])->second;
