@@ -22,7 +22,7 @@ string highestRated(string cuisine) {
     return begin(cuisineToRatingAndFoods[cuisine])->second;
 }
 
- private:
+private:
   unordered_map<string, set<pair<int, string>>> cuisineToRatingAndFoods;
   unordered_map<string, string> foodToCuisine;
   unordered_map<string, int> foodToRating;
