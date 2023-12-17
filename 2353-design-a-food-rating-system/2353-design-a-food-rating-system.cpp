@@ -2,7 +2,7 @@ class FoodRatings {
 public:
   FoodRatings(vector<string>& foods, vector<string>& cuisines,
               vector<int>& ratings) {
-    for (int i = 0; i < foods.size(); ++i) {
+for (int i = 0; i < foods.size(); ++i) {
       cuisineToRatingAndFoods[cuisines[i]].insert({-ratings[i], foods[i]});
       foodToCuisine[foods[i]] = cuisines[i];
       foodToRating[foods[i]] = ratings[i];
