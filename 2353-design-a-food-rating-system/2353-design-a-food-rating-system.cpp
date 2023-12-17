@@ -20,7 +20,7 @@ for (int i = 0; i < foods.size(); ++i) {
 
   string highestRated(string cuisine) {
     return begin(cuisineToRatingAndFoods[cuisine])->second;
-  }
+}
 
  private:
   unordered_map<string, set<pair<int, string>>> cuisineToRatingAndFoods;
