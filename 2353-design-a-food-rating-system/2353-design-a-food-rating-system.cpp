@@ -9,7 +9,7 @@ for (int i = 0; i < foods.size(); ++i) {
 }
 }
     
-  void changeRating(string food, int newRating) {
+void changeRating(string food, int newRating) {
     const string cuisine = foodToCuisine[food];
     const int oldRating = foodToRating[food];
     auto& ratingAndFoods = cuisineToRatingAndFoods[cuisine];
