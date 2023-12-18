@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxProductDifference(vector<int>& nums) {
     int max1 = INT_MIN;
     int max2 = INT_MIN;
