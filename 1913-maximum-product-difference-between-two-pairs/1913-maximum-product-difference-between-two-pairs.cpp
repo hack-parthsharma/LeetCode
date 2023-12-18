@@ -12,7 +12,7 @@ for (const int num : nums) {
         max1 = num;
       } else if (num > max2) {
         max2 = num;
-      }
+}
       if (num < min1) {
         min2 = min1;
         min1 = num;
