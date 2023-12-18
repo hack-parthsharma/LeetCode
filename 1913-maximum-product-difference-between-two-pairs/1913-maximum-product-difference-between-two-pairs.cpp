@@ -19,7 +19,7 @@ for (const int num : nums) {
       } else if (num < min2) {
         min2 = num;
       }
-    }
+}
 
     return max1 * max2 - min1 * min2;
 }
