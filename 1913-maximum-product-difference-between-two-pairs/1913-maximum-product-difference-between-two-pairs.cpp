@@ -4,7 +4,7 @@ int maxProductDifference(vector<int>& nums) {
 int max1 = INT_MIN;
 int max2 = INT_MIN;
 int min1 = INT_MAX;
-    int min2 = INT_MAX;
+int min2 = INT_MAX;
 
     for (const int num : nums) {
       if (num > max1) {
