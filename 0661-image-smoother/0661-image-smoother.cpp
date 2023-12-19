@@ -1,6 +1,6 @@
 class Solution {
 public:
-  vector<vector<int>> imageSmoother(vector<vector<int>>& M) {
+vector<vector<int>> imageSmoother(vector<vector<int>>& M) {
     const int m = M.size();
     const int n = M[0].size();
     vector<vector<int>> ans(m, vector<int>(n));
