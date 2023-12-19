@@ -6,7 +6,7 @@ const int n = M[0].size();
 vector<vector<int>> ans(m, vector<int>(n));
 
 for (int i = 0; i < m; ++i)
-      for (int j = 0; j < n; ++j) {
+    for (int j = 0; j < n; ++j) {
         int ones = 0;
         int count = 0;
         for (int x = max(0, i - 1); x < min(m, i + 2); ++x)
