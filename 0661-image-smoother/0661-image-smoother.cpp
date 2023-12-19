@@ -15,7 +15,7 @@ for (int i = 0; i < m; ++i)
             ++count;
           }
         ans[i][j] = ones / count;
-      }
+}
 
 return ans;
 }
