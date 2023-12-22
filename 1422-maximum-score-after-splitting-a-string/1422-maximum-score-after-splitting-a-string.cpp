@@ -9,6 +9,6 @@ int one = 0, zero = 0, ans = 0;
             one -= c == '1';
             ans = max(ans, zero + one);
         }
-        return ans;
+return ans;
 }
 };
