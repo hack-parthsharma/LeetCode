@@ -10,5 +10,5 @@ int one = 0, zero = 0, ans = 0;
             ans = max(ans, zero + one);
         }
         return ans;
-    }
+}
 };
