@@ -6,7 +6,7 @@ for (char c : s) one += c == '1';
 for (int i = 0; i < s.size() - 1; ++i) {
 char c  = s[i];
 zero += c == '0';
-            one -= c == '1';
+one -= c == '1';
             ans = max(ans, zero + one);
 }
 return ans;
