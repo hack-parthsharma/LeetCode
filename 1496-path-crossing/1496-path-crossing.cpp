@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool isPathCrossing(string path) {
     set<int> seen;
     seen.insert(0);
