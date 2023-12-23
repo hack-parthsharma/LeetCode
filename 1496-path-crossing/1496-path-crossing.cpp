@@ -28,5 +28,5 @@ class Solution {
     }
 
     return false;
-  }
+}
 };
