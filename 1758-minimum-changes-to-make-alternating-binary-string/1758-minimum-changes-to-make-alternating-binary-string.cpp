@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int minOperations(string s) {
+int minOperations(string s) {
         int start_with_zero = 0;
         int start_with_one = 0;
         for (int i=0; i<s.size(); i++){
