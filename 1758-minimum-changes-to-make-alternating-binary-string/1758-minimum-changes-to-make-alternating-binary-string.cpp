@@ -9,7 +9,7 @@ int start_with_one = 0;
             }else{
                 s[i] == '0' ? start_with_zero++ : start_with_one++;
             }
-        }
+}
 return std::min(start_with_zero, start_with_one);
 }
 };
