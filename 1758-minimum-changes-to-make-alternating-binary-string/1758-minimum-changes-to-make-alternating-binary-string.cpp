@@ -11,5 +11,5 @@ int start_with_one = 0;
             }
         }
         return std::min(start_with_zero, start_with_one);
-    }
+}
 };
