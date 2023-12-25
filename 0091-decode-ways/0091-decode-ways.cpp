@@ -12,10 +12,8 @@ class Solution {
       if (isValid(s[i], s[i + 1]))
         dp[i] += dp[i + 2];
     }
-
     return dp[0];
   }
-
  private:
   bool isValid(char c) {
     return c != '0';
