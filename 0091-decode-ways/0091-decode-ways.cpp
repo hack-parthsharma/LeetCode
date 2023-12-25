@@ -20,7 +20,6 @@ class Solution {
   bool isValid(char c) {
     return c != '0';
   }
-
   bool isValid(char c1, char c2) {
     return c1 == '1' || c1 == '2' && c2 < '7';
   }
