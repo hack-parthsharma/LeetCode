@@ -3,7 +3,7 @@ class Solution {
   int numDecodings(string s) {
     const int n = s.length();
     vector<int> dp(n + 1);
-    dp[n] = 1;  // ""
+    dp[n] = 1;  
     dp[n - 1] = isValid(s[n - 1]);
 
     for (int i = n - 2; i >= 0; --i) {
