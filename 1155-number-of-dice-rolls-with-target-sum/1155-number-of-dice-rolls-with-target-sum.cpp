@@ -4,7 +4,6 @@ class Solution {
     constexpr int kMod = 1'000'000'007;
     vector<int> dp(target + 1);
     dp[0] = 1;
-
     while (n--) {  
       vector<int> newDp(target + 1);
       for (int i = 1; i <= k; ++i)           
