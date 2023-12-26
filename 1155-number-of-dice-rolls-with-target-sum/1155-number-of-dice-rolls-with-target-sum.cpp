@@ -5,7 +5,7 @@ class Solution {
     vector<int> dp(target + 1);
     dp[0] = 1;
 
-    while (n--) {  // N dices
+    while (n--) {  
       vector<int> newDp(target + 1);
       for (int i = 1; i <= k; ++i)           
         for (int t = i; t <= target; ++t) {  
@@ -14,7 +14,6 @@ class Solution {
         }
       dp = move(newDp);
     }
-
     return dp[target];
   }
 };
