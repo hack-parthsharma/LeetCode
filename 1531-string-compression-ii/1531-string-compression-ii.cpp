@@ -31,7 +31,7 @@ public:
     return dp[i][k];
   }
 
-  int getLength(int maxFreq) {  // The length to compress `maxFreq`
+  int getLength(int maxFreq) {  
     if (maxFreq == 1)
       return 1;  // C
     if (maxFreq < 10)
