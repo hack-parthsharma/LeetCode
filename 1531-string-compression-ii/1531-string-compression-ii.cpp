@@ -20,7 +20,6 @@ public:
     int maxFreq = 0;  // Max freq in s[i..j]
     vector<int> count(128);
 
-    // Make chars in s[i..j] be same
     // Keep the char that has max freq in this range and remove other chars
     for (int j = i; j < s.length(); ++j) {
       maxFreq = max(maxFreq, ++count[s[j]]);
