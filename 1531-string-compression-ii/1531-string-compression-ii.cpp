@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int getLengthOfOptimalCompression(string s, int k) {
     dp.resize(s.length(), vector<int>(k + 1, kMax));
     return compression(s, 0, k);
