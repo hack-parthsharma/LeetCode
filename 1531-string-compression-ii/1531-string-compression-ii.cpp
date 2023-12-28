@@ -35,7 +35,7 @@ public:
     if (maxFreq == 1)
       return 1;  
     if (maxFreq < 10)
-      return 2;  // [1-9]c
+      return 2;  
     if (maxFreq < 100)
       return 3;  // [1-9][0-9]c
     return 4;    // [1-9][0-9][0-9]c
