@@ -23,7 +23,7 @@ public:
     for (int j = i; j < s.length(); ++j) {
       maxFreq = max(maxFreq, ++count[s[j]]);
       dp[i][k] = min(  
-          dp[i][k],    //
+          dp[i][k],    
           getLength(maxFreq) +
               compression(s, j + 1, k - (j - i + 1 - maxFreq)));
     }
