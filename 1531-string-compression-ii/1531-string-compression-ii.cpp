@@ -1,7 +1,6 @@
 class Solution {
  public:
   int getLengthOfOptimalCompression(string s, int k) {
-    // dp[i][k] := length of optimal compression of s[i:] w/ at most k deletion
     dp.resize(s.length(), vector<int>(k + 1, kMax));
     return compression(s, 0, k);
   }
