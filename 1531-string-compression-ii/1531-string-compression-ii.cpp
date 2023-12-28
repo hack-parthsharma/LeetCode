@@ -17,7 +17,7 @@ public:
     if (dp[i][k] != kMax)
       return dp[i][k];
 
-    int maxFreq = 0;  // Max freq in s[i..j]
+    int maxFreq = 0;  
     vector<int> count(128);
 
     for (int j = i; j < s.length(); ++j) {
