@@ -33,7 +33,7 @@ public:
 
   int getLength(int maxFreq) {  
     if (maxFreq == 1)
-      return 1;  // C
+      return 1;  
     if (maxFreq < 10)
       return 2;  // [1-9]c
     if (maxFreq < 100)
