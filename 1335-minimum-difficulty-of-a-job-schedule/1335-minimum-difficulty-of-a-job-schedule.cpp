@@ -5,7 +5,6 @@ class Solution {
     if (n < d)
       return -1;
 
-    // dp[i][k] := min difficulty to schedule the first i jobs in k days
     vector<vector<int>> dp(n + 1, vector<int>(d + 1, INT_MAX / 2));
     dp[0][0] = 0;
 
