@@ -10,7 +10,7 @@ class Solution {
 
     for (int i = 1; i <= n; ++i)
       for (int k = 1; k <= d; ++k) {
-        int maxDifficulty = 0;                  // Max(job[j + 1..i])
+        int maxDifficulty = 0;                  
         for (int j = i - 1; j >= k - 1; --j) {  // 1-based
           maxDifficulty = max(maxDifficulty, jobDifficulty[j]);  // 0-based
           dp[i][k] = min(dp[i][k], dp[j][k - 1] + maxDifficulty);
