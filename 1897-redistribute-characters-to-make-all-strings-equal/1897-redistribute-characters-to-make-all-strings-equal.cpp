@@ -12,5 +12,5 @@ vector<int> counter(26, 0);
             if (count % n != 0) return false;
         }
         return true;
-    }
+}
 };
