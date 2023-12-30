@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool makeEqual(vector<string>& words) {
+bool makeEqual(vector<string>& words) {
         vector<int> counter(26, 0);
         for (string word : words) {
             for (char c : word) {
