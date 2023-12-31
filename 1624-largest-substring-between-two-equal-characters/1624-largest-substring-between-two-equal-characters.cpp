@@ -11,6 +11,6 @@ int ans = -1;
             }
             ans = max(ans, last - first - 1);
         }
-        return ans;
+return ans;
 }
 };
