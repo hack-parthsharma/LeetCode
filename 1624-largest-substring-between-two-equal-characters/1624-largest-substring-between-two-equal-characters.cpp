@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int maxLengthBetweenEqualCharacters(string s) {
+int maxLengthBetweenEqualCharacters(string s) {
         int ans = -1;
         for (int i = 'a'; i <= 'z'; ++i) {
             int first = -1, last = -1;
