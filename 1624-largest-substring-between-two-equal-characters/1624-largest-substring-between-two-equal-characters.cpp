@@ -1,7 +1,7 @@
 class Solution {
 public:
 int maxLengthBetweenEqualCharacters(string s) {
-        int ans = -1;
+int ans = -1;
         for (int i = 'a'; i <= 'z'; ++i) {
             int first = -1, last = -1;
             for (int j = 0; j < s.size(); ++j) {
