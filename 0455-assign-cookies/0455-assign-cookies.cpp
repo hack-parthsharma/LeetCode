@@ -7,7 +7,6 @@ class Solution {
     for (int j = 0; j < s.size() && i < g.size(); ++j)
       if (g[i] <= s[j])
         ++i;
-
     return i;
   }
 };
