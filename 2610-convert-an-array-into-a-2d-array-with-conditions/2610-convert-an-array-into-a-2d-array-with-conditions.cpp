@@ -8,7 +8,6 @@ class Solution {
         ans.push_back({});
       ans[count[num] - 1].push_back(num);
     }
-
     return ans;
   }
 };
