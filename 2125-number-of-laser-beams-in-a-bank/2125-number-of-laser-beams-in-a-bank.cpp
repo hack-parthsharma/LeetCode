@@ -10,6 +10,6 @@ class Solution {
         prevOnes = ones;
       }
     }
-    return ans;
+return ans;
 }
 };
