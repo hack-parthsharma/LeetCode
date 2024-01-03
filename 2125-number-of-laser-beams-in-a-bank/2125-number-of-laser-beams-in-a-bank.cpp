@@ -9,7 +9,7 @@ for (const string& row : bank) {
         ans += prevOnes * ones;
         prevOnes = ones;
       }
-    }
+}
 return ans;
 }
 };
