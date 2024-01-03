@@ -11,5 +11,5 @@ class Solution {
       }
     }
     return ans;
-  }
+}
 };
