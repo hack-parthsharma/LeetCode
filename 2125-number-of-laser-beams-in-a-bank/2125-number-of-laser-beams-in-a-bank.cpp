@@ -8,7 +8,7 @@ for (const string& row : bank) {
       if (ones > 0) {
         ans += prevOnes * ones;
         prevOnes = ones;
-      }
+}
 }
 return ans;
 }
