@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numberOfBeams(vector<string>& bank) {
     int ans = 0;
     int prevOnes = 0;
