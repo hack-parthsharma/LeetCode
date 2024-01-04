@@ -12,6 +12,6 @@ public:
             }
             ans += (c + 2) / 3;
         }
-        return ans;
+return ans;
 }
 };
