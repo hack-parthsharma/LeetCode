@@ -9,5 +9,5 @@ vector<int> dp(nums.size(), 1);
         if (nums[j] < nums[i])
           dp[i] = max(dp[i], dp[j] + 1);
     return *max_element(begin(dp), end(dp));
-  }
+}
 };
