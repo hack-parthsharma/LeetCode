@@ -11,7 +11,6 @@ class Solution {
   int jobScheduling(vector<int>& startTime, vector<int>& endTime,
                     vector<int>& profit) {
     const int n = startTime.size();
-    // dp[i] := max profit to schedule jobs[i:]
     dp.resize(n + 1);
     vector<Job> jobs;
 
