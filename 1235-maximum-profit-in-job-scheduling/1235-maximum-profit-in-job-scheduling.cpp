@@ -5,7 +5,6 @@ struct Job {
   Job(int startTime, int endTime, int profit)
       : startTime(startTime), endTime(endTime), profit(profit) {}
 };
-
 class Solution {
  public:
   int jobScheduling(vector<int>& startTime, vector<int>& endTime,
