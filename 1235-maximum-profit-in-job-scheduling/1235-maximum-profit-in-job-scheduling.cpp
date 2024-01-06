@@ -25,7 +25,6 @@ class Solution {
 
     return jobScheduling(jobs, startTime, 0);
   }
-
  private:
   vector<int> dp;
 
