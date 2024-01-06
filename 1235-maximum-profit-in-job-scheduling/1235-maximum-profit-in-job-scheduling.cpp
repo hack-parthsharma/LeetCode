@@ -41,7 +41,6 @@ class Solution {
     const int skip = jobScheduling(jobs, startTime, i + 1);
     return dp[i] = max(pick, skip);
   }
-
   int firstGreaterEqual(const vector<int>& A, int startFrom, int target) {
     return lower_bound(begin(A) + startFrom, end(A), target) - begin(A);
   }
