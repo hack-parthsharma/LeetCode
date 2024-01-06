@@ -21,7 +21,6 @@ class Solution {
       return a.startTime < b.startTime;
     });
 
-    // Will use binary search to find the first available startTime
     for (int i = 0; i < n; ++i)
       startTime[i] = jobs[i].startTime;
 
