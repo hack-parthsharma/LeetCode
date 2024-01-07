@@ -7,7 +7,6 @@ class Solution {
     unordered_map<long, vector<int>> numToIndices;
     for (int i = 0; i < n; ++i)
       numToIndices[nums[i]].push_back(i);
-
     for (int i = 0; i < n; ++i)
       for (int j = 0; j < i; ++j) {
         const long target = nums[j] * 2L - nums[i];
