@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numberOfArithmeticSlices(vector<int>& nums) {
     const int n = nums.size();
     int ans = 0;
