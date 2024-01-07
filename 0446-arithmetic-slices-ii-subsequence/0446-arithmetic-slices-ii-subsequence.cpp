@@ -5,7 +5,6 @@ class Solution {
     int ans = 0;
     vector<vector<int>> dp(n, vector<int>(n));
     unordered_map<long, vector<int>> numToIndices;
-
     for (int i = 0; i < n; ++i)
       numToIndices[nums[i]].push_back(i);
 
