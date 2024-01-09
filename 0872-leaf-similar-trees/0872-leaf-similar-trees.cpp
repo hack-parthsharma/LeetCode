@@ -6,7 +6,7 @@ public:
     dfs(root1, leaves1);
     dfs(root2, leaves2);
     return leaves1 == leaves2;
-  }
+}
   void dfs(TreeNode* root, vector<int>& leaves) {
     if (root == nullptr)
       return;
