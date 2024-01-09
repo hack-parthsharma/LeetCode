@@ -14,7 +14,8 @@ void dfs(TreeNode* root, vector<int>& leaves) {
       leaves.push_back(root->val);
       return;
 }
-    dfs(root->left, leaves);
+    
+dfs(root->left, leaves);
     dfs(root->right, leaves);
 }
 };
