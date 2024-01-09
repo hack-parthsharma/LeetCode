@@ -16,5 +16,5 @@ public:
     }
     dfs(root->left, leaves);
     dfs(root->right, leaves);
-  }
+}
 };
