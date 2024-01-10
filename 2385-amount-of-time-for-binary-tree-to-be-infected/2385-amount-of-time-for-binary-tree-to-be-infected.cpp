@@ -38,7 +38,6 @@ class Solution {
       if (node->right)
         q.emplace(node->right, node->val);
     }
-
     return graph;
   }
 };
