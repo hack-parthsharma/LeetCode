@@ -25,8 +25,7 @@ class Solution {
  private:
   unordered_map<int, vector<int>> getGraph(TreeNode* root) {
     unordered_map<int, vector<int>> graph;
-    queue<pair<TreeNode*, int>> q{{{root, -1}}};  // (node, parent)
-
+    queue<pair<TreeNode*, int>> q{{{root, -1}}};  
     while (!q.empty()) {
       const auto [node, parent] = q.front();
       q.pop();
