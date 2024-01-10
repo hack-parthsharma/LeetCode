@@ -5,7 +5,6 @@ class Solution {
     const unordered_map<int, vector<int>> graph = getGraph(root);
     queue<int> q{{start}};
     unordered_set<int> seen{start};
-
     for (; !q.empty(); ++ans) {
       for (int sz = q.size(); sz > 0; --sz) {
         const int u = q.front();
