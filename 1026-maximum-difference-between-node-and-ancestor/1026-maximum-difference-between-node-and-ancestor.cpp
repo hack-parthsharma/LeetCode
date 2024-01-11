@@ -10,7 +10,7 @@ private:
     mini = min(mini, root->val);
     maxi = max(maxi, root->val);
     const int l = maxAncestorDiff(root->left, mini, maxi);
-    const int r = maxAncestorDiff(root->right, mini, maxi);
+const int r = maxAncestorDiff(root->right, mini, maxi);
 return max({maxi - mini, l, r});
 }
 };
