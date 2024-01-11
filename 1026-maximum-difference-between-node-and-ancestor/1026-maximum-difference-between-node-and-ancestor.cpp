@@ -5,7 +5,6 @@ class Solution {
   }
 
  private:
-  // Returns |max - min| of the tree w/ root
   int maxAncestorDiff(TreeNode* root, int mini, int maxi) {
     if (root == nullptr)
       return 0;
