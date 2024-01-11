@@ -7,7 +7,6 @@ class Solution {
   int maxAncestorDiff(TreeNode* root, int mini, int maxi) {
     if (root == nullptr)
       return 0;
-
     mini = min(mini, root->val);
     maxi = max(maxi, root->val);
     const int l = maxAncestorDiff(root->left, mini, maxi);
