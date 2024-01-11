@@ -12,5 +12,5 @@ public:
     const int l = maxAncestorDiff(root->left, mini, maxi);
     const int r = maxAncestorDiff(root->right, mini, maxi);
     return max({maxi - mini, l, r});
-  }
+}
 };
