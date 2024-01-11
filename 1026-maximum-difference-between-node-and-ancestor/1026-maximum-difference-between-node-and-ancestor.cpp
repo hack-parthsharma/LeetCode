@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxAncestorDiff(TreeNode* root) {
     return maxAncestorDiff(root, root->val, root->val);
   }
