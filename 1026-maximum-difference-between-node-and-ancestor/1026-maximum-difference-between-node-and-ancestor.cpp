@@ -3,7 +3,6 @@ class Solution {
   int maxAncestorDiff(TreeNode* root) {
     return maxAncestorDiff(root, root->val, root->val);
   }
-
  private:
   int maxAncestorDiff(TreeNode* root, int mini, int maxi) {
     if (root == nullptr)
