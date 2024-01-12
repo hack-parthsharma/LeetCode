@@ -7,6 +7,6 @@ for (int i = 0; i < n; ++i) {
 cnt += vowels.count(s[i]);
 cnt -= vowels.count(s[i + n]);
 }
-        return cnt == 0;
+return cnt == 0;
     }
 };
