@@ -8,5 +8,5 @@ cnt += vowels.count(s[i]);
 cnt -= vowels.count(s[i + n]);
 }
 return cnt == 0;
-    }
+}
 };
