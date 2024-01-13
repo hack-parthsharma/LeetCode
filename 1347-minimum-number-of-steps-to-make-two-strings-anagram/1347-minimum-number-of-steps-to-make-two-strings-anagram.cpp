@@ -6,7 +6,6 @@ class Solution {
       ++count[c - 'a'];
     for (const char c : t)
       --count[c - 'a'];
-
     return accumulate(begin(count), end(count), 0,
                       [](int subtotal, int c) { return subtotal + abs(c); }) /
            2;
