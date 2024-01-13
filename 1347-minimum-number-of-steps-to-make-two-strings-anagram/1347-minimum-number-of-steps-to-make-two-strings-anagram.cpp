@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minSteps(string s, string t) {
     vector<int> count(26);
     for (const char c : s)
