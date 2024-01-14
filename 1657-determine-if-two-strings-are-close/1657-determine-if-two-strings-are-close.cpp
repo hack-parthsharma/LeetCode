@@ -8,7 +8,7 @@ unordered_map<char, int> count1;
 unordered_map<char, int> count2;
 string s1;           
 string s2;           
-    vector<int> freqs1;  
+vector<int> freqs1;  
     vector<int> freqs2;  
 
     for (const char c : word1)
