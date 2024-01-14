@@ -11,7 +11,7 @@ string s2;
 vector<int> freqs1;  
 vector<int> freqs2;  
 
-    for (const char c : word1)
+for (const char c : word1)
       ++count1[c];
 
     for (const char c : word2)
