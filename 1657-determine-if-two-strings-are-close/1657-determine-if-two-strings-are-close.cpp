@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool closeStrings(string word1, string word2) {
     if (word1.length() != word2.length())
       return false;
