@@ -5,7 +5,7 @@ public:
       return false;
 
 unordered_map<char, int> count1;
-    unordered_map<char, int> count2;
+unordered_map<char, int> count2;
     string s1;           
     string s2;           
     vector<int> freqs1;  
