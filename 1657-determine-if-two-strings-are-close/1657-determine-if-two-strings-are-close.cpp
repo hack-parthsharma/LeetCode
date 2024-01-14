@@ -22,7 +22,7 @@ for (const auto& [c, freq] : count1) {
       freqs1.push_back(freq);
     }
 
-    for (const auto& [c, freq] : count2) {
+for (const auto& [c, freq] : count2) {
       s2 += c;
       freqs2.push_back(freq);
     }
