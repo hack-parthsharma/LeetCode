@@ -4,7 +4,7 @@ public:
     if (word1.length() != word2.length())
       return false;
 
-    unordered_map<char, int> count1;
+unordered_map<char, int> count1;
     unordered_map<char, int> count2;
     string s1;           
     string s2;           
