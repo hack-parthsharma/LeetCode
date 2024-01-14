@@ -6,7 +6,7 @@ class Solution {
 
     unordered_map<char, int> count1;
     unordered_map<char, int> count2;
-    string s1;           // Unique chars in word1
+    string s1;           
     string s2;           // Unique chars in word2
     vector<int> freqs1;  // Freqs of unique chars in word1
     vector<int> freqs2;  
