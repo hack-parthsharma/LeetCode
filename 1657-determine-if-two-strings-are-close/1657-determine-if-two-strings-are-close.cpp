@@ -14,10 +14,10 @@ vector<int> freqs2;
 for (const char c : word1)
       ++count1[c];
 
-    for (const char c : word2)
+for (const char c : word2)
       ++count2[c];
 
-    for (const auto& [c, freq] : count1) {
+for (const auto& [c, freq] : count1) {
       s1 += c;
       freqs1.push_back(freq);
     }
