@@ -10,7 +10,7 @@ for (const vector<int>& m : matches) {
       if (!lossesCount.count(winner))
         lossesCount[winner] = 0;
       ++lossesCount[loser];
-    }
+}
 
     for (const auto& [player, nLosses] : lossesCount)
       if (nLosses < 2)
