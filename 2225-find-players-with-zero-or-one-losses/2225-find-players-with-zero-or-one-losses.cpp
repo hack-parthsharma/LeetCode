@@ -12,7 +12,7 @@ for (const vector<int>& m : matches) {
       ++lossesCount[loser];
 }
 
-    for (const auto& [player, nLosses] : lossesCount)
+for (const auto& [player, nLosses] : lossesCount)
       if (nLosses < 2)
         ans[nLosses].push_back(player);
 
