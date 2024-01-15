@@ -17,5 +17,5 @@ for (const auto& [player, nLosses] : lossesCount)
         ans[nLosses].push_back(player);
 
     return ans;
-  }
+}
 };
