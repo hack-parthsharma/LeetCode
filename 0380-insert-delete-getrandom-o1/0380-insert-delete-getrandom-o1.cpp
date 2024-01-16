@@ -3,7 +3,6 @@ class RandomizedSet {
   bool insert(int val) {
     if (valToIndex.count(val))
       return false;
-
     valToIndex[val] = vals.size();
     vals.push_back(val);
     return true;
