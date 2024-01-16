@@ -1,5 +1,5 @@
 class RandomizedSet {
- public:
+public:
   bool insert(int val) {
     if (valToIndex.count(val))
       return false;
