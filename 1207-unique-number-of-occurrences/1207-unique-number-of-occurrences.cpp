@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool uniqueOccurrences(vector<int>& arr) {
     unordered_map<int, int> count;
     unordered_set<int> occurrences;
