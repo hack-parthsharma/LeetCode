@@ -7,11 +7,11 @@ unordered_set<int> occurrences;
 for (const int a : arr)
       ++count[a];
 
-    for (const auto& [_, value] : count)
+for (const auto& [_, value] : count)
       if (!occurrences.insert(value).second)
         return false;
 
       
     return true;
-  }
+}
 };
