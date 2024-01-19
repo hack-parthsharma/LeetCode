@@ -1,7 +1,7 @@
 class Solution {
 public:
 int minFallingPathSum(vector<vector<int>>& A) {
-    const int n = A.size();
+const int n = A.size();
 
     for (int i = 1; i < n; ++i)
       for (int j = 0; j < n; ++j) {
