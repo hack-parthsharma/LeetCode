@@ -11,6 +11,6 @@ for (int i = 1; i < n; ++i)
         A[i][j] += mini;
 }
 
-    return *min_element(begin(A[n - 1]), end(A[n - 1]));
+return *min_element(begin(A[n - 1]), end(A[n - 1]));
   }
 };
