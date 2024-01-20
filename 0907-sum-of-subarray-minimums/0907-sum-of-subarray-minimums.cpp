@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int sumSubarrayMins(vector<int>& arr) {
     constexpr int kMod = 1'000'000'007;
     const int n = arr.size();
