@@ -5,7 +5,6 @@ class Solution {
     const int n = arr.size();
     long ans = 0;
     vector<int> prev(n, -1);
-    // next[i] := index k s.t. arr[k] is the next min in arr[i + 1:]
     vector<int> next(n, n);
     stack<int> stack;
 
