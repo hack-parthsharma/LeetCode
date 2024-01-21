@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int rob(vector<int>& nums) {
+int rob(vector<int>& nums) {
     if (nums.empty())
       return 0;
     if (nums.size() == 1)
