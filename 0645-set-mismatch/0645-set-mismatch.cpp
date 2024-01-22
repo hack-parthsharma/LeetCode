@@ -9,7 +9,7 @@ for (const int num : nums)
       else
         nums[abs(num) - 1] *= -1;
 
-    for (int i = 0; i < nums.size(); ++i)
+for (int i = 0; i < nums.size(); ++i)
       if (nums[i] > 0)
         return {duplicate, i + 1};
 
