@@ -1,6 +1,6 @@
 class Solution {
 public:
-  vector<int> findErrorNums(vector<int>& nums) {
+vector<int> findErrorNums(vector<int>& nums) {
     int duplicate;
 
     for (const int num : nums)
