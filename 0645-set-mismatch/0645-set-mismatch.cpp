@@ -3,7 +3,7 @@ public:
 vector<int> findErrorNums(vector<int>& nums) {
 int duplicate;
 
-    for (const int num : nums)
+for (const int num : nums)
       if (nums[abs(num) - 1] < 0)
         duplicate = abs(num);
       else
