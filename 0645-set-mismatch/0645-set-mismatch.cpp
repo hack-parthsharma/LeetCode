@@ -1,7 +1,7 @@
 class Solution {
 public:
 vector<int> findErrorNums(vector<int>& nums) {
-    int duplicate;
+int duplicate;
 
     for (const int num : nums)
       if (nums[abs(num) - 1] < 0)
