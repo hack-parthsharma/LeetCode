@@ -14,5 +14,5 @@ for (int i = 0; i < nums.size(); ++i)
         return {duplicate, i + 1};
 
     throw;
-  }
+}
 };
