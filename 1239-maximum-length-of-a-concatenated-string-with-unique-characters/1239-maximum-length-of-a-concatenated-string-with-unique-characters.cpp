@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxLength(vector<string>& arr) {
     vector<int> masks;
 
