@@ -10,7 +10,7 @@ for (const string& s : arr) {
 }
 
 return dfs(masks, 0, /*usedMask=*/0);
-  }
+}
 
  private:
   int dfs(const vector<int>& masks, int s, int usedMask) {
