@@ -7,7 +7,7 @@ for (const string& s : arr) {
       const int mask = getMask(s);
       if (mask != -1)
         masks.push_back(mask);
-    }
+}
 
     return dfs(masks, 0, /*usedMask=*/0);
   }
