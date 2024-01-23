@@ -3,7 +3,7 @@ public:
 int maxLength(vector<string>& arr) {
     vector<int> masks;
 
-    for (const string& s : arr) {
+for (const string& s : arr) {
       const int mask = getMask(s);
       if (mask != -1)
         masks.push_back(mask);
