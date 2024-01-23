@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int maxLength(vector<string>& arr) {
+int maxLength(vector<string>& arr) {
     vector<int> masks;
 
     for (const string& s : arr) {
