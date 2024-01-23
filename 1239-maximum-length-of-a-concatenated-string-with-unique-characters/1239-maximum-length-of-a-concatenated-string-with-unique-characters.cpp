@@ -9,7 +9,7 @@ for (const string& s : arr) {
         masks.push_back(mask);
 }
 
-    return dfs(masks, 0, /*usedMask=*/0);
+return dfs(masks, 0, /*usedMask=*/0);
   }
 
  private:
