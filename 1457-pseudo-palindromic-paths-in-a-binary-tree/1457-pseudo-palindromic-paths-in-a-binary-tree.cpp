@@ -15,7 +15,7 @@ private:
       if ((path & (path - 1)) == 0)
         ++ans;
       return;
-    }
+}
 
     dfs(root->left, path ^ 1 << root->val, ans);
     dfs(root->right, path ^ 1 << root->val, ans);
