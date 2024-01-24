@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int pseudoPalindromicPaths(TreeNode* root) {
     int ans = 0;
     dfs(root, 0, ans);
