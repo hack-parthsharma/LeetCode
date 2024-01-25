@@ -10,6 +10,6 @@ for (int i = 0; i < m; ++i)
                                ? 1 + dp[i][j]
                                : max(dp[i][j + 1], dp[i + 1][j]);
 
-    return dp[m][n];
-  }
+return dp[m][n];
+}
 };
