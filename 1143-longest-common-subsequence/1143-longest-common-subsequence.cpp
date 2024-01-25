@@ -1,7 +1,7 @@
 class Solution {
 public:
 int longestCommonSubsequence(string text1, string text2) {
-    const int m = text1.length();
+const int m = text1.length();
     const int n = text2.length();
     vector<vector<int>> dp(m + 1, vector<int>(n + 1));
 for (int i = 0; i < m; ++i)
