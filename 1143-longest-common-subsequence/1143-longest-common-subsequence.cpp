@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int longestCommonSubsequence(string text1, string text2) {
     const int m = text1.length();
     const int n = text2.length();
