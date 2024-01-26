@@ -22,7 +22,6 @@ class Solution {
             }
       dp = move(newDp);
     }
-
     return ans;
   }
 };
