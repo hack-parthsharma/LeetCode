@@ -23,5 +23,5 @@ public:
       dp = move(newDp);
     }
 return ans;
-  }
+}
 };
