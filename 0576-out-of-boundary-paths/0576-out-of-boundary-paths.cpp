@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
     constexpr int kMod = 1'000'000'007;
     const vector<int> dirs{0, 1, 0, -1, 0};
