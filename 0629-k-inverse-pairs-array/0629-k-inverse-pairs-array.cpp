@@ -4,7 +4,6 @@ class Solution {
     constexpr int kMod = 1'000'000'007;
     vector<vector<int>> dp(n + 1, vector<int>(k + 1));
 
-    // If there's no inverse pair, the permutation is unique "123..i"
     for (int i = 0; i <= n; ++i)
       dp[i][0] = 1;
 
