@@ -5,7 +5,6 @@ class Solution {
     const int n = matrix[0].size();
     int ans = 0;
 
-    // Transfer each row of matrix to prefix sum
     for (auto& row : matrix)
       for (int i = 1; i < n; ++i)
         row[i] += row[i - 1];
