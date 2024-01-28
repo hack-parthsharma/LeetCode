@@ -9,7 +9,7 @@ for (auto& row : matrix)
       for (int i = 1; i < n; ++i)
         row[i] += row[i - 1];
 
-    for (int baseCol = 0; baseCol < n; ++baseCol)
+for (int baseCol = 0; baseCol < n; ++baseCol)
       for (int j = baseCol; j < n; ++j) {
         unordered_map<int, int> prefixCount{{0, 1}};
         int sum = 0;
@@ -24,6 +24,6 @@ for (auto& row : matrix)
         }
       }
 
-    return ans;
+return ans;
   }
 };
