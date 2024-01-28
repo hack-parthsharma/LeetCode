@@ -1,11 +1,11 @@
 class Solution {
- public:
+public:
   int numSubmatrixSumTarget(vector<vector<int>>& matrix, int target) {
     const int m = matrix.size();
     const int n = matrix[0].size();
     int ans = 0;
 
-    for (auto& row : matrix)
+for (auto& row : matrix)
       for (int i = 1; i < n; ++i)
         row[i] += row[i - 1];
 
