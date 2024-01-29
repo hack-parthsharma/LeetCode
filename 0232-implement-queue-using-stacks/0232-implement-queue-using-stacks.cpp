@@ -2,7 +2,7 @@ class MyQueue {
 public:
   void push(int x) {
     input.push(x);
-  }
+}
 
   int pop() {
     peek();
