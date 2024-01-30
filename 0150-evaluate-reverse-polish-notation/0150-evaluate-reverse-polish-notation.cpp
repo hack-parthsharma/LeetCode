@@ -17,8 +17,8 @@ for (const string& token : tokens)
         stack.push(op.at(token)(a, b));
       } else {
         stack.push(stoi(token));
-      }
+}
 
-    return stack.top();
+return stack.top();
 }
 };
