@@ -8,7 +8,7 @@ public:
         {"*", multiplies<long>()},
         {"/", divides<long>()}};
 
-    for (const string& token : tokens)
+for (const string& token : tokens)
       if (op.count(token)) {
         const long b = stack.top();
         stack.pop();
