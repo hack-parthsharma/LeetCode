@@ -10,5 +10,5 @@ vector<int> dailyTemperatures(vector<int>& temperatures) {
             stk.push(i);
         }
         return ans;
-    }
+}
 };
