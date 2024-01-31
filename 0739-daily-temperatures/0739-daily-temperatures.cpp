@@ -9,6 +9,6 @@ stack<int> stk;
             if (!stk.empty()) ans[i] = stk.top() - i;
             stk.push(i);
         }
-        return ans;
+return ans;
 }
 };
