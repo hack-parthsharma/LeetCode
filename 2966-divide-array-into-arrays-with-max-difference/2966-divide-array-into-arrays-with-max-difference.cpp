@@ -10,7 +10,7 @@ for (int i = 0; i < n; i += 3) {
                 return {};
             }
             ans.emplace_back(t);
-        }
+}
 return ans;
 }
 };
