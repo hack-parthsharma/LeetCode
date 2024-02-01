@@ -12,5 +12,5 @@ vector<vector<int>> divideArray(vector<int>& nums, int k) {
             ans.emplace_back(t);
         }
         return ans;
-    }
+}
 };
