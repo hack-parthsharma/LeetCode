@@ -16,6 +16,6 @@ while (!q.empty()) {
         q.push(num * 10 + lastDigit + 1);
     }
 
-    return ans;
+return ans;
 }
 };
