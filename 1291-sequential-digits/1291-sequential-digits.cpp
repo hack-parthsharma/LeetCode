@@ -14,7 +14,7 @@ while (!q.empty()) {
       const int lastDigit = num % 10;
       if (lastDigit < 9)
         q.push(num * 10 + lastDigit + 1);
-    }
+}
 
 return ans;
 }
