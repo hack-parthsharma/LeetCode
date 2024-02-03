@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int maxSumAfterPartitioning(vector<int>& A, int K) {
+int maxSumAfterPartitioning(vector<int>& A, int K) {
         int N = A.size();
         vector<int> dp(N);
         for (int i = 0; i < N; ++i) {
