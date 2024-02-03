@@ -10,6 +10,6 @@ int maxSumAfterPartitioning(vector<int>& A, int K) {
                 dp[i] = max(dp[i], (j == 0 ? 0 : dp[j - 1]) + maxVal * (i - j + 1));
             }
         }
-        return dp[N - 1];
-    }
+return dp[N - 1];
+}
 };
