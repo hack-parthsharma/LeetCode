@@ -3,7 +3,7 @@ public:
 int maxSumAfterPartitioning(vector<int>& A, int K) {
 int N = A.size();
 vector<int> dp(N);
-        for (int i = 0; i < N; ++i) {
+for (int i = 0; i < N; ++i) {
             int maxVal = 0;
             for (int j = i, k = 0; j >= 0 && k < K; --j, ++k) {
                 maxVal = max(maxVal, A[j]);
