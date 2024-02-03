@@ -8,7 +8,7 @@ for (int i = 0; i < N; ++i) {
     for (int j = i, k = 0; j >= 0 && k < K; --j, ++k) {
                 maxVal = max(maxVal, A[j]);
                 dp[i] = max(dp[i], (j == 0 ? 0 : dp[j - 1]) + maxVal * (i - j + 1));
-            }
+    }
 }
 return dp[N - 1];
 }
