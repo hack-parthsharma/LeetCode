@@ -1,6 +1,6 @@
 class Solution {
 public:
-  string minWindow(string s, string t) {
+string minWindow(string s, string t) {
     vector<int> count(128);
     int required = t.length();
     int bestLeft = -1;
@@ -19,6 +19,6 @@ public:
           ++required;
       }
     }
-    return bestLeft == -1 ? "" : s.substr(bestLeft, minLength);
+return bestLeft == -1 ? "" : s.substr(bestLeft, minLength);
 }
 };
