@@ -20,5 +20,5 @@ public:
       }
     }
     return bestLeft == -1 ? "" : s.substr(bestLeft, minLength);
-  }
+}
 };
