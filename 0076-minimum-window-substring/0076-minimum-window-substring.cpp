@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string minWindow(string s, string t) {
     vector<int> count(128);
     int required = t.length();
