@@ -3,7 +3,7 @@ public:
 int firstUniqChar(string s) {
     vector<int> count(128);
 
-    for (const char c : s)
+for (const char c : s)
       ++count[c];
 
     for (int i = 0; i < s.length(); ++i)
