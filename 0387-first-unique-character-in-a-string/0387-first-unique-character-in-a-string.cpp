@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int firstUniqChar(string s) {
+int firstUniqChar(string s) {
     vector<int> count(128);
 
     for (const char c : s)
