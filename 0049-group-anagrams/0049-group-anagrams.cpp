@@ -10,6 +10,6 @@ for (const string& str : strs) {
 }
 for (const auto& [_, anagrams] : keyToAnagrams)
       ans.push_back(anagrams);
-    return ans;
+return ans;
 }
 };
