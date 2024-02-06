@@ -8,6 +8,7 @@ for (const string& str : strs) {
       sort(begin(key), end(key));
       keyToAnagrams[key].push_back(str);
 }
+
 for (const auto& [_, anagrams] : keyToAnagrams)
       ans.push_back(anagrams);
 return ans;
