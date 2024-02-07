@@ -4,7 +4,6 @@ public:
     const int n = s.length();
     string ans;
     vector<int> count(128);
-    // bucket[i] := stores chars that appear i times in s
     vector<vector<char>> bucket(n + 1);
 
     for (const char c : s)
