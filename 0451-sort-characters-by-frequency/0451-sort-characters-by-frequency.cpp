@@ -6,10 +6,10 @@ string frequencySort(string s) {
     vector<int> count(128);
     vector<vector<char>> bucket(n + 1);
 
-    for (const char c : s)
+for (const char c : s)
       ++count[c];
 
-    for (int i = 0; i < 128; ++i) {
+for (int i = 0; i < 128; ++i) {
       const int freq = count[i];
       if (freq > 0)
         bucket[freq].push_back((char)i);
