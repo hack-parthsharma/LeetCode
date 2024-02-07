@@ -1,6 +1,6 @@
 class Solution {
 public:
-  string frequencySort(string s) {
+string frequencySort(string s) {
     const int n = s.length();
     string ans;
     vector<int> count(128);
