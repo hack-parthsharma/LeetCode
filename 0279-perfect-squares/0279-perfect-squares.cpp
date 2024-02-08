@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int numSquares(int n) {
+int numSquares(int n) {
     vector<int> dp(n + 1, n);  
     dp[0] = 0;  
     dp[1] = 1;  
