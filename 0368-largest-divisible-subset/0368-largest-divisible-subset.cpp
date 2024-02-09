@@ -10,7 +10,6 @@ public:
 
     sort(begin(nums), end(nums));
 
-    // Fix max ending num in the subset first
     for (int i = 0; i < n; ++i) {
       for (int j = i - 1; j >= 0; --j)
         if (nums[i] % nums[j] == 0 && sizeEndsAt[i] < sizeEndsAt[j] + 1) {
