@@ -16,7 +16,6 @@ public:
           sizeEndsAt[i] = sizeEndsAt[j] + 1;
           prevIndex[i] = j;
         }
-      // Find a new subset that has a bigger size
       if (maxSize < sizeEndsAt[i]) {
         maxSize = sizeEndsAt[i];
         index = i;  // Update the best ending index
