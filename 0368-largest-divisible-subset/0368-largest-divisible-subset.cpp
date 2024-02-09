@@ -4,7 +4,6 @@ public:
     const int n = nums.size();
     vector<int> ans;
     vector<int> sizeEndsAt(n, 1);
-    // 1. nums[i] % nums[prevIndex[i]] == 0 and
     // 2. can increase the size of the subset
     vector<int> prevIndex(n, -1);
     int maxSize = 0;  // Max size of the subset
