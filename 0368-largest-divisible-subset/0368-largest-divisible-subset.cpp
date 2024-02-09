@@ -22,7 +22,6 @@ public:
       }
     }
 
-    // Loop from back to front
     while (index != -1) {
       ans.push_back(nums[index]);
       index = prevIndex[index];
