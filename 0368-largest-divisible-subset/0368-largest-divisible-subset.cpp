@@ -3,7 +3,6 @@ public:
   vector<int> largestDivisibleSubset(vector<int>& nums) {
     const int n = nums.size();
     vector<int> ans;
-    // sizeEndsAt[i] := largest size ends at nums[i]
     vector<int> sizeEndsAt(n, 1);
     // prevIndex[i] := the best index s.t.
     // 1. nums[i] % nums[prevIndex[i]] == 0 and
