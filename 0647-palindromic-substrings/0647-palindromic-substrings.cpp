@@ -11,7 +11,7 @@ public:
     return ans;
   }
 
- private:
+private:
   int extendPalindromes(const string& s, int l, int r) {
     int count = 0;
 
