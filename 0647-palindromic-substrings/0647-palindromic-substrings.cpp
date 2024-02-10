@@ -9,7 +9,7 @@ public:
     }
 
     return ans;
-  }
+}
 
 private:
   int extendPalindromes(const string& s, int l, int r) {
