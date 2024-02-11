@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int cherryPickup(vector<vector<int>>& grid) {
     this->m = grid.size();
     this->n = grid[0].size();
