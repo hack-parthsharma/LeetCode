@@ -28,5 +28,5 @@ for (int d1 = -1; d1 <= 1; ++d1)
             dp[x][y1][y2], currRow + cherryPick(grid, x + 1, y1 + d1, y2 + d2));
 
     return dp[x][y1][y2];
-  }
+}
 };
