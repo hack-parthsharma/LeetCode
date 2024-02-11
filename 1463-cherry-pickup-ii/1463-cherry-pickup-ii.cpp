@@ -7,7 +7,7 @@ public:
     return cherryPick(grid, 0, 0, n - 1);
   }
 
- private:
+private:
   int m;
   int n;
   vector<vector<vector<int>>> dp;
