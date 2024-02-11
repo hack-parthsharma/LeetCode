@@ -5,7 +5,7 @@ public:
     this->n = grid[0].size();
     dp.resize(m, vector<vector<int>>(n, vector<int>(n, -1)));
     return cherryPick(grid, 0, 0, n - 1);
-  }
+}
 
 private:
   int m;
