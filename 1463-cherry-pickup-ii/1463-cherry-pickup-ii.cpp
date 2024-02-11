@@ -12,7 +12,7 @@ private:
   int n;
   vector<vector<vector<int>>> dp;
 
-  int cherryPick(const vector<vector<int>>& grid, int x, int y1, int y2) {
+int cherryPick(const vector<vector<int>>& grid, int x, int y1, int y2) {
     if (x == m)
       return 0;
     if (y1 < 0 || y1 == n || y2 < 0 || y2 == n)
