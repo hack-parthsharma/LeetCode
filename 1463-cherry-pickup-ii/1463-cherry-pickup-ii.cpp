@@ -3,7 +3,6 @@ class Solution {
   int cherryPickup(vector<vector<int>>& grid) {
     this->m = grid.size();
     this->n = grid[0].size();
-    // Robot #1 on (x, y1) and Robot #2 on (x, y2) first
     dp.resize(m, vector<vector<int>>(n, vector<int>(n, -1)));
     return cherryPick(grid, 0, 0, n - 1);
   }
