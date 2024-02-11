@@ -20,7 +20,7 @@ private:
     if (dp[x][y1][y2] != -1)
       return dp[x][y1][y2];
 
-    const int currRow = grid[x][y1] + (y1 != y2) * grid[x][y2];
+const int currRow = grid[x][y1] + (y1 != y2) * grid[x][y2];
 
 for (int d1 = -1; d1 <= 1; ++d1)
       for (int d2 = -1; d2 <= 1; ++d2)
