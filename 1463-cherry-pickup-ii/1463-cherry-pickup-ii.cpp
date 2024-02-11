@@ -22,7 +22,7 @@ private:
 
     const int currRow = grid[x][y1] + (y1 != y2) * grid[x][y2];
 
-    for (int d1 = -1; d1 <= 1; ++d1)
+for (int d1 = -1; d1 <= 1; ++d1)
       for (int d2 = -1; d2 <= 1; ++d2)
         dp[x][y1][y2] = max(
             dp[x][y1][y2], currRow + cherryPick(grid, x + 1, y1 + d1, y2 + d2));
