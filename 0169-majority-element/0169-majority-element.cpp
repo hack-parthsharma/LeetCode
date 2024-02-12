@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int majorityElement(vector<int>& nums) {
     int ans;
     int count = 0;
