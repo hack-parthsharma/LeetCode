@@ -15,5 +15,5 @@ private:
       if (s[i++] != s[j--])
         return false;
     return true;
-  }
+}
 };
