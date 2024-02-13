@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string firstPalindrome(vector<string>& words) {
     for (const string& word : words)
       if (isPalindrome(word))
