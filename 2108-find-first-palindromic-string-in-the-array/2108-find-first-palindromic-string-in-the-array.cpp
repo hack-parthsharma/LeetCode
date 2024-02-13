@@ -7,7 +7,7 @@ public:
     return "";
 }
 
- private:
+private:
   bool isPalindrome(const string& s) {
     int i = 0;
     int j = s.length() - 1;
