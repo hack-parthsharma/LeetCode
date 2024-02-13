@@ -5,7 +5,7 @@ public:
       if (isPalindrome(word))
         return word;
     return "";
-  }
+}
 
  private:
   bool isPalindrome(const string& s) {
