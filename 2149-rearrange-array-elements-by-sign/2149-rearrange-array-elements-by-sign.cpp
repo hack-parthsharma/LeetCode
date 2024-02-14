@@ -3,7 +3,7 @@ public:
   vector<int> rearrangeArray(vector<int>& nums) {
   vector<int> ans;
   vector<int> pos;
-    vector<int> neg;
+  vector<int> neg;
 
 for (const int num : nums)
       (num > 0 ? pos : neg).push_back(num);
