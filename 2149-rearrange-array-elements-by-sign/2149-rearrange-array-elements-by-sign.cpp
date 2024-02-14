@@ -13,6 +13,6 @@ for (int i = 0; i < pos.size(); ++i) {
       ans.push_back(neg[i]);
 }
 
-    return ans;
+return ans;
 }
 };
