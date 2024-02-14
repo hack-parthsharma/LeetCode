@@ -5,7 +5,7 @@ public:
     vector<int> pos;
     vector<int> neg;
 
-    for (const int num : nums)
+for (const int num : nums)
       (num > 0 ? pos : neg).push_back(num);
 
     for (int i = 0; i < pos.size(); ++i) {
