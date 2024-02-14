@@ -14,5 +14,5 @@ for (int i = 0; i < pos.size(); ++i) {
 }
 
     return ans;
-  }
+}
 };
