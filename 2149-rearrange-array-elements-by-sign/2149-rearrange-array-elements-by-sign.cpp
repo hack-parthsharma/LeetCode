@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> rearrangeArray(vector<int>& nums) {
     vector<int> ans;
     vector<int> pos;
