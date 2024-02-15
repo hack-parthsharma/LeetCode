@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   long long largestPerimeter(vector<int>& nums) {
     long long prefix = accumulate(nums.begin(), nums.end(), 0LL);
 
