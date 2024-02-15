@@ -7,7 +7,6 @@ class Solution {
 
     for (int i = nums.size() - 1; i >= 2; --i) {
       prefix -= nums[i];
-      // length no longer than nums[i] > nums[i].
       if (prefix > nums[i])
         return prefix + nums[i];
     }
