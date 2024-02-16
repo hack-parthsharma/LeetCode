@@ -3,7 +3,6 @@ class Solution {
   long long maximumSubarraySum(vector<int>& nums, int k) {
     long long ans = LLONG_MIN;
     long long prefix = 0;
-    // {num: the minimum prefix sum excluding `num`}
     unordered_map<int, long long> numToMinPrefix;
 
     for (const int num : nums) {
