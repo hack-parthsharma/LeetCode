@@ -7,7 +7,7 @@ public:
 for (const int a : arr)
       ++count[a];
 
-    for (const auto& [_, freq] : count)
+for (const auto& [_, freq] : count)
       minHeap.push(freq);
 
     while (k > 0)
