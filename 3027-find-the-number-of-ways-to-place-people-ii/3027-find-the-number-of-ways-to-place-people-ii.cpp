@@ -1,6 +1,5 @@
 class Solution {
  public:
-  // Same as 3025. Find the Number of Ways to Place People I
   int numberOfPairs(vector<vector<int>>& points) {
     int ans = 0;
 
