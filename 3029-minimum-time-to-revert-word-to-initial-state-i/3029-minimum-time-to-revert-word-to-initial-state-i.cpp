@@ -11,7 +11,6 @@ class Solution {
     return maxOps;
   }
 
-  // Returns the z array, where z[i] is the length of the longest prefix of
   // s[i..n) which is also a prefix of s.
   //
   // https://cp-algorithms.com/string/z-function.html#implementation
