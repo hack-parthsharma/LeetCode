@@ -10,7 +10,7 @@ for (const int a : arr)
 for (const auto& [_, freq] : count)
       minHeap.push(freq);
 
-    while (k > 0)
+while (k > 0)
       k -= minHeap.top(), minHeap.pop();
 
     return minHeap.size() + (k < 0 ? 1 : 0);
