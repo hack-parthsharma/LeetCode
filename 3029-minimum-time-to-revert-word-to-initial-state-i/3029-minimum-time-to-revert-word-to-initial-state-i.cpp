@@ -1,6 +1,5 @@
 class Solution {
  public:
-  // Same as 3029. Minimum Time to Revert Word to Initial State I
   int minimumTimeToInitialState(string word, int k) {
     const int n = word.length();
     const int maxOps = (n - 1) / k + 1;
