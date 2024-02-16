@@ -10,7 +10,6 @@ class Solution {
     for (const auto& [_, freq] : count)
       minHeap.push(freq);
 
-    // Greedily remove k least frequent nums to have least # of unique integers.
     while (k > 0)
       k -= minHeap.top(), minHeap.pop();
 
