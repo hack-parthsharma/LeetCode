@@ -11,9 +11,7 @@ class Solution {
     return maxOps;
   }
 
-  //
-  // https://cp-algorithms.com/string/z-function.html#implementation
-  vector<int> zFunction(const string& s) {
+    vector<int> zFunction(const string& s) {
     const int n = s.length();
     vector<int> z(n);
     int l = 0;
