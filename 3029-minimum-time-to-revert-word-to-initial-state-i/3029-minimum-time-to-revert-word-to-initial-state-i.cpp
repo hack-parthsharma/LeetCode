@@ -11,7 +11,6 @@ class Solution {
     return maxOps;
   }
 
-  // s[i..n) which is also a prefix of s.
   //
   // https://cp-algorithms.com/string/z-function.html#implementation
   vector<int> zFunction(const string& s) {
