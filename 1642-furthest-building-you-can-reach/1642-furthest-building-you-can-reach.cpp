@@ -5,7 +5,7 @@ public:
 
 for (int i = 1; i < heights.size(); ++i) {
       const int diff = heights[i] - heights[i - 1];
-      if (diff <= 0)
+if (diff <= 0)
         continue;
       minHeap.push(diff);
       if (minHeap.size() > ladders)
