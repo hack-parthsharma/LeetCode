@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int furthestBuilding(vector<int>& heights, int bricks, int ladders) {
     priority_queue<int, vector<int>, greater<int>> minHeap;
 
