@@ -10,7 +10,7 @@ if (diff <= 0)
       minHeap.push(diff);
 if (minHeap.size() > ladders)
         bricks -= minHeap.top(), minHeap.pop();
-      if (bricks < 0)
+if (bricks < 0)
         return i - 1;
     }
 
