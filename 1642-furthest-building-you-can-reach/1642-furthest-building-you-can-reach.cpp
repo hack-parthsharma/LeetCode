@@ -14,6 +14,6 @@ for (int i = 1; i < heights.size(); ++i) {
         return i - 1;
     }
 
-    return heights.size() - 1;
+return heights.size() - 1;
 }
 };
