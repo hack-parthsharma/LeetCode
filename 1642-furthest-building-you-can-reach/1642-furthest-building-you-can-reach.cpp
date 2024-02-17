@@ -12,7 +12,7 @@ if (minHeap.size() > ladders)
         bricks -= minHeap.top(), minHeap.pop();
 if (bricks < 0)
         return i - 1;
-    }
+}
 
 return heights.size() - 1;
 }
