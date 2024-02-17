@@ -8,7 +8,6 @@ class Solution {
       if (diff <= 0)
         continue;
       minHeap.push(diff);
-      // When we run out of ladders, greedily use as less bricks as possible.
       if (minHeap.size() > ladders)
         bricks -= minHeap.top(), minHeap.pop();
       if (bricks < 0)
