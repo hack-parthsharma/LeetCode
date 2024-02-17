@@ -15,5 +15,5 @@ for (int i = 1; i < heights.size(); ++i) {
     }
 
     return heights.size() - 1;
-  }
+}
 };
