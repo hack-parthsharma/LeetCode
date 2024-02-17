@@ -8,7 +8,7 @@ for (int i = 1; i < heights.size(); ++i) {
 if (diff <= 0)
         continue;
       minHeap.push(diff);
-      if (minHeap.size() > ladders)
+if (minHeap.size() > ladders)
         bricks -= minHeap.top(), minHeap.pop();
       if (bricks < 0)
         return i - 1;
