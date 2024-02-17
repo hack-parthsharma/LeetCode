@@ -3,7 +3,7 @@ public:
   int furthestBuilding(vector<int>& heights, int bricks, int ladders) {
     priority_queue<int, vector<int>, greater<int>> minHeap;
 
-    for (int i = 1; i < heights.size(); ++i) {
+for (int i = 1; i < heights.size(); ++i) {
       const int diff = heights[i] - heights[i - 1];
       if (diff <= 0)
         continue;
