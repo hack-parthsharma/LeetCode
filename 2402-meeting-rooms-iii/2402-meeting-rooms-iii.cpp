@@ -23,7 +23,6 @@ class Solution {
     for (const vector<int>& meeting : meetings) {
       const int start = meeting[0];
       const int end = meeting[1];
-      // `availableRoomsIds`
       while (!occupied.empty() && occupied.top().endTime <= start)
         availableRoomIds.push(occupied.top().roomId), occupied.pop();
       if (availableRoomIds.empty()) {
