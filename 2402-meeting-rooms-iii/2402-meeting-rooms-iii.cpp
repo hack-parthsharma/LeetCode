@@ -4,7 +4,7 @@ struct T {
 };
 
 class Solution {
- public:
+public:
   int mostBooked(int n, vector<vector<int>>& meetings) {
     vector<int> count(n);
 
