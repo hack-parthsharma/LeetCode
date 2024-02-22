@@ -3,7 +3,7 @@ public:
   int findJudge(int n, vector<vector<int>>& trust) {
     vector<int> count(n + 1);
 
-    for (vector<int>& t : trust) {
+for (vector<int>& t : trust) {
       --count[t[0]];
       ++count[t[1]];
     }
