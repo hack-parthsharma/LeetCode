@@ -1,6 +1,5 @@
 int MX = 100010;
 vector<int> P[100010];
-
 int init = []() {
     for (int x = 1; x < MX; ++x) {
         int v = x;
