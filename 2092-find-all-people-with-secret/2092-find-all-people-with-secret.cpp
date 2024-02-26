@@ -37,7 +37,7 @@ void unionByRank(int u, int v) {
 };
 
 class Solution {
- public:
+public:
   vector<int> findAllPeople(int n, vector<vector<int>>& meetings,
                             int firstPerson) {
     vector<int> ans;
