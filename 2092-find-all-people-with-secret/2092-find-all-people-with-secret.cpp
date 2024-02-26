@@ -2,7 +2,7 @@ class UnionFind {
 public:
   UnionFind(int n) : id(n), rank(n) {
     iota(begin(id), end(id), 0);
-  }
+}
 
   void unionByRank(int u, int v) {
     const int i = find(u);
