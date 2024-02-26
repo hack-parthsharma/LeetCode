@@ -1,5 +1,5 @@
 class UnionFind {
- public:
+public:
   UnionFind(int n) : id(n), rank(n) {
     iota(begin(id), end(id), 0);
   }
