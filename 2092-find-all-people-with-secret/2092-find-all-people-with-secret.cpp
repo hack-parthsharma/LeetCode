@@ -4,7 +4,7 @@ public:
     iota(begin(id), end(id), 0);
 }
 
-  void unionByRank(int u, int v) {
+void unionByRank(int u, int v) {
     const int i = find(u);
     const int j = find(v);
     if (i == j)
