@@ -4,7 +4,7 @@ public:
     int ans = 0;
     maxDepth(root, ans);
     return ans;
-  }
+}
  private:
   int maxDepth(TreeNode* root, int& ans) {
     if (root == nullptr)
