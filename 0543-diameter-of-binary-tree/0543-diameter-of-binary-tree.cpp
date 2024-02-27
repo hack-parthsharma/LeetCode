@@ -5,7 +5,7 @@ public:
     maxDepth(root, ans);
     return ans;
 }
- private:
+private:
   int maxDepth(TreeNode* root, int& ans) {
     if (root == nullptr)
       return 0;
