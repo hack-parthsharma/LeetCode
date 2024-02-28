@@ -4,7 +4,7 @@ public:
     int ans = 0;
     dfs(root, 1, 0, ans);
     return ans;
-  }
+}
 
  private:
   void dfs(TreeNode* root, int depth, int&& maxDepth, int& ans) {
