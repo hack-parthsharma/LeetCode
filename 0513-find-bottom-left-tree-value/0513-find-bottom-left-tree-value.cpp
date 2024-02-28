@@ -6,7 +6,7 @@ public:
     return ans;
 }
 
- private:
+private:
   void dfs(TreeNode* root, int depth, int&& maxDepth, int& ans) {
     if (root == nullptr)
       return;
