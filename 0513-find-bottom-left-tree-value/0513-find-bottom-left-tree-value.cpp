@@ -13,7 +13,7 @@ private:
     if (depth > maxDepth) {
       maxDepth = depth;
       ans = root->val;
-    }
+}
 
     dfs(root->left, depth + 1, move(maxDepth), ans);
     dfs(root->right, depth + 1, move(maxDepth), ans);
