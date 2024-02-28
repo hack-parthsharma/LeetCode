@@ -17,5 +17,5 @@ private:
 
     dfs(root->left, depth + 1, move(maxDepth), ans);
     dfs(root->right, depth + 1, move(maxDepth), ans);
-  }
+}
 };
