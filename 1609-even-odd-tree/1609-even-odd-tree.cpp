@@ -21,5 +21,5 @@ public:
             ++lv;
         }
         return true;
-    }
+}
 };
