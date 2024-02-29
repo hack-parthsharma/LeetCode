@@ -4,7 +4,7 @@ public:
         queue<TreeNode*> q;
         q.push(root);
         int lv = 0;
-        while (q.size()) {
+while (q.size()) {
             int cnt = q.size(), prev = lv % 2 == 0 ? 0 : INT_MAX;
             while (cnt--) {
                 auto node = q.front();
