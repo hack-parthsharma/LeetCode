@@ -6,7 +6,7 @@ public:
         int lv = 0;
 while (q.size()) {
             int cnt = q.size(), prev = lv % 2 == 0 ? 0 : INT_MAX;
-            while (cnt--) {
+while (cnt--) {
                 auto node = q.front();
                 q.pop();
                 if (lv % 2 == 0) {
