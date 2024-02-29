@@ -9,7 +9,7 @@ while (q.size()) {
 while (cnt--) {
                 auto node = q.front();
                 q.pop();
-                if (lv % 2 == 0) {
+if (lv % 2 == 0) {
                     if (node->val % 2 == 0 || node->val <= prev) return false;
                 } else {
                     if (node->val % 2 || node->val >= prev) return false;
