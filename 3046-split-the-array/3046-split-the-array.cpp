@@ -8,5 +8,5 @@ public:
       ++count[num];
 
     return ranges::all_of(count, [](int freq) { return freq <= 2; });
-  }
+}
 };
