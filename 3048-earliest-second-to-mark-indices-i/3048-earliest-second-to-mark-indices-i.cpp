@@ -29,7 +29,6 @@ class Solution {
     for (int i = 0; i < second; ++i) {
       const int index = changeIndices[i] - 1;  // Convert to 0-indexed.
       if (i == indexToLastSecond[index]) {
-        // Reach the last occurrence of the number.
         if (nums[index] > decrement)
           return false;
         decrement -= nums[index];
