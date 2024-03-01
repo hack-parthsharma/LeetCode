@@ -27,7 +27,7 @@ class Solution {
       indexToLastSecond[changeIndices[i] - 1] = i;
 
     for (int i = 0; i < second; ++i) {
-      const int index = changeIndices[i] - 1;  // Convert to 0-indexed.
+      const int index = changeIndices[i] - 1;  
       if (i == indexToLastSecond[index]) {
         if (nums[index] > decrement)
           return false;
