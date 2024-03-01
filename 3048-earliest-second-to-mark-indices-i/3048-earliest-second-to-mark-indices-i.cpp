@@ -17,7 +17,6 @@ class Solution {
   }
 
  private:
-  // Returns true if all indices of `nums` can be marked within `second`.
   bool canMark(const vector<int>& nums, const vector<int>& changeIndices,
                int second) {
     int numMarked = 0;
