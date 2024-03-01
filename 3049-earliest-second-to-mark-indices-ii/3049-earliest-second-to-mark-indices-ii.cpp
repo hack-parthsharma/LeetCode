@@ -73,7 +73,6 @@ class Solution {
     unordered_map<int, int> secondToIndex;
     for (int zeroIndexedSecond = 0; zeroIndexedSecond < changeIndices.size();
          ++zeroIndexedSecond) {
-      // Convert to 0-indexed.
       const int index = changeIndices[zeroIndexedSecond] - 1;
       if (nums[index] > 0 && !indexToFirstSecond.count(index))
         indexToFirstSecond[index] = zeroIndexedSecond;
