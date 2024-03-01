@@ -21,7 +21,6 @@ class Solution {
                int second) {
     int numMarked = 0;
     int decrement = 0;
-    // indexToLastSecond[i] := the last second to mark the index i
     vector<int> indexToLastSecond(nums.size(), -1);
 
     for (int i = 0; i < second; ++i)
