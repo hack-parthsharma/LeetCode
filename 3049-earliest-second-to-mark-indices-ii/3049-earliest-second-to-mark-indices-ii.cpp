@@ -69,7 +69,6 @@ class Solution {
 
   unordered_map<int, int> getSecondToIndex(const vector<int>& nums,
                                            const vector<int>& changeIndices) {
-    // {the `index` of nums: the earliest second to zero out nums[index]}
     unordered_map<int, int> indexToFirstSecond;
     unordered_map<int, int> secondToIndex;
     for (int zeroIndexedSecond = 0; zeroIndexedSecond < changeIndices.size();
