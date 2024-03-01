@@ -32,7 +32,6 @@ class Solution {
         // Reach the last occurrence of the number.
         // So, the current second will be used to mark the index.
         if (nums[index] > decrement)
-          // The decrement is less than the number to be marked.
           return false;
         decrement -= nums[index];
         ++numMarked;
