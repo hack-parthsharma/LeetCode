@@ -5,7 +5,7 @@ public:
         string ans;
         for (int i = 1; i < cnt; ++i) {
             ans.push_back('1');
-        }
+    }
 for (int i = 0; i < s.size() - cnt; ++i) {
             ans.push_back('0');
         }
