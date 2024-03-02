@@ -1,7 +1,7 @@
 class Solution {
 public:
   vector<int> sortedSquares(vector<int>& nums) {
-    const int n = nums.size();
+const int n = nums.size();
     vector<int> ans(n);
     int i = n - 1;
 
@@ -12,5 +12,5 @@ public:
         ans[i--] = nums[r] * nums[r--];
 
     return ans;
-  }
+}
 };
