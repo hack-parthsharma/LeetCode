@@ -4,7 +4,7 @@ class Solution {
     int ans = 0;
     int score = 0;
     int i = 0;                  
-    int j = tokens.size() - 1;  // Index of largest token
+    int j = tokens.size() - 1;  
 
     sort(begin(tokens), end(tokens));
 
