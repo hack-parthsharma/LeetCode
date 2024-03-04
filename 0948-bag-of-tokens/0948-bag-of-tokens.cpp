@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int bagOfTokensScore(vector<int>& tokens, int power) {
     int ans = 0;
     int score = 0;
@@ -8,7 +8,7 @@ class Solution {
 
     sort(begin(tokens), end(tokens));
 
-    while (i <= j && (power >= tokens[i] || score)) {
+while (i <= j && (power >= tokens[i] || score)) {
       while (i <= j && power >= tokens[i]) {
         power -= tokens[i++];
         ++score;
