@@ -15,12 +15,11 @@ class Solution {
       }
       ans = max(ans, score);
       if (i <= j && score) {
-        // Play the largest face down
         power += tokens[j--];
         --score;
       }
     }
 
     return ans;
-  }
+}
 };
