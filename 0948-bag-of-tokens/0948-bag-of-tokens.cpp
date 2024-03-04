@@ -10,7 +10,6 @@ class Solution {
 
     while (i <= j && (power >= tokens[i] || score)) {
       while (i <= j && power >= tokens[i]) {
-        // Play the smallest face up
         power -= tokens[i++];
         ++score;
       }
