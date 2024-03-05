@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int minimumLength(string s) {
+int minimumLength(string s) {
         char ch; 
         int left=0, right=s.size()-1;
         
