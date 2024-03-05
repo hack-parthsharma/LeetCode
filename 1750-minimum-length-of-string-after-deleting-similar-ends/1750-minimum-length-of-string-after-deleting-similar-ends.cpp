@@ -8,7 +8,7 @@ while(left < right) {
             ch = s[left];
             if (s[right] != ch) break;
             
-            while (s[left] == ch) left++;
+while (s[left] == ch) left++;
     
             if (left >= right ) return 0;
             while (s[right] == ch) right--;
