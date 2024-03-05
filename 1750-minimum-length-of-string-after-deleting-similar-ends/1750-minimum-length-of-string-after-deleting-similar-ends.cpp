@@ -15,6 +15,5 @@ while(left < right) {
 }
         
         return right - left + 1;
-        
-    }
+}
 };
