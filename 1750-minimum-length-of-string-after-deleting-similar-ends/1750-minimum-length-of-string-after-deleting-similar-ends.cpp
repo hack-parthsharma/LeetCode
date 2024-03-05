@@ -6,7 +6,7 @@ int left=0, right=s.size()-1;
         
 while(left < right) {
             ch = s[left];
-            if (s[right] != ch) break;
+    if (s[right] != ch) break;
             
 while (s[left] == ch) left++;
     
