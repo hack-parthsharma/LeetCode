@@ -12,8 +12,7 @@ while(left < right) {
     
             if (left >= right ) return 0;
             while (s[right] == ch) right--;
-}
-        
+}       
 return right - left + 1;
 }
 };
