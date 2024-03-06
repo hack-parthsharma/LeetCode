@@ -3,7 +3,7 @@ public:
 
 bool hasCycle(ListNode* head) {
     
-    ListNode* slow = head;
+ListNode* slow = head;
     
     ListNode* fast = head;
    
