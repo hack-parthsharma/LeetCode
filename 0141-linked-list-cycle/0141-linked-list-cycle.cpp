@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   
     bool hasCycle(ListNode* head) {
     
