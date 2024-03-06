@@ -14,6 +14,6 @@ while (fast && fast->next) {
         return true;
 }
     
-      return false;
+return false;
 }
 };
