@@ -7,7 +7,7 @@ public:
 for (const int num : nums)
       ++count[num];
 
-    const int maxFreq = ranges::max(count);
+const int maxFreq = ranges::max(count);
     return ranges::count(count, maxFreq) * maxFreq;
   }
 };
