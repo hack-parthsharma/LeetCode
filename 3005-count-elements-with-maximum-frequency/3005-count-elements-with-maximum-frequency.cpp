@@ -8,6 +8,6 @@ for (const int num : nums)
       ++count[num];
 
 const int maxFreq = ranges::max(count);
-    return ranges::count(count, maxFreq) * maxFreq;
+return ranges::count(count, maxFreq) * maxFreq;
   }
 };
