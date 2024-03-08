@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxFrequencyElements(vector<int>& nums) {
     constexpr int kMax = 100;
     vector<int> count(kMax + 1);
