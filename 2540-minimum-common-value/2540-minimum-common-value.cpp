@@ -11,7 +11,7 @@ while (i < nums1.size() && j < nums2.size()) {
         ++i;
       else
         ++j;
-    }
+}
 
     return -1;
 }
