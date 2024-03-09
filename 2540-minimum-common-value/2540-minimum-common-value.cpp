@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int getCommon(vector<int>& nums1, vector<int>& nums2) {
     int i = 0;  
     int j = 0;  
