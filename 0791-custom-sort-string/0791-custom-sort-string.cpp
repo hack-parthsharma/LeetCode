@@ -16,5 +16,5 @@ for (char c = 'a'; c <= 'z'; ++c)
         ans += c;
 
 return ans;
-  }
+}
 };
