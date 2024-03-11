@@ -15,6 +15,6 @@ for (char c = 'a'; c <= 'z'; ++c)
       while (count[c]-- > 0)
         ans += c;
 
-    return ans;
+return ans;
   }
 };
