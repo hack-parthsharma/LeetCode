@@ -4,7 +4,7 @@ public:
     string ans;
     vector<int> count(128);
 
-    for (const char c : s)
+for (const char c : s)
       ++count[c];
 
     for (const char c : order)
