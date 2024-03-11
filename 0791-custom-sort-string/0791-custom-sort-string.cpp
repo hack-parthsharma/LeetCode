@@ -2,7 +2,7 @@ class Solution {
 public:
   string customSortString(string order, string s) {
   string ans;
-    vector<int> count(128);
+  vector<int> count(128);
 
 for (const char c : s)
       ++count[c];
