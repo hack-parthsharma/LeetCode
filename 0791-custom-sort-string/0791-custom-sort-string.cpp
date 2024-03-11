@@ -11,7 +11,7 @@ for (const char c : order)
       while (count[c]-- > 0)
         ans += c;
 
-    for (char c = 'a'; c <= 'z'; ++c)
+for (char c = 'a'; c <= 'z'; ++c)
       while (count[c]-- > 0)
         ans += c;
 
