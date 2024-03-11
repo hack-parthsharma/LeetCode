@@ -1,7 +1,7 @@
 class Solution {
 public:
   string customSortString(string order, string s) {
-    string ans;
+  string ans;
     vector<int> count(128);
 
 for (const char c : s)
