@@ -9,7 +9,7 @@ public:
 for (; head; head = head->next) {
       prefix += head->val;
       prefixToNode[prefix] = head;
-    }
+}
 
     prefix = 0;
 
