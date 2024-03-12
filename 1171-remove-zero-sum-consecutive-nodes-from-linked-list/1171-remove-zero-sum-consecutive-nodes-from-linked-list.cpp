@@ -6,7 +6,7 @@ public:
     unordered_map<int, ListNode*> prefixToNode;
     prefixToNode[0] = &dummy;
 
-    for (; head; head = head->next) {
+for (; head; head = head->next) {
       prefix += head->val;
       prefixToNode[prefix] = head;
     }
