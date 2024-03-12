@@ -1,6 +1,6 @@
 class Solution {
 public:
-  ListNode* removeZeroSumSublists(ListNode* head) {
+ListNode* removeZeroSumSublists(ListNode* head) {
     ListNode dummy(0, head);
     int prefix = 0;
     unordered_map<int, ListNode*> prefixToNode;
