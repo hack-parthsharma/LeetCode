@@ -18,6 +18,6 @@ for (head = &dummy; head; head = head->next) {
       head->next = prefixToNode[prefix]->next;
 }
 
-    return dummy.next;
-  }
+return dummy.next;
+}
 };
