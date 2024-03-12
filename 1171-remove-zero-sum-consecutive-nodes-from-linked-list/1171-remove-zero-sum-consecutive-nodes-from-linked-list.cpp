@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   ListNode* removeZeroSumSublists(ListNode* head) {
     ListNode dummy(0, head);
     int prefix = 0;
