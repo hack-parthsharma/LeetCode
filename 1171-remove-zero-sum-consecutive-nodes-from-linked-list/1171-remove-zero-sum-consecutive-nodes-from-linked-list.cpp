@@ -13,7 +13,7 @@ for (; head; head = head->next) {
 
     prefix = 0;
 
-    for (head = &dummy; head; head = head->next) {
+for (head = &dummy; head; head = head->next) {
       prefix += head->val;
       head->next = prefixToNode[prefix]->next;
     }
