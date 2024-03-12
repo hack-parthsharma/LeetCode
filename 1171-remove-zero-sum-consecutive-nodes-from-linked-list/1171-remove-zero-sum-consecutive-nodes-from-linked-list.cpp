@@ -5,7 +5,7 @@ ListNode* removeZeroSumSublists(ListNode* head) {
 ListNode dummy(0, head);
 int prefix = 0;
 unordered_map<int, ListNode*> prefixToNode;
-    prefixToNode[0] = &dummy;
+prefixToNode[0] = &dummy;
 
 for (; head; head = head->next) {
       prefix += head->val;
