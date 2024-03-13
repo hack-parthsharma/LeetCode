@@ -1,7 +1,6 @@
 class Solution {
  public:
   int pivotInteger(int n) {
-    // (1 + x) * x / 2 = (x + n) * (n - x + 1) / 2
     //         x + x^2 = nx - x^2 + x + n^2 - nx + n
     //         2 * x^2 = n^2 + n
     //               x = sqrt((n^2 + n) / 2)
