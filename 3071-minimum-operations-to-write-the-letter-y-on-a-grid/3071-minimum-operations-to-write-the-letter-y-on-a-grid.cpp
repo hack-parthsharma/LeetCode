@@ -13,8 +13,6 @@ class Solution {
     int operations = 0;
     for (int i = 0; i < n; ++i)
       for (int j = 0; j < n; ++j)
-        // For the 'Y' pattern, before the midpoint, check the diagonal and
-        // anti-diagonal. After the midpoint, check the middle column.
         if ((i < mid && (i == j || i + j == n - 1)) || (i >= mid && j == mid)) {
           if (grid[i][j] != a)
             ++operations;
