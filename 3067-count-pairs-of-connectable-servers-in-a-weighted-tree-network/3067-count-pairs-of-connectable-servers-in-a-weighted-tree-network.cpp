@@ -35,7 +35,6 @@ class Solution {
     return pairs;
   }
 
-  // (dist % signalSpeed == 0).
   int dfs(const vector<vector<pair<int, int>>>& tree, int u, int prev, int dist,
           int signalSpeed) {
     int count = 0;
