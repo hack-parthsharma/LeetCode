@@ -21,7 +21,6 @@ class Solution {
   }
 
  private:
-  // Returns the number of server pairs that are connectable through the server
   // `u`.
   int connectablePairsRootedAt(const vector<vector<pair<int, int>>>& tree,
                                int u, int signalSpeed) {
