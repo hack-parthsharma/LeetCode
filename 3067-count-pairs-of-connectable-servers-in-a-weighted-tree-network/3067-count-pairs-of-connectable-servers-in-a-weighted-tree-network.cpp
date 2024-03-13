@@ -35,7 +35,6 @@ class Solution {
     return pairs;
   }
 
-  // Returns the number of servers that are connectable throught the server `u`
   // (dist % signalSpeed == 0).
   int dfs(const vector<vector<pair<int, int>>>& tree, int u, int prev, int dist,
           int signalSpeed) {
