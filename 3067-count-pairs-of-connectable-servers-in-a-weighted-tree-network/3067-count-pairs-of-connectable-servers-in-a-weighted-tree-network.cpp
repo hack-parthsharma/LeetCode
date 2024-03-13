@@ -21,7 +21,6 @@ class Solution {
   }
 
  private:
-  // `u`.
   int connectablePairsRootedAt(const vector<vector<pair<int, int>>>& tree,
                                int u, int signalSpeed) {
     int pairs = 0;
