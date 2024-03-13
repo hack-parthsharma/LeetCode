@@ -7,7 +7,6 @@ class Solution {
   }
 
  private:
-  // Returns the number of operations to turn Y into a and non-Y into b.
   int getOperations(const vector<vector<int>>& grid, int a, int b) {
     const int n = grid.size();
     const int mid = n / 2;
