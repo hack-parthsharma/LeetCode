@@ -10,7 +10,7 @@ for (int num : nums) {
       if (const auto it = count.find(prefix - goal); it != cend(count))
         ans += it->second;
       ++count[prefix];
-    }
+}
 
     return ans;
   }
