@@ -13,5 +13,5 @@ for (int num : nums) {
 }
 
 return ans;
-  }
+}
 };
