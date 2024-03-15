@@ -14,7 +14,7 @@ for (int i = n - 2; i >= 0; --i)
 
 for (int i = 0; i < n; ++i)
       ans[i] = prefix[i] * suffix[i];
-    return ans;
+return ans;
 
 }
 };
