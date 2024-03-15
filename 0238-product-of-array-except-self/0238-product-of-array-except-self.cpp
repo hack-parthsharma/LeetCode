@@ -1,6 +1,6 @@
 class Solution {
 public:
-  vector<int> productExceptSelf(vector<int>& nums) {
+    vector<int> productExceptSelf(vector<int>& nums) {
     const int n = nums.size();
     vector<int> ans(n);        
     vector<int> prefix(n, 1);  
