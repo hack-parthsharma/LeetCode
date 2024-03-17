@@ -17,7 +17,7 @@ while (i < n && intervals[i][0] <= newInterval[1]) {
 
     ans.push_back(newInterval);
 
-    while (i < n)
+while (i < n)
       ans.push_back(intervals[i++]);
 
     return ans;
