@@ -6,7 +6,7 @@ public:
     vector<vector<int>> ans;
     int i = 0;
 
-    while (i < n && intervals[i][1] < newInterval[0])
+while (i < n && intervals[i][1] < newInterval[0])
       ans.push_back(intervals[i++]);
 
     while (i < n && intervals[i][0] <= newInterval[1]) {
