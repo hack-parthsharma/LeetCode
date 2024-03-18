@@ -11,5 +11,5 @@ public:
         ++ans;
       }
     return ans;
-  }
+}
 };
