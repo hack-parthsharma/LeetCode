@@ -11,7 +11,6 @@ class Solution {
 
     const int maxFreq = *max_element(begin(count), end(count));
     const int maxFreqTaskOccupy = (maxFreq - 1) * (n + 1);
-    // Get # of tasks with same frequency as maxFreq,
     // we'll append them after maxFreqTaskOccupy
     const int nMaxFreq = std::count(begin(count), end(count), maxFreq);
     // Max(
