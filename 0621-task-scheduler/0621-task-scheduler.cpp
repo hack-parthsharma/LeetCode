@@ -4,7 +4,7 @@ public:
     if (n == 0)
       return tasks.size();
 
-    vector<int> count(26);
+vector<int> count(26);
 
     for (const char task : tasks)
       ++count[task - 'A'];
