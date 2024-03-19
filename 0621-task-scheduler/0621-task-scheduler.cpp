@@ -6,7 +6,7 @@ public:
 
 vector<int> count(26);
 
-    for (const char task : tasks)
+for (const char task : tasks)
       ++count[task - 'A'];
 
     const int maxFreq = *max_element(begin(count), end(count));
