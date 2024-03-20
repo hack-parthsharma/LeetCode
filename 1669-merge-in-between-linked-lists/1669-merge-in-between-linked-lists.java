@@ -1,5 +1,5 @@
 class Solution {
-    public ListNode mergeInBetween(
+public ListNode mergeInBetween(
             ListNode list1, int a, int b, ListNode list2) {
         ListNode current = list1;
         for (int i = 1; i < a; i++) {
