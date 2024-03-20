@@ -7,7 +7,6 @@ class Solution {
         }
         ListNode toRemove = current.next;
         current.next = list2;
-        // 4. Find the first node to add at the end of list 2
         for (int i = 0; i < b - a + 1; i++) {
             toRemove = toRemove.next;
         }
