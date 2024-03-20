@@ -17,7 +17,7 @@ for (int i = 0; i < b - a + 1; i++) {
     
     ListNode lastNode(ListNode node) {
         ListNode current = node;
-        while(current.next != null) {
+while(current.next != null) {
             current = current.next;
         }
         return current;
