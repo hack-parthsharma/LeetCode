@@ -11,7 +11,6 @@ class Solution {
             toRemove = toRemove.next;
         }
         ListNode lastNode = lastNode(list2);
-        // 6. De-reference last node to the end of list 1
         lastNode.next = toRemove;
         return list1;
     }
