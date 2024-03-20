@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    //           The cost is 2.
     // Action 2: Swap a '1' towards him and collect it.
     //           The cost equals the distance to the '1'.
     //
