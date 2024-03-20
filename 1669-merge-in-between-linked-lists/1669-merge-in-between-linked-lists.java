@@ -20,6 +20,6 @@ for (int i = 0; i < b - a + 1; i++) {
 while(current.next != null) {
             current = current.next;
         }
-        return current;
+return current;
 }
 }
