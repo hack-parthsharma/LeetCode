@@ -4,7 +4,7 @@ public ListNode mergeInBetween(
         ListNode current = list1;
 for (int i = 1; i < a; i++) {
             current = current.next;
-        }
+}
         ListNode toRemove = current.next;
         current.next = list2;
         for (int i = 0; i < b - a + 1; i++) {
