@@ -5,7 +5,6 @@ class Solution {
         for (int i = 1; i < a; i++) {
             current = current.next;
         }
-        // 2. Remove the first node to remove
         ListNode toRemove = current.next;
         // 3. De-reference to list2
         current.next = list2;
