@@ -25,7 +25,7 @@ class Solution {
     // should be replaced with Action 1.
     constexpr int kNumOfIndicesWithinOneDistance = 3;
     long long ans = LLONG_MAX;
-    vector<int> oneIndices;       // the indices of 1s
+    vector<int> oneIndices;       
     vector<long long> prefix{0};  // the accumulated indices of 1s
 
     for (int i = 0; i < nums.size(); ++i)
