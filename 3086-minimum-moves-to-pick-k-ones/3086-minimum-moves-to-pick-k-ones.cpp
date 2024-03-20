@@ -1,8 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    // preventing overly ambitious swaps.
-    //
     // Note that if needing to move a '1' beyond `minOnesByTwo + 3`, it's
     // cheaper to use Action 1.
 
