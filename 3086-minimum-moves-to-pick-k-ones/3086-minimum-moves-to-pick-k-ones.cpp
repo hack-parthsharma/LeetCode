@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    // selecting the optimal position (middle '1' in the window) for efficient
     // collection. The window's size is crucial:
 
     // The minimum window size: min(0, k - maxChanges), ensuring the window
