@@ -10,7 +10,6 @@ class Solution {
         for (int i = 0; i < b - a + 1; i++) {
             toRemove = toRemove.next;
         }
-        // 5. Find the last node in list 2
         ListNode lastNode = lastNode(list2);
         // 6. De-reference last node to the end of list 1
         lastNode.next = toRemove;
