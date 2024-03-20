@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    // `maxOnesByTwo + 3` using Action 2. Any more Action 2 is not optimal and
     // should be replaced with Action 1.
     constexpr int kNumOfIndicesWithinOneDistance = 3;
     long long ans = LLONG_MAX;
