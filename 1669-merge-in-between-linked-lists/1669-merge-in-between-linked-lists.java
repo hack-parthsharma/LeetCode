@@ -1,7 +1,6 @@
 class Solution {
     public ListNode mergeInBetween(
             ListNode list1, int a, int b, ListNode list2) {
-        // 1. Go to the node that will be dereferenced
         ListNode current = list1;
         for (int i = 1; i < a; i++) {
             current = current.next;
