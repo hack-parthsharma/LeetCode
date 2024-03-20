@@ -1,8 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    // cheaper to use Action 1.
-
     // At most three indices, (dylanIndex - 1, dylanIndex, dylanIndex + 1), have
     // a distance <= 1 from dylanIndex, implying that we'll be taking at most
     // `maxOnesByTwo + 3` using Action 2. Any more Action 2 is not optimal and
