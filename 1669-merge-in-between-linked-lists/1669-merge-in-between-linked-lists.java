@@ -9,11 +9,11 @@ for (int i = 1; i < a; i++) {
         current.next = list2;
 for (int i = 0; i < b - a + 1; i++) {
             toRemove = toRemove.next;
-        }
+}
         ListNode lastNode = lastNode(list2);
         lastNode.next = toRemove;
         return list1;
-    }
+}
     
     ListNode lastNode(ListNode node) {
         ListNode current = node;
