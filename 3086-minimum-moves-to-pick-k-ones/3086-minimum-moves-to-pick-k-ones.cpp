@@ -20,7 +20,7 @@ class Solution {
 
     for (int onesByTwo = minOnesByTwo; onesByTwo <= maxOnesByTwo; ++onesByTwo)
       for (int l = 0; l + onesByTwo < prefix.size(); ++l) {
-        const int r = l + onesByTwo;  // Collect 1s in oneIndices[l - 1..r - 1].
+        const int r = l + onesByTwo;  
         const long long cost1 = (k - onesByTwo) * 2;
         const long long cost2 = (prefix[r] - prefix[(l + r) / 2]) -
                                 (prefix[(l + r + 1) / 2] - prefix[l]);
