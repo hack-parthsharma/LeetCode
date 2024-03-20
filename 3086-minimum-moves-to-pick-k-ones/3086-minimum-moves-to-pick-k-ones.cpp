@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    // Note that if needing to move a '1' beyond `minOnesByTwo + 3`, it's
     // cheaper to use Action 1.
 
     // At most three indices, (dylanIndex - 1, dylanIndex, dylanIndex + 1), have
