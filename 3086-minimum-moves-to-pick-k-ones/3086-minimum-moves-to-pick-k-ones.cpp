@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    //           The cost equals the distance to the '1'.
     //
     // To minimize the swapping cost, Dylan can use a sliding window strategy,
     // selecting the optimal position (middle '1' in the window) for efficient
