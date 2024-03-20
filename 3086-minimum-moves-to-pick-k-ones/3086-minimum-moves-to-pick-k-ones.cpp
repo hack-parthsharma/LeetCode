@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    // Dylan has two actions for collecting '1's in a sequence:
     // Action 1: Put a '1' next to him and pick it up.
     //           The cost is 2.
     // Action 2: Swap a '1' towards him and collect it.
