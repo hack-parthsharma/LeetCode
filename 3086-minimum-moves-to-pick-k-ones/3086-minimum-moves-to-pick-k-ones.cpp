@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    // The minimum window size: min(0, k - maxChanges), ensuring the window
     // isn't too small.
     // The maximum window size: min(k, minOnesByTwo + 3, the number of ones),
     // preventing overly ambitious swaps.
