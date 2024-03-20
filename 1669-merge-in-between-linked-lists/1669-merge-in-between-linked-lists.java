@@ -21,5 +21,5 @@ while(current.next != null) {
             current = current.next;
         }
         return current;
-    }
+}
 }
