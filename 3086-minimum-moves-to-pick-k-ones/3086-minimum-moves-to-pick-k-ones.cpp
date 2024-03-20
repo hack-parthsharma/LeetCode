@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minimumMoves(vector<int>& nums, int k, int maxChanges) {
-    // should be replaced with Action 1.
     constexpr int kNumOfIndicesWithinOneDistance = 3;
     long long ans = LLONG_MAX;
     vector<int> oneIndices;       
