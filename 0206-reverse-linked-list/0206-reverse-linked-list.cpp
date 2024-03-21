@@ -7,5 +7,5 @@ if (!head || !head->next)
     head->next->next = head;
     head->next = nullptr;
     return newHead;
-  }
+}
 };
