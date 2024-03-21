@@ -6,7 +6,7 @@ if (!head || !head->next)
 ListNode* newHead = reverseList(head->next);
 head->next->next = head;
 head->next = nullptr;
-    return newHead;
+return newHead;
 
 }
 };
