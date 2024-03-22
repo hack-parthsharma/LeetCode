@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool isPalindrome(ListNode* head) {
     ListNode* slow = head;
     ListNode* fast = head;
