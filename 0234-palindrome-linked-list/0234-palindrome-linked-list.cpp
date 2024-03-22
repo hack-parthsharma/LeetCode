@@ -7,13 +7,13 @@ public:
 while (fast && fast->next) {
       slow = slow->next;
       fast = fast->next->next;
-    }
+}
 
     if (fast != nullptr)
       slow = slow->next;
     slow = reverseList(slow);
 
-    while (slow) {
+while (slow) {
       if (slow->val != head->val)
         return false;
       slow = slow->next;
