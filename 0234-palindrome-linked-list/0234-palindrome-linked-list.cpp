@@ -9,7 +9,7 @@ while (fast && fast->next) {
       fast = fast->next->next;
 }
 
-    if (fast != nullptr)
+if (fast != nullptr)
       slow = slow->next;
     slow = reverseList(slow);
 
