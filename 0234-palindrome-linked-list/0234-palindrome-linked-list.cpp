@@ -22,7 +22,7 @@ while (slow) {
 
     return true;
   }
- private:
+private:
   ListNode* reverseList(ListNode* head) {
     ListNode* prev = nullptr;
     while (head) {
