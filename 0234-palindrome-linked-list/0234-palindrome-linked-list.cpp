@@ -18,7 +18,7 @@ while (slow) {
         return false;
       slow = slow->next;
       head = head->next;
-    }
+}
 
     return true;
   }
