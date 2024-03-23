@@ -37,7 +37,7 @@ while (curr) {
     }
 
     return prev;
-  }
+}
 
   void merge(ListNode* l1, ListNode* l2) {
     while (l2) {
