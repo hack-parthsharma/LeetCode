@@ -23,13 +23,13 @@ private:
     prev->next = nullptr;
 
     return slow;
-  }
+}
 
   ListNode* reverse(ListNode* head) {
     ListNode* prev = nullptr;
     ListNode* curr = head;
 
-    while (curr) {
+while (curr) {
       ListNode* next = curr->next;
       curr->next = prev;
       prev = curr;
