@@ -13,5 +13,5 @@ while (slow != fast) {
       fast = nums[fast];
 }
     return slow;
-  }
+}
 };
