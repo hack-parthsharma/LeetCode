@@ -6,7 +6,7 @@ public:
 while (slow != fast) {
       slow = nums[slow];
       fast = nums[nums[fast]];
-    }
+}
     slow = nums[0];
     while (slow != fast) {
       slow = nums[slow];
