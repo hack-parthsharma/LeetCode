@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int firstMissingPositive(vector<int>& nums) {
     const int n = nums.size();
     for (int i = 0; i < n; ++i)
