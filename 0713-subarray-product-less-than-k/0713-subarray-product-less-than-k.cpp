@@ -5,7 +5,7 @@ public:
       return 0;
 
 int ans = 0;
-    int prod = 1;
+int prod = 1;
 
 for (int l = 0, r = 0; r < nums.size(); ++r) {
       prod *= nums[r];
