@@ -9,7 +9,7 @@ for (int l = 0, r = 0; r < nums.size(); ++r) {
       while (count[nums[r]] == k + 1)
         --count[nums[l++]];
       ans = max(ans, r - l + 1);
-    }
+}
 
     return ans;
   }
