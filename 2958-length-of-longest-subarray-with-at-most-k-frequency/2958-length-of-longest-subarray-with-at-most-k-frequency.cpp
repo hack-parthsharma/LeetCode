@@ -11,6 +11,6 @@ for (int l = 0, r = 0; r < nums.size(); ++r) {
       ans = max(ans, r - l + 1);
 }
 
-    return ans;
+return ans;
   }
 };
