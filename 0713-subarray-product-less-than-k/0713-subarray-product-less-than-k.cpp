@@ -12,7 +12,7 @@ for (int l = 0, r = 0; r < nums.size(); ++r) {
       while (prod >= k)
         prod /= nums[l++];
       ans += r - l + 1;
-    }
+}
 
     return ans;
   }
