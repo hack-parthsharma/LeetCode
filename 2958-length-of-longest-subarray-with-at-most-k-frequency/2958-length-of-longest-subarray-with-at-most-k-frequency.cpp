@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int maxSubarrayLength(vector<int>& nums, int k) {
+    int maxSubarrayLength(vector<int>& nums, int k) {
     int ans = 0;
     unordered_map<int, int> count;
 
