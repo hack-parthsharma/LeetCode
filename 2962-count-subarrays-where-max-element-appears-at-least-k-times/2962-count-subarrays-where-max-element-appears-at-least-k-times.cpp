@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   long long countSubarrays(vector<int>& nums, int k) {
     const int maxNum = ranges::max(nums);
     long long ans = 0;
