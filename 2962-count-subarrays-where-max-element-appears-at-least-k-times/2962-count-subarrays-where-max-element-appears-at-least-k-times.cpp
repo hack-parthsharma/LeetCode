@@ -5,7 +5,7 @@ public:
     long long ans = 0;
     int count = 0;
 
-    for (int l = 0, r = 0; r < nums.size(); ++r) {
+for (int l = 0, r = 0; r < nums.size(); ++r) {
       if (nums[r] == maxNum)
         ++count;
       while (count == k)
