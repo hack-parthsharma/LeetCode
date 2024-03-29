@@ -12,7 +12,7 @@ for (int l = 0, r = 0; r < nums.size(); ++r) {
         if (nums[l++] == maxNum)
           --count;
       ans += l;
-    }
+}
 
     return ans;
   }
