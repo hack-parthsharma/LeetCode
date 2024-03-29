@@ -11,7 +11,6 @@ class Solution {
       while (count == k)
         if (nums[l++] == maxNum)
           --count;
-      // subarray nums[i..r], where i < l, it will have at least k times of the
       // maximum number, since nums[l - 1] equals the maximum number.
       ans += l;
     }
