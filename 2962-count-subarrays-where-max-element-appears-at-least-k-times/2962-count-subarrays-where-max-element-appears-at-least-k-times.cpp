@@ -14,6 +14,6 @@ for (int l = 0, r = 0; r < nums.size(); ++r) {
       ans += l;
 }
 
-    return ans;
+return ans;
   }
 };
