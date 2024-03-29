@@ -15,5 +15,5 @@ for (int l = 0, r = 0; r < nums.size(); ++r) {
 }
 
 return ans;
-  }
+}
 };
