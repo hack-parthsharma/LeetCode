@@ -11,7 +11,6 @@ class Solution {
       while (count == k)
         if (nums[l++] == maxNum)
           --count;
-      // maximum number, since nums[l - 1] equals the maximum number.
       ans += l;
     }
 
