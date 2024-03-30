@@ -19,6 +19,6 @@ private:
       ans += r - l + 1;  
 }
 
-    return ans;
+return ans;
 }
 };
