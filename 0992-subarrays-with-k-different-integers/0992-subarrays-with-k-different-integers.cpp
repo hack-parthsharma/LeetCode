@@ -17,7 +17,7 @@ private:
         if (--count[nums[l++]] == 0)
           ++k;
       ans += r - l + 1;  
-    }
+}
 
     return ans;
   }
