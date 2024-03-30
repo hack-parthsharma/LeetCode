@@ -5,7 +5,7 @@ public:
            subarrayWithAtMostKDistinct(nums, k - 1);
   }
 
- private:
+private:
   int subarrayWithAtMostKDistinct(const vector<int>& nums, int k) {
     int ans = 0;
     vector<int> count(nums.size() + 1);
