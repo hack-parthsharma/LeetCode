@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int subarraysWithKDistinct(vector<int>& nums, int k) {
     return subarrayWithAtMostKDistinct(nums, k) -
            subarrayWithAtMostKDistinct(nums, k - 1);
