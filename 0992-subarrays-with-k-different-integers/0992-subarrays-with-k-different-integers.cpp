@@ -20,5 +20,5 @@ private:
 }
 
     return ans;
-  }
+}
 };
