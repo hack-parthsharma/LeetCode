@@ -13,7 +13,6 @@ class Solution {
         prevMinKIndex = i;
       if (nums[i] == maxK)
         prevMaxKIndex = i;
-      // start of the subarray s.t. nums[k..i] satisfies the conditions
       ans += max(0, min(prevMinKIndex, prevMaxKIndex) - j);
     }
 
