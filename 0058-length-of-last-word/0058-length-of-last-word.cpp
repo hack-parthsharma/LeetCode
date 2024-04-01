@@ -5,7 +5,7 @@ public:
 while (i >= 0 && s[i] == ' ')
       --i;
     const int lastIndex = i;
-    while (i >= 0 && s[i] != ' ')
+while (i >= 0 && s[i] != ' ')
       --i;
     return lastIndex - i;
 }
