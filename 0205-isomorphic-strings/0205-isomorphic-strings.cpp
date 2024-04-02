@@ -9,7 +9,7 @@ for (int i = 0; i < s.length(); ++i) {
         return false;
       charToIndex_s[s[i]] = i + 1;
       charToIndex_t[t[i]] = i + 1;
-    }
+}
 
     return true;
   }
