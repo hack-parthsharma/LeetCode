@@ -1,7 +1,6 @@
 class Solution {
  public:
   int minOperations(int k) {
-    // The required operations are
     //   1. Increase `1` to `x`
     //   2. Duplicate `x`, `y` times, to `sum` s.t. x * (1 + y) >= k.
     // The number of operations used would be (x - 1) + y. Equivalently, the
