@@ -12,7 +12,7 @@ public:
            int s) {
 if (i < 0 || i == board.size() || j < 0 || j == board[0].size())
       return false;
-    if (board[i][j] != word[s] || board[i][j] == '*')
+if (board[i][j] != word[s] || board[i][j] == '*')
       return false;
     if (s == word.length() - 1)
       return true;
