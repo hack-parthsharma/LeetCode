@@ -24,5 +24,5 @@ public:
                          dfs(board, word, i, j - 1, s + 1);
     board[i][j] = cache;
     return isExist;
-  }
+}
 };
