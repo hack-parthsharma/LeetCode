@@ -23,6 +23,6 @@ const bool isExist = dfs(board, word, i + 1, j, s + 1) ||
                          dfs(board, word, i, j + 1, s + 1) ||
                          dfs(board, word, i, j - 1, s + 1);
     board[i][j] = cache;
-    return isExist;
+return isExist;
 }
 };
