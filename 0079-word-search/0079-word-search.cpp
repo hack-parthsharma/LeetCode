@@ -16,7 +16,7 @@ if (board[i][j] != word[s] || board[i][j] == '*')
       return false;
 if (s == word.length() - 1)
       return true;
-    const char cache = board[i][j];
+const char cache = board[i][j];
     board[i][j] = '*';
 const bool isExist = dfs(board, word, i + 1, j, s + 1) ||
                          dfs(board, word, i - 1, j, s + 1) ||
