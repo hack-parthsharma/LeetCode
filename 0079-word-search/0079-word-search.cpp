@@ -10,7 +10,7 @@ public:
  private:
   bool dfs(vector<vector<char>>& board, const string& word, int i, int j,
            int s) {
-    if (i < 0 || i == board.size() || j < 0 || j == board[0].size())
+if (i < 0 || i == board.size() || j < 0 || j == board[0].size())
       return false;
     if (board[i][j] != word[s] || board[i][j] == '*')
       return false;
