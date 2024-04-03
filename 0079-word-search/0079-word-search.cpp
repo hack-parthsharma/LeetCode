@@ -6,7 +6,7 @@ public:
         if (dfs(board, word, i, j, 0))
           return true;
     return false;
-  }
+}
  private:
   bool dfs(vector<vector<char>>& board, const string& word, int i, int j,
            int s) {
