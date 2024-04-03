@@ -1,7 +1,6 @@
 class Solution {
  public:
   int minOperations(int k) {
-    // problem can be rephrased as finding min(x - 1 + y) s.t. x * (1 + y) >= k.
     // Optimally, `x` should equal to `1 + y`, implying that x^2 >= k, and
     // hence, x >= sqrt(k) and y = ceil(k / x) - 1.
     const int x = ceil(sqrt(k));
