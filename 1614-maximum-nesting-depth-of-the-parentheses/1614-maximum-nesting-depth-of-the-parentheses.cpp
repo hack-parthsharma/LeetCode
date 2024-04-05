@@ -9,7 +9,8 @@ public:
     if (s[i] == '(') ++left;
             
     else --left;
-            ans = max(ans, left);
+            
+    ans = max(ans, left);
 }
         return ans;
 }
