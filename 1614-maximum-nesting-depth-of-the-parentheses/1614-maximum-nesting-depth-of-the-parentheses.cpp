@@ -9,5 +9,5 @@ public:
             ans = max(ans, left);
         }
         return ans;
-    }
+}
 };
