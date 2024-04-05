@@ -5,7 +5,8 @@ public:
     for (int i = 0; i < s.size(); ++i) {
     
     if (s[i] != '(' && s[i] != ')') continue;
-            if (s[i] == '(') ++left;
+    
+    if (s[i] == '(') ++left;
             else --left;
             ans = max(ans, left);
 }
