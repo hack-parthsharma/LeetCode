@@ -7,5 +7,5 @@ public:
             else ans.push_back(c);
         }
         return ans;
-    }
+}
 };
