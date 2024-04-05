@@ -7,7 +7,8 @@ public:
     if (s[i] != '(' && s[i] != ')') continue;
     
     if (s[i] == '(') ++left;
-            else --left;
+            
+    else --left;
             ans = max(ans, left);
 }
         return ans;
