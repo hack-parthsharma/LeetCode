@@ -8,7 +8,7 @@ class Solution {
         stack.push(i);  
       } else if (s[i] == ')') {
         if (stack.empty())
-          s[i] = '*';  // Mark unpaired ')' as '*'
+          s[i] = '*';  
         else
           stack.pop();  // Find a pair!
       }
