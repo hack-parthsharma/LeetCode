@@ -5,7 +5,7 @@ class Solution {
 
     for (int i = 0; i < s.length(); ++i)
       if (s[i] == '(') {
-        stack.push(i);  // Record unpaired '(' index
+        stack.push(i);  
       } else if (s[i] == ')') {
         if (stack.empty())
           s[i] = '*';  // Mark unpaired ')' as '*'
