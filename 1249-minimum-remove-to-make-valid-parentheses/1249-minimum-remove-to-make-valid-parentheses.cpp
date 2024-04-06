@@ -10,7 +10,7 @@ class Solution {
         if (stack.empty())
           s[i] = '*';  
         else
-          stack.pop();  // Find a pair!
+          stack.pop();  
       }
 
     // Mark unpaired '(' as '*'
