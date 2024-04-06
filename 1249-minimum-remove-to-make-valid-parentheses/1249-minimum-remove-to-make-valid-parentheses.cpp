@@ -1,7 +1,7 @@
 class Solution {
  public:
   string minRemoveToMakeValid(string s) {
-    stack<int> stack;  // Unpaired '(' indices
+    stack<int> stack;  
 
     for (int i = 0; i < s.length(); ++i)
       if (s[i] == '(') {
