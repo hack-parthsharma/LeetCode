@@ -13,7 +13,6 @@ class Solution {
           stack.pop();  
       }
 
-    // Mark unpaired '(' as '*'
     while (!stack.empty())
       s[stack.top()] = '*', stack.pop();
 
