@@ -2,8 +2,7 @@ class Solution {
  public:
   bool checkValidString(const string& s) {
     int low = 0;  
-    int high = 0;  // Upper bound of valid '(' count
-
+    int high = 0;  
     for (const char c : s) {
       switch (c) {
         case '(':
