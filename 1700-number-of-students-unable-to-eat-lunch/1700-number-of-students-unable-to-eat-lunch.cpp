@@ -1,6 +1,7 @@
 class Solution {
 public:
-    int countStudents(vector<int>& students, vector<int>& sandwiches) {
+    
+int countStudents(vector<int>& students, vector<int>& sandwiches) {
         int st[2] = {0};
         for(auto s: students) {
             st[s]++;
