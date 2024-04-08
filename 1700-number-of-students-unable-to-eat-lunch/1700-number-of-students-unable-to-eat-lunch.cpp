@@ -13,7 +13,7 @@ for(auto& san : sandwiches){
             if (st[san] == 0) break;
             st[san]--;
             cnt++;
-        }
+}
         return students.size() - cnt;
 }
 };
