@@ -14,6 +14,8 @@ for(auto& san : sandwiches){
             st[san]--;
             cnt++;
 }
-        return students.size() - cnt;
+
+return students.size() - cnt;
+
 }
 };
