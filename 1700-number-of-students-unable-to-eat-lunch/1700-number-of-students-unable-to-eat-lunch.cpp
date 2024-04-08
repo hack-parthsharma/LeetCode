@@ -12,7 +12,7 @@ int cnt = 0;
 for(auto& san : sandwiches){
     if (st[san] == 0) break;
     st[san]--;
-            cnt++;
+    cnt++;
 }
 
 return students.size() - cnt;
