@@ -6,7 +6,7 @@ int countStudents(vector<int>& students, vector<int>& sandwiches) {
         for(auto s: students) {
             st[s]++;
 }
-        int cnt = 0;
+int cnt = 0;
         for(auto& san : sandwiches){
             if (st[san] == 0) break;
             st[san]--;
