@@ -12,5 +12,5 @@ public:
             cnt++;
         }
         return students.size() - cnt;
-    }
+}
 };
