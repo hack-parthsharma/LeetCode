@@ -10,5 +10,5 @@ for (int i = 0; i < tickets.size(); ++i)
         ans += min(tickets[i], tickets[k] - 1);
 
     return ans;
-  }
+}
 };
