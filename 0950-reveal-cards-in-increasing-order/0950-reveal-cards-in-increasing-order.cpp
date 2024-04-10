@@ -2,7 +2,7 @@ class Solution {
 public:
   
 vector<int> deckRevealedIncreasing(vector<int>& deck) {
-    sort(begin(deck), end(deck), greater<int>());
+sort(begin(deck), end(deck), greater<int>());
 
 deque<int> q{deck[0]};
 
