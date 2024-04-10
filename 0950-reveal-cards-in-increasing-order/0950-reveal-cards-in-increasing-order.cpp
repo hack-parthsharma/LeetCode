@@ -13,5 +13,5 @@ for (int i = 1; i < deck.size(); ++i) {
 }
 
     return {begin(q), end(q)};
-  }
+}
 };
