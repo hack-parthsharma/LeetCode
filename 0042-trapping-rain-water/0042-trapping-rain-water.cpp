@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int trap(vector<int>& height) {
     const int n = height.size();
     int ans = 0;
