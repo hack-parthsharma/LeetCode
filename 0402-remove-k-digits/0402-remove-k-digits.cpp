@@ -18,7 +18,7 @@ for (int i = 0; i < num.length(); ++i) {
     while (k-- > 0)
       stack.pop_back();
 
-    for (const char c : stack) {
+for (const char c : stack) {
       if (c == '0' && ans.empty())
         continue;
       ans += c;
