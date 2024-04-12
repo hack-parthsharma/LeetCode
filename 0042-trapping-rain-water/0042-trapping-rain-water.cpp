@@ -1,7 +1,7 @@
 class Solution {
 public:
 int trap(vector<int>& height) {
-    const int n = height.size();
+const int n = height.size();
     int ans = 0;
     vector<int> l(n);  
     vector<int> r(n);  
