@@ -22,7 +22,7 @@ for (const char c : stack) {
       if (c == '0' && ans.empty())
         continue;
       ans += c;
-    }
+}
 
     return ans.empty() ? "0" : ans;
   }
