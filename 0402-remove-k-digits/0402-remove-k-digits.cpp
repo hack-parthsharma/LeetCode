@@ -13,7 +13,7 @@ for (int i = 0; i < num.length(); ++i) {
         --k;
       }
       stack.push_back(num[i]);
-    }
+}
 
     while (k-- > 0)
       stack.pop_back();
