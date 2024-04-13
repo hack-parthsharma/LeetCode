@@ -7,7 +7,7 @@ class Solution {
     int ans = 0;
     vector<int> hist(matrix[0].size());
 
-    for (const vector<char>& row : matrix) {
+for (const vector<char>& row : matrix) {
       for (int i = 0; i < row.size(); ++i)
         hist[i] = row[i] == '0' ? 0 : hist[i] + 1;
       ans = max(ans, largestRectangleArea(hist));
