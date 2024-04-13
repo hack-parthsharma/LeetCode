@@ -14,7 +14,7 @@ for (const vector<char>& row : matrix) {
     }
 
     return ans;
-  }
+}
 
 private:
   int largestRectangleArea(const vector<int>& heights) {
