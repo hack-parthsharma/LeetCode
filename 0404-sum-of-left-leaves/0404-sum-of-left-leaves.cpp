@@ -17,7 +17,7 @@ while (!stack.empty()) {
       }
       if (root->right)
         stack.push(root->right);
-    }
+}
 
     return ans;
   }
