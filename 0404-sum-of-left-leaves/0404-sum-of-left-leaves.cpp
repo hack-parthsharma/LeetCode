@@ -9,7 +9,7 @@ public:
 
 while (!stack.empty()) {
       root = stack.top(), stack.pop();
-      if (root->left) {
+    if (root->left) {
         if (root->left->left == nullptr && root->left->right == nullptr)
           ans += root->left->val;
         else
@@ -20,5 +20,5 @@ while (!stack.empty()) {
 }
 
     return ans;
-  }
+}
 };
