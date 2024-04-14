@@ -7,7 +7,7 @@ public:
     int ans = 0;
     stack<TreeNode*> stack{{root}};
 
-    while (!stack.empty()) {
+while (!stack.empty()) {
       root = stack.top(), stack.pop();
       if (root->left) {
         if (root->left->left == nullptr && root->left->right == nullptr)
