@@ -10,12 +10,12 @@ public:
   void dfs(TreeNode* root, int path, int& ans) {
     if (root == nullptr)
       return;
-    if (root->left == nullptr && root->right == nullptr) {
+if (root->left == nullptr && root->right == nullptr) {
       ans += path * 10 + root->val;
       return;
 }
 
 dfs(root->left, path * 10 + root->val, ans);
-    dfs(root->right, path * 10 + root->val, ans);
+dfs(root->right, path * 10 + root->val, ans);
 }
 };
