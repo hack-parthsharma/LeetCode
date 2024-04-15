@@ -13,7 +13,7 @@ public:
     if (root->left == nullptr && root->right == nullptr) {
       ans += path * 10 + root->val;
       return;
-    }
+}
 
     dfs(root->left, path * 10 + root->val, ans);
     dfs(root->right, path * 10 + root->val, ans);
