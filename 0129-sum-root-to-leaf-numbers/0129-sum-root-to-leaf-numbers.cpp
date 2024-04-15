@@ -8,7 +8,7 @@ public:
 
  private:
   void dfs(TreeNode* root, int path, int& ans) {
-    if (root == nullptr)
+if (root == nullptr)
       return;
 if (root->left == nullptr && root->right == nullptr) {
       ans += path * 10 + root->val;
