@@ -15,7 +15,7 @@ public:
       return;
 }
 
-    dfs(root->left, path * 10 + root->val, ans);
+dfs(root->left, path * 10 + root->val, ans);
     dfs(root->right, path * 10 + root->val, ans);
 }
 };
