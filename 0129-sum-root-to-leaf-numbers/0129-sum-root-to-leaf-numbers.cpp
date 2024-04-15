@@ -3,7 +3,7 @@ public:
   int sumNumbers(TreeNode* root) {
   int ans = 0;
   dfs(root, 0, ans);
-    return ans;
+  return ans;
 }
 
 private:
