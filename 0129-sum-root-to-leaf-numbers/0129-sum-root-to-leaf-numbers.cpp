@@ -7,7 +7,7 @@ public:
 }
 
  private:
-  void dfs(TreeNode* root, int path, int& ans) {
+      void dfs(TreeNode* root, int path, int& ans) {
 if (root == nullptr)
       return;
 if (root->left == nullptr && root->right == nullptr) {
