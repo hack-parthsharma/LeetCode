@@ -11,7 +11,7 @@ int depth = 0;
 queue<TreeNode*> q{{root}};
 
 while (!q.empty()) {
-      ++depth;
+          ++depth;
 for (int sz = q.size(); sz > 0; --sz) {
           TreeNode* node = q.front();
           q.pop();
