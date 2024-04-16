@@ -7,7 +7,7 @@ if (d == 1) {
       return newRoot;
 }
 
-    int depth = 0;
+int depth = 0;
     queue<TreeNode*> q{{root}};
 
     while (!q.empty()) {
