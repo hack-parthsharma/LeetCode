@@ -32,6 +32,6 @@ public:
         break;
     }
 
-    return root;
+return root;
 }
 };
