@@ -10,7 +10,7 @@ if (d == 1) {
 int depth = 0;
 queue<TreeNode*> q{{root}};
 
-    while (!q.empty()) {
+while (!q.empty()) {
       ++depth;
       for (int sz = q.size(); sz > 0; --sz) {
         TreeNode* node = q.front();
