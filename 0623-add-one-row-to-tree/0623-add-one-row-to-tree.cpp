@@ -5,7 +5,7 @@ public:
       TreeNode* newRoot = new TreeNode(v);
       newRoot->left = root;
       return newRoot;
-    }
+}
 
     int depth = 0;
     queue<TreeNode*> q{{root}};
