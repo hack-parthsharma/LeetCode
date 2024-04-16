@@ -19,7 +19,7 @@ if (node->left)
           q.push(node->left);
 if (node->right)
           q.push(node->right);
-        if (depth == d - 1) {
+if (depth == d - 1) {
           TreeNode* cachedLeft = node->left;
           TreeNode* cachedRight = node->right;
           node->left = new TreeNode(v);
