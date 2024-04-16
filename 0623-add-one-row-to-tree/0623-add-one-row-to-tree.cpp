@@ -30,7 +30,7 @@ public:
       }
       if (depth == d - 1)
         break;
-    }
+}
 
 return root;
 }
