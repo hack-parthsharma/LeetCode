@@ -1,7 +1,7 @@
 class Solution {
 public:
   TreeNode* addOneRow(TreeNode* root, int v, int d) {
-    if (d == 1) {
+if (d == 1) {
       TreeNode* newRoot = new TreeNode(v);
       newRoot->left = root;
       return newRoot;
