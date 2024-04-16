@@ -27,7 +27,7 @@ if (depth == d - 1) {
           node->left->left = cachedLeft;
           node->right->right = cachedRight;
         }
-      }
+}
 if (depth == d - 1)
         break;
 }
