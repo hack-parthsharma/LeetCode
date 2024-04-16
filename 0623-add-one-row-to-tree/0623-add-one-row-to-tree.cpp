@@ -13,7 +13,7 @@ queue<TreeNode*> q{{root}};
 while (!q.empty()) {
       ++depth;
 for (int sz = q.size(); sz > 0; --sz) {
-        TreeNode* node = q.front();
+          TreeNode* node = q.front();
           q.pop();
 if (node->left)
           q.push(node->left);
