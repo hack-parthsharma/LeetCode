@@ -17,7 +17,7 @@ for (int sz = q.size(); sz > 0; --sz) {
         q.pop();
 if (node->left)
           q.push(node->left);
-        if (node->right)
+if (node->right)
           q.push(node->right);
         if (depth == d - 1) {
           TreeNode* cachedLeft = node->left;
