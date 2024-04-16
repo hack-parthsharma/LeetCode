@@ -28,7 +28,7 @@ public:
           node->right->right = cachedRight;
         }
       }
-      if (depth == d - 1)
+if (depth == d - 1)
         break;
 }
 
