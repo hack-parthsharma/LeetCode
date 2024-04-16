@@ -8,7 +8,7 @@ if (d == 1) {
 }
 
 int depth = 0;
-    queue<TreeNode*> q{{root}};
+queue<TreeNode*> q{{root}};
 
     while (!q.empty()) {
       ++depth;
