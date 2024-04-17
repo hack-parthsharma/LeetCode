@@ -13,7 +13,7 @@ private:
 
     path.push_back(root->val + 'a');
 
-    if (root->left == nullptr && root->right == nullptr) {
+if (root->left == nullptr && root->right == nullptr) {
       reverse(begin(path), end(path));
       if (ans == "" || ans > path)
         ans = path;
