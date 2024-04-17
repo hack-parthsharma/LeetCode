@@ -4,7 +4,7 @@ public:
     string ans;
     dfs(root, "", ans);
     return ans;
-  }
+ }
 
  private:
   void dfs(TreeNode* root, string&& path, string& ans) {
