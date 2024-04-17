@@ -18,7 +18,7 @@ if (root->left == nullptr && root->right == nullptr) {
       if (ans == "" || ans > path)
         ans = path;
       reverse(begin(path), end(path));  // Roll back
-    }
+}
 
     dfs(root->left, move(path), ans);
     dfs(root->right, move(path), ans);
