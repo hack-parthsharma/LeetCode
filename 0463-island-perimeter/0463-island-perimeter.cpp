@@ -15,5 +15,5 @@ for (int i = 0; i < grid.size(); ++i)
         }
 
     return islands * 4 - neighbors * 2;
-  }
+}
 };
