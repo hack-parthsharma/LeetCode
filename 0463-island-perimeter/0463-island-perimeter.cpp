@@ -12,7 +12,7 @@ for (int i = 0; i < grid.size(); ++i)
             ++neighbors;
         if (j - 1 >= 0 && grid[i][j - 1])
             ++neighbors;
-        }
+}
 
 return islands * 4 - neighbors * 2;
 }
