@@ -28,7 +28,7 @@ for (int i = 0; i < m; ++i)
         if (grid[i][j] == '1') {
           bfs(i, j);
           ++ans;
-        }
-    return ans;
+}
+return ans;
 }
 };
