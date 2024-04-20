@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> findFarmland(vector<vector<int>>& land) {
-        vector<vector<int>> ans;
+    vector<vector<int>> ans;
         int m = land.size();
         int n = land[0].size();
         for (int i = 0; i < m; ++i) {
