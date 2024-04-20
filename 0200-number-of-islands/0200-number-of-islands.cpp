@@ -30,5 +30,5 @@ public:
           ++ans;
         }
     return ans;
-  }
+}
 };
