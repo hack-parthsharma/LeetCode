@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int numIslands(vector<vector<char>>& grid) {
+int numIslands(vector<vector<char>>& grid) {
     const int m = grid.size();
     const int n = grid[0].size();
     const vector<int> dirs{0, 1, 0, -1, 0};
