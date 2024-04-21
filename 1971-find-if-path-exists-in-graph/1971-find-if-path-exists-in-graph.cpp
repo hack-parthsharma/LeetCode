@@ -7,7 +7,7 @@ for (auto& e : edges) {
             int a = e[0], b = e[1];
             g[a].emplace_back(b);
             g[b].emplace_back(a);
-        }
+}
 function<bool(int)> dfs = [&](int i) -> bool {
             if (i == destination) return true;
             vis[i] = true;
