@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
+bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
         vector<bool> vis(n);
         vector<vector<int>> g(n);
         for (auto& e : edges) {
