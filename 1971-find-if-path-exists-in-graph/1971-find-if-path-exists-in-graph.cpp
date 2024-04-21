@@ -8,7 +8,7 @@ public:
             g[a].emplace_back(b);
             g[b].emplace_back(a);
         }
-        function<bool(int)> dfs = [&](int i) -> bool {
+function<bool(int)> dfs = [&](int i) -> bool {
             if (i == destination) return true;
             vis[i] = true;
             for (int& j : g[i]) {
