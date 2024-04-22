@@ -28,7 +28,7 @@ for (int i = 0; i < 4; ++i) {
           word[i] = word[i] == '0' ? '9' : word[i] - 1;
     if (word == target)
             return ans;
-          if (!seen.count(word)) {
+    if (!seen.count(word)) {
             q.push(word);
             seen.insert(word);
           }
