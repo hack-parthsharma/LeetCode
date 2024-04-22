@@ -12,7 +12,7 @@ if (target == "0000")
 
 while (!q.empty()) {
       ++ans;
-      for (int sz = q.size(); sz > 0; --sz) {
+for (int sz = q.size(); sz > 0; --sz) {
         string word = q.front();
         q.pop();
         for (int i = 0; i < 4; ++i) {
