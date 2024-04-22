@@ -25,7 +25,6 @@ if (target == "0000")
             seen.insert(word);
           }
           word[i] = cache;
-          // Decrease i-th digit by 1
           word[i] = word[i] == '0' ? '9' : word[i] - 1;
           if (word == target)
             return ans;
