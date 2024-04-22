@@ -37,6 +37,6 @@ for (int i = 0; i < 4; ++i) {
       }
     }
 
-    return -1;
+return -1;
 }
 };
