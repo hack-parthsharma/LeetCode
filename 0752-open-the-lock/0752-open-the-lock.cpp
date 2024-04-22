@@ -26,7 +26,7 @@ for (int i = 0; i < 4; ++i) {
     }
           word[i] = cache;
           word[i] = word[i] == '0' ? '9' : word[i] - 1;
-          if (word == target)
+    if (word == target)
             return ans;
           if (!seen.count(word)) {
             q.push(word);
