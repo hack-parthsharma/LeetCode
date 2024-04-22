@@ -10,7 +10,7 @@ if (target == "0000")
     int ans = 0;
     queue<string> q{{"0000"}};
 
-    while (!q.empty()) {
+while (!q.empty()) {
       ++ans;
       for (int sz = q.size(); sz > 0; --sz) {
         string word = q.front();
