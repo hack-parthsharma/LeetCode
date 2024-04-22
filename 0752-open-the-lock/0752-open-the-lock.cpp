@@ -17,7 +17,6 @@ if (target == "0000")
         q.pop();
         for (int i = 0; i < 4; ++i) {
           const char cache = word[i];
-          // Increase i-th digit by 1
           word[i] = word[i] == '9' ? '0' : word[i] + 1;
           if (word == target)
             return ans;
