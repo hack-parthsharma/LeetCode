@@ -18,7 +18,7 @@ for (int sz = q.size(); sz > 0; --sz) {
 for (int i = 0; i < 4; ++i) {
           const char cache = word[i];
           word[i] = word[i] == '9' ? '0' : word[i] + 1;
-          if (word == target)
+    if (word == target)
             return ans;
           if (!seen.count(word)) {
             q.push(word);
