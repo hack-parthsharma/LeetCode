@@ -4,7 +4,7 @@ public:
     if (n == 1 || edges.empty())
       return {0};
 
-    vector<int> ans;
+vector<int> ans;
     unordered_map<int, unordered_set<int>> graph;
 
     for (const vector<int>& edge : edges) {
