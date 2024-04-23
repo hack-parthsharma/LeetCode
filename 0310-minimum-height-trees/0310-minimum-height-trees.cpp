@@ -5,7 +5,7 @@ public:
       return {0};
 
 vector<int> ans;
-    unordered_map<int, unordered_set<int>> graph;
+unordered_map<int, unordered_set<int>> graph;
 
     for (const vector<int>& edge : edges) {
       const int u = edge[0];
