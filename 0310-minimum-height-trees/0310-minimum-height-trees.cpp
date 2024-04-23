@@ -27,7 +27,7 @@ for (const int leaf : ans) {
         if (graph[u].size() == 1)
           nextLeaves.push_back(u);
       }
-      ans = nextLeaves;
+ans = nextLeaves;
 }
 
     return ans;
