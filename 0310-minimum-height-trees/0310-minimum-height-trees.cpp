@@ -18,7 +18,7 @@ unordered_map<int, unordered_set<int>> graph;
       if (children.size() == 1)
         ans.push_back(label);
 
-    while (n > 2) {
+while (n > 2) {
       n -= ans.size();
       vector<int> nextLeaves;
       for (const int leaf : ans) {
