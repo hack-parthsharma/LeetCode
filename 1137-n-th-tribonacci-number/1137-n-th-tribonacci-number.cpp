@@ -9,7 +9,7 @@ for (int i = 3; i <= n; ++i) {
             a = b;
             b = c;
             c = next;
-        }
+}
         
         return c;
     }
