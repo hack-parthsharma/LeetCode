@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int longestIdealString(string s, int k) {
     vector<int> dp(26);
 
