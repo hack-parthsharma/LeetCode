@@ -1,7 +1,6 @@
 class Solution {
  public:
   int longestIdealString(string s, int k) {
-    // dp[i] := longest subseq that ends at ('a' + i)
     vector<int> dp(26);
 
     for (const char c : s) {
