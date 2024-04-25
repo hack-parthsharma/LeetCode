@@ -9,9 +9,9 @@ public:
     }
 
     return *max_element(begin(dp), end(dp));
-  }
+}
 
- private:
+private:
   int getMaxReachable(const vector<int>& dp, int i, int k) {
     const int first = max(0, i - k);
     const int last = min(25, i + k);
