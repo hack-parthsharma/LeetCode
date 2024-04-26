@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minFallingPathSum(vector<vector<int>>& grid) {
     const int n = grid.size();
 
