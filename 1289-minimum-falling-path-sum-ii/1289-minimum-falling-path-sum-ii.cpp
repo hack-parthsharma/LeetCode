@@ -7,7 +7,7 @@ public:
           const vector<pair<int, int>> twoMinNumAndIndexs =
           getTwoMinNumAndIndexs(grid[i - 1]);
           const auto& [firstMinNum, firstMinIndex] = twoMinNumAndIndexs[0];
-      const auto& [secondMinNum, _] = twoMinNumAndIndexs[1];
+          const auto& [secondMinNum, _] = twoMinNumAndIndexs[1];
     for (int j = 0; j < n; ++j)
         if (j == firstMinIndex)
           grid[i][j] += secondMinNum;
