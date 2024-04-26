@@ -1,7 +1,7 @@
 class Solution {
 public:
   int minFallingPathSum(vector<vector<int>>& grid) {
-    const int n = grid.size();
+  const int n = grid.size();
 
     for (int i = 1; i < n; ++i) {
       const vector<pair<int, int>> twoMinNumAndIndexs =
