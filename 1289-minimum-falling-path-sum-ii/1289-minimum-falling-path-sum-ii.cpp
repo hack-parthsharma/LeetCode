@@ -16,7 +16,7 @@ public:
     }
 
     return *min_element(begin(grid.back()), end(grid.back()));
-  }
+}
 
 private:
   vector<pair<int, int>> getTwoMinNumAndIndexs(const vector<int>& A) {
