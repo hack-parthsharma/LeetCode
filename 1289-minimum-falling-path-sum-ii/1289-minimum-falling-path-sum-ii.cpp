@@ -4,7 +4,7 @@ public:
   const int n = grid.size();
 
     for (int i = 1; i < n; ++i) {
-      const vector<pair<int, int>> twoMinNumAndIndexs =
+          const vector<pair<int, int>> twoMinNumAndIndexs =
           getTwoMinNumAndIndexs(grid[i - 1]);
           const auto& [firstMinNum, firstMinIndex] = twoMinNumAndIndexs[0];
       const auto& [secondMinNum, _] = twoMinNumAndIndexs[1];
