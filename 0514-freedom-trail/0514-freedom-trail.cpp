@@ -24,5 +24,5 @@ class Solution {
       }
 
     return memo[hashKey] = ans;
-  }
+}
 };
