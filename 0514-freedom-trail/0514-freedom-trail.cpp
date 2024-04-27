@@ -9,15 +9,12 @@ class Solution {
           unordered_map<string, int>&& memo) {
     if (index == key.length())
       return 0;
-    // Add the index to prevent duplicate
     const string hashKey = ring + to_string(index);
     if (const auto it = memo.find(hashKey); it != cend(memo))
       return it->second;
 
     int ans = INT_MAX;
 
-    // For each ring[i] == key[index]
-    // We rotate the ring to match ring[i] w/ key[index]
     // Then recursively match newRing w/ key[index + 1:]
     for (size_t i = 0; i < ring.length(); ++i)
       if (ring[i] == key[index]) {
