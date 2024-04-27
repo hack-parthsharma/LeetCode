@@ -15,7 +15,6 @@ class Solution {
 
     int ans = INT_MAX;
 
-    // Then recursively match newRing w/ key[index + 1:]
     for (size_t i = 0; i < ring.length(); ++i)
       if (ring[i] == key[index]) {
         const int minRotates = min(i, ring.length() - i);
