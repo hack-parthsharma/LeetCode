@@ -17,7 +17,7 @@ public:
     return ans;
   }
 
- private:
+private:
   void postorder(const vector<unordered_set<int>>& tree, int node, int parent,
                  vector<int>& count, vector<int>& ans) {
     for (const int child : tree[node]) {
