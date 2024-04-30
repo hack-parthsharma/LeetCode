@@ -3,7 +3,7 @@ class Solution {
   long long wonderfulSubstrings(string word) {
     long long ans = 0;
     int prefix = 0;           
-    vector<int> count(1024);  // Binary prefix count
+    vector<int> count(1024);  
     count[0] = 1;             // Empty string ""
 
     for (const char c : word) {
