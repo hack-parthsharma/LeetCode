@@ -7,7 +7,7 @@ int prefix = 0;
 vector<int> count(1024);  
 count[0] = 1;             
 
-    for (const char c : word) {
+for (const char c : word) {
       prefix ^= 1 << c - 'a';
       ans += count[prefix];         
       for (int i = 0; i < 10; ++i)  
