@@ -4,7 +4,7 @@ class Solution {
     long long ans = 0;
     int prefix = 0;           
     vector<int> count(1024);  
-    count[0] = 1;             // Empty string ""
+    count[0] = 1;             
 
     for (const char c : word) {
       prefix ^= 1 << c - 'a';
