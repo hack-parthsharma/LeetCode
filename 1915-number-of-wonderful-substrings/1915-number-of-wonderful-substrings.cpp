@@ -15,6 +15,6 @@ for (const char c : word) {
       ++count[prefix];
 }
 
-    return ans;
+return ans;
 }
 };
