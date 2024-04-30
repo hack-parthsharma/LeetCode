@@ -1,6 +1,7 @@
 class Solution {
- public:
-  long long wonderfulSubstrings(string word) {
+public:
+  
+long long wonderfulSubstrings(string word) {
     long long ans = 0;
     int prefix = 0;           
     vector<int> count(1024);  
