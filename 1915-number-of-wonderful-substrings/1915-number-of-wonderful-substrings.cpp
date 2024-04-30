@@ -2,7 +2,7 @@ class Solution {
  public:
   long long wonderfulSubstrings(string word) {
     long long ans = 0;
-    int prefix = 0;           // Binary prefix
+    int prefix = 0;           
     vector<int> count(1024);  // Binary prefix count
     count[0] = 1;             // Empty string ""
 
