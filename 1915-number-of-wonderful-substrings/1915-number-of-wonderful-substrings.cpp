@@ -8,7 +8,7 @@ class Solution {
 
     for (const char c : word) {
       prefix ^= 1 << c - 'a';
-      ans += count[prefix];         // All chars occur even times
+      ans += count[prefix];         
       for (int i = 0; i < 10; ++i)  // ('a' + i) occurs odd times
         ans += count[prefix ^ 1 << i];
       ++count[prefix];
