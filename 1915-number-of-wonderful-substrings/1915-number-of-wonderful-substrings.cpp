@@ -13,7 +13,7 @@ for (const char c : word) {
       for (int i = 0; i < 10; ++i)  
         ans += count[prefix ^ 1 << i];
       ++count[prefix];
-    }
+}
 
     return ans;
 }
