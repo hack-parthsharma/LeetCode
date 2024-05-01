@@ -27,12 +27,10 @@ class Solution {
       return mem[i][j][mask] = kInf;
     if (mask == andValues[j])
       // Case 1: Keep going.
-      // Case 2: End the subarray here and pick nums[i], then fresh start.
       return mem[i][j][mask] =
                  min(minimumValueSum(nums, andValues, i + 1, j, mask, mem),
                      nums[i] + minimumValueSum(nums, andValues, i + 1, j + 1,
                                                kAllMask, mem));
-    // Keep going.
     return mem[i][j][mask] =
                minimumValueSum(nums, andValues, i + 1, j, mask, mem);
   };
