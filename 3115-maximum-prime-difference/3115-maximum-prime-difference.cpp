@@ -14,9 +14,9 @@ class Solution {
       }
 
     return maxPrimeIndex - minPrimeIndex;
-  }
+}
 
- private:
+private:
   vector<bool> sieveEratosthenes(int n) {
     vector<bool> isPrime(n, true);
     isPrime[0] = false;
