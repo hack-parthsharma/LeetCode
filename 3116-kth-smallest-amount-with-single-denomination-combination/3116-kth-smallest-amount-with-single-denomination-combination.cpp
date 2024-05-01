@@ -28,7 +28,6 @@ class Solution {
     return res;
   };
 
-  // Returns the LCMs for each number of combination of coins.
   vector<vector<long long>> getSizeToLcms(const vector<int>& coins) {
     const int n = coins.size();
     const int maxMask = 1 << n;
