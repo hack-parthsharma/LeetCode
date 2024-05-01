@@ -26,5 +26,5 @@ private:
         for (int j = i * i; j < n; j += i)
           isPrime[j] = false;
     return isPrime;
-  }
+}
 };
