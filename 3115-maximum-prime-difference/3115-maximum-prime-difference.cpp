@@ -6,7 +6,7 @@ class Solution {
     int minPrimeIndex = -1;
     int maxPrimeIndex = -1;
 
-    for (int i = 0; i < nums.size(); ++i)
+for (int i = 0; i < nums.size(); ++i)
       if (isPrime[nums[i]]) {
         if (minPrimeIndex == -1)
           minPrimeIndex = i;
