@@ -17,13 +17,11 @@ class Solution {
   }
 
  private:
-  // Returns the number of denominations <= m.
   long long numDenominationsNoGreaterThan(
       const vector<vector<long long>>& sizeToLcms, long long m) {
     long long res = 0;
     for (int sz = 1; sz < sizeToLcms.size(); ++sz)
       for (const long long lcm : sizeToLcms[sz])
-        // Principle of Inclusion-Exclusion (PIE)
         res += m / lcm * pow(-1, sz + 1);
     return res;
   };
