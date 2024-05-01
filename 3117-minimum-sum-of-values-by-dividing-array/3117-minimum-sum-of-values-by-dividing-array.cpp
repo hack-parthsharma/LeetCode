@@ -26,7 +26,6 @@ class Solution {
     if (mask < andValues[j])
       return mem[i][j][mask] = kInf;
     if (mask == andValues[j])
-      // Case 1: Keep going.
       return mem[i][j][mask] =
                  min(minimumValueSum(nums, andValues, i + 1, j, mask, mem),
                      nums[i] + minimumValueSum(nums, andValues, i + 1, j + 1,
