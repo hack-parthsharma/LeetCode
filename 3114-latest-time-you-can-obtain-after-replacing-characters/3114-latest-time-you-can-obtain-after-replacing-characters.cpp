@@ -1,6 +1,5 @@
 class Solution {
  public:
-  // Similar to 1736. Latest Time by Replacing Hidden Digits
   string findLatestTime(string s) {
     string ans = s;
     if (s[0] == '?')
