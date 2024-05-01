@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string findLatestTime(string s) {
     string ans = s;
     if (s[0] == '?')
