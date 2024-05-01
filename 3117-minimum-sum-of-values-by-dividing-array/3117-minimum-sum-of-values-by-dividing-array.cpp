@@ -11,8 +11,6 @@ class Solution {
   static constexpr int kInf = 1'000'000'000;
   static constexpr int kAllMask = (1 << 17) - 1;
 
-  // Returns the minimum value sum of nums[i..n) and andValues[j..m), where
-  // `mask` is the running value of the current subarray.
   int minimumValueSum(const vector<int>& nums, const vector<int>& andValues,
                       int i, int j, int mask,
                       vector<vector<unordered_map<int, int>>>& mem) {
