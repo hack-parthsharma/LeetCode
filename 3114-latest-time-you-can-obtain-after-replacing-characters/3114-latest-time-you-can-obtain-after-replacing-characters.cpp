@@ -1,6 +1,6 @@
 class Solution {
 public:
-  string findLatestTime(string s) {
+    string findLatestTime(string s) {
     string ans = s;
     if (s[0] == '?')
       ans[0] = s[1] == '?' || s[1] < '2' ? '1' : '0';
@@ -11,5 +11,5 @@ public:
     if (s[4] == '?')
       ans[4] = '9';
     return ans;
-  }
+}
 };
