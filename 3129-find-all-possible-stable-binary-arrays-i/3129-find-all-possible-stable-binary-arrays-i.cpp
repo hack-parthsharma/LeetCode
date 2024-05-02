@@ -1,6 +1,5 @@
 class Solution {
  public:
-  // Same as 3129. Find All Possible Stable Binary Arrays I
   int numberOfStableArrays(int zero, int one, int limit) {
     constexpr int kMod = 1'000'000'007;
     // dp[i][j][k] := the number of stable arrays, where the number of
