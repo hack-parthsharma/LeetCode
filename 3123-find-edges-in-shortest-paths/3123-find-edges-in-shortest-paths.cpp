@@ -1,6 +1,5 @@
 class Solution {
  public:
-  // Similar to 2203. Minimum Weighted Subgraph With the Required Paths
   vector<bool> findAnswer(int n, vector<vector<int>>& edges) {
     vector<bool> ans;
     vector<vector<pair<int, int>>> graph(n);
@@ -32,7 +31,7 @@ class Solution {
 
   vector<int> dijkstra(const vector<vector<pair<int, int>>>& graph, int src) {
     vector<int> dist(graph.size(), kMax);
-    using P = pair<int, int>;  // (d, u)
+    using P = pair<int, int>;  
     priority_queue<P, vector<P>, greater<>> minHeap;
 
     dist[src] = 0;
