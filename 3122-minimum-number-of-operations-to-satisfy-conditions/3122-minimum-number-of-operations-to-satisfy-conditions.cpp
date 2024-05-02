@@ -15,7 +15,6 @@ class Solution {
 
  private:
   // Returns the number of minimum operations needed to make grid[:][j..n)
-  // satisfy the conditions, where the (j - 1)-th column is filled with `prev`.
   int minimumOperations(const vector<vector<int>>& count, int j, int prev,
                         int m, vector<vector<int>>& mem) {
     if (j == count.size())
