@@ -14,7 +14,6 @@ class Solution {
   }
 
  private:
-  // Returns the number of minimum operations needed to make grid[:][j..n)
   int minimumOperations(const vector<vector<int>>& count, int j, int prev,
                         int m, vector<vector<int>>& mem) {
     if (j == count.size())
