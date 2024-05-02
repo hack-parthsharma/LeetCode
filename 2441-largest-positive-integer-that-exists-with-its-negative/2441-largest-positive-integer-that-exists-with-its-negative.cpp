@@ -11,5 +11,5 @@ for (const int num : nums)
         seen.insert(num);
 
     return ans;
-  }
+}
 };
