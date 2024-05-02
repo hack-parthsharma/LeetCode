@@ -2,7 +2,6 @@ class Solution {
  public:
   int numberOfStableArrays(int zero, int one, int limit) {
     constexpr int kMod = 1'000'000'007;
-    // dp[i][j][k] := the number of stable arrays, where the number of
     vector<vector<vector<long>>> dp(
         zero + 1, vector<vector<long>>(one + 1, vector<long>(2)));
 
