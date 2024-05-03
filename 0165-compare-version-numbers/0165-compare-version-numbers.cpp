@@ -16,7 +16,7 @@ while (bool(iss1 >> v1) + bool(iss2 >> v2)) {
       iss2 >> dotChar;
       v1 = 0;
       v2 = 0;
-    }
+}
 
     return 0;
   };
