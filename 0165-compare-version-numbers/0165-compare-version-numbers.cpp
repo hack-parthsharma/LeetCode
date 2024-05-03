@@ -7,7 +7,7 @@ public:
     int v2;
     char dotChar;
 
-    while (bool(iss1 >> v1) + bool(iss2 >> v2)) {
+while (bool(iss1 >> v1) + bool(iss2 >> v2)) {
       if (v1 < v2)
         return -1;
       if (v1 > v2)
