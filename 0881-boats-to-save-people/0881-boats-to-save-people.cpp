@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int numRescueBoats(vector<int>& people, int limit) {
+    int numRescueBoats(vector<int>& people, int limit) {
     int ans = 0;
 
     sort(begin(people), end(people));
