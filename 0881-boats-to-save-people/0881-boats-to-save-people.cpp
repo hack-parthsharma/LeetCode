@@ -5,7 +5,7 @@ public:
 
     sort(begin(people), end(people));
 
-    for (int i = 0, j = people.size() - 1; i <= j; ++ans) {
+for (int i = 0, j = people.size() - 1; i <= j; ++ans) {
       int remain = limit - people[j--];
       if (people[i] <= remain)
         ++i;
