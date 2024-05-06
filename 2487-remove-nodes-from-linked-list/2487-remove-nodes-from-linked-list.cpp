@@ -1,6 +1,6 @@
 class Solution {
 public:
-  ListNode* removeNodes(ListNode* head) {
+ListNode* removeNodes(ListNode* head) {
     if (head == nullptr)
       return nullptr;
     head->next = removeNodes(head->next);
