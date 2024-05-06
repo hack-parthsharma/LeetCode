@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   ListNode* removeNodes(ListNode* head) {
     if (head == nullptr)
       return nullptr;
