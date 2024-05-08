@@ -1,6 +1,6 @@
 class Solution {
 public:
-  vector<string> findRelativeRanks(vector<int>& nums) {
+    vector<string> findRelativeRanks(vector<int>& nums) {
     const int n = nums.size();
     vector<string> ans(n);
     vector<int> indices(n);
