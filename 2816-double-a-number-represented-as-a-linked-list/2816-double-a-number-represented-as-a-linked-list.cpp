@@ -4,7 +4,7 @@ public:
     if (getCarry(head) == 1)
       return new ListNode(1, head);
     return head;
-  }
+}
 
  private:
   int getCarry(ListNode* node) {
