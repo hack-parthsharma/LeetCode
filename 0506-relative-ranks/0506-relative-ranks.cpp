@@ -5,7 +5,7 @@ public:
     vector<string> ans(n);
     vector<int> indices(n);
 
-    iota(begin(indices), end(indices), 0);
+iota(begin(indices), end(indices), 0);
 
     sort(begin(indices), end(indices),
          [&](const int a, const int b) { return nums[a] > nums[b]; });
