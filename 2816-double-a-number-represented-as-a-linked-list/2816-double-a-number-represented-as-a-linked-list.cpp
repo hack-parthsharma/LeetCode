@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   ListNode* doubleIt(ListNode* head) {
     if (getCarry(head) == 1)
       return new ListNode(1, head);
