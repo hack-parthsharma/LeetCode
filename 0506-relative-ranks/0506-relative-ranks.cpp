@@ -7,7 +7,7 @@ public:
 
 iota(begin(indices), end(indices), 0);
 
-    sort(begin(indices), end(indices),
+sort(begin(indices), end(indices),
          [&](const int a, const int b) { return nums[a] > nums[b]; });
 
     for (int i = 0; i < n; ++i)
