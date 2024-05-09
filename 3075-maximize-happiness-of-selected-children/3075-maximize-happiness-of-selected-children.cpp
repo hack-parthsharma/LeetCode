@@ -1,7 +1,7 @@
 class Solution {
 public:
      long long maximumHappinessSum(vector<int>& happiness, int k) {
-    long long ans = 0;
+     long long ans = 0;
     int decremented = 0;
 
     ranges::sort(happiness, greater<>());
