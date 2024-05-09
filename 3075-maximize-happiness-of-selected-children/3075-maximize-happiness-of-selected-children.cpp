@@ -6,7 +6,7 @@ public:
 
     ranges::sort(happiness, greater<>());
 
-    for (int i = 0; i < k; ++i) {
+for (int i = 0; i < k; ++i) {
       ans += max(0, happiness[i] - decremented);
       ++decremented;
     }
