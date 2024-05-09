@@ -9,8 +9,8 @@ public:
 for (int i = 0; i < k; ++i) {
       ans += max(0, happiness[i] - decremented);
       ++decremented;
-    }
+}
 
     return ans;
-  }
+}
 };
