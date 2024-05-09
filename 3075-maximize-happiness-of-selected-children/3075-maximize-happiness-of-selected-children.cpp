@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   long long maximumHappinessSum(vector<int>& happiness, int k) {
     long long ans = 0;
     int decremented = 0;
