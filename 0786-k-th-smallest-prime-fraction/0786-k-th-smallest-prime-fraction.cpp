@@ -5,7 +5,7 @@ public:
     double l = 0.0;
     double r = 1.0;
 
-    while (l < r) {
+while (l < r) {
       const double m = (l + r) / 2.0;
       int fractionsNoGreaterThanM = 0;
       int p = 0;
