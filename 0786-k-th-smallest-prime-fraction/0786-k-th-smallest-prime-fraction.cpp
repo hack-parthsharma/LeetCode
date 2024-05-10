@@ -1,6 +1,6 @@
 class Solution {
 public:
-  vector<int> kthSmallestPrimeFraction(vector<int>& arr, int k) {
+    vector<int> kthSmallestPrimeFraction(vector<int>& arr, int k) {
     const int n = arr.size();
     double l = 0.0;
     double r = 1.0;
