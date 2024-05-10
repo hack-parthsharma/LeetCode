@@ -11,7 +11,6 @@ class Solution {
       int p = 0;
       int q = 1;
 
-      // So fractionsNoGreaterThanM for index i will be n - j
       for (int i = 0, j = 1; i < n; ++i) {
         while (j < n && arr[i] > m * arr[j])
           ++j;
