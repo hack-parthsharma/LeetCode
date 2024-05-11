@@ -1,6 +1,6 @@
 class Solution {
     public:
-  double mincostToHireWorkers(vector<int>& quality, vector<int>& wage, int k) {
+    double mincostToHireWorkers(vector<int>& quality, vector<int>& wage, int k) {
     double ans = DBL_MAX;
     int qualitySum = 0;
     vector<pair<double, int>> workers;
