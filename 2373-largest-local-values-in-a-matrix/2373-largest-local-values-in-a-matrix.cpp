@@ -10,6 +10,6 @@ public:
           for (int y = j; y < j + 3; ++y)
             ans[i][j] = max(ans[i][j], grid[x][y]);
 
-    return ans;
+return ans;
 }
 };
