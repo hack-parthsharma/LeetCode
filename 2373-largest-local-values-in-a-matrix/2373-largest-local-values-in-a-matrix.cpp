@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<vector<int>> largestLocal(vector<vector<int>>& grid) {
     const int n = grid.size();
     vector<vector<int>> ans(n - 2, vector<int>(n - 2));
