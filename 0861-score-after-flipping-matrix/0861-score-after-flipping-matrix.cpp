@@ -37,10 +37,10 @@ void flipCol(vector<vector<int>>& grid, int j) {
       grid[i][j] ^= 1;
   }
 
-  int binary(const vector<int>& row) {
+int binary(const vector<int>& row) {
     int res = row[0];
     for (int j = 1; j < row.size(); ++j)
       res = res * 2 + row[j];
     return res;
-  }
+}
 };
