@@ -13,7 +13,6 @@ class Solution {
       if (onesColCount(grid, j) * 2 < m)
         flipCol(grid, j);
 
-    // Add binary number for each row
     for (const vector<int>& row : grid)
       ans += binary(row);
 
