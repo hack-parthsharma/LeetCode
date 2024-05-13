@@ -23,7 +23,7 @@ private:
   void flip(vector<int>& row) {
     for (int i = 0; i < row.size(); ++i)
       row[i] ^= 1;
-  }
+}
 
 int onesColCount(const vector<vector<int>>& grid, int j) {
     int ones = 0;
