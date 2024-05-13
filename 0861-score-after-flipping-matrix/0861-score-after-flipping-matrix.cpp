@@ -30,7 +30,7 @@ int onesColCount(const vector<vector<int>>& grid, int j) {
     for (int i = 0; i < grid.size(); ++i)
       ones += grid[i][j];
     return ones;
-  }
+}
 
 void flipCol(vector<vector<int>>& grid, int j) {
     for (int i = 0; i < grid.size(); ++i)
