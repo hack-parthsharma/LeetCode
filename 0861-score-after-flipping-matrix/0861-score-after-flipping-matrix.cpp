@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int matrixScore(vector<vector<int>>& grid) {
     const int m = grid.size();
     const int n = grid[0].size();
