@@ -25,7 +25,7 @@ class Solution {
       row[i] ^= 1;
   }
 
-  int onesColCount(const vector<vector<int>>& grid, int j) {
+int onesColCount(const vector<vector<int>>& grid, int j) {
     int ones = 0;
     for (int i = 0; i < grid.size(); ++i)
       ones += grid[i][j];
