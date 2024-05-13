@@ -32,7 +32,7 @@ class Solution {
     return ones;
   }
 
-  void flipCol(vector<vector<int>>& grid, int j) {
+void flipCol(vector<vector<int>>& grid, int j) {
     for (int i = 0; i < grid.size(); ++i)
       grid[i][j] ^= 1;
   }
