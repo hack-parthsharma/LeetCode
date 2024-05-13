@@ -9,7 +9,6 @@ class Solution {
       if (row[0] == 0)
         flip(row);
 
-    // Flip cols with 1s < 0s
     for (int j = 0; j < n; ++j)
       if (onesColCount(grid, j) * 2 < m)
         flipCol(grid, j);
