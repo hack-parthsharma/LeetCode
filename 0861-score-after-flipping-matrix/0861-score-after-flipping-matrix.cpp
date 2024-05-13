@@ -19,7 +19,7 @@ class Solution {
     return ans;
   }
 
- private:
+private:
   void flip(vector<int>& row) {
     for (int i = 0; i < row.size(); ++i)
       row[i] ^= 1;
