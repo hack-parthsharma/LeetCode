@@ -8,7 +8,7 @@ for (int i = 0; i < grid.size(); ++i)
         ans = max(ans, dfs(grid, i, j));
 
     return ans;
-  }
+}
 
  private:
   int dfs(vector<vector<int>>& grid, int i, int j) {
