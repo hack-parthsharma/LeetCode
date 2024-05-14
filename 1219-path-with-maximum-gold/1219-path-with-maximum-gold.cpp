@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int getMaximumGold(vector<vector<int>>& grid) {
     int ans = 0;
 
