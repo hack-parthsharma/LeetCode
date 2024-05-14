@@ -10,7 +10,7 @@ for (int i = 0; i < grid.size(); ++i)
     return ans;
 }
 
- private:
+private:
   int dfs(vector<vector<int>>& grid, int i, int j) {
     if (i < 0 || j < 0 || i == grid.size() || j == grid[0].size())
       return 0;
