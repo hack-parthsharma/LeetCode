@@ -18,7 +18,7 @@ class Solution {
       return 0;
 
     const int gold = grid[i][j];
-    grid[i][j] = 0;  // Mark as visited.
+    grid[i][j] = 0;  
     const int maxPath = max({dfs(grid, i + 1, j), dfs(grid, i - 1, j),
                              dfs(grid, i, j + 1), dfs(grid, i, j - 1)});
     grid[i][j] = gold;
