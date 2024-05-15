@@ -61,7 +61,7 @@ for (int i = 0; i < n; ++i)
         if (grid[i][j] == 1) {
           q.emplace(i, j);
           seen[i][j] = true;
-        }
+}
 
     for (int dist = 0; !q.empty(); ++dist) {
       for (int sz = q.size(); sz > 0; --sz) {
