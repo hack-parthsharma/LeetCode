@@ -77,7 +77,7 @@ for (int i = 0; i < n; ++i)
             continue;
           q.emplace(x, y);
           seen[x][y] = true;
-        }
+}
 }
 }
 
