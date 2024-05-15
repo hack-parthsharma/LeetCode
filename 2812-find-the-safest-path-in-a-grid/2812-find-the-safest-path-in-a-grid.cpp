@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maximumSafenessFactor(vector<vector<int>>& grid) {
     const vector<vector<int>> distToThief = getDistToThief(grid);
     int l = 0;
