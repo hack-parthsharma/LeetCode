@@ -78,7 +78,7 @@ for (int i = 0; i < n; ++i)
           q.emplace(x, y);
           seen[x][y] = true;
         }
-      }
+}
 }
 
     return distToThief;
