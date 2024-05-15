@@ -16,7 +16,7 @@ public:
     return l - 1;
   }
 
- private:
+private:
   const vector<int> dirs{0, 1, 0, -1, 0};
 
   bool hasValidPath(const vector<vector<int>>& distToThief, int safeness) {
