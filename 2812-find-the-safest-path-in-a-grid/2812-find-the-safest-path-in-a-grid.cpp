@@ -54,7 +54,7 @@ vector<vector<int>> getDistToThief(const vector<vector<int>>& grid) {
 const int n = grid.size();
 vector<vector<int>> distToThief(n, vector<int>(n));
 queue<pair<int, int>> q;
-    vector<vector<bool>> seen(n, vector<bool>(n));
+vector<vector<bool>> seen(n, vector<bool>(n));
 
     for (int i = 0; i < n; ++i)
       for (int j = 0; j < n; ++j)
