@@ -79,7 +79,7 @@ for (int i = 0; i < n; ++i)
           seen[x][y] = true;
         }
       }
-    }
+}
 
     return distToThief;
   }
