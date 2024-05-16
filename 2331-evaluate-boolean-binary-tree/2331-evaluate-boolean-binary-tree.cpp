@@ -5,7 +5,6 @@ public:
       return root->val;
     if (root->val == 2)  // OR
       return evaluateTree(root->left) || evaluateTree(root->right);
-    // AND
     return evaluateTree(root->left) && evaluateTree(root->right);
   }
 };
