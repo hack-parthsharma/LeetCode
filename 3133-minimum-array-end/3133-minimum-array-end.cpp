@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minEnd(int n, int x) {
-    // operation increase x for (n - 1) iterations while preserving x's 1s.
     const int kMaxBit = log2(n) + log2(x) + 2;
     const long long k = n - 1;
     long long ans = x;
