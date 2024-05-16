@@ -7,7 +7,7 @@ public:
     int l = 1;
     int r = n;
 
-    while (l < r) {
+while (l < r) {
       const int m = (l + r) / 2;
       if (subarrayWithAtMostKDistinct(nums, m) >= medianCount)
         r = m;
