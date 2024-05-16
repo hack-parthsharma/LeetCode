@@ -1,7 +1,6 @@
 class Solution {
  public:
   int minimumAddedInteger(vector<int>& nums1, vector<int>& nums2) {
-    // elements removed) and nums2 is represented by nums2[0] - nums1[i], where
     // 0 <= i <= 2.
     int ans = INT_MAX;
 
