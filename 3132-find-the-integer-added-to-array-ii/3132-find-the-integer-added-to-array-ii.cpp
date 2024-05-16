@@ -16,7 +16,6 @@ class Solution {
   }
 
  private:
-  // Returns true if it's possible to increase nums1 (with two elements removed)
   // by `inc` to nums2.
   bool isValidDiff(const vector<int>& nums1, const vector<int>& nums2,
                    int inc) {
