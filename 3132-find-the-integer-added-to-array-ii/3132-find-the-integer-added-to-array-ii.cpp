@@ -1,7 +1,6 @@
 class Solution {
  public:
   int minimumAddedInteger(vector<int>& nums1, vector<int>& nums2) {
-    // 0 <= i <= 2.
     int ans = INT_MAX;
 
     ranges::sort(nums1);
