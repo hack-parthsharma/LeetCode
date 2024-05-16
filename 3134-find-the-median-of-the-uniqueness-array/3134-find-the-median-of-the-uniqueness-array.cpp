@@ -16,7 +16,7 @@ while (l < r) {
     }
 
     return l;
-  }
+}
 
  private:
   long subarrayWithAtMostKDistinct(const vector<int>& nums, int k) {
