@@ -30,7 +30,7 @@ private:
         if (--count[nums[l++]] == 0)
           ++k;
       res += r - l + 1;  
-    }
+}
 
     return res;
   }
