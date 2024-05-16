@@ -30,7 +30,7 @@ class Solution {
       while (k == -1)
         if (--count[nums[l++]] == 0)
           ++k;
-      res += r - l + 1;  // nums[l..r], nums[l + 1..r], ..., nums[r]
+      res += r - l + 1;  
     }
 
     return res;
