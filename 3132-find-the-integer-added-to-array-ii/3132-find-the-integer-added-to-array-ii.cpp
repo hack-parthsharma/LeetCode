@@ -16,7 +16,6 @@ class Solution {
   }
 
  private:
-  // by `inc` to nums2.
   bool isValidDiff(const vector<int>& nums1, const vector<int>& nums2,
                    int inc) {
     int removed = 0;
