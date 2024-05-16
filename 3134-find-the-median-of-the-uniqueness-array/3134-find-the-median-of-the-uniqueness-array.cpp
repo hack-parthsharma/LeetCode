@@ -19,7 +19,6 @@ class Solution {
   }
 
  private:
-  // Similar to 992. Subarrays with K Different Integers
   long subarrayWithAtMostKDistinct(const vector<int>& nums, int k) {
     long res = 0;
     unordered_map<int, int> count;
