@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long minEnd(int n, int x) {
-    // Set x's 0s with (n - 1)'s LSb-to-MSb bits, preserving x's 1s. This
     // operation increase x for (n - 1) iterations while preserving x's 1s.
     const int kMaxBit = log2(n) + log2(x) + 2;
     const long long k = n - 1;
