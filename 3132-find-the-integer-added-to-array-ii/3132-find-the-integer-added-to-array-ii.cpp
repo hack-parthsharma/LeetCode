@@ -19,7 +19,7 @@ class Solution {
   bool isValidDiff(const vector<int>& nums1, const vector<int>& nums2,
                    int inc) {
     int removed = 0;
-    int i = 0;  // nums2's index
+    int i = 0;  
 
     for (const int num : nums1)
       if (num + inc == nums2[i]) {
