@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int medianOfUniquenessArray(vector<int>& nums) {
+    int medianOfUniquenessArray(vector<int>& nums) {
     const int n = nums.size();
     const long subarryCount = n * (n + 1L) / 2;
     const long medianCount = (subarryCount + 1) / 2;
