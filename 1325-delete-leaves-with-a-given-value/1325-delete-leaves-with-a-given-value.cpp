@@ -7,6 +7,7 @@ public:
     return nullptr;
     
     root->left = removeLeafNodes(root->left, target);
+    
     root->right = removeLeafNodes(root->right, target);
     return isLeaf(root) && root->val == target ? nullptr : root;
 }
