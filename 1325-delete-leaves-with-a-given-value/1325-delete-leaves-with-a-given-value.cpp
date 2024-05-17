@@ -9,7 +9,7 @@ public:
 }
 
 private:
-  bool isLeaf(TreeNode* root) {
+    bool isLeaf(TreeNode* root) {
     return root->left == nullptr && root->right == nullptr;
 }
 };
