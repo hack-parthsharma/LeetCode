@@ -8,8 +8,8 @@ public:
     return isLeaf(root) && root->val == target ? nullptr : root;
 }
 
- private:
+private:
   bool isLeaf(TreeNode* root) {
     return root->left == nullptr && root->right == nullptr;
-  }
+}
 };
