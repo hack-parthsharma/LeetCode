@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   TreeNode* removeLeafNodes(TreeNode* root, int target) {
     if (root == nullptr)
       return nullptr;
