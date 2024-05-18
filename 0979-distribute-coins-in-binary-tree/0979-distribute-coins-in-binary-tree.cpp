@@ -15,5 +15,5 @@ private:
     const int r = dfs(root->right, ans);
     ans += abs(l) + abs(r);
     return (root->val - 1) + l + r;
-  }
+}
 };
