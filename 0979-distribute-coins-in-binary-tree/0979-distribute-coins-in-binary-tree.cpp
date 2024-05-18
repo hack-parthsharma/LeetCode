@@ -6,7 +6,7 @@ public:
     return ans;
 }
 
- private:
+private:
   int dfs(TreeNode* root, int& ans) {
     if (root == nullptr)
       return 0;
