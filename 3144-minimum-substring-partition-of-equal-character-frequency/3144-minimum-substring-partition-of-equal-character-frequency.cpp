@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int minimumSubstringsInPartition(string s) {
+        int minimumSubstringsInPartition(string s) {
         int n = s.size();
         int f[n];
         memset(f, -1, sizeof(f));
