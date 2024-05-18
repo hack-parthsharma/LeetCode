@@ -4,7 +4,7 @@ public:
     int ans = 0;
     dfs(root, ans);
     return ans;
-  }
+}
 
   // Returns how many coins I can give (positive) / take (negative)
  private:
