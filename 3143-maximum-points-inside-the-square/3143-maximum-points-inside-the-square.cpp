@@ -7,7 +7,7 @@ public:
             int key = max(abs(p[0]), abs(p[1]));
             g[key].push_back(i);
         }
-        bool vis[26]{};
+bool vis[26]{};
 int ans = 0;
         for (auto& [_, idx] : g) {
             for (int i : idx) {
