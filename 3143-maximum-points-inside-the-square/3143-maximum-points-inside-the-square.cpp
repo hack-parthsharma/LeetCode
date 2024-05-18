@@ -8,7 +8,7 @@ public:
             g[key].push_back(i);
         }
         bool vis[26]{};
-        int ans = 0;
+int ans = 0;
         for (auto& [_, idx] : g) {
             for (int i : idx) {
                 int j = s[i] - 'a';
