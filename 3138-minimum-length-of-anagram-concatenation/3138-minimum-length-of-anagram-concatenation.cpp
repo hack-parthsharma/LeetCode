@@ -9,7 +9,6 @@ class Solution {
   }
 
  private:
-  // Returns true if we can concatenate an anagram of length k to s.
   bool canFormAnagram(const string& s, int k) {
     const int n = s.length();
     vector<int> anagramCount(26);
