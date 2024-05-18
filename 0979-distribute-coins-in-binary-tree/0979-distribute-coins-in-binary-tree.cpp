@@ -7,7 +7,7 @@ public:
 }
 
 private:
-  int dfs(TreeNode* root, int& ans) {
+int dfs(TreeNode* root, int& ans) {
     if (root == nullptr)
       return 0;
 
