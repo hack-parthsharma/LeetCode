@@ -14,7 +14,7 @@ public:
             f[i] = n - i;
             int cnt[26]{};
             unordered_map<int, int> freq;
-            for (int j = i; j < n; ++j) {
+        for (int j = i; j < n; ++j) {
                 int k = s[j] - 'a';
                 if (cnt[k]) {
                     freq[cnt[k]]--;
