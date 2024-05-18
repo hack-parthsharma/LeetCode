@@ -6,7 +6,6 @@ public:
     return ans;
 }
 
-  // Returns how many coins I can give (positive) / take (negative)
  private:
   int dfs(TreeNode* root, int& ans) {
     if (root == nullptr)
