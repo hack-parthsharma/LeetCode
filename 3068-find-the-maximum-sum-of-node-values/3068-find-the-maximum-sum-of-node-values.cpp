@@ -12,7 +12,7 @@ public:
       minChangeDiff = min(minChangeDiff, abs(num - (num ^ k)));
     }
 
-    if (changedCount % 2 == 0)
+if (changedCount % 2 == 0)
       return maxSum;
     return maxSum - minChangeDiff;
   }
