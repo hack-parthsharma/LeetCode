@@ -55,7 +55,6 @@ class Solution {
     return sumBits;
   }
 
-  // Returns sum(all powers of i), where 1 <= i <= x.
   long long sumPowersTill(long long x) {
     long long sumPowers = 0;
     long long powerOfTwo = 1;
