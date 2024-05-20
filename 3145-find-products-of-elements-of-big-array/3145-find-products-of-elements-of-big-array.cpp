@@ -46,7 +46,6 @@ class Solution {
     return l;
   }
 
-  // Returns sum(i.bit_count()), where 1 <= i <= x.
   long long sumBitsTill(long long x) {
     long long sumBits = 0;
     for (long long powerOfTwo = 1; powerOfTwo <= x; powerOfTwo *= 2) {
