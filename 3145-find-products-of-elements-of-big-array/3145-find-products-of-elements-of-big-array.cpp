@@ -17,7 +17,7 @@ class Solution {
     return ans;
   }
 
- private:
+private:
   long long sumPowersFirstKBigNums(long long k) {
     const long long num = firstNumberHavingSumBitsTillGreaterThan(k);
     long long sumPowers = sumPowersTill(num - 1);
