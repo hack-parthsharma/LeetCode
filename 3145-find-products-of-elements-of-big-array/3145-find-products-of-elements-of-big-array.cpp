@@ -33,7 +33,6 @@ class Solution {
     return sumPowers;
   }
 
-  // Returns the first number in [1, k] that has sumBitsTill(num) >= k.
   long long firstNumberHavingSumBitsTillGreaterThan(long long k) {
     long long l = 1;
     long long r = k;
