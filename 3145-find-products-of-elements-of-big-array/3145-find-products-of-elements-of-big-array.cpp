@@ -18,7 +18,6 @@ class Solution {
   }
 
  private:
-  // Returns the sum of powers of the first k numbers in `big_nums`.
   long long sumPowersFirstKBigNums(long long k) {
     const long long num = firstNumberHavingSumBitsTillGreaterThan(k);
     long long sumPowers = sumPowersTill(num - 1);
