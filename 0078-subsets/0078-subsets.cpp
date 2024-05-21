@@ -14,5 +14,5 @@ for (int i = s; i < nums.size(); ++i) {
     dfs(nums, i + 1, move(path), ans);
     path.pop_back();
 }
-  }
+}
 };
