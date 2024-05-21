@@ -7,7 +7,7 @@ public:
 }
 private:
     void dfs(const vector<int>& nums, int s, vector<int>&& path,
-           vector<vector<int>>& ans) {
+    vector<vector<int>>& ans) {
     ans.push_back(path);
 for (int i = s; i < nums.size(); ++i) {
       path.push_back(nums[i]);
