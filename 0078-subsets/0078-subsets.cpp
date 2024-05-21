@@ -4,7 +4,7 @@ public:
     vector<vector<int>> ans;
     dfs(nums, 0, {}, ans);
     return ans;
-  }
+}
  private:
   void dfs(const vector<int>& nums, int s, vector<int>&& path,
            vector<vector<int>>& ans) {
