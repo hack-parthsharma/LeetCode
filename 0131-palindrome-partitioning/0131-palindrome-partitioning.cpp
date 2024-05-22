@@ -24,5 +24,5 @@ private:
       if (s[l++] != s[r--])
         return false;
     return true;
-  }
+}
 };
