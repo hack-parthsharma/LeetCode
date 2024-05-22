@@ -11,14 +11,14 @@ private:
     if (start == s.length()) {
       ans.push_back(path);
       return;
-    }
+}
     for (int i = start; i < s.length(); ++i)
       if (isPalindrome(s, start, i)) {
         path.push_back(s.substr(start, i - start + 1));
         dfs(s, i + 1, move(path), ans);
         path.pop_back();
       }
-  }
+}
   bool isPalindrome(const string& s, int l, int r) {
     while (l < r)
       if (s[l++] != s[r--])
