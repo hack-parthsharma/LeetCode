@@ -3,9 +3,7 @@
 // subset[0] = [2, 4, 4']
 // subset[1] = [1]
 // count = {2: 1, 4: 2, 1: 1}
-//
-// Initially, skip = len([]) = 0, pick = len([]) = 0
-//
+
 
 
 class Solution {
