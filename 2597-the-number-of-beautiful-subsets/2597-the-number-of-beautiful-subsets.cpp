@@ -18,7 +18,6 @@
 //          = len([[4], [4'], [4, 4']]) * len([[]])
 //          = len([[4], [4'], [4, 4']]) = 3
 //
-// * For values in subset[1]:
 
 class Solution {
  public:
