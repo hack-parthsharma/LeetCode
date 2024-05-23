@@ -6,12 +6,7 @@
 //
 // Initially, skip = len([]) = 0, pick = len([]) = 0
 //
-// * For values in subset[0]:
-//   After 2:
-//     skip = skip + pick = len([]) = 0
-//     pick = (2^count[2] - 1) * (1 + skip + pick)
-//          = len([[2]]) * len([[]])
-//          = len([[2]]) = 1
+
 
 class Solution {
  public:
