@@ -20,7 +20,6 @@
 //
 // * For values in subset[1]:
 //   After 1:
-//     skip = skip + pick
 
 class Solution {
  public:
