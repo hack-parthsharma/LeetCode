@@ -23,7 +23,6 @@
 //     skip = skip + pick
 //          = len([[2], [4], [4'], [4, 4']]) = 4
 //     pick = (2^count[1] - 1) * (1 + skip + pick)
-//          = len([[1]]) * len([[], [2], [4], [4'], [4, 4']])
 
 class Solution {
  public:
