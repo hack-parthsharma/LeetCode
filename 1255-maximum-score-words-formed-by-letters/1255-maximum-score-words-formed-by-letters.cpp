@@ -21,8 +21,7 @@ private:
     return ans;
 }
 
-int useWord(const vector<string>& words, int i, vector<int>& count,
-              const vector<int>& score) {
+int useWord(const vector<string>& words, int i, vector<int>& count, const vector<int>& score) {
     bool isValid = true;
     int earned = 0;
     for (const char c : words[i]) {
