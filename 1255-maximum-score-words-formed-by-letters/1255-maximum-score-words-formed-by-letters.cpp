@@ -6,7 +6,7 @@ public:
     for (const char c : letters)
       ++count[c - 'a'];
     return dfs(words, 0, count, score);
-  }
+}
 
  private:
   int dfs(const vector<string>& words, int s, vector<int>& count,
