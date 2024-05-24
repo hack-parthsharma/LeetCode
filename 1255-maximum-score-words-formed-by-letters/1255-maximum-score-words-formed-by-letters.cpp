@@ -24,13 +24,13 @@ private:
 int useWord(const vector<string>& words, int i, vector<int>& count, const vector<int>& score) {
     bool isValid = true;
     int earned = 0;
-    for (const char c : words[i]) {
+for (const char c : words[i]) {
       if (--count[c - 'a'] < 0)
         isValid = false;
       earned += score[c - 'a'];
     }
     return isValid ? earned : -1;
-  }
+}
 
   void unuseWord(const vector<string>& words, int i, vector<int>& count) {
     for (const char c : words[i])
