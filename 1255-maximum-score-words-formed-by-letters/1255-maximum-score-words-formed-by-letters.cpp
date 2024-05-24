@@ -9,7 +9,6 @@ class Solution {
   }
 
  private:
-  // Max score you can get from words[s:]
   int dfs(const vector<string>& words, int s, vector<int>& count,
           const vector<int>& score) {
     int ans = 0;
