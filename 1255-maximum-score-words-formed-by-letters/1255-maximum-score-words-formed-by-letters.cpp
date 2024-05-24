@@ -32,7 +32,7 @@ for (const char c : words[i]) {
     return isValid ? earned : -1;
 }
 
-  void unuseWord(const vector<string>& words, int i, vector<int>& count) {
+void unuseWord(const vector<string>& words, int i, vector<int>& count) {
     for (const char c : words[i])
       ++count[c - 'a'];
   }
