@@ -35,5 +35,5 @@ for (const char c : words[i]) {
 void unuseWord(const vector<string>& words, int i, vector<int>& count) {
     for (const char c : words[i])
       ++count[c - 'a'];
-  }
+}
 };
