@@ -19,7 +19,7 @@ private:
       unuseWord(words, i, count);
     }
     return ans;
-  }
+}
 
   int useWord(const vector<string>& words, int i, vector<int>& count,
               const vector<int>& score) {
