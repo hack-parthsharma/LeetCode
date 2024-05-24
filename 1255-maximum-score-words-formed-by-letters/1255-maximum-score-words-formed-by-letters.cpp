@@ -8,7 +8,7 @@ public:
     return dfs(words, 0, count, score);
 }
 
- private:
+private:
   int dfs(const vector<string>& words, int s, vector<int>& count,
           const vector<int>& score) {
     int ans = 0;
