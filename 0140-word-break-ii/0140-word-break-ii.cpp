@@ -23,7 +23,6 @@ class Solution {
           ans.push_back(prefix + " " + word);
     }
 
-    // Contains whole string, so don't add any space
     if (wordSet.count(s))
       ans.push_back(s);
 
