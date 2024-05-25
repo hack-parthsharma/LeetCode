@@ -13,7 +13,7 @@ private:
     if (const auto it = memo.find(s); it != cend(memo))
       return it->second;
 
-    vector<string> ans;
+vector<string> ans;
 
     for (int i = 1; i < s.length(); ++i) {
       const string& prefix = s.substr(0, i);
