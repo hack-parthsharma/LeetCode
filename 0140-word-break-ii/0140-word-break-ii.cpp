@@ -4,9 +4,9 @@ public:
     unordered_set<string> wordSet{begin(wordDict), end(wordDict)};
     unordered_map<string, vector<string>> memo;
     return wordBreak(s, wordSet, memo);
-  }
+}
 
- private:
+private:
   vector<string> wordBreak(const string& s,
                            const unordered_set<string>& wordSet,
                            unordered_map<string, vector<string>>& memo) {
