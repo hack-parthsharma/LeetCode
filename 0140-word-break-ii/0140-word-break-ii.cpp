@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> wordBreak(string s, vector<string>& wordDict) {
     unordered_set<string> wordSet{begin(wordDict), end(wordDict)};
     unordered_map<string, vector<string>> memo;
