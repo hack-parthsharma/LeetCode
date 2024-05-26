@@ -8,7 +8,6 @@ class Solution {
     while (n--) {
       const auto prev(dp);
 
-      // Append P
       dp[0][0] = (prev[0][0] + prev[0][1] + prev[0][2]) % kMod;
 
       // Append L
