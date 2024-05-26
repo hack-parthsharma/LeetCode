@@ -20,7 +20,6 @@ class Solution {
 
       dp[1][1] = prev[1][0];
 
-      // Append L
       dp[1][2] = prev[1][1];
     }
 
