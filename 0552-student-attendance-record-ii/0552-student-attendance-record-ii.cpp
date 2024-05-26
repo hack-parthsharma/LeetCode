@@ -18,7 +18,6 @@ class Solution {
                   prev[1][0] + prev[1][1] + prev[1][2]) %
                  kMod;
 
-      // Append L
       dp[1][1] = prev[1][0];
 
       // Append L
