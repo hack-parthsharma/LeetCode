@@ -6,7 +6,7 @@ int specialArray(vector<int>& A) {
 for (int i = 0; i <= N; ++i) {
             int cnt = N - (lower_bound(begin(A), end(A), i) - begin(A));
             if (cnt == i) return i;
-        }
+}
         return -1;
-    }
+}
 };
