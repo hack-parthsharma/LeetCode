@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int specialArray(vector<int>& A) {
+int specialArray(vector<int>& A) {
         sort(begin(A), end(A));
         int N = A.size();
         for (int i = 0; i <= N; ++i) {
