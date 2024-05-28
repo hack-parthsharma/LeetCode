@@ -8,6 +8,6 @@ for (int i = 0; i < s.length(); ++i) {
         maxCost += abs(s[j] - t[j++]);
 }
 
-    return s.length() - j;
+return s.length() - j;
 }
 };
