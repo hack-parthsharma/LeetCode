@@ -6,7 +6,7 @@ class Solution {
     while (s.back() == '0') {
       s.pop_back();
       ++ans;
-    }
+}
 
     if (s == "1")
       return ans;
