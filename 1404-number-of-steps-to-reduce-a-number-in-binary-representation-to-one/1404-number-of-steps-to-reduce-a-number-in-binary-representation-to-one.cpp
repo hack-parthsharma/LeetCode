@@ -3,7 +3,6 @@ class Solution {
   int numSteps(string s) {
     int ans = 0;
 
-    // All trailing 0s can be popped by 1 step.
     while (s.back() == '0') {
       s.pop_back();
       ++ans;
