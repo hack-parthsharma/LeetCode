@@ -17,5 +17,5 @@ class Solution {
       ans += c == '1' ? 1 : 2;
 
     return ans;
-  }
+}
 };
