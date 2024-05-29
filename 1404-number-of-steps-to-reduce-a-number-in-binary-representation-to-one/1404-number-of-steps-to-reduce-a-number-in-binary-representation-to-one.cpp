@@ -11,7 +11,6 @@ class Solution {
     if (s == "1")
       return ans;
 
-    // s is now odd, so add 1 to s and cost 1 step.
     ++ans;
 
     // All 1s will become 0s and be popped by 1 step.
