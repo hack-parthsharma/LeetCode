@@ -13,8 +13,6 @@ class Solution {
 
     ++ans;
 
-    // All 1s will become 0s and be popped by 1 step.
-    // All 0s will become 1s and be popped by 2 step (add 1 then divide by 2).
     for (const char c : s)
       ans += c == '1' ? 1 : 2;
 
