@@ -5,7 +5,7 @@ let ans = -Infinity;
 for (let i = 0; i < m; ++i) {
 for (let j = 0; j < n; ++j) {
 let mi = Infinity;
-            if (i) {
+if (i) {
                 mi = Math.min(mi, f[i - 1][j]);
             }
             if (j) {
