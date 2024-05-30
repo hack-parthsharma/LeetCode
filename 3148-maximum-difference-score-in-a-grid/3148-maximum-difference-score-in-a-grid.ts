@@ -14,6 +14,6 @@ if (j) {
 ans = Math.max(ans, grid[i][j] - mi);
 f[i][j] = Math.min(mi, grid[i][j]);
         }
-    }
+}
     return ans;
 }
