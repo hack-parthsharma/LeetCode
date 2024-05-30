@@ -6,7 +6,7 @@ public:
         int f[1 << n][n];
         memset(f, -1, sizeof(f));
         function<int(int, int)> dfs = [&](int mask, int pre) {
-            if (mask == (1 << n) - 1) {
+    if (mask == (1 << n) - 1) {
                 return abs(pre - nums[0]);
             }
             int* res = &f[mask][pre];
