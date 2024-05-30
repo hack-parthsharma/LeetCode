@@ -1,6 +1,6 @@
 function maxScore(grid: number[][]): number {
 const [m, n] = [grid.length, grid[0].length];
-    const f: number[][] = Array.from({ length: m }, () => Array.from({ length: n }, () => 0));
+const f: number[][] = Array.from({ length: m }, () => Array.from({ length: n }, () => 0));
     let ans = -Infinity;
     for (let i = 0; i < m; ++i) {
         for (let j = 0; j < n; ++j) {
