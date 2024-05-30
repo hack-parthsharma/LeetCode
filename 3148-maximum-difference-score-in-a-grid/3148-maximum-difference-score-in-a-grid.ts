@@ -4,7 +4,7 @@ const f: number[][] = Array.from({ length: m }, () => Array.from({ length: n }, 
 let ans = -Infinity;
 for (let i = 0; i < m; ++i) {
 for (let j = 0; j < n; ++j) {
-            let mi = Infinity;
+let mi = Infinity;
             if (i) {
                 mi = Math.min(mi, f[i - 1][j]);
             }
