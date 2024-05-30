@@ -8,7 +8,7 @@ let mi = Infinity;
 if (i) {
                 mi = Math.min(mi, f[i - 1][j]);
 }
-            if (j) {
+if (j) {
                 mi = Math.min(mi, f[i][j - 1]);
             }
             ans = Math.max(ans, grid[i][j] - mi);
