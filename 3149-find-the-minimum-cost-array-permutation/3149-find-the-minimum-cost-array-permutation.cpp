@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<int> findPermutation(vector<int>& nums) {
+        vector<int> findPermutation(vector<int>& nums) {
         int n = nums.size();
         vector<int> ans;
         int f[1 << n][n];
