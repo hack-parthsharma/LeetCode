@@ -1,5 +1,5 @@
 class Solution {
-    private Integer[][] f;
+private Integer[][] f;
     private int[] nums;
     private int[] ans;
     private int n;
