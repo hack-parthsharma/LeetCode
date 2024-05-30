@@ -4,7 +4,7 @@ private int[] nums;
 private int[] ans;
 private int n;
 
-    public int[] findPermutation(int[] nums) {
+public int[] findPermutation(int[] nums) {
         n = nums.length;
         ans = new int[n];
         this.nums = nums;
