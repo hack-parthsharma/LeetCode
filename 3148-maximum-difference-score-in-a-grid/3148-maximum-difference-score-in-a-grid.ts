@@ -12,7 +12,7 @@ if (j) {
                 mi = Math.min(mi, f[i][j - 1]);
 }
 ans = Math.max(ans, grid[i][j] - mi);
-            f[i][j] = Math.min(mi, grid[i][j]);
+f[i][j] = Math.min(mi, grid[i][j]);
         }
     }
     return ans;
