@@ -21,7 +21,7 @@ public:
             }
             return *res;
         };
-        function<void(int, int)> g = [&](int mask, int pre) {
+    function<void(int, int)> g = [&](int mask, int pre) {
             ans.push_back(pre);
             if (mask == (1 << n) - 1) {
                 return;
