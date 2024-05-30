@@ -7,7 +7,7 @@ for (let j = 0; j < n; ++j) {
 let mi = Infinity;
 if (i) {
                 mi = Math.min(mi, f[i - 1][j]);
-            }
+}
             if (j) {
                 mi = Math.min(mi, f[i][j - 1]);
             }
