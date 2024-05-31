@@ -5,7 +5,7 @@ public:
         for(int num: nums) xor_all ^= num;
         int setbit = 1;
         while((setbit & xor_all) == 0) 
-            setbit <<= 1;
+        setbit <<= 1;
 
         vector<int> result(2);
 
