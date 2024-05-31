@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<int> singleNumber(vector<int>& nums) {
+        vector<int> singleNumber(vector<int>& nums) {
         int xor_all = 0;
         for(int num: nums) xor_all ^= num;
         int setbit = 1;
