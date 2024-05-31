@@ -3,7 +3,6 @@ public:
     vector<int> singleNumber(vector<int>& nums) {
         int xor_all = 0;
         for(int num: nums) xor_all ^= num;
-        // if value of a bit in xor is 1, then it means either a or b has 
         // 1 in that position, but not both. We can use this to find the answer.
         int setbit = 1;
         // Find the first position in xor_all where the value is 1
