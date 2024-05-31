@@ -3,9 +3,7 @@ public:
     vector<int> singleNumber(vector<int>& nums) {
         int xor_all = 0;
         for(int num: nums) xor_all ^= num;
-        // 1 in that position, but not both. We can use this to find the answer.
         int setbit = 1;
-        // Find the first position in xor_all where the value is 1
         while((setbit & xor_all) == 0) 
             setbit <<= 1;
 
