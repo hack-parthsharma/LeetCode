@@ -9,7 +9,6 @@ public:
 
         vector<int> result(2);
 
-        // Second set of numbers, will have 0 in the setbit position.
         for(int num: nums) {
             if(num & setbit) {
                 result[0] ^= num;
