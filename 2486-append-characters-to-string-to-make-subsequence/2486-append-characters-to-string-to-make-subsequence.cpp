@@ -9,5 +9,5 @@ for (const char c : s)
           return 0;
 
     return t.length() - i;
-  }
+}
 };
