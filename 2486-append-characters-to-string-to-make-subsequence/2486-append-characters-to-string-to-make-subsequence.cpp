@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int appendCharacters(string s, string t) {
     int i = 0;  
 
