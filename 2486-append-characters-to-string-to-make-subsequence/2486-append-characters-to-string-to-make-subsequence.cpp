@@ -8,6 +8,6 @@ if (c == t[i])
 if (++i == t.length())
 return 0;
 
-    return t.length() - i;
+return t.length() - i;
 }
 };
