@@ -10,7 +10,7 @@ for (const char c : s)
 for (const int c : count)
       ans += c % 2 == 0 ? c : c - 1;
 
-    const bool hasOddCount =
+const bool hasOddCount =
         any_of(begin(count), end(count), [](int c) { return c & 1; });
 
     return ans + hasOddCount;
