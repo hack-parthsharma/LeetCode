@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int longestPalindrome(string s) {
+    int longestPalindrome(string s) {
     int ans = 0;
     vector<int> count(128);
 
