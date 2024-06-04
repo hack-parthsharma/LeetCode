@@ -7,7 +7,7 @@ public:
 for (const char c : s)
       ++count[c];
 
-    for (const int c : count)
+for (const int c : count)
       ans += c % 2 == 0 ? c : c - 1;
 
     const bool hasOddCount =
