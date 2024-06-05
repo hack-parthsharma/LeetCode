@@ -17,5 +17,5 @@ for (char c = 'a'; c <= 'z'; ++c)
         ans.push_back(string(1, c));
 
     return ans;
-  }
+}
 };
