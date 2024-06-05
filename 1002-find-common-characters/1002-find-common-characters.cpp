@@ -4,7 +4,7 @@ public:
     vector<string> ans;
     vector<int> commonCount(26, INT_MAX);
 
-    for (const string& a : A) {
+for (const string& a : A) {
       vector<int> count(26);
       for (char c : a)
         ++count[c - 'a'];
