@@ -14,7 +14,7 @@ for (const string& a : A) {
 
 for (char c = 'a'; c <= 'z'; ++c)
 for (int i = 0; i < commonCount[c - 'a']; ++i)
-        ans.push_back(string(1, c));
+ans.push_back(string(1, c));
 
     return ans;
 }
