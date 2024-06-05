@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> commonChars(vector<string>& A) {
     vector<string> ans;
     vector<int> commonCount(26, INT_MAX);
