@@ -15,7 +15,7 @@ for (int i = start; i < start + groupSize; ++i) {
       count[i] -= value;
     
 if (count[i] < 0)
-            return false;
+      return false;
 
 }
 }
