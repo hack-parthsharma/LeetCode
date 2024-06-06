@@ -21,5 +21,5 @@ if (count[i] < 0)
 }
 
     return true;
-  }
+}
 };
