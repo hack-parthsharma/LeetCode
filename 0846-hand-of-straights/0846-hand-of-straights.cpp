@@ -12,7 +12,7 @@ for (const auto& [start, _] : count) {
 if (value > 0)
 
 for (int i = start; i < start + groupSize; ++i) {
-          count[i] -= value;
+      count[i] -= value;
 if (count[i] < 0)
             return false;
 }
