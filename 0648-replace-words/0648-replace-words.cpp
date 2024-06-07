@@ -11,7 +11,7 @@ public:
     insert(word);
 
 string ans;
-    istringstream iss(sentence);
+istringstream iss(sentence);
 
     for (string s; iss >> s;)
       ans += search(s) + ' ';
