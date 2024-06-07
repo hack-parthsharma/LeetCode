@@ -6,7 +6,7 @@ struct TrieNode {
 
 class Solution {
 public:
-  string replaceWords(vector<string>& dictionary, string sentence) {
+    string replaceWords(vector<string>& dictionary, string sentence) {
     for (const string& word : dictionary)
       insert(word);
 
