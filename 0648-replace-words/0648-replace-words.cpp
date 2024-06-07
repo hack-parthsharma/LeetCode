@@ -25,7 +25,8 @@ private:
 
   void insert(const string& word) {
     shared_ptr<TrieNode> node = root;
-    for (const char c : word) {
+
+for (const char c : word) {
       const int i = c - 'a';
       if (node->children[i] == nullptr)
         node->children[i] = make_shared<TrieNode>();
