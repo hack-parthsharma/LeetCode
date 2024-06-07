@@ -33,7 +33,7 @@ for (const char c : word) {
       node = node->children[i];
     }
     node->word = &word;
-  }
+}
 
   string search(const string& word) {
     shared_ptr<TrieNode> node = root;
