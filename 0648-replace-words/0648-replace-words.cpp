@@ -18,7 +18,7 @@ istringstream iss(sentence);
     ans.pop_back();
 
     return ans;
-  }
+}
 
 private:
   shared_ptr<TrieNode> root = make_shared<TrieNode>();
