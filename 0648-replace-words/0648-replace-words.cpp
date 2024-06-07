@@ -20,7 +20,7 @@ istringstream iss(sentence);
     return ans;
   }
 
- private:
+private:
   shared_ptr<TrieNode> root = make_shared<TrieNode>();
 
   void insert(const string& word) {
