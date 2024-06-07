@@ -8,9 +8,9 @@ class Solution {
 public:
     string replaceWords(vector<string>& dictionary, string sentence) {
     for (const string& word : dictionary)
-      insert(word);
+    insert(word);
 
-    string ans;
+string ans;
     istringstream iss(sentence);
 
     for (string s; iss >> s;)
