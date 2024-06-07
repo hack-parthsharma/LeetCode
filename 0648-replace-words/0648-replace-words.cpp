@@ -35,7 +35,7 @@ for (const char c : word) {
     node->word = &word;
 }
 
-  string search(const string& word) {
+string search(const string& word) {
     shared_ptr<TrieNode> node = root;
     for (const char c : word) {
       if (node->word)
