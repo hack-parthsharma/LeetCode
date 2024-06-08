@@ -6,7 +6,7 @@ public:
 
 for (int i = 0; i < nums.size(); ++i) {
       prefix += nums[i];
-      if (k != 0)
+if (k != 0)
         prefix %= k;
       if (const auto it = prefixToIndex.find(prefix);
           it != cend(prefixToIndex)) {
