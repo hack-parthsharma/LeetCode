@@ -4,7 +4,7 @@ public:
   int prefix = 0;
   unordered_map<int, int> prefixToIndex{{0, -1}};
 
-    for (int i = 0; i < nums.size(); ++i) {
+for (int i = 0; i < nums.size(); ++i) {
       prefix += nums[i];
       if (k != 0)
         prefix %= k;
