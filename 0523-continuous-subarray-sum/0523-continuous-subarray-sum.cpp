@@ -5,7 +5,7 @@ public:
   unordered_map<int, int> prefixToIndex{{0, -1}};
 
 for (int i = 0; i < nums.size(); ++i) {
-      prefix += nums[i];
+        prefix += nums[i];
 if (k != 0)
         prefix %= k;
 if (const auto it = prefixToIndex.find(prefix);
