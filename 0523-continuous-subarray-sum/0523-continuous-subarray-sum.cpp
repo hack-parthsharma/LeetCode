@@ -14,7 +14,7 @@ if (i - it->second > 1)
         return true;
 } else {
         prefixToIndex[prefix] = i;
-      }
+}
 }
 
     return false;
