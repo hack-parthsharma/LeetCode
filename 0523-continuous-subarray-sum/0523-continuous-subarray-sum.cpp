@@ -11,7 +11,7 @@ if (k != 0)
 if (const auto it = prefixToIndex.find(prefix);
         it != cend(prefixToIndex)) {
 if (i - it->second > 1)
-          return true;
+        return true;
       } else {
         prefixToIndex[prefix] = i;
       }
