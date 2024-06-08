@@ -10,7 +10,7 @@ if (k != 0)
         prefix %= k;
 if (const auto it = prefixToIndex.find(prefix);
           it != cend(prefixToIndex)) {
-        if (i - it->second > 1)
+if (i - it->second > 1)
           return true;
       } else {
         prefixToIndex[prefix] = i;
