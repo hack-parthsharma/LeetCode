@@ -8,7 +8,7 @@ for (int i = 0; i < nums.size(); ++i) {
       prefix += nums[i];
 if (k != 0)
         prefix %= k;
-      if (const auto it = prefixToIndex.find(prefix);
+if (const auto it = prefixToIndex.find(prefix);
           it != cend(prefixToIndex)) {
         if (i - it->second > 1)
           return true;
