@@ -18,5 +18,5 @@ if (i - it->second > 1)
 }
 
     return false;
-  }
+}
 };
