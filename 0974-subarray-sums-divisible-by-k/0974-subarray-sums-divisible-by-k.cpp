@@ -4,9 +4,9 @@ public:
      int ans = 0;
      int prefix = 0;
      vector<int> count(k);
-    count[0] = 1;
+     count[0] = 1;
 
-    for (const int num : nums) {
+for (const int num : nums) {
       prefix = (prefix + num % k + k) % k;
       ans += count[prefix];
       ++count[prefix];
