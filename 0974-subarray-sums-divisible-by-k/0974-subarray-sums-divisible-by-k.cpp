@@ -8,7 +8,7 @@ public:
 
 for (const int num : nums) {
      prefix = (prefix + num % k + k) % k;
-      ans += count[prefix];
+     ans += count[prefix];
       ++count[prefix];
 }
 
