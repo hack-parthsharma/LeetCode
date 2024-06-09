@@ -12,6 +12,6 @@ for (const int num : nums) {
       ++count[prefix];
 }
 
-    return ans;
-  }
+return ans;
+}
 };
