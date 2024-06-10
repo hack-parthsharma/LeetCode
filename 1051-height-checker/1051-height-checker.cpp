@@ -5,7 +5,7 @@ public:
   int currentHeight = 1;
   vector<int> count(101);
 
-    for (int height : heights)
+for (int height : heights)
       ++count[height];
 
     for (int height : heights) {
