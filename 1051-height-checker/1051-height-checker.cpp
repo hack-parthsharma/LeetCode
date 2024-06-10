@@ -8,7 +8,7 @@ public:
 for (int height : heights)
       ++count[height];
 
-    for (int height : heights) {
+for (int height : heights) {
       while (count[currentHeight] == 0)
         ++currentHeight;
       if (height != currentHeight)
