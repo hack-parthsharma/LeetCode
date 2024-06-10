@@ -1,7 +1,7 @@
 class Solution {
 public:
   int heightChecker(vector<int>& heights) {
-    int ans = 0;
+  int ans = 0;
     int currentHeight = 1;
     vector<int> count(101);
 
