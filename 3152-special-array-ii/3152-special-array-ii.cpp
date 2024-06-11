@@ -3,7 +3,6 @@ class Solution {
   vector<bool> isArraySpecial(vector<int>& nums, vector<vector<int>>& queries) {
     vector<bool> ans;
     int id = 0;
-    // parityIds[i] := the id of the parity group that nums[i] belongs to
     vector<int> parityIds = {id};
 
     for (int i = 1; i < nums.size(); ++i) {
