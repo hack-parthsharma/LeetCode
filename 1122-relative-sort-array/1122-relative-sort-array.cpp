@@ -15,6 +15,6 @@ for (int num = 0; num < 1001; ++num)
       while (count[num]-- > 0)
         ans.push_back(num);
 
-    return ans;
+return ans;
 }
 };
