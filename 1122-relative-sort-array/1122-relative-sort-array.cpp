@@ -7,7 +7,7 @@ public:
 for (int a : arr1)
       ++count[a];
 
-    for (int a : arr2)
+for (int a : arr2)
       while (count[a]-- > 0)
         ans.push_back(a);
 
