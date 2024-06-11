@@ -16,5 +16,5 @@ for (int num = 0; num < 1001; ++num)
         ans.push_back(num);
 
     return ans;
-  }
+}
 };
