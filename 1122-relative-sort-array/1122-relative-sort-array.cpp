@@ -4,7 +4,7 @@ public:
     vector<int> ans;
     vector<int> count(1001);
 
-    for (int a : arr1)
+for (int a : arr1)
       ++count[a];
 
     for (int a : arr2)
