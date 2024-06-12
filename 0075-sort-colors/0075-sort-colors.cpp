@@ -13,7 +13,7 @@ if (num == 0) {
 } else if (num == 1) {
         nums[++two] = 2;
         nums[++one] = 1;
-      } else {
+} else {
         nums[++two] = 2;
       }
   }
