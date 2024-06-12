@@ -1,6 +1,6 @@
 class Solution {
 public:
-  void sortColors(vector<int>& nums) {
+   void sortColors(vector<int>& nums) {
     int zero = -1;
     int one = -1;
     int two = -1;
