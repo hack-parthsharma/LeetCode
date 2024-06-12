@@ -10,7 +10,7 @@ if (num == 0) {
         nums[++two] = 2;
         nums[++one] = 1;
         nums[++zero] = 0;
-      } else if (num == 1) {
+} else if (num == 1) {
         nums[++two] = 2;
         nums[++one] = 1;
       } else {
