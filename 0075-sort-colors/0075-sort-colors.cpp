@@ -6,7 +6,7 @@ public:
     int two = -1;
 
 for (const int num : nums)
-      if (num == 0) {
+if (num == 0) {
         nums[++two] = 2;
         nums[++one] = 1;
         nums[++zero] = 0;
