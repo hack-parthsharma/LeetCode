@@ -5,7 +5,7 @@ public:
     int one = -1;
     int two = -1;
 
-    for (const int num : nums)
+for (const int num : nums)
       if (num == 0) {
         nums[++two] = 2;
         nums[++one] = 1;
