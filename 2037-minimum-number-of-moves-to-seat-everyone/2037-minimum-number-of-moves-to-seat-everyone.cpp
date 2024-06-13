@@ -5,7 +5,7 @@ public:
     sort(begin(seats), end(seats));
     sort(begin(students), end(students));
 
-    for (int i = 0; i < seats.size(); ++i)
+for (int i = 0; i < seats.size(); ++i)
       ans += abs(seats[i] - students[i]);
 
     return ans;
