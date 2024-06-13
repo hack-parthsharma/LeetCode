@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minMovesToSeat(vector<int>& seats, vector<int>& students) {
     int ans = 0;
 
