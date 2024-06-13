@@ -8,6 +8,6 @@ public:
 for (int i = 0; i < seats.size(); ++i)
     ans += abs(seats[i] - students[i]);
 
-    return ans;
+return ans;
 }
 };
