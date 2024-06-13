@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int minMovesToSeat(vector<int>& seats, vector<int>& students) {
+    int minMovesToSeat(vector<int>& seats, vector<int>& students) {
     int ans = 0;
 
     sort(begin(seats), end(seats));
