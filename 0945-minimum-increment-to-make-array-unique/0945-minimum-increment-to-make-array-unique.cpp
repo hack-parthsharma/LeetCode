@@ -4,7 +4,7 @@ public:
     int ans = 0;
     int minAvailable = 0;
 
-    sort(begin(nums), end(nums));
+sort(begin(nums), end(nums));
 
     for (const int num : nums) {
       ans += max(minAvailable - num, 0);
