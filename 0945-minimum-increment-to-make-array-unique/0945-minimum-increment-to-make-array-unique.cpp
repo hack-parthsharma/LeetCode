@@ -9,8 +9,8 @@ sort(begin(nums), end(nums));
 for (const int num : nums) {
       ans += max(minAvailable - num, 0);
       minAvailable = max(minAvailable, num) + 1;
-    }
+}
 
     return ans;
-  }
+}
 };
