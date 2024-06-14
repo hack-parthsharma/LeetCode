@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int minIncrementForUnique(vector<int>& nums) {
+    int minIncrementForUnique(vector<int>& nums) {
     int ans = 0;
     int minAvailable = 0;
 
