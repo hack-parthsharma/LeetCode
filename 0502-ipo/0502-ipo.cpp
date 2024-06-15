@@ -5,8 +5,7 @@ struct T {
 };
 class Solution {
 public:
-  int findMaximizedCapital(int k, int W, vector<int>& Profits,
-                           vector<int>& Capital) {
+  int findMaximizedCapital(int k, int W, vector<int>& Profits, vector<int>& Capital) {
     auto compareC = [](const T& a, const T& b) { return a.cap > b.cap; };
     auto compareP = [](const T& a, const T& b) { return a.pro < b.pro; };
     priority_queue<T, vector<T>, decltype(compareC)> minHeap(compareC);
