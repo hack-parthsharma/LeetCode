@@ -19,6 +19,6 @@ while (k--) {
         break;
       W += maxHeap.top().pro, maxHeap.pop();
 }
-    return W;
+return W;
 }
 };
