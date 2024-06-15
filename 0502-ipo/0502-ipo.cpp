@@ -4,7 +4,7 @@ struct T {
   T(int pro, int cap) : pro(pro), cap(cap) {}
 };
 class Solution {
- public:
+public:
   int findMaximizedCapital(int k, int W, vector<int>& Profits,
                            vector<int>& Capital) {
     auto compareC = [](const T& a, const T& b) { return a.cap > b.cap; };
