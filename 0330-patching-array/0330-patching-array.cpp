@@ -9,7 +9,6 @@ class Solution {
       if (i < nums.size() && nums[i] <= miss) {
         miss += nums[i++];
       } else {
-        
         miss += miss;
         ++ans;
       }
