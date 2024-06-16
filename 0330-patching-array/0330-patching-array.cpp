@@ -9,7 +9,7 @@ class Solution {
       if (i < nums.size() && nums[i] <= miss) {
         miss += nums[i++];
       } else {
-        // Greedily add miss itself to increase the range
+        
         // From [1, miss) to [1, 2 * miss)
         miss += miss;
         ++ans;
