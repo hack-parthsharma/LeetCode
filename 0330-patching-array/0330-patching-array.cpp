@@ -10,7 +10,6 @@ class Solution {
         miss += nums[i++];
       } else {
         
-        // From [1, miss) to [1, 2 * miss)
         miss += miss;
         ++ans;
       }
