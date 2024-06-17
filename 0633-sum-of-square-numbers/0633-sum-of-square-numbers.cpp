@@ -9,7 +9,7 @@ while (l <= r) {
 if (sum == c)
       return true;
 if (sum < c)
-        ++l;
+      ++l;
       else
         --r;
 }
