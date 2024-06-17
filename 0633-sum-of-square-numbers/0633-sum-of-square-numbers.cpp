@@ -12,7 +12,7 @@ while (l <= r) {
         ++l;
       else
         --r;
-    }
+}
 
     return false;
   }
