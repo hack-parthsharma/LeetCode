@@ -7,8 +7,8 @@ public:
 while (l <= r) {
       const unsigned sum = l * l + r * r;
 if (sum == c)
-        return true;
-      if (sum < c)
+      return true;
+if (sum < c)
         ++l;
       else
         --r;
