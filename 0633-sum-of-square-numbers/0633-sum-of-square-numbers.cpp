@@ -4,7 +4,7 @@ public:
     unsigned l = 0;
     unsigned r = sqrt(c);
 
-    while (l <= r) {
+while (l <= r) {
       const unsigned sum = l * l + r * r;
       if (sum == c)
         return true;
