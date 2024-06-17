@@ -15,5 +15,5 @@ while (l <= r) {
 }
 
     return false;
-  }
+}
 };
