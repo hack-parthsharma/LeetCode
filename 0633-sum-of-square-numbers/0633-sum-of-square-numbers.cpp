@@ -1,6 +1,6 @@
 class Solution {
 public:
-  bool judgeSquareSum(int c) {
+    bool judgeSquareSum(int c) {
     unsigned l = 0;
     unsigned r = sqrt(c);
 
