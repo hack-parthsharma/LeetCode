@@ -2,9 +2,9 @@ class Solution {
 public:
 int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit, vector<int>& worker) {
 int ans = 0;
-    vector<pair<int, int>> jobs;
+vector<pair<int, int>> jobs;
 
-    for (int i = 0; i < difficulty.size(); ++i)
+for (int i = 0; i < difficulty.size(); ++i)
       jobs.emplace_back(difficulty[i], profit[i]);
 
     sort(begin(jobs), end(jobs));
