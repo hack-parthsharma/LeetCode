@@ -1,7 +1,6 @@
 class Solution {
 public:
-  int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit,
-                          vector<int>& worker) {
+int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit, vector<int>& worker) {
     int ans = 0;
     vector<pair<int, int>> jobs;
 
