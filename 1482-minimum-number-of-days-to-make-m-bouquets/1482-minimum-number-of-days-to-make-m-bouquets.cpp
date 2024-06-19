@@ -15,7 +15,7 @@ while (l < r) {
     }
 
     return l;
-  }
+}
 
  private:
   int getBouquetCount(const vector<int>& bloomDay, int k, int waitingDays) {
