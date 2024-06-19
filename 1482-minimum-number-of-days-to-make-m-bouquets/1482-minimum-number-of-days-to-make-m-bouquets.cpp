@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int minDays(vector<int>& bloomDay, int m, int k) {
+    int minDays(vector<int>& bloomDay, int m, int k) {
     if (bloomDay.size() < static_cast<long>(m) * k)
       return -1;
 
