@@ -21,7 +21,7 @@ return l;
     int bouquetCount = 0;
     int requiredFlowers = k;
     for (const int day : bloomDay)
-      if (day > waitingDays) {
+    if (day > waitingDays) {
         requiredFlowers = k;
       } else if (--requiredFlowers == 0) {
         ++bouquetCount;
