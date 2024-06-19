@@ -24,7 +24,6 @@ class Solution {
     int requiredFlowers = k;
     for (const int day : bloomDay)
       if (day > waitingDays) {
-        // Reset `requiredFlowers` since there was not enough adjacent flowers.
         requiredFlowers = k;
       } else if (--requiredFlowers == 0) {
         // Use k adjacent flowers to make a bouquet.
