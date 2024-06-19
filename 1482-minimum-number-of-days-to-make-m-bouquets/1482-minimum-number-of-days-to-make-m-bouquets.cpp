@@ -19,7 +19,6 @@ class Solution {
   }
 
  private:
-  // Returns # of bouquet (k flowers needed) can be made after `waitingDays`.
   int getBouquetCount(const vector<int>& bloomDay, int k, int waitingDays) {
     int bouquetCount = 0;
     int requiredFlowers = k;
