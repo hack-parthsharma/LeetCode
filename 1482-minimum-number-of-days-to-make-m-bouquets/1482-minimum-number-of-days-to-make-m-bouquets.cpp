@@ -17,7 +17,7 @@ return l;
 }
 
  private:
-  int getBouquetCount(const vector<int>& bloomDay, int k, int waitingDays) {
+    int getBouquetCount(const vector<int>& bloomDay, int k, int waitingDays) {
     int bouquetCount = 0;
     int requiredFlowers = k;
     for (const int day : bloomDay)
