@@ -12,7 +12,7 @@ while (l < r) {
         r = mid;
       else
         l = mid + 1;
-    }
+}
 return l;
 }
 
