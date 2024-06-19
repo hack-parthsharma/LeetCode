@@ -7,7 +7,7 @@ public:
     int r = *max_element(begin(bloomDay), end(bloomDay));
 
 while (l < r) {
-      const int mid = (l + r) / 2;
+const int mid = (l + r) / 2;
       if (getBouquetCount(bloomDay, k, mid) >= m)
         r = mid;
       else
