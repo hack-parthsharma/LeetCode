@@ -26,7 +26,6 @@ class Solution {
       if (day > waitingDays) {
         requiredFlowers = k;
       } else if (--requiredFlowers == 0) {
-        // Use k adjacent flowers to make a bouquet.
         ++bouquetCount;
         requiredFlowers = k;
       }
