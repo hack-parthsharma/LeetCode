@@ -13,8 +13,7 @@ while (l < r) {
       else
         l = mid + 1;
     }
-
-    return l;
+return l;
 }
 
  private:
