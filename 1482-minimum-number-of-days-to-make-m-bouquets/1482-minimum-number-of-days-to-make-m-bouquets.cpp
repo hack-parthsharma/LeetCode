@@ -2,7 +2,7 @@ class Solution {
 public:
     int minDays(vector<int>& bloomDay, int m, int k) {
     if (bloomDay.size() < static_cast<long>(m) * k)
-      return -1;
+    return -1;
 
     int l = *min_element(begin(bloomDay), end(bloomDay));
     int r = *max_element(begin(bloomDay), end(bloomDay));
