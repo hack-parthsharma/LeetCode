@@ -26,7 +26,7 @@ return l;
     } else if (--requiredFlowers == 0) {
         ++bouquetCount;
         requiredFlowers = k;
-      }
+    }
     return bouquetCount;
   }
 };
