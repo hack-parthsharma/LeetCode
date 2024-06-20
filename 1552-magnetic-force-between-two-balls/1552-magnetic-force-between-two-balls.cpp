@@ -1,7 +1,7 @@
 class Solution {
     bool valid(vector<int> &A, int d, int m) {
     int prev = -1;
-        for (int i = 0; i < A.size(); ++i) {
+    for (int i = 0; i < A.size(); ++i) {
             if (prev != -1 && A[i] - prev < d) continue;
             if (--m == 0) return true;
             prev = A[i];
