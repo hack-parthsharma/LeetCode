@@ -6,7 +6,7 @@ class Solution {
             if (--m == 0) return true;
             prev = A[i];
     }
-        return false;
+return false;
     }
 public:
     int maxDistance(vector<int>& A, int m) {
