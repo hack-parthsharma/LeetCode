@@ -5,7 +5,7 @@ class Solution {
             if (prev != -1 && A[i] - prev < d) continue;
             if (--m == 0) return true;
             prev = A[i];
-        }
+    }
         return false;
     }
 public:
