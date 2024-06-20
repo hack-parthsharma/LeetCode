@@ -16,7 +16,7 @@ public:
             int M = (L + R) / 2;
             if (valid(A, M, m)) L = M + 1;
             else R = M - 1;
-        }
+    }
         return R;
     }
 };
