@@ -10,7 +10,7 @@ return false;
     }
 public:
     int maxDistance(vector<int>& A, int m) {
-        sort(begin(A), end(A));
+    sort(begin(A), end(A));
         int L = 1, R = A.back() - A[0];
         while (L <= R) {
             int M = (L + R) / 2;
