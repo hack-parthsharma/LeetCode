@@ -17,6 +17,6 @@ public:
             if (valid(A, M, m)) L = M + 1;
             else R = M - 1;
     }
-        return R;
+return R;
     }
 };
