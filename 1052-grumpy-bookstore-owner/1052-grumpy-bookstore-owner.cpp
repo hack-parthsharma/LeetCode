@@ -8,6 +8,7 @@ public:
 for (int i = 0; i < customers.size(); ++i) {
     
 if (grumpy[i] == 0)
+    
         satisfied += customers[i];
 else
         windowSatisfied += customers[i];
