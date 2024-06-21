@@ -13,7 +13,7 @@ for (int i = 0; i < customers.size(); ++i) {
       if (i >= X && grumpy[i - X] == 1)
         windowSatisfied -= customers[i - X];
       madeSatisfied = max(madeSatisfied, windowSatisfied);
-    }
+}
 
     return satisfied + madeSatisfied;
   }
