@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int X) {
     int satisfied = 0;
     int madeSatisfied = 0;
