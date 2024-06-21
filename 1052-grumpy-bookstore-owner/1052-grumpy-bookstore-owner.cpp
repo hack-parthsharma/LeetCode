@@ -12,6 +12,7 @@ else
         windowSatisfied += customers[i];
 if (i >= X && grumpy[i - X] == 1)
         windowSatisfied -= customers[i - X];
+        
         madeSatisfied = max(madeSatisfied, windowSatisfied);
 }
 
