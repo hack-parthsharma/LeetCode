@@ -6,7 +6,7 @@ public:
     int windowSatisfied = 0;
 
 for (int i = 0; i < customers.size(); ++i) {
-      if (grumpy[i] == 0)
+if (grumpy[i] == 0)
         satisfied += customers[i];
       else
         windowSatisfied += customers[i];
