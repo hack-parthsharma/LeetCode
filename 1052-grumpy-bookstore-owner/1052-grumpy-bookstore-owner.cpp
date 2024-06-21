@@ -15,6 +15,6 @@ for (int i = 0; i < customers.size(); ++i) {
       madeSatisfied = max(madeSatisfied, windowSatisfied);
 }
 
-    return satisfied + madeSatisfied;
-  }
+return satisfied + madeSatisfied;
+}
 };
