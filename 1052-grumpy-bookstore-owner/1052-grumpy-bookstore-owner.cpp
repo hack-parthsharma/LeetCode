@@ -8,7 +8,7 @@ public:
 for (int i = 0; i < customers.size(); ++i) {
 if (grumpy[i] == 0)
         satisfied += customers[i];
-      else
+else
         windowSatisfied += customers[i];
       if (i >= X && grumpy[i - X] == 1)
         windowSatisfied -= customers[i - X];
