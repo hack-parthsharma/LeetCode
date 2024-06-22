@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numberOfSubarrays(vector<int>& nums, int k) {
     return numberOfSubarraysAtMost(nums, k) -
            numberOfSubarraysAtMost(nums, k - 1);
