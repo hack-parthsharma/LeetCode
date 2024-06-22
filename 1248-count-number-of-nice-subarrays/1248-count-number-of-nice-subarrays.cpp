@@ -3,9 +3,9 @@ public:
   int numberOfSubarrays(vector<int>& nums, int k) {
     return numberOfSubarraysAtMost(nums, k) -
            numberOfSubarraysAtMost(nums, k - 1);
-  }
+}
 
- private:
+private:
   int numberOfSubarraysAtMost(vector<int>& nums, int k) {
     int ans = 0;
 
