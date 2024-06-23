@@ -5,7 +5,7 @@ public:
     deque<int> minQ;
     deque<int> maxQ;
 
-    for (int l = 0, r = 0; r < nums.size(); ++r) {
+for (int l = 0, r = 0; r < nums.size(); ++r) {
       while (!minQ.empty() && minQ.back() > nums[r])
         minQ.pop_back();
       minQ.push_back(nums[r]);
