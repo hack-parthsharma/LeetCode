@@ -20,7 +20,7 @@ for (int l = 0, r = 0; r < nums.size(); ++r) {
         ++l;
       }
       ans = max(ans, r - l + 1);
-    }
+}
 
     return ans;
   }
