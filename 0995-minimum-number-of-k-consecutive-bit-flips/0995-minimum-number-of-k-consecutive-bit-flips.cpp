@@ -10,7 +10,7 @@ for (int i = 0; i < nums.size(); ++i) {
       if (flippedTime % 2 == nums[i]) {
       if (i + k > nums.size())
           return -1;
-        ++ans;
+    ++ans;
         ++flippedTime;
         nums[i] = 2;
       }
