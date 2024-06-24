@@ -11,7 +11,7 @@ for (int i = 0; i < nums.size(); ++i) {
       if (i + k > nums.size())
           return -1;
     ++ans;
-        ++flippedTime;
+    ++flippedTime;
         nums[i] = 2;
       }
 }
