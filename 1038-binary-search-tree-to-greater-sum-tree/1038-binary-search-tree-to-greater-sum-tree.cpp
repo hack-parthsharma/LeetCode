@@ -1,6 +1,6 @@
 class Solution {
 public:
-  TreeNode* bstToGst(TreeNode* root) {
+    TreeNode* bstToGst(TreeNode* root) {
     int prefix = 0;
 
     function<void(TreeNode*)> reversedInorder = [&](TreeNode* root) {
