@@ -9,8 +9,8 @@ public:
 
     reversedInorder(root->right);
 
-      root->val += prefix;
-      prefix = root->val;
+    root->val += prefix;
+    prefix = root->val;
 
       reversedInorder(root->left);
     };
