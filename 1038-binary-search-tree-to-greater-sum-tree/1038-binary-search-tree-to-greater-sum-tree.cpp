@@ -4,7 +4,7 @@ public:
     int prefix = 0;
 
     function<void(TreeNode*)> reversedInorder = [&](TreeNode* root) {
-      if (root == nullptr)
+    if (root == nullptr)
         return;
 
       reversedInorder(root->right);
