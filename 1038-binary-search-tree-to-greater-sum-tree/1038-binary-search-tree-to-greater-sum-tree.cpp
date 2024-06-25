@@ -12,7 +12,7 @@ public:
     root->val += prefix;
     prefix = root->val;
 
-      reversedInorder(root->left);
+    reversedInorder(root->left);
     };
 
     reversedInorder(root);
