@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   TreeNode* bstToGst(TreeNode* root) {
     int prefix = 0;
 
