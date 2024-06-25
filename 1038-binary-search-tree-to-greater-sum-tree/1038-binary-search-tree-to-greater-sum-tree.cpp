@@ -7,7 +7,7 @@ public:
     if (root == nullptr)
     return;
 
-      reversedInorder(root->right);
+    reversedInorder(root->right);
 
       root->val += prefix;
       prefix = root->val;
