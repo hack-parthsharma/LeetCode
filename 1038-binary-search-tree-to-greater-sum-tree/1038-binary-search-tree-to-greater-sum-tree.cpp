@@ -17,5 +17,5 @@ public:
 
     reversedInorder(root);
     return root;
-  }
+}
 };
