@@ -15,7 +15,7 @@ private:
     inorder(root->right, nums);
 }
 
-  TreeNode* build(const vector<int>& nums, int l, int r) {
+TreeNode* build(const vector<int>& nums, int l, int r) {
     if (l > r)
       return nullptr;
     const int m = (l + r) / 2;
