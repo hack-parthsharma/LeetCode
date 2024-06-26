@@ -15,7 +15,6 @@ class Solution {
     inorder(root->right, nums);
   }
 
-  // Same as 108. Convert Sorted Array to Binary Search Tree
   TreeNode* build(const vector<int>& nums, int l, int r) {
     if (l > r)
       return nullptr;
