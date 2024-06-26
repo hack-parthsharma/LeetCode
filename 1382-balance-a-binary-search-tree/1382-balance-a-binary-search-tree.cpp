@@ -4,7 +4,7 @@ public:
     vector<int> nums;
     inorder(root, nums);
     return build(nums, 0, nums.size() - 1);
-  }
+}
 
  private:
   void inorder(TreeNode* root, vector<int>& nums) {
