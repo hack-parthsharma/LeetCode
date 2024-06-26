@@ -9,7 +9,7 @@ public:
 private:
   void inorder(TreeNode* root, vector<int>& nums) {
     if (root == nullptr)
-      return;
+    return;
     inorder(root->left, nums);
     nums.push_back(root->val);
     inorder(root->right, nums);
