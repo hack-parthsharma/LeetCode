@@ -6,7 +6,7 @@ public:
     return build(nums, 0, nums.size() - 1);
 }
 
- private:
+private:
   void inorder(TreeNode* root, vector<int>& nums) {
     if (root == nullptr)
       return;
