@@ -13,7 +13,7 @@ private:
     inorder(root->left, nums);
     nums.push_back(root->val);
     inorder(root->right, nums);
-  }
+}
 
   TreeNode* build(const vector<int>& nums, int l, int r) {
     if (l > r)
