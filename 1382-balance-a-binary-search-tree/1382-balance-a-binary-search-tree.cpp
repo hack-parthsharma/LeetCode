@@ -1,6 +1,6 @@
 class Solution {
- public:
-  TreeNode* balanceBST(TreeNode* root) {
+public:
+    TreeNode* balanceBST(TreeNode* root) {
     vector<int> nums;
     inorder(root, nums);
     return build(nums, 0, nums.size() - 1);
