@@ -7,7 +7,7 @@ public:
 }
 
 private:
-  void inorder(TreeNode* root, vector<int>& nums) {
+    void inorder(TreeNode* root, vector<int>& nums) {
     if (root == nullptr)
     return;
     inorder(root->left, nums);
