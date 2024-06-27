@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> queryResults(int limit, vector<vector<int>>& queries) {
     vector<int> ans;
     unordered_map<int, int> ballToColor;
