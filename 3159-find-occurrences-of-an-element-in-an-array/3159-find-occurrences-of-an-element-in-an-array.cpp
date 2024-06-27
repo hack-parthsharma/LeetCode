@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> occurrencesOfElement(vector<int>& nums, vector<int>& queries, int x) {
     const vector<int> indices = getIndices(nums, x);
     vector<int> ans;
