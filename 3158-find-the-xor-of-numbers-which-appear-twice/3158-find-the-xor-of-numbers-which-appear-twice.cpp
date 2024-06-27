@@ -13,5 +13,5 @@ public:
     ans ^= num;
 
     return ans;
-  }
+}
 };
