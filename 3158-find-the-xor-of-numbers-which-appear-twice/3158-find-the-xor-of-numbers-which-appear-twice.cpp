@@ -6,7 +6,7 @@ public:
     vector<int> count(kMax + 1);
 
     for (const int num : nums)
-      ++count[num];
+    ++count[num];
 
     for (int num = 1; num <= kMax; ++num)
       if (count[num] == 2)
