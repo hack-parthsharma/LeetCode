@@ -10,7 +10,7 @@ public:
     return ans;
 }
 
- private:
+private:
   vector<int> getIndices(const vector<int>& nums, int x) {
     vector<int> indices;
     for (int i = 0; i < nums.size(); ++i)
