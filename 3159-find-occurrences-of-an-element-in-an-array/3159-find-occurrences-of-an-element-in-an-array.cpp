@@ -8,7 +8,7 @@ public:
       ans.push_back(query <= indices.size() ? indices[query - 1] : -1);
 
     return ans;
-  }
+}
 
  private:
   vector<int> getIndices(const vector<int>& nums, int x) {
