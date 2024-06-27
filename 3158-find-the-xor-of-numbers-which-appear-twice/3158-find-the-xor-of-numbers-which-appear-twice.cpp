@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int duplicateNumbersXOR(vector<int>& nums) {
     constexpr int kMax = 50;
     int ans = 0;
