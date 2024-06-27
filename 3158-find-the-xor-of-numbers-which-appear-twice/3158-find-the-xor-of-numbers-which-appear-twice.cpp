@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int duplicateNumbersXOR(vector<int>& nums) {
+    int duplicateNumbersXOR(vector<int>& nums) {
     constexpr int kMax = 50;
     int ans = 0;
     vector<int> count(kMax + 1);
