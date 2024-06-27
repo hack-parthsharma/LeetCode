@@ -3,7 +3,7 @@ public:
     vector<int> queryResults(int limit, vector<vector<int>>& queries) {
         vector<int> ans;
             unordered_map<int, int> ballToColor;
-    unordered_map<int, int> colorCount;
+                unordered_map<int, int> colorCount;
 
     for (const vector<int>& query : queries) {
       const int ball = query[0];
