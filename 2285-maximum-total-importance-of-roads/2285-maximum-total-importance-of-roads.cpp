@@ -1,6 +1,6 @@
 class Solution {
 public:
-  long long maximumImportance(int n, vector<vector<int>>& roads) {
+    long long maximumImportance(int n, vector<vector<int>>& roads) {
     long long ans = 0;
     vector<long long> count(n);
 
