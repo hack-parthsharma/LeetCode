@@ -4,7 +4,7 @@ public:
     long long ans = 0;
     vector<long long> count(n);
 
-    for (const vector<int>& r : roads) {
+for (const vector<int>& r : roads) {
       ++count[r[0]];
       ++count[r[1]];
     }
