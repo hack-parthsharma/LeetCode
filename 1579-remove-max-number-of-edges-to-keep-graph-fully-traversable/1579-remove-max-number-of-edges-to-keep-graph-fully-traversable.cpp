@@ -1,5 +1,5 @@
 class UnionFind{
-    vector<int> id;
+vector<int> id;
     int size;
 public:
     UnionFind(int N ): id(N), size(N) {
