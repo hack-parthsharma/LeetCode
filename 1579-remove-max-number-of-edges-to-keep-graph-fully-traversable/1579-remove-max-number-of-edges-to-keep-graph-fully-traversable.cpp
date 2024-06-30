@@ -44,6 +44,6 @@ for (auto &e : E) {
                 else b.connect(u, v);
             }
         }
-        return a.getSize() != 1 || b.getSize() != 1 ? -1 : ans;
+return a.getSize() != 1 || b.getSize() != 1 ? -1 : ans;
 }
 };
