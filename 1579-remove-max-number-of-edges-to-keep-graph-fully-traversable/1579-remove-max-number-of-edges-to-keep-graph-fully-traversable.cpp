@@ -45,5 +45,5 @@ for (auto &e : E) {
             }
         }
         return a.getSize() != 1 || b.getSize() != 1 ? -1 : ans;
-    }
+}
 };
