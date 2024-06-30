@@ -24,7 +24,7 @@ public:
         int maxNumEdgesToRemove(int n, vector<vector<int>>& E) {
             UnionFind a(n), b(n);
                 int ans = 0;
-        for (auto &e : E) {
+for (auto &e : E) {
             if (e[0] != 3) continue;
             int u = e[1] - 1, v = e[2] - 1;
             if (a.connected(u, v)) {
