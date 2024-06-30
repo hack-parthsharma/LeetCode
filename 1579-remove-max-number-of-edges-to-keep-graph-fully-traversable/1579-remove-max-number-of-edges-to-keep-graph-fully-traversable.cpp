@@ -21,7 +21,7 @@ public:
 };
 class Solution {
 public:
-    int maxNumEdgesToRemove(int n, vector<vector<int>>& E) {
+        int maxNumEdgesToRemove(int n, vector<vector<int>>& E) {
         UnionFind a(n), b(n);
         int ans = 0;
         for (auto &e : E) {
