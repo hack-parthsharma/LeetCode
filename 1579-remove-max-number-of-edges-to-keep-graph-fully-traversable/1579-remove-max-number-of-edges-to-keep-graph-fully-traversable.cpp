@@ -34,7 +34,7 @@ for (auto &e : E) {
             a.connect(u, v);
             b.connect(u, v);
         }
-        for (auto &e : E) {
+for (auto &e : E) {
             int u = e[1] - 1, v = e[2] - 1;
             if (e[0] == 1) {
                 if (a.connected(u, v)) ++ans;
