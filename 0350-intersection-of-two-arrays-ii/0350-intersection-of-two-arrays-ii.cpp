@@ -26,7 +26,7 @@ class Solution {
     int l = lo;
     int r = nums2.size();
 
-    while (l < r) {
+while (l < r) {
       const int m = (l + r) / 2;
       if (nums2[m] >= target)
         r = m;
