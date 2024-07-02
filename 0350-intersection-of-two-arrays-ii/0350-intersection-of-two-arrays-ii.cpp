@@ -22,7 +22,7 @@ class Solution {
   }
 
  private:
-  int binarySearch(vector<int>& nums2, int lo, int target) {
+    int binarySearch(vector<int>& nums2, int lo, int target) {
     int l = lo;
     int r = nums2.size();
 
