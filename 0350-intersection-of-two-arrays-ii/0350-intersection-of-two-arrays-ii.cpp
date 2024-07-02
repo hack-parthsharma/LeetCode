@@ -22,7 +22,6 @@ class Solution {
   }
 
  private:
-  // Find the first index l s.t nums2[l] >= target
   int binarySearch(vector<int>& nums2, int lo, int target) {
     int l = lo;
     int r = nums2.size();
