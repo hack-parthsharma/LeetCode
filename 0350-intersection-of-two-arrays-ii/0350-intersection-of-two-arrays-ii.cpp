@@ -22,7 +22,6 @@ class Solution {
   }
 
  private:
-  // Perform binary search on the bigger array
   // Find the first index l s.t nums2[l] >= target
   int binarySearch(vector<int>& nums2, int lo, int target) {
     int l = lo;
