@@ -5,7 +5,7 @@ const int n = nums.size();
 if (n < 5)
 return 0;
 
-    int ans = INT_MAX;
+int ans = INT_MAX;
 
     sort(begin(nums), end(nums));
 
