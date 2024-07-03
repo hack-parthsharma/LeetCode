@@ -1,7 +1,7 @@
 class Solution {
 public:
 int minDifference(vector<int>& nums) {
-    const int n = nums.size();
+const int n = nums.size();
     if (n < 5)
       return 0;
 
