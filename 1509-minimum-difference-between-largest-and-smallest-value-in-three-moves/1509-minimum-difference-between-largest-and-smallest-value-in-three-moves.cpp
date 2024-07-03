@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minDifference(vector<int>& nums) {
     const int n = nums.size();
     if (n < 5)
@@ -9,7 +9,6 @@ class Solution {
 
     sort(begin(nums), end(nums));
 
-    // Change nums[n - 3 + i..n) to nums[n - 4 + i]
     for (int i = 0; i <= 3; ++i)
       ans = min(ans, nums[n - 4 + i] - nums[i]);
 
