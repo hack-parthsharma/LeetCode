@@ -7,7 +7,7 @@ public:
       ListNode* node = new ListNode(head->val);
       node->next = mergeNodes(head->next->next);
       return node;
-    }
+}
 
     ListNode* next = mergeNodes(head->next);
     next->val += head->val;
