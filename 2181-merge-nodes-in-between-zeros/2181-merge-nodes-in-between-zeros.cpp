@@ -9,7 +9,7 @@ public:
       return node;
 }
 
-    ListNode* next = mergeNodes(head->next);
+ListNode* next = mergeNodes(head->next);
     next->val += head->val;
     return next;
   }
