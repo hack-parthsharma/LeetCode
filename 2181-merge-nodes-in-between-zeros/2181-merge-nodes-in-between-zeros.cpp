@@ -11,6 +11,6 @@ public:
 
 ListNode* next = mergeNodes(head->next);
 next->val += head->val;
-    return next;
+return next;
   }
 };
