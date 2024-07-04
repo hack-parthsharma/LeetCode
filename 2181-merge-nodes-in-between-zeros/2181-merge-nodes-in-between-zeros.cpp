@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   ListNode* mergeNodes(ListNode* head) {
     if (head == nullptr)
       return nullptr;
