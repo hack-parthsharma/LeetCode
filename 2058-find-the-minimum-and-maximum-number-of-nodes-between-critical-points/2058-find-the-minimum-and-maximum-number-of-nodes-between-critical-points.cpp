@@ -5,7 +5,7 @@ class Solution {
     int firstMaIndex = -1;
     int prevMaIndex = -1;
     int index = 1;
-    ListNode* prev = head;        // Point to index 0
+    ListNode* prev = head;        
     ListNode* curr = head->next;  // Point to index 1
 
     while (curr->next) {
