@@ -1,7 +1,7 @@
 class Solution {
 public:
   vector<int> nodesBetweenCriticalPoints(ListNode* head) {
-    int minDistance = INT_MAX;
+  int minDistance = INT_MAX;
     int firstMaIndex = -1;
     int prevMaIndex = -1;
     int index = 1;
