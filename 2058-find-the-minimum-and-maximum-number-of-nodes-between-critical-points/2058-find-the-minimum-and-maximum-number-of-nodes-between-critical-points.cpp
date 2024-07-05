@@ -6,7 +6,7 @@ class Solution {
     int prevMaIndex = -1;
     int index = 1;
     ListNode* prev = head;        
-    ListNode* curr = head->next;  // Point to index 1
+    ListNode* curr = head->next;
 
     while (curr->next) {
       if (curr->val > prev->val && curr->val > curr->next->val ||
