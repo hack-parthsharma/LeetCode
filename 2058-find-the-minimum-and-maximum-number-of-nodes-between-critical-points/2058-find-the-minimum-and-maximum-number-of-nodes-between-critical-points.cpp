@@ -11,7 +11,7 @@ class Solution {
     while (curr->next) {
       if (curr->val > prev->val && curr->val > curr->next->val ||
           curr->val < prev->val && curr->val < curr->next->val) {
-        if (firstMaIndex == -1)  // Only assign once
+        if (firstMaIndex == -1)  
           firstMaIndex = index;
         if (prevMaIndex != -1)
           minDistance = min(minDistance, index - prevMaIndex);
