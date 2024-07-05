@@ -4,7 +4,7 @@ public:
   int minDistance = INT_MAX;
   int firstMaIndex = -1;
   int prevMaIndex = -1;
-    int index = 1;
+  int index = 1;
     ListNode* prev = head;        
     ListNode* curr = head->next;
 
