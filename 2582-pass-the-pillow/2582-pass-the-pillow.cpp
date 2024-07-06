@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
     int passThePillow(int n, int time) {
     time %= (n - 1) * 2;
     if (time < n)  
