@@ -1,6 +1,6 @@
 class Solution {
  public:
-  int passThePillow(int n, int time) {
+    int passThePillow(int n, int time) {
     time %= (n - 1) * 2;
     if (time < n)  
     return 1 + time;
