@@ -5,5 +5,5 @@ class Solution {
     if (time < n)  
       return 1 + time;
     return n - (time - (n - 1));  
-  }
+}
 };
