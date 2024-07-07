@@ -9,5 +9,5 @@ while (numBottles >= numExchange) {
 }
 
     return ans;
-  }
+}
 };
