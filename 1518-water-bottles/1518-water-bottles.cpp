@@ -6,7 +6,7 @@ public:
 while (numBottles >= numExchange) {
       ans += numBottles / numExchange;
       numBottles = numBottles / numExchange + numBottles % numExchange;
-    }
+}
 
     return ans;
   }
