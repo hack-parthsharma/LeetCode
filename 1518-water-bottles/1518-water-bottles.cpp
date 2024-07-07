@@ -4,7 +4,7 @@ public:
     int ans = numBottles;
 
 while (numBottles >= numExchange) {
-      ans += numBottles / numExchange;
+    ans += numBottles / numExchange;
       numBottles = numBottles / numExchange + numBottles % numExchange;
 }
 
