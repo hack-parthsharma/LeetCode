@@ -9,5 +9,5 @@ for (auto& e : customers) {
             tot += t - a;
 }
         return tot / customers.size();
-    }
+}
 };
