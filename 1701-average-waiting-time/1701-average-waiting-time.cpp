@@ -1,6 +1,6 @@
 class Solution {
 public:
-    double averageWaitingTime(vector<vector<int>>& customers) {
+double averageWaitingTime(vector<vector<int>>& customers) {
         double tot = 0;
         int t = 0;
         for (auto& e : customers) {
