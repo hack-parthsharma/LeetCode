@@ -10,7 +10,7 @@ for (const string& log : logs) {
         ans = max(0, ans - 1);
       else
         ++ans;
-    }
+}
 
     return ans;
   }
