@@ -3,7 +3,7 @@ public:
   int minOperations(vector<string>& logs) {
     int ans = 0;
 
-    for (const string& log : logs) {
+for (const string& log : logs) {
       if (log == "./")
         continue;
       if (log == "../")
