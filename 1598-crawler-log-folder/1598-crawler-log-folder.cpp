@@ -13,5 +13,5 @@ for (const string& log : logs) {
 }
 
     return ans;
-  }
+}
 };
