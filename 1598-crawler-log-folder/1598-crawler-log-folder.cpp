@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minOperations(vector<string>& logs) {
     int ans = 0;
 
