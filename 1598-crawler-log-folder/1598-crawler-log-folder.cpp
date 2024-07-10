@@ -4,7 +4,7 @@ public:
     int ans = 0;
 
 for (const string& log : logs) {
-      if (log == "./")
+if (log == "./")
         continue;
 if (log == "../")
         ans = max(0, ans - 1);
