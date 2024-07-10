@@ -6,7 +6,7 @@ public:
 for (const string& log : logs) {
       if (log == "./")
         continue;
-      if (log == "../")
+if (log == "../")
         ans = max(0, ans - 1);
       else
         ++ans;
