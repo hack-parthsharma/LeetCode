@@ -12,6 +12,6 @@ for (const string& log : logs) {
         ++ans;
 }
 
-    return ans;
+return ans;
 }
 };
