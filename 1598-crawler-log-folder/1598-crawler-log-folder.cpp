@@ -8,7 +8,7 @@ for (const string& log : logs) {
         continue;
 if (log == "../")
         ans = max(0, ans - 1);
-      else
+else
         ++ans;
 }
 
