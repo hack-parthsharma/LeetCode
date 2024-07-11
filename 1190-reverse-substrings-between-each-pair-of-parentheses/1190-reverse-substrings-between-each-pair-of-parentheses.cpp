@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string reverseParentheses(string s) {
     stack<int> stack;
     string ans;
