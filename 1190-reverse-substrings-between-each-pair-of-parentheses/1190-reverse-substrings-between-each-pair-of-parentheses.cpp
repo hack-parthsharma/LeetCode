@@ -7,7 +7,7 @@ public:
 for (const char c : s)
 if (c == '(') {
         stack.push(ans.length());
-      } else if (c == ')') {
+} else if (c == ')') {
         const int j = stack.top();
         stack.pop();
         reverse(begin(ans) + j, end(ans));
