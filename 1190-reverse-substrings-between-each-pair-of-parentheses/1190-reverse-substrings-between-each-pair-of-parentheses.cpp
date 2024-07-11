@@ -1,7 +1,7 @@
 class Solution {
 public:
   string reverseParentheses(string s) {
-    stack<int> stack;
+  stack<int> stack;
     string ans;
 
 for (const char c : s)
