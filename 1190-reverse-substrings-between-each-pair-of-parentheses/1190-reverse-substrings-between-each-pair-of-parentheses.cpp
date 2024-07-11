@@ -2,7 +2,7 @@ class Solution {
 public:
   string reverseParentheses(string s) {
   stack<int> stack;
-    string ans;
+  string ans;
 
 for (const char c : s)
       if (c == '(') {
