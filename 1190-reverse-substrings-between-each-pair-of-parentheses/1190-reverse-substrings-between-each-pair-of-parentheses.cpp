@@ -5,7 +5,7 @@ public:
   string ans;
 
 for (const char c : s)
-      if (c == '(') {
+if (c == '(') {
         stack.push(ans.length());
       } else if (c == ')') {
         const int j = stack.top();
