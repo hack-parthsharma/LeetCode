@@ -14,7 +14,6 @@ if (c == '(') {
 } else {
         ans += c;
 }
-
 return ans;
 }
 };
