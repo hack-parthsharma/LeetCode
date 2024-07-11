@@ -11,7 +11,7 @@ if (c == '(') {
         const int j = stack.top();
         stack.pop();
         reverse(begin(ans) + j, end(ans));
-      } else {
+} else {
         ans += c;
       }
 
