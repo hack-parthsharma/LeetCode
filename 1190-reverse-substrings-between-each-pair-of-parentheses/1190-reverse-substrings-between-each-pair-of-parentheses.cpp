@@ -13,7 +13,7 @@ if (c == '(') {
         reverse(begin(ans) + j, end(ans));
 } else {
         ans += c;
-      }
+}
 
 return ans;
 }
