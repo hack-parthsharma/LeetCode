@@ -15,6 +15,6 @@ public:
         ans += c;
       }
 
-    return ans;
+return ans;
 }
 };
