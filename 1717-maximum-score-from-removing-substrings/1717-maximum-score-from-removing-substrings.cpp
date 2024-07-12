@@ -18,7 +18,6 @@ public:
             }
 
             if ( c == key[1] && left_stack.top() == key[0]){
-                //cout << key << endl;
                 left_stack.pop();
                 score += high;
                 continue;
@@ -26,7 +25,6 @@ public:
             left_stack.push(c);
         }
         
-        //process the low score
         stack<char> right_stack;
         while(!left_stack.empty()) {
             char c = left_stack.top();  left_stack.pop();
