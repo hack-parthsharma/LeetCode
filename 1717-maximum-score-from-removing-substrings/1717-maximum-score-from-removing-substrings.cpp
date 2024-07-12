@@ -7,7 +7,6 @@ public:
         int high = max(x,y);
         int low = min(x,y);
         
-        //greedy for high score
         int score = 0;
         stack<char> left_stack;
         for (int i=0; i<s.size(); i++) {
