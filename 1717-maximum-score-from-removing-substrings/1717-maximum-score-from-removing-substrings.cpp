@@ -17,7 +17,6 @@ public:
                 continue;
             }
 
-            // if we meet the high score pattern
             if ( c == key[1] && left_stack.top() == key[0]){
                 //cout << key << endl;
                 left_stack.pop();
