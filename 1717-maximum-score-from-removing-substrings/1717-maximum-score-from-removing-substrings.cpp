@@ -11,7 +11,7 @@ public:
         stack<char> left_stack;
         for (int i=0; i<s.size(); i++) {
             char c = s[i];
-            if (  left_stack.empty()  ||  //stack is empty, just push directly
+            if (  left_stack.empty()  ||  
                  ( c != key[0] && c != key[1] ) ) { 
                 left_stack.push(c);
                 continue;
