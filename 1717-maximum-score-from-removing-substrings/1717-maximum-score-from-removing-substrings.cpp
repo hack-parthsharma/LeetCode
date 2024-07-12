@@ -12,7 +12,7 @@ public:
         for (int i=0; i<s.size(); i++) {
             char c = s[i];
             if (  left_stack.empty()  ||  //stack is empty, just push directly
-                 ( c != key[0] && c != key[1] ) ) { // not the score char, just tpush cirectory
+                 ( c != key[0] && c != key[1] ) ) { 
                 left_stack.push(c);
                 continue;
             }
