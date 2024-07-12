@@ -32,7 +32,6 @@ public:
                 right_stack.push(c);
                 continue;
             }
-            // if we meet the low score pattern
             if ( c == key[1] && right_stack.top() == key[0]){
                 right_stack.pop();
                 score += low;
