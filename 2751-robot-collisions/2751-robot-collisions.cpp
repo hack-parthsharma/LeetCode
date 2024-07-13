@@ -33,7 +33,7 @@ class Solution {
         } else if (stack.back().health < robot.health) {
           stack.pop_back();
           robot.health -= 1;
-        } else {  // stack.back().health > robot.health
+        } else {  
           stack.back().health -= 1;
           robot.health = 0;
         }
