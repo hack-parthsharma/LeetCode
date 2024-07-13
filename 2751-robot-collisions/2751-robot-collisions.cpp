@@ -11,7 +11,7 @@ class Solution {
                                     vector<int>& healths, string directions) {
     vector<int> ans;
     vector<Robot> robots;
-    vector<Robot> stack;  // runnnig robots
+    vector<Robot> stack;  
 
     for (int i = 0; i < positions.size(); ++i)
       robots.push_back(Robot{i, positions[i], healths[i], directions[i]});
