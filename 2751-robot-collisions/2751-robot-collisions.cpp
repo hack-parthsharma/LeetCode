@@ -25,7 +25,6 @@ class Solution {
         stack.push_back(robot);
         continue;
       }
-      // Collide with robots going right if any.
       while (!stack.empty() && stack.back().direction == 'R' &&
              robot.health > 0) {
         if (stack.back().health == robot.health) {
