@@ -26,7 +26,7 @@ class Solution {
         for (auto&& [_, freq] : count)
           freq *= num;
         return count;  
-      } else {         // s[i] must be uppercased
+      } else {         
         const string& elem = getElem(s, i);
         const int num = getNum(s, i);
         count[elem] += num;
