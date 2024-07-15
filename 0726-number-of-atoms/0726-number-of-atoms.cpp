@@ -36,7 +36,7 @@ class Solution {
   }
 
   string getElem(const string& s, int& i) {
-    const int elemStart = i++;  // s[elemStart] is uppercased
+    const int elemStart = i++;  
     while (i < s.length() && islower(s[i]))
       ++i;
     return s.substr(elemStart, i - elemStart);
