@@ -19,7 +19,6 @@ class Solution {
         parent->right = child;
     }
 
-    // Pick a random node and traverse upwardly.
     TreeNode* root = childToParent.begin()->second;
     while (childToParent.count(root))
       root = childToParent[root];
