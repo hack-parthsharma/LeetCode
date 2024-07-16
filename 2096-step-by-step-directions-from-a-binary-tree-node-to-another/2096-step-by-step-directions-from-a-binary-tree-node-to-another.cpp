@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string getDirections(TreeNode* root, int startValue, int destValue) {
     string path;
     string pathToStart;
