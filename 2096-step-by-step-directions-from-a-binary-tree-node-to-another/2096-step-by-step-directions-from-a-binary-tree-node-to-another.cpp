@@ -4,7 +4,6 @@ class Solution {
     string path;
     string pathToStart;
     string pathToDest;
-    // Only this subtree matters
     dfs(lca(root, startValue, destValue), startValue, destValue, path,
         pathToStart, pathToDest);
     return string(pathToStart.length(), 'U') + pathToDest;
