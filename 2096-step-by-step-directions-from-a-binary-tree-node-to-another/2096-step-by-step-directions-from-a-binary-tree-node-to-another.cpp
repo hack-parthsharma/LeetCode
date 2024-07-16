@@ -18,9 +18,8 @@ public:
     if (l != nullptr && r != nullptr)
       return root;
     return l == nullptr ? r : l;
-  }
-
-  void dfs(TreeNode* root, int p, int q, string& path, string& pathToStart,
+}
+void dfs(TreeNode* root, int p, int q, string& path, string& pathToStart,
            string& pathToDest) {
     if (root == nullptr)
       return;
