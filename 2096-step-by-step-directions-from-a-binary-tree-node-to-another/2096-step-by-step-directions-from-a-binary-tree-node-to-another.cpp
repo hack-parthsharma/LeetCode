@@ -7,7 +7,7 @@ public:
     dfs(lca(root, startValue, destValue), startValue, destValue, path,
         pathToStart, pathToDest);
     return string(pathToStart.length(), 'U') + pathToDest;
-  }
+}
 
  private:
   TreeNode* lca(TreeNode* root, int p, int q) {
