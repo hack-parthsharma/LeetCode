@@ -12,7 +12,7 @@ private:
 if (root == nullptr)
       return nullptr;
 
-    const bool deleted = toDeleteSet.count(root->val);
+const bool deleted = toDeleteSet.count(root->val);
     if (isRoot && !deleted)
       ans.push_back(root);
 
