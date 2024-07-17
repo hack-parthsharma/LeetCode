@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<TreeNode*> delNodes(TreeNode* root, vector<int>& to_delete) {
     vector<TreeNode*> ans;
     dfs(root, {begin(to_delete), end(to_delete)}, true, ans);
