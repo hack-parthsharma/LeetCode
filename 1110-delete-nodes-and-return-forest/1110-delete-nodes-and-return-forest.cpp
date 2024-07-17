@@ -9,7 +9,7 @@ public:
 private:
   TreeNode* dfs(TreeNode*& root, const unordered_set<int>&& toDeleteSet,
                 bool isRoot, vector<TreeNode*>& ans) {
-    if (root == nullptr)
+if (root == nullptr)
       return nullptr;
 
     const bool deleted = toDeleteSet.count(root->val);
