@@ -4,7 +4,7 @@ public:
     vector<TreeNode*> ans;
     dfs(root, {begin(to_delete), end(to_delete)}, true, ans);
     return ans;
-  }
+}
 
  private:
   TreeNode* dfs(TreeNode*& root, const unordered_set<int>&& toDeleteSet,
