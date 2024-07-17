@@ -16,7 +16,6 @@ class Solution {
     if (isRoot && !deleted)
       ans.push_back(root);
 
-    // If root is deleted, both children have the possibility to be a new root
     root->left = dfs(root->left, move(toDeleteSet), deleted, ans);
     root->right = dfs(root->right, move(toDeleteSet), deleted, ans);
     return deleted ? nullptr : root;
