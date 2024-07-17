@@ -6,7 +6,7 @@ public:
     return ans;
 }
 
- private:
+private:
   TreeNode* dfs(TreeNode*& root, const unordered_set<int>&& toDeleteSet,
                 bool isRoot, vector<TreeNode*>& ans) {
     if (root == nullptr)
