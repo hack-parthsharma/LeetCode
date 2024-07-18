@@ -10,7 +10,7 @@ class Solution {
 
  private:
   vector<int> dfs(TreeNode* root, int distance, int& ans) {
-    vector<int> d(distance + 1);  // {distance: # of leaf nodes}
+    vector<int> d(distance + 1);  
     if (root == nullptr)
       return d;
     if (root->left == nullptr && root->right == nullptr) {
