@@ -8,7 +8,7 @@ public:
     return ans;
 }
 
- private:
+private:
   vector<int> dfs(TreeNode* root, int distance, int& ans) {
     vector<int> d(distance + 1);  
     if (root == nullptr)
