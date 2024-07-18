@@ -6,7 +6,7 @@ public:
     dfs(root, distance, ans);
 
     return ans;
-  }
+}
 
  private:
   vector<int> dfs(TreeNode* root, int distance, int& ans) {
