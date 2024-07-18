@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int countPairs(TreeNode* root, int distance) {
     int ans = 0;
 
