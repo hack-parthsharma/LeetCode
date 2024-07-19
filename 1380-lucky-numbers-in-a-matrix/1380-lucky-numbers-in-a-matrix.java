@@ -1,7 +1,7 @@
 class Solution {
 public List<Integer> luckyNumbers(int[][] matrix) {
     int m = matrix.length, n = matrix[0].length;
-        int[] row = new int[m];
+    int[] row = new int[m];
         int[] col = new int[n];
 
         for (int i = 0; i < m; i++) {
