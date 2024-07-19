@@ -4,7 +4,7 @@ public List<Integer> luckyNumbers(int[][] matrix) {
     int[] row = new int[m];
     int[] col = new int[n];
 
-        for (int i = 0; i < m; i++) {
+for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (matrix[i][j] < matrix[i][row[i]]) {
                     row[i] = j;
