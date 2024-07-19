@@ -16,7 +16,7 @@ for (int j = 0; j < n; j++) {
             }
         }
 
-        List<Integer> res = new ArrayList<>();
+List<Integer> res = new ArrayList<>();
         for (int i = 0; i < m; i++) {
             int j = row[i];
             if (col[j] == i) {
