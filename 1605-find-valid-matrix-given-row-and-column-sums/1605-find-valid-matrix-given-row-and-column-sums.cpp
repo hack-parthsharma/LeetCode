@@ -5,7 +5,7 @@ int n = row.size();
 int m = col.size();
         if(n==0 ||m==0)
             return {};
-        vector<vector<int>> res(n,vector<int>(m,0));
+vector<vector<int>> res(n,vector<int>(m,0));
         priority_queue<pair<int,int>> p,q;
         for(int i=0;i<n;i++){
             p.push({row[i],i});
