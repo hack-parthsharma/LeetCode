@@ -9,7 +9,7 @@ vector<vector<int>> res(n,vector<int>(m,0));
 priority_queue<pair<int,int>> p,q;
         for(int i=0;i<n;i++){
             p.push({row[i],i});
-        }
+}
         for(int j=0;j<m;j++){
             q.push({col[j],j});
         }
