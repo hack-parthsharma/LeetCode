@@ -12,7 +12,7 @@ priority_queue<pair<int,int>> p,q;
 }
         for(int j=0;j<m;j++){
             q.push({col[j],j});
-        }
+}
 
         while(!q.empty() && !p.empty()){
             auto a = p.top();
