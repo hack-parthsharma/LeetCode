@@ -29,5 +29,5 @@ priority_queue<pair<int,int>> p,q;
                 q.push(b);
 }
         return res;
-    }
+}
 };
