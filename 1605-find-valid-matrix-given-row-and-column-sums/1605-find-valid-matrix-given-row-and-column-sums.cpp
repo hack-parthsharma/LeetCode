@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<vector<int>> restoreMatrix(vector<int>& row, vector<int>& col) {
+vector<vector<int>> restoreMatrix(vector<int>& row, vector<int>& col) {
         int n = row.size();
         int m = col.size();
         if(n==0 ||m==0)
