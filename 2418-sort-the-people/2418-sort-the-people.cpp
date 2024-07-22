@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> sortPeople(vector<string>& names, vector<int>& heights) {
     vector<string> ans;
     vector<pair<int, string>> heightAndNames;
