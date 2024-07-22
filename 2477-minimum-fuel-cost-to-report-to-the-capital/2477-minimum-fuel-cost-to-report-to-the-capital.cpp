@@ -9,7 +9,7 @@ public:
       const int v = road[1];
       tree[u].push_back(v);
       tree[v].push_back(u);
-    }
+}
 
     dfs(tree, 0, -1, seats, ans);
     return ans;
