@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   long long minimumFuelCost(vector<vector<int>>& roads, int seats) {
     long long ans = 0;
     vector<vector<int>> tree(roads.size() + 1);
