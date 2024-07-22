@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<vector<int>> buildMatrix(int k, vector<vector<int>>& rowConditions,
                                   vector<vector<int>>& colConditions) {
     const vector<int> rowOrder = topologicalSort(rowConditions, k);
