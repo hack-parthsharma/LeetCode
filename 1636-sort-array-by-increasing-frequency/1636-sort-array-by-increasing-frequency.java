@@ -6,11 +6,11 @@ for (int v : nums) {
             v += 100;
             ++cnt[v];
             t.add(v);
-        }
+}
         t.sort((a, b) -> cnt[a] == cnt[b] ? b - a : cnt[a] - cnt[b]);
         int[] ans = new int[nums.length];
         int i = 0;
-        for (int v : t) {
+for (int v : t) {
             ans[i++] = v - 100;
         }
         return ans;
