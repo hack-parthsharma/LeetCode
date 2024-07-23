@@ -1,5 +1,5 @@
 class Solution {
-    public int[] frequencySort(int[] nums) {
+public int[] frequencySort(int[] nums) {
         int[] cnt = new int[201];
         List<Integer> t = new ArrayList<>();
         for (int v : nums) {
