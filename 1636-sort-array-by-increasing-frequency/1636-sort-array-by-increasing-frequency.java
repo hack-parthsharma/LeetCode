@@ -12,7 +12,7 @@ for (int v : nums) {
         int i = 0;
 for (int v : t) {
             ans[i++] = v - 100;
-        }
+}
         return ans;
-    }
+}
 }
