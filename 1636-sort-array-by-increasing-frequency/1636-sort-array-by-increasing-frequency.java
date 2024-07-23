@@ -2,7 +2,7 @@ class Solution {
 public int[] frequencySort(int[] nums) {
         int[] cnt = new int[201];
         List<Integer> t = new ArrayList<>();
-        for (int v : nums) {
+for (int v : nums) {
             v += 100;
             ++cnt[v];
             t.add(v);
