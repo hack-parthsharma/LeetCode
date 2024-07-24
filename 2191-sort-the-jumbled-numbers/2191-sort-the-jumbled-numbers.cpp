@@ -13,7 +13,7 @@ class Solution {
       ans.push_back(num);
 
     return ans;
-  }
+}
 
  private:
   int getMapped(int num, const vector<int>& mapping) {
