@@ -2,7 +2,7 @@ class Solution {
  public:
   vector<int> sortJumbled(vector<int>& mapping, vector<int>& nums) {
     vector<int> ans;
-    vector<tuple<int, int, int>> A;  // (mapped, index, num)
+    vector<tuple<int, int, int>> A;  
 
     for (int i = 0; i < nums.size(); ++i)
       A.emplace_back(getMapped(nums[i], mapping), i, nums[i]);
