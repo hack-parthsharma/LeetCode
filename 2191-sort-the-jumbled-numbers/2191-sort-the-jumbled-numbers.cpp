@@ -15,7 +15,7 @@ class Solution {
     return ans;
 }
 
- private:
+private:
   int getMapped(int num, const vector<int>& mapping) {
     string mapped;
     for (const char c : to_string(num))
