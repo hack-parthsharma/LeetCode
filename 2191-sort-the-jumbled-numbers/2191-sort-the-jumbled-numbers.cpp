@@ -17,7 +17,7 @@ class Solution {
 
 private:
   int getMapped(int num, const vector<int>& mapping) {
-    string mapped;
+  string mapped;
     for (const char c : to_string(num))
       mapped += to_string(mapping[c - '0']);
     return stoi(mapped);
