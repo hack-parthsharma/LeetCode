@@ -3,7 +3,6 @@ public:
     vector<int> mergesorted(vector<int>&arr)
     {
         if(arr.size()==1)
-
         {
 
             return arr;
