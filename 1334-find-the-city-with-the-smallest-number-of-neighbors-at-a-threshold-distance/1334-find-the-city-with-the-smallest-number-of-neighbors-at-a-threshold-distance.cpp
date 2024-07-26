@@ -5,7 +5,7 @@ public:
   int minCitiesCount = n;
   const vector<vector<int>> dist = floydWarshall(n, edges, distanceThreshold);
 
-    for (int i = 0; i < n; ++i) {
+for (int i = 0; i < n; ++i) {
       int citiesCount = 0;
       for (int j = 0; j < n; ++j)
         if (dist[i][j] <= distanceThreshold)
