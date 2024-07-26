@@ -2,7 +2,7 @@ class Solution {
 public:
   int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {
   int ans = -1;
-    int minCitiesCount = n;
+  int minCitiesCount = n;
     const vector<vector<int>> dist = floydWarshall(n, edges, distanceThreshold);
 
     for (int i = 0; i < n; ++i) {
