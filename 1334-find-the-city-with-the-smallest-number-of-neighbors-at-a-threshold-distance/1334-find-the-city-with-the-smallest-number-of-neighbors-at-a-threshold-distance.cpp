@@ -14,7 +14,7 @@ for (int i = 0; i < n; ++i) {
         ans = i;
         minCitiesCount = citiesCount;
       }
-    }
+}
 
     return ans;
   }
