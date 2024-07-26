@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {
     int ans = -1;
     int minCitiesCount = n;
