@@ -20,8 +20,7 @@ for (int i = 0; i < n; ++i) {
   }
 
 private:
-  vector<vector<int>> floydWarshall(int n, const vector<vector<int>>& edges,
-                                    int distanceThreshold) {
+  vector<vector<int>> floydWarshall(int n, const vector<vector<int>>& edges, int distanceThreshold) {
     vector<vector<int>> dist(n, vector<int>(n, distanceThreshold + 1));
 
     for (int i = 0; i < n; ++i)
