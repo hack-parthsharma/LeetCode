@@ -26,7 +26,7 @@ vector<vector<int>> dist(n, vector<int>(n, distanceThreshold + 1));
     for (int i = 0; i < n; ++i)
       dist[i][i] = 0;
 
-    for (const vector<int>& edge : edges) {
+for (const vector<int>& edge : edges) {
       const int u = edge[0];
       const int v = edge[1];
       const int w = edge[2];
