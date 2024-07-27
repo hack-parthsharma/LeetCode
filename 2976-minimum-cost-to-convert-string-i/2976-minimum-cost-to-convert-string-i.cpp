@@ -1,6 +1,6 @@
 class Solution {
 public:
-  long long minimumCost(string source, string target, vector<char>& original, vector<char>& changed, vector<int>& cost) {
+long long minimumCost(string source, string target, vector<char>& original, vector<char>& changed, vector<int>& cost) {
     long long ans = 0;
     vector<vector<long long>> dist(26, vector<long long>(26, LLONG_MAX));
 
