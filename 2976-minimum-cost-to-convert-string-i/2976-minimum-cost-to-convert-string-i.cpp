@@ -3,7 +3,6 @@ class Solution {
   long long minimumCost(string source, string target, vector<char>& original,
                         vector<char>& changed, vector<int>& cost) {
     long long ans = 0;
-    // dist[u][v] := the minimum distance to change ('a' + u) to ('a' + v)
     vector<vector<long long>> dist(26, vector<long long>(26, LLONG_MAX));
 
     for (int i = 0; i < cost.size(); ++i) {
