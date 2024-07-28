@@ -16,7 +16,6 @@ class Solution {
     while (!q.empty()) {
       const auto [i, prevTime] = q.front();
       q.pop();
-      // If numChangeSignal is even -> now green
       const int numChangeSignal = prevTime / change;
       const int waitTime =
           numChangeSignal & 1 ? change - (prevTime % change) : 0;
