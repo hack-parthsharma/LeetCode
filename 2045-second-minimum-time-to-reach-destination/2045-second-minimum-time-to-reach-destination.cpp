@@ -3,7 +3,6 @@ class Solution {
   int secondMinimum(int n, vector<vector<int>>& edges, int time, int change) {
     vector<vector<int>> graph(n + 1);
     queue<pair<int, int>> q{{{1, 0}}};
-    // minTime[i][0] := 1st min time to reach node i
     // minTime[i][1] := 2nd min time to reach node i
     vector<vector<int>> minTime(n + 1, vector<int>(2, INT_MAX));
     minTime[1][0] = 0;
