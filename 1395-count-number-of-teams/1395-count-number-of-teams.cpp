@@ -4,7 +4,6 @@ class Solution {
     int ans = 0;
 
     for (int i = 1; i < rating.size() - 1; ++i) {
-      // Calculate soldiers on the left with less/greater ratings.
       int leftLess = 0;
       int leftGreater = 0;
       for (int j = 0; j < i; ++j)
