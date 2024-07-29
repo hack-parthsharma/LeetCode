@@ -5,7 +5,6 @@ class Solution {
 
     for (const char c : s)
       if (isdigit(c))
-        // Since `ans` only contains non-digit characters, popping the last
         // character is equivalent to deleting the closest non-digit character.
         ans.pop_back();
       else
