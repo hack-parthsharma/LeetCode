@@ -11,7 +11,6 @@ class Solution {
           ++leftLess;
         else if (rating[j] > rating[i])
           ++leftGreater;
-      // Calculate soldiers on the right with less/greater ratings.
       int rightLess = 0;
       int rightGreater = 0;
       for (int j = i + 1; j < rating.size(); ++j)
