@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numTeams(vector<int>& rating) {
     int ans = 0;
 
