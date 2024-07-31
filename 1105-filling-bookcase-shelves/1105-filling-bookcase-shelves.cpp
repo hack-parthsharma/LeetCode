@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minHeightShelves(vector<vector<int>>& books, int shelfWidth) {
     vector<int> dp(books.size() + 1, INT_MAX);
     dp[0] = 0;
