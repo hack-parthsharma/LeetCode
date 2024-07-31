@@ -15,7 +15,7 @@ if (sumThickness > shelfWidth)
           break;
         maxHeight = max(maxHeight, height);
         dp[i + 1] = min(dp[i + 1], dp[j] + maxHeight);
-      }
+}
 }
 
     return dp.back();
