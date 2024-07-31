@@ -1,7 +1,6 @@
 class Solution {
  public:
   int minHeightShelves(vector<vector<int>>& books, int shelfWidth) {
-    // dp[i] := min height to place the first i books
     vector<int> dp(books.size() + 1, INT_MAX);
     dp[0] = 0;
 
