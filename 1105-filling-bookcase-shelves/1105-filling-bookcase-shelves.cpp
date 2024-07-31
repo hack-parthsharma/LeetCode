@@ -19,5 +19,5 @@ if (sumThickness > shelfWidth)
 }
 
     return dp.back();
-  }
+}
 };
