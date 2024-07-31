@@ -4,7 +4,7 @@ public:
   vector<int> dp(books.size() + 1, INT_MAX);
   dp[0] = 0;
 
-    for (int i = 0; i < books.size(); ++i) {
+for (int i = 0; i < books.size(); ++i) {
       int sumThickness = 0;
       int maxHeight = 0;
       // Place books[j..i] on a new shelf.
