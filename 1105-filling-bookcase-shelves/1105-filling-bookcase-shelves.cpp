@@ -7,7 +7,7 @@ public:
 for (int i = 0; i < books.size(); ++i) {
       int sumThickness = 0;
       int maxHeight = 0;
-      for (int j = i; j >= 0; --j) {
+for (int j = i; j >= 0; --j) {
         const int thickness = books[j][0];
         const int height = books[j][1];
         sumThickness += thickness;
