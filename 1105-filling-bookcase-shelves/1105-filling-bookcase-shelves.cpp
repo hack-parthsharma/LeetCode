@@ -12,7 +12,7 @@ for (int j = i; j >= 0; --j) {
         const int height = books[j][1];
         sumThickness += thickness;
 if (sumThickness > shelfWidth)
-          break;
+        break;
         maxHeight = max(maxHeight, height);
         dp[i + 1] = min(dp[i + 1], dp[j] + maxHeight);
 }
