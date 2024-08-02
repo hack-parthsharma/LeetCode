@@ -3,7 +3,7 @@ class Solution {
   int minSwaps(vector<int>& nums) {
     const int n = nums.size();
     const int k = count(begin(nums), end(nums), 1);
-    int ones = 0;     // Ones in window
+    int ones = 0;     
     int maxOnes = 0;  // Max ones in window
 
     for (int i = 0; i < n * 2; ++i) {
