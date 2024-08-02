@@ -4,7 +4,7 @@ class Solution {
     const int n = nums.size();
     const int k = count(begin(nums), end(nums), 1);
     int ones = 0;     
-    int maxOnes = 0;  // Max ones in window
+    int maxOnes = 0;  
 
     for (int i = 0; i < n * 2; ++i) {
       if (i >= k && nums[(i - k) % n])
