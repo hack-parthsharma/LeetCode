@@ -3,7 +3,7 @@ public:
 bool canBeEqual(vector<int>& target, vector<int>& arr) {
        
 int len1 = target.size();
-        int len2 = arr.size();
+int len2 = arr.size();
         if (len1 != len2) return false;
         if (len1 == 0) return true;
         
