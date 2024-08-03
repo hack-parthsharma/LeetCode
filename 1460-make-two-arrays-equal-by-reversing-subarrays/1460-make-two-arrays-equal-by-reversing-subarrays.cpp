@@ -1,6 +1,5 @@
 class Solution {
 public:
-    // This problem could transfer to check two array has exactly same numbers
     bool canBeEqual(vector<int>& target, vector<int>& arr) {
        
        
