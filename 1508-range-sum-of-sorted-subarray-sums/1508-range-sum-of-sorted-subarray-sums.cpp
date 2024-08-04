@@ -14,7 +14,7 @@ class Solution {
         window += nums[j];  // Extend each subarray ends w/ j
         while (window > m) {
           sum -= window;
-          window -= nums[i++];  // Shrink the window
+          window -= nums[i++];  
         }
         count += j - i + 1;
         total += sum;
