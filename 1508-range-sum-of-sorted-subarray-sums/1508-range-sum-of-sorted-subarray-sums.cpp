@@ -23,7 +23,6 @@ class Solution {
       return {count, total};
     };
 
-    // [L, R] is the possible range of the sum of any subarray
     const int L = *min_element(begin(nums), end(nums));
     const int R = accumulate(begin(nums), end(nums), 0);
 
@@ -40,7 +39,6 @@ class Solution {
       }
 
       const auto& [count, total] = subarraysAndSumNoGreaterThan(l);
-      // When count != k, there're subarray(s) have the same sum as l
       return total - l * (count - k);
     };
 
