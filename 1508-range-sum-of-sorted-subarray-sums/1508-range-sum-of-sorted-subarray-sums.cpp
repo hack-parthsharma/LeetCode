@@ -4,7 +4,7 @@ class Solution {
     constexpr int kMod = 1'000'000'007;
 
     auto subarraysAndSumNoGreaterThan = [&](int m) -> pair<int, long> {
-      int count = 0;   // # of subarrays <= m
+      int count = 0;   
       long total = 0;  // Sum(subarrays)
       int sum = 0;     // Current sum (will be added to `total` in each loop)
       int window = 0;  // Window sum (can be extend and shrink)
