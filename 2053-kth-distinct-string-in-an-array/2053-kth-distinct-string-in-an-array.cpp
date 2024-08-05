@@ -1,6 +1,6 @@
 class Solution {
 public:
-  string kthDistinct(vector<string>& arr, int k) {
+string kthDistinct(vector<string>& arr, int k) {
 unordered_map<string, int> count;
 
     for (const string& a : arr)
