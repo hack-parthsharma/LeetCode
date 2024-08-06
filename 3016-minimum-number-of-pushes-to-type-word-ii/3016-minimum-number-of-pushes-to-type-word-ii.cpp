@@ -12,6 +12,6 @@ ranges::sort(count, greater<>());
 for (int i = 0; i < 26; ++i)
       ans += count[i] * (i / 8 + 1);
 
-    return ans;
+return ans;
 }
 };
