@@ -1,6 +1,5 @@
 class Solution {
  public:
-  // Same as 3014. Minimum Number of Pushes to Type Word I
   int minimumPushes(string word) {
     int ans = 0;
     vector<int> count(26);
