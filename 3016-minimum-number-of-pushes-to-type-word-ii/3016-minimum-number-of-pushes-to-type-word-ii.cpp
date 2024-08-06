@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int minimumPushes(string word) {
+int minimumPushes(string word) {
     int ans = 0;
     vector<int> count(26);
 
