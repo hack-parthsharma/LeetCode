@@ -2,7 +2,7 @@ class Solution {
 public:
 int minimumPushes(string word) {
 int ans = 0;
-    vector<int> count(26);
+vector<int> count(26);
 
     for (const char c : word)
       ++count[c - 'a'];
