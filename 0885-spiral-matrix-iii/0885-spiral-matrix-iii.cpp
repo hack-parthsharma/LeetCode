@@ -3,7 +3,7 @@ public:
   vector<vector<int>> spiralMatrixIII(int rows, int cols, int rStart,
                                       int cStart) {
 const vector<int> dx{1, 0, -1, 0};
-    const vector<int> dy{0, 1, 0, -1};
+const vector<int> dy{0, 1, 0, -1};
     vector<vector<int>> ans{{rStart, cStart}};
 
     for (int i = 0; ans.size() < rows * cols; ++i)
