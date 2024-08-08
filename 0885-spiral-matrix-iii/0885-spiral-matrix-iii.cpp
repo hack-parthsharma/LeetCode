@@ -2,7 +2,7 @@ class Solution {
 public:
   vector<vector<int>> spiralMatrixIII(int rows, int cols, int rStart,
                                       int cStart) {
-    const vector<int> dx{1, 0, -1, 0};
+const vector<int> dx{1, 0, -1, 0};
     const vector<int> dy{0, 1, 0, -1};
     vector<vector<int>> ans{{rStart, cStart}};
 
