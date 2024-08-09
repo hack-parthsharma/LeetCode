@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int numMagicSquaresInside(vector<vector<int>>& grid) {
+int numMagicSquaresInside(vector<vector<int>>& grid) {
     int ans = 0;
 
     for (int i = 0; i + 2 < grid.size(); ++i)
