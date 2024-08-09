@@ -11,7 +11,7 @@ public:
     return ans;
   }
 
- private:
+private:
   int isMagic(const vector<vector<int>>& grid, int i, int j) {
     string s;
 
