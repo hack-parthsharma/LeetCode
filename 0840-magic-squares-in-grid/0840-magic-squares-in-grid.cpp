@@ -3,7 +3,7 @@ public:
 int numMagicSquaresInside(vector<vector<int>>& grid) {
 int ans = 0;
 
-    for (int i = 0; i + 2 < grid.size(); ++i)
+for (int i = 0; i + 2 < grid.size(); ++i)
       for (int j = 0; j + 2 < grid[0].size(); ++j)
         if (grid[i][j] % 2 == 0 && grid[i + 1][j + 1] == 5)
           ans += isMagic(grid, i, j);
