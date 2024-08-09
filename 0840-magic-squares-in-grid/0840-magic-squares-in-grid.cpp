@@ -9,7 +9,7 @@ int ans = 0;
           ans += isMagic(grid, i, j);
 
     return ans;
-  }
+}
 
 private:
   int isMagic(const vector<vector<int>>& grid, int i, int j) {
