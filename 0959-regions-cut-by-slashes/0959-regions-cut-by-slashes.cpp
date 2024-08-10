@@ -2,7 +2,7 @@ class Solution {
 public:
 int regionsBySlashes(vector<string>& grid) {
 const int n = grid.size();
-    vector<vector<int>> g(n * 3, vector<int>(n * 3));
+vector<vector<int>> g(n * 3, vector<int>(n * 3));
 
     for (int i = 0; i < n; ++i)
       for (int j = 0; j < n; ++j)
