@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int regionsBySlashes(vector<string>& grid) {
     const int n = grid.size();
     vector<vector<int>> g(n * 3, vector<int>(n * 3));
