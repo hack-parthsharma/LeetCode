@@ -35,7 +35,7 @@ class Solution {
     if (g[i][j] != 0)
       return;
 
-    g[i][j] = 2;  // Mark 2 as visited
+    g[i][j] = 2;  
     dfs(g, i + 1, j);
     dfs(g, i - 1, j);
     dfs(g, i, j + 1);
