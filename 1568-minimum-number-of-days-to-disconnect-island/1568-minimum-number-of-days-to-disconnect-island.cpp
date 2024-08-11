@@ -1,6 +1,6 @@
 class Solution {
 int M, N, dirs[4][2] = { {0,1},{0,-1},{1,0},{-1,0} };
-    void dfs(vector<vector<int>> &G, int i, int j,vector<vector<int>> &seen) {
+void dfs(vector<vector<int>> &G, int i, int j,vector<vector<int>> &seen) {
         seen[i][j] = true;
         for (auto &[dx, dy] : dirs) {
             int x = dx + i, y = dy + j;
