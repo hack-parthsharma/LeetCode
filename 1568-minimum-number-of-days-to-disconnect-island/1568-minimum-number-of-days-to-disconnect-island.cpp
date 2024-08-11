@@ -21,7 +21,7 @@ void dfs(vector<vector<int>> &G, int i, int j,vector<vector<int>> &seen) {
         return cnt == 0;
     }
 public:
-    int minDays(vector<vector<int>>& G) {
+int minDays(vector<vector<int>>& G) {
         M = G.size(), N = G[0].size();
         if (disconnected(G)) return 0;
         for (int i = 0; i < M; ++i) {
