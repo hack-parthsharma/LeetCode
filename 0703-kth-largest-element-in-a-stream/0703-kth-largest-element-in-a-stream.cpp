@@ -3,7 +3,7 @@ public:
   KthLargest(int k, vector<int>& nums) : k(k) {
     for (const int num : nums)
       heapify(num);
-  }
+}
 
   int add(int val) {
     heapify(val);
