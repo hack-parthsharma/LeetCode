@@ -8,7 +8,7 @@ public:
 int add(int val) {
     heapify(val);
     return minHeap.top();
-  }
+}
 
  private:
   const int k;
