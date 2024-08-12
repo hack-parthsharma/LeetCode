@@ -5,7 +5,7 @@ public:
       heapify(num);
 }
 
-  int add(int val) {
+int add(int val) {
     heapify(val);
     return minHeap.top();
   }
