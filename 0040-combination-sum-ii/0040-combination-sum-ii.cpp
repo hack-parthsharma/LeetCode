@@ -4,7 +4,7 @@ vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
 vector<vector<int>> ans;
 sort(begin(candidates), end(candidates));
 dfs(candidates, 0, target, {}, ans);
-    return ans;
+return ans;
 }
 
  private:
