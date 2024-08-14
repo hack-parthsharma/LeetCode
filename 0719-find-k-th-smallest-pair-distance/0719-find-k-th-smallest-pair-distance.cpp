@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int smallestDistancePair(vector<int>& nums, int k) {
+int smallestDistancePair(vector<int>& nums, int k) {
     sort(begin(nums), end(nums));
 
     int l = 0;
