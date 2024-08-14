@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int smallestDistancePair(vector<int>& nums, int k) {
     sort(begin(nums), end(nums));
 
