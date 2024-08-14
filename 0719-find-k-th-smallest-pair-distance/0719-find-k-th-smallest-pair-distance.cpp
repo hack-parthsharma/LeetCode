@@ -21,7 +21,6 @@ class Solution {
   int pairDistancesNoGreaterThan(const vector<int>& nums, int m) {
     int count = 0;
     int j = 1;
-    // So pairDistancesNoGreaterThan for index i will be j - i - 1
     for (int i = 0; i < nums.size(); ++i) {
       while (j < nums.size() && nums[j] <= nums[i] + m)
         ++j;
