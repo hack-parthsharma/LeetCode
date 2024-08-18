@@ -1,6 +1,6 @@
 class Solution {
 public:
-  int nthUglyNumber(int n) {
+    int nthUglyNumber(int n) {
     vector<int> uglyNums{1};
     int i2 = 0;
     int i3 = 0;
