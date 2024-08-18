@@ -19,7 +19,7 @@ if (next == next3)
 if (next == next5)
         ++i5;
       uglyNums.push_back(next);
-    }
+}
 
     return uglyNums.back();
   }
