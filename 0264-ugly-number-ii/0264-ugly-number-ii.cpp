@@ -22,5 +22,5 @@ if (next == next5)
 }
 
     return uglyNums.back();
-  }
+}
 };
