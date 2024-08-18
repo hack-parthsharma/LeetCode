@@ -16,7 +16,7 @@ if (next == next2)
         ++i2;
 if (next == next3)
         ++i3;
-      if (next == next5)
+if (next == next5)
         ++i5;
       uglyNums.push_back(next);
     }
