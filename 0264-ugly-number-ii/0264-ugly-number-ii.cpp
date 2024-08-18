@@ -20,7 +20,6 @@ if (next == next5)
         ++i5;
       uglyNums.push_back(next);
 }
-
-    return uglyNums.back();
+return uglyNums.back();
 }
 };
