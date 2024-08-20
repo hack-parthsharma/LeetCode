@@ -1,9 +1,8 @@
 class Solution {
- public:
+public:
   int stoneGameII(vector<int>& piles) {
     const int n = piles.size();
     dp.resize(n, vector<int>(n));
-    // suffixSum[i] := sum of piles[i:]
     suffixSum = piles;
 
     for (int i = n - 2; i >= 0; --i)
