@@ -2,7 +2,6 @@ class Solution {
  public:
   long long maxPoints(vector<vector<int>>& points) {
     const int n = points[0].size();
-    // dp[j] := max # points you can have if points[i][j] is the most recent
     vector<long long> dp(n);
 
     for (const vector<int>& row : points) {
