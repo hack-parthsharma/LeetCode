@@ -2,7 +2,6 @@ class Solution {
  public:
   int stoneGameII(vector<int>& piles) {
     const int n = piles.size();
-    // dp[i][j] := max # of stones Alice can get w/ piles[i:] and M = j
     dp.resize(n, vector<int>(n));
     // suffixSum[i] := sum of piles[i:]
     suffixSum = piles;
