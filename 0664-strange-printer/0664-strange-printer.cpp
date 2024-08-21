@@ -4,11 +4,11 @@ public:
     const int n = s.length();
     dp.resize(n, vector<int>(n));
     return strangePrinter(s, 0, n - 1);
-  }
+}
  private:
   vector<vector<int>> dp;
   int strangePrinter(const string& s, int i, int j) {
-    if (i > j)
+if (i > j)
       return 0;
     if (dp[i][j] > 0)
       return dp[i][j];
