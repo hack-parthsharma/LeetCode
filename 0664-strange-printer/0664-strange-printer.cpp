@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int strangePrinter(string s) {
     const int n = s.length();
     dp.resize(n, vector<int>(n));
