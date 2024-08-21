@@ -6,7 +6,6 @@ public:
 
     vector<int> dp(n + 1);
 
-    // Copy 'A', then paste 'A' i - 1 times
     iota(begin(dp), end(dp), 0);
 
     for (int i = 2; i <= n; ++i)
