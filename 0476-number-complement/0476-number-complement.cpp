@@ -7,7 +7,7 @@ while(num) {
             inv = inv | ((1 - (num % 2))<<iter);
             num /= 2;
             iter++;
-        }
+}
         return inv;
     }
 };
