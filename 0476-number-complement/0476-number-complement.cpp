@@ -9,5 +9,5 @@ while(num) {
             iter++;
 }
         return inv;
-    }
+}
 };
