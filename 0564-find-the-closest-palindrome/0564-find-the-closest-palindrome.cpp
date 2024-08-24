@@ -12,7 +12,6 @@ string makePalindromic(string s) {
         
         long long orgVal = stoll(n);
     
-        // candidate #1 (ex: 123xx -> 12321, 123xxx -> 123321)
         string res = makePalindromic(n);
         long long resVal = stoll(res);
         long long diff = abs(resVal - orgVal);
