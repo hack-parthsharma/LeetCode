@@ -6,7 +6,7 @@ postorder(root, ans);
 return ans;
 }
 
- private:
+private:
   void postorder(TreeNode* root, vector<int>& ans) {
     if (root == nullptr)
       return;
