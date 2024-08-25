@@ -2,8 +2,8 @@ class Solution {
 public:
 vector<int> postorderTraversal(TreeNode* root) {
 vector<int> ans;
-    postorder(root, ans);
-    return ans;
+postorder(root, ans);
+return ans;
 }
 
  private:
