@@ -1,6 +1,6 @@
 class Solution {
 public:
-  vector<int> postorderTraversal(TreeNode* root) {
+vector<int> postorderTraversal(TreeNode* root) {
 vector<int> ans;
     postorder(root, ans);
     return ans;
