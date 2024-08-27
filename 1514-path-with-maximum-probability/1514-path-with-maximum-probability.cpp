@@ -3,7 +3,7 @@ public:
   double maxProbability(int n, vector<vector<int>>& edges,
                         vector<double>& succProb, int start, int end) {
     vector<vector<pair<int, double>>> graph(n);  
-    priority_queue<pair<double, int>> maxHeap;   // (prob to reach u, u)
+    priority_queue<pair<double, int>> maxHeap;   
     maxHeap.emplace(1.0, start);
     vector<bool> seen(n);
 
