@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   double maxProbability(int n, vector<vector<int>>& edges,
                         vector<double>& succProb, int start, int end) {
     vector<vector<pair<int, double>>> graph(n);  // {a: [(b, prob_ab)]}
