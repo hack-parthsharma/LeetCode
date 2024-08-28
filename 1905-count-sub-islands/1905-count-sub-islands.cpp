@@ -19,7 +19,7 @@ class Solution {
     if (grid2[i][j] != 1)
       return 1;
 
-    grid2[i][j] = 2;  // Mark 2 as visited
+    grid2[i][j] = 2;  
 
     return dfs(grid1, grid2, i + 1, j) & dfs(grid1, grid2, i - 1, j) &
            dfs(grid1, grid2, i, j + 1) & dfs(grid1, grid2, i, j - 1) &
