@@ -3,7 +3,7 @@ public:
   int removeStones(vector<vector<int>>& stones) {
   int numOfIslands = 0;
   vector<vector<int>> graph(stones.size());
-    unordered_set<int> seen;
+  unordered_set<int> seen;
 
     for (int i = 0; i < stones.size(); ++i)
       for (int j = i + 1; j < stones.size(); ++j)
