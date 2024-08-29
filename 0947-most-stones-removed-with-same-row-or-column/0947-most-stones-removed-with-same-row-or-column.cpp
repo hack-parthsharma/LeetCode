@@ -5,7 +5,7 @@ public:
   vector<vector<int>> graph(stones.size());
   unordered_set<int> seen;
 
-    for (int i = 0; i < stones.size(); ++i)
+for (int i = 0; i < stones.size(); ++i)
       for (int j = i + 1; j < stones.size(); ++j)
         if (stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1]) {
           graph[i].push_back(j);
