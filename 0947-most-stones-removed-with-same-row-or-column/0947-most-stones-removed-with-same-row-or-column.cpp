@@ -12,7 +12,7 @@ for (int i = 0; i < stones.size(); ++i)
           graph[j].push_back(i);
         }
 
-    for (int i = 0; i < stones.size(); ++i)
+for (int i = 0; i < stones.size(); ++i)
       if (seen.insert(i).second) {
         dfs(graph, i, seen);
         ++numOfIslands;
