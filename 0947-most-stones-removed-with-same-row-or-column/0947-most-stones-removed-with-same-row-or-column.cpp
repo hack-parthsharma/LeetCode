@@ -19,7 +19,7 @@ for (int i = 0; i < stones.size(); ++i)
       }
 
     return stones.size() - numOfIslands;
-  }
+}
 
  private:
   void dfs(const vector<vector<int>>& graph, int u, unordered_set<int>& seen) {
