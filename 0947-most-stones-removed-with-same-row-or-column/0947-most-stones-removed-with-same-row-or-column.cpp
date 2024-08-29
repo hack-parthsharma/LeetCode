@@ -1,7 +1,7 @@
 class Solution {
 public:
   int removeStones(vector<vector<int>>& stones) {
-    int numOfIslands = 0;
+  int numOfIslands = 0;
     vector<vector<int>> graph(stones.size());
     unordered_set<int> seen;
 
