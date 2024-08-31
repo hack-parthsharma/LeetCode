@@ -15,7 +15,7 @@ double maxProbability(int n, vector<vector<int>>& edges,
       graph[v].emplace_back(u, prob);
     }
 
-    while (!maxHeap.empty()) {
+while (!maxHeap.empty()) {
       const auto [prob, u] = maxHeap.top();
       maxHeap.pop();
       if (u == end)
