@@ -1,6 +1,6 @@
 class Solution {
 public:
-  double maxProbability(int n, vector<vector<int>>& edges,
+double maxProbability(int n, vector<vector<int>>& edges,
                         vector<double>& succProb, int start, int end) {
     vector<vector<pair<int, double>>> graph(n);  
     priority_queue<pair<double, int>> maxHeap;   
