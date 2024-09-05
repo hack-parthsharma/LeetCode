@@ -1,6 +1,6 @@
 class Solution {
 public:
-  vector<int> missingRolls(vector<int>& rolls, int mean, int n) {
+vector<int> missingRolls(vector<int>& rolls, int mean, int n) {
     const int targetSum = (rolls.size() + n) * mean;
     int missingSum = targetSum - accumulate(begin(rolls), end(rolls), 0);
     if (missingSum > n * 6 || missingSum < n)
