@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> missingRolls(vector<int>& rolls, int mean, int n) {
     const int targetSum = (rolls.size() + n) * mean;
     int missingSum = targetSum - accumulate(begin(rolls), end(rolls), 0);
