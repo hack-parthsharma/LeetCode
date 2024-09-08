@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<ListNode*> splitListToParts(ListNode* root, int k) {
     vector<ListNode*> ans(k);
     const int length = getLength(root);
