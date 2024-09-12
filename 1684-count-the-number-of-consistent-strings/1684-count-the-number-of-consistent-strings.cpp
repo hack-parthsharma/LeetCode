@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int countConsistentStrings(string allowed, vector<string>& words) {
+int countConsistentStrings(string allowed, vector<string>& words) {
         auto f = [](string& w) {
             int mask = 0;
             for (auto& c : w) mask |= 1 << (c - 'a');
