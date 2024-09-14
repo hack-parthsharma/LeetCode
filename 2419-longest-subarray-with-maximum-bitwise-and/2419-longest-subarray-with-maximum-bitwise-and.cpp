@@ -14,7 +14,7 @@ for (int i = 0; i < nums.size(); ++i)
         ans = 1;
 } else {
         sameNumLength = 0;
-      }
+}
 
     return ans;
   }
