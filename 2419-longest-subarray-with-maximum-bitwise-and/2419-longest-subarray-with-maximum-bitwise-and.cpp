@@ -12,7 +12,7 @@ for (int i = 0; i < nums.size(); ++i)
         maxIndex = i;
         sameNumLength = 1;
         ans = 1;
-      } else {
+} else {
         sameNumLength = 0;
       }
 
